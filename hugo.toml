@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'zh-CN'
+title = '拯救MCBBS'
+theme = 'etch'

@@ -1,0 +1,2635 @@
+---
+title: "[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 编程开发 - Minecraft(我的世界)中文论坛 -.html"
+---
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%8f%92%e4%bb%b6&d=4551527539146854&mkt=zh-CN&setlang=zh-CN&w=FYR2Hn6WmcIVy4R6fZyIEPl4L4EIDJG7 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/thread-1280861-1-1.html">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2022/10/15--><!--InvariantDate:10/15/2022--></head><body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;"><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/thread-1280861-1-1.html" h="ID=SERP,5003.1">https://www.mcbbs.net/thread-1280861-1-1.html</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2022/10/15</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/thread-1280861-1-1.html" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="force-rendering" content="webkit">
+
+<title>[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 编程开发 - Minecraft(我的世界)中文论坛 - </title>
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta itemprop="image" content="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png">
+<script charset="utf-8" src="./[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 编程开发 - Minecraft(我的世界)中文论坛 -_files/UrlChangeTracker.js.下载"></script><script src="./[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 编程开发 - Minecraft(我的世界)中文论坛 -_files/hm.js.下载"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?affdf09dddabcdf2d681acefa474b973";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style>
+.fastlg {
+display:none;
+}
+</style>
+<link href="https://www.mcbbs.net/thread-1280861-1-1.html" rel="canonical"><meta name="keywords" content="我的世界编程开发,Minecraft(我的世界)中文论坛,我的世界安装,我的世界下载,我的世界,我的世界中文论坛">
+<meta name="description" content="[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 引子        众所周知，Minecraft 的服务端和客户端是分离的两部分，客户端与服务端通过 TCP / IP（特指 Java 版，基岩版使用的是 UDP） 进行数据通讯（所以我们需要在服务 ... ">
+<meta name="generator" content="Discuz! X3.5">
+<meta name="author" content="我的世界中文论坛">
+<meta name="copyright" content="2001-2013 Comsenz Inc.">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<!--<base href="https://www.mcbbs.net/">--><base href=".">
+<link rel="manifest" href="https://www.mcbbs.net/manifest.json"><link rel="stylesheet" type="text/css" href="https://www.mcbbs.net/data/cache/style_30_common.css?a5a"><link rel="stylesheet" type="text/css" href="https://www.mcbbs.net/data/cache/style_30_forum_viewthread.css?a5a"><link rel="stylesheet" id="css_extstyle" type="text/css" href="https://www.mcbbs.net/template/mcbbs/style/winter/style.css"><script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'a5a', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭[已弃用]|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/winter', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L3RocmVhZC0xMjgwODYxLTEtMS5odG1s', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
+<script src="https://www.mcbbs.net/data/cache/common.js?a5a" type="text/javascript"></script>
+<meta name="application-name" content="Minecraft(我的世界)中文论坛">
+<meta name="msapplication-tooltip" content="Minecraft(我的世界)中文论坛">
+<meta name="msapplication-task" content="name=首页;action-uri=https://www.mcbbs.net/portal.php;icon-uri=https://www.mcbbs.net/template/mcbbs/image/portal.ico"><meta name="msapplication-task" content="name=论坛;action-uri=https://www.mcbbs.net/forum.php;icon-uri=https://www.mcbbs.net/template/mcbbs/image/bbs.ico">
+<meta name="msapplication-task" content="name=小组;action-uri=https://www.mcbbs.net/group.php;icon-uri=https://www.mcbbs.net/template/mcbbs/image/group.ico"><link rel="archives" title="Minecraft(我的世界)中文论坛" href="https://www.mcbbs.net/archiver/">
+<script src="https://www.mcbbs.net/data/cache/forum.js?a5a" type="text/javascript"></script>
+        <!--<link rel="stylesheet" href="template/mcbbs/common/xw.css"/>-->
+<script src="https://www.mcbbs.net/template/mcbbs/common/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var jq = jQuery.noConflict();
+</script>
+
+
+
+
+    <div id="body_fixed_bg"></div>
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="new_wp wp">
+<div class="z light">
+                                        <a href="https://minecraft.net/" title="我的世界（国际版）官方网站" target="_blank">我的世界官网</a>                                        <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" title="Minecraft Wiki，设立于Fandom" target="_blank">中文百科</a>                                        <a href="https://www.mcbbs.net/forum-server-1.html" target="_blank" style="font-weight: bold;">Java版服务器列表</a>                                        <a href="https://www.mcbbs.net/forum-peserver-1.html" target="_blank" style="font-weight: bold;">基岩版服务器列表</a>                                                                                                                                                                                                                                                                                                                                                                        </div>
+<div class="y">
+                    <!--<div class="y_search">
+                        <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+                            <input type="hidden" name="mod" id="scbar_mod" value="search" />
+                            <input type="hidden" name="formhash" value="5c3a536a" />
+                            <input type="hidden" name="srchtype" value="title" />
+                            <input type="hidden" name="srhfid" value="479" />
+                            <input type="hidden" name="srhlocality" value="forum::viewthread" />
+                            &lt;!&ndash;&ndash;&gt;
+                                <div class="y_search_btn"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></div>
+                                <div class="y_search_inp"><input type="text" name="srchtxt" id="scbar_txt" value="" placeholder="请输入搜索内容" autocomplete="off" x-webkit-speech speech  title=""/></div>
+
+
+
+</form>
+                    </div>--><div class="cl y_search">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($(&#39;scbar_txt&#39;))" action="https://www.mcbbs.net/search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search">
+<input type="hidden" name="formhash" value="5c3a536a">
+<input type="hidden" name="srchtype" value="title">
+<input type="hidden" name="srhfid" value="479">
+<input type="hidden" name="srhlocality" value="forum::viewthread">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<!--<td class="scbar_icon_td"></td>-->
+<td class="y_search_btn"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="y_search_inp"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech="" speech=""></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true" style="height: 26px">搜索</a></td>
+
+<!--	<td class="scbar_hot_td">
+<div id="scbar_hot">
+&lt;!&ndash;&ndash;&gt;
+</div>
+</td>-->
+</tr>
+</tbody></table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="479">本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+<div class="user_menu"> 
+<!--<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>-->
+</div>
+<!--
+<div id="user_login_menu" style="display: none">
+<script src="data/cache/logging.js?a5a" type="text/javascript"></script>
+<form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit();">
+<ul class="user_info_menu_info">
+<li><label for="ls_username">!account!</label><input type="text" name="username" id="ls_username" class="px vm xg1"  value="用户名/Email" onfocus="if(this.value == '用户名/Email'){this.value = '';this.className = 'px vm';}" onblur="if(this.value == ''){this.value = '用户名/Email';this.className = 'px vm xg1';}" tabindex="901" /></li>
+<li><label for="ls_password">!password!</label><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902" /></li>
+<li><label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903" />自动登录</label></li>
+<li><button type="submit" tabindex="914" style="width:220px;height:45px;cursor:pointer;border:0;background:url('template/mcbbs/image/dl.png') 0 0 no-repeat;display: inherit;"></button></li>
+</ul>
+</form>
+</div>
+-->
+<div class="avt y light" id="user_login" onmouseover="showMenu({&#39;ctrlid&#39;:this.id})">
+<a href="https://www.mcbbs.net/member.php?mod=register">注册</a>
+<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login">登录</a>
+<div class="avt y hd_t_a" style="z-index:0">
+<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login"><img src="https://www.mcbbs.net/template/mcbbs/image/special_photo_bg.png"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+        
+<div id="user_info_menu" style="display: none">
+<ul class="user_info_menu_info">
+<li><p class="username"></p>
+</li>
+<li><a class="rank" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=7">游客</a></li>
+<li><a id="rank" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=7" target="_blank"></a>
+</li>
+<li><span class="autowidth pbg2"><span class="pbr2" style="width:%;"></span></span></li>
+<li><a class="extcredits" title="金粒" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit"><em class="gold_nugget"></em>  </a> <a class="extcredits" title="绿宝石" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit"><em class="emerald"></em>  </a></li>
+
+</ul>
+<ul class="user_info_menu_btn">
+<li><a href="https://www.mcbbs.net/home.php?mod=spacecp" target="_blank">账号设置</a></li>
+<li><a href="https://www.mcbbs.net/forum.php?mod=guide&amp;view=my" target="_blank">我的帖子</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=space&amp;do=favorite&amp;view=me" target="_blank">我的收藏</a></li>
+
+<li><a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=logout&amp;formhash=5c3a536a" onclick="showDialog(&#39;你确定要退出登录吗？&#39;, &#39;confirm&#39;, &#39;退出登录&#39;, function(){
+top.window.location.href = &#39;member.php?mod=logging&amp;action=logout&amp;formhash=5c3a536a&#39;;
+}, 1, null, &#39;&#39;, &#39;&#39;, &#39;&#39;, &#39;&#39;, 0);return false;">退出登录</a></li>
+
+</ul>
+</div>
+<!--消息通知--> 
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br>没有帐号？<a href="https://www.mcbbs.net/member.php?mod=register" class="xi2 xw1">注册(register)</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div>    <!--整个主体div-->
+    <div class="mc_map_wp">
+<!--头部公用 用户状态信息-->
+        <div class="new_wp" style="padding: 28px 0 26px 0;">
+<div class="hdc cl"><h2 style="padding:0;float: left;"><a href="https://www.mcbbs.net/portal.php" title="Minecraft(我的世界)中文论坛"><img src="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png" alt="Minecraft(我的世界)中文论坛" border="0"></a></h2><script src="https://www.mcbbs.net/data/cache/logging.js?a5a" type="text/javascript"></script>
+<form method="post" autocomplete="off" id="lsform" action="https://www.mcbbs.net/member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit();">
+<div class="fastlg cl">
+<span id="return_ls" style="display:none"></span>
+<div class="y pns">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td><label for="ls_username">帐号</label></td>
+<td><input type="text" name="username" id="ls_username" class="px vm xg1" value="用户名/Email" onfocus="if(this.value == &#39;用户名/Email&#39;){this.value = &#39;&#39;;this.className = &#39;px vm&#39;;}" onblur="if(this.value == &#39;&#39;){this.value = &#39;用户名/Email&#39;;this.className = &#39;px vm xg1&#39;;}" tabindex="901"></td>
+<td class="fastlg_l"><label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903">自动登录</label></td>
+<td>&nbsp;<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login&amp;viewlostpw=1">找回密码</a></td>
+</tr>
+<tr>
+<td><label for="ls_password">密码</label></td>
+<td><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902"></td>
+<td class="fastlg_l"><button type="submit" class="pn vm" tabindex="904" style="width: 75px;"><em>登录</em></button></td>
+<td>&nbsp;<a href="https://www.mcbbs.net/member.php?mod=register" class="xi2 xw1">注册(register)</a></td>
+</tr>
+</tbody></table>
+<input type="hidden" name="quickforward" value="yes">
+<input type="hidden" name="handlekey" value="ls">
+</div>
+
+<div class="fastlg_fm y" style="padding-right: 5px; border-right: none;">
+<p><a href="https://www.mcbbs.net/bilibili_connect.php?mod=auth&amp;op=login"><img src="https://www.mcbbs.net/template/mcbbs/image/bili_login.gif" class="vm" alt="!header_login!"></a></p>
+<p class="hm xg1" style="padding-top: 2px; color: white !important;">只需一步，立刻登录</p>
+</div>
+        <script type="text/javascript" src="https://www.mcbbs.net/source/plugin/geetest3/js/gt3-init.js"></script>
+        <script type="text/javascript" src="https://www.mcbbs.net/source/plugin/geetest3/js/gt.js"></script>
+
+        <script type="text/javascript">
+            var lsform = document.getElementById('lsform');
+            var o = document.createElement("button");  
+            o.id = "header-loggin-btn";       
+            o.setAttribute('type', 'submit');                               
+            o.value = ""; 
+            o.style.display="none";
+            lsform.appendChild(o);
+        </script>
+        <script type="text/javascript">
+            var handler = function (captchaObj) {
+                window.__gtcaptch__ = captchaObj;         
+             };
+            var xmlHttp;
+            function createxmlHttpRequest() {
+                if (window.ActiveXObject) {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } else if (window.XMLHttpRequest) {
+                    xmlHttp = new XMLHttpRequest();
+                }
+            }
+            createxmlHttpRequest();
+            xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start&t=" + (new Date()).getTime());
+            xmlHttp.send(null);
+            xmlHttp.onreadystatechange = function(result) {
+                if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+                        var obj = JSON.parse(xmlHttp.responseText);          
+                            initGeetest({
+                                gt: obj.gt,
+                                challenge: obj.challenge,
+                                offline: !obj.success,
+                                timeout: '5000',
+                                product: "bind", // 产品形式，包括：float，popup
+                                width: "300px"
+                            }, handler);
+                }
+            }
+        </script>
+</div><button id="header-loggin-btn" type="submit" value="" style="display: none;"></button>
+</form>
+
+<div id="FvWmcw" class="y">
+<script>(function(i){var l="2.73";if(i.support==undefined){i.support={opacity:!(i.browser.msie)}}function a(q){if(i.fn.cycle.debug){f(q)}}function f(){if(window.console&&window.console.log){window.console.log("[cycle] "+Array.prototype.join.call(arguments," "))}}i.fn.cycle=function(r,q){var s={s:this.selector,c:this.context};if(this.length===0&&r!="stop"){if(!i.isReady&&s.s){f("DOM not ready, queuing slideshow");i(function(){i(s.s,s.c).cycle(r,q)});return this}f("terminating; zero elements found by selector"+(i.isReady?"":" (DOM not ready)"));return this}return this.each(function(){var w=m(this,r,q);if(w===false){return}if(this.cycleTimeout){clearTimeout(this.cycleTimeout)}this.cycleTimeout=this.cyclePause=0;var x=i(this);var y=w.slideExpr?i(w.slideExpr,this):x.children();var u=y.get();if(u.length<2){f("terminating; too few slides: "+u.length);return}var t=k(x,y,u,w,s);if(t===false){return}var v=t.continuous?10:h(t.currSlide,t.nextSlide,t,!t.rev);if(v){v+=(t.delay||0);if(v<10){v=10}a("first timeout: "+v);this.cycleTimeout=setTimeout(function(){e(u,t,0,!t.rev)},v)}})};function m(q,t,r){if(q.cycleStop==undefined){q.cycleStop=0}if(t===undefined||t===null){t={}}if(t.constructor==String){switch(t){case"stop":q.cycleStop++;if(q.cycleTimeout){clearTimeout(q.cycleTimeout)}q.cycleTimeout=0;i(q).removeData("cycle.opts");return false;case"pause":q.cyclePause=1;return false;case"resume":q.cyclePause=0;if(r===true){t=i(q).data("cycle.opts");if(!t){f("options not found, can not resume");return false}if(q.cycleTimeout){clearTimeout(q.cycleTimeout);q.cycleTimeout=0}e(t.elements,t,1,1)}return false;case"prev":case"next":var u=i(q).data("cycle.opts");if(!u){f('options not found, "prev/next" ignored');return false}i.fn.cycle[t](u);return false;default:t={fx:t}}return t}else{if(t.constructor==Number){var s=t;t=i(q).data("cycle.opts");if(!t){f("options not found, can not advance slide");return false}if(s<0||s>=t.elements.length){f("invalid slide index: "+s);return false}t.nextSlide=s;if(q.cycleTimeout){clearTimeout(q.cycleTimeout);q.cycleTimeout=0}if(typeof r=="string"){t.oneTimeFx=r}e(t.elements,t,1,s>=t.currSlide);return false}}return t}function b(q,r){if(!i.support.opacity&&r.cleartype&&q.style.filter){try{q.style.removeAttribute("filter")}catch(s){}}}function k(y,J,u,t,E){var C=i.extend({},i.fn.cycle.defaults,t||{},i.metadata?y.metadata():i.meta?y.data():{});if(C.autostop){C.countdown=C.autostopCount||u.length}var r=y[0];y.data("cycle.opts",C);C.$cont=y;C.stopCount=r.cycleStop;C.elements=u;C.before=C.before?[C.before]:[];C.after=C.after?[C.after]:[];C.after.unshift(function(){C.busy=0});if(!i.support.opacity&&C.cleartype){C.after.push(function(){b(this,C)})}if(C.continuous){C.after.push(function(){e(u,C,0,!C.rev)})}n(C);if(!i.support.opacity&&C.cleartype&&!C.cleartypeNoBg){g(J)}if(y.css("position")=="static"){y.css("position","relative")}if(C.width){y.width(C.width)}if(C.height&&C.height!="auto"){y.height(C.height)}if(C.startingSlide){C.startingSlide=parseInt(C.startingSlide)}if(C.random){C.randomMap=[];for(var H=0;H<u.length;H++){C.randomMap.push(H)}C.randomMap.sort(function(L,w){return Math.random()-0.5});C.randomIndex=0;C.startingSlide=C.randomMap[0]}else{if(C.startingSlide>=u.length){C.startingSlide=0}}C.currSlide=C.startingSlide=C.startingSlide||0;var x=C.startingSlide;J.css({position:"absolute",top:0,left:0}).hide().each(function(w){var L=x?w>=x?u.length-(w-x):x-w:u.length-w;i(this).css("z-index",L)});i(u[x]).css("opacity",1).show();b(u[x],C);if(C.fit&&C.width){J.width(C.width)}if(C.fit&&C.height&&C.height!="auto"){J.height(C.height)}var D=C.containerResize&&!y.innerHeight();if(D){var v=0,B=0;for(var F=0;F<u.length;F++){var q=i(u[F]),K=q[0],A=q.outerWidth(),I=q.outerHeight();if(!A){A=K.offsetWidth}if(!I){I=K.offsetHeight}v=A>v?A:v;B=I>B?I:B}if(v>0&&B>0){y.css({width:v+"px",height:B+"px"})}}if(C.pause){y.hover(function(){this.cyclePause++},function(){this.cyclePause--})}if(c(C)===false){return false}var s=false;t.requeueAttempts=t.requeueAttempts||0;J.each(function(){var N=i(this);this.cycleH=(C.fit&&C.height)?C.height:N.height();this.cycleW=(C.fit&&C.width)?C.width:N.width();if(N.is("img")){var L=(i.browser.msie&&this.cycleW==28&&this.cycleH==30&&!this.complete);var O=(i.browser.mozilla&&this.cycleW==34&&this.cycleH==19&&!this.complete);var M=(i.browser.opera&&((this.cycleW==42&&this.cycleH==19)||(this.cycleW==37&&this.cycleH==17))&&!this.complete);var w=(this.cycleH==0&&this.cycleW==0&&!this.complete);if(L||O||M||w){if(E.s&&C.requeueOnImageNotLoaded&&++t.requeueAttempts<100){f(t.requeueAttempts," - img slide not loaded, requeuing slideshow: ",this.src,this.cycleW,this.cycleH);setTimeout(function(){i(E.s,E.c).cycle(t)},C.requeueTimeout);s=true;return false}else{f("could not determine size of image: "+this.src,this.cycleW,this.cycleH)}}}return true});if(s){return false}C.cssBefore=C.cssBefore||{};C.animIn=C.animIn||{};C.animOut=C.animOut||{};J.not(":eq("+x+")").css(C.cssBefore);if(C.cssFirst){i(J[x]).css(C.cssFirst)}if(C.timeout){C.timeout=parseInt(C.timeout);if(C.speed.constructor==String){C.speed=i.fx.speeds[C.speed]||parseInt(C.speed)}if(!C.sync){C.speed=C.speed/2}while((C.timeout-C.speed)<250){C.timeout+=C.speed}}if(C.easing){C.easeIn=C.easeOut=C.easing}if(!C.speedIn){C.speedIn=C.speed}if(!C.speedOut){C.speedOut=C.speed}C.slideCount=u.length;C.currSlide=C.lastSlide=x;if(C.random){C.nextSlide=C.currSlide;if(++C.randomIndex==u.length){C.randomIndex=0}C.nextSlide=C.randomMap[C.randomIndex]}else{C.nextSlide=C.startingSlide>=(u.length-1)?0:C.startingSlide+1}if(!C.multiFx){var G=i.fn.cycle.transitions[C.fx];if(i.isFunction(G)){G(y,J,C)}else{if(C.fx!="custom"&&!C.multiFx){f("unknown transition: "+C.fx,"; slideshow terminating");return false}}}var z=J[x];if(C.before.length){C.before[0].apply(z,[z,z,C,true])}if(C.after.length>1){C.after[1].apply(z,[z,z,C,true])}if(C.next){i(C.next).bind(C.prevNextEvent,function(){return o(C,C.rev?-1:1)})}if(C.prev){i(C.prev).bind(C.prevNextEvent,function(){return o(C,C.rev?1:-1)})}if(C.pager){d(u,C)}j(C,u);return C}function n(q){q.original={before:[],after:[]};q.original.cssBefore=i.extend({},q.cssBefore);q.original.cssAfter=i.extend({},q.cssAfter);q.original.animIn=i.extend({},q.animIn);q.original.animOut=i.extend({},q.animOut);i.each(q.before,function(){q.original.before.push(this)});i.each(q.after,function(){q.original.after.push(this)})}function c(w){var u,s,r=i.fn.cycle.transitions;if(w.fx.indexOf(",")>0){w.multiFx=true;w.fxs=w.fx.replace(/\s*/g,"").split(",");for(u=0;u<w.fxs.length;u++){var v=w.fxs[u];s=r[v];if(!s||!r.hasOwnProperty(v)||!i.isFunction(s)){f("discarding unknown transition: ",v);w.fxs.splice(u,1);u--}}if(!w.fxs.length){f("No valid transitions named; slideshow terminating.");return false}}else{if(w.fx=="all"){w.multiFx=true;w.fxs=[];for(p in r){s=r[p];if(r.hasOwnProperty(p)&&i.isFunction(s)){w.fxs.push(p)}}}}if(w.multiFx&&w.randomizeEffects){var t=Math.floor(Math.random()*20)+30;for(u=0;u<t;u++){var q=Math.floor(Math.random()*w.fxs.length);w.fxs.push(w.fxs.splice(q,1)[0])}a("randomized fx sequence: ",w.fxs)}return true}function j(r,q){r.addSlide=function(u,v){var t=i(u),w=t[0];if(!r.autostopCount){r.countdown++}q[v?"unshift":"push"](w);if(r.els){r.els[v?"unshift":"push"](w)}r.slideCount=q.length;t.css("position","absolute");t[v?"prependTo":"appendTo"](r.$cont);if(v){r.currSlide++;r.nextSlide++}if(!i.support.opacity&&r.cleartype&&!r.cleartypeNoBg){g(t)}if(r.fit&&r.width){t.width(r.width)}if(r.fit&&r.height&&r.height!="auto"){$slides.height(r.height)}w.cycleH=(r.fit&&r.height)?r.height:t.height();w.cycleW=(r.fit&&r.width)?r.width:t.width();t.css(r.cssBefore);if(r.pager){i.fn.cycle.createPagerAnchor(q.length-1,w,i(r.pager),q,r)}if(i.isFunction(r.onAddSlide)){r.onAddSlide(t)}else{t.hide()}}}i.fn.cycle.resetState=function(r,q){q=q||r.fx;r.before=[];r.after=[];r.cssBefore=i.extend({},r.original.cssBefore);r.cssAfter=i.extend({},r.original.cssAfter);r.animIn=i.extend({},r.original.animIn);r.animOut=i.extend({},r.original.animOut);r.fxFn=null;i.each(r.original.before,function(){r.before.push(this)});i.each(r.original.after,function(){r.after.push(this)});var s=i.fn.cycle.transitions[q];if(i.isFunction(s)){s(r.$cont,i(r.elements),r)}};function e(x,q,w,y){if(w&&q.busy&&q.manualTrump){i(x).stop(true,true);q.busy=false}if(q.busy){return}var u=q.$cont[0],A=x[q.currSlide],z=x[q.nextSlide];if(u.cycleStop!=q.stopCount||u.cycleTimeout===0&&!w){return}if(!w&&!u.cyclePause&&((q.autostop&&(--q.countdown<=0))||(q.nowrap&&!q.random&&q.nextSlide<q.currSlide))){if(q.end){q.end(q)}return}if(w||!u.cyclePause){var v=q.fx;A.cycleH=A.cycleH||i(A).height();A.cycleW=A.cycleW||i(A).width();z.cycleH=z.cycleH||i(z).height();z.cycleW=z.cycleW||i(z).width();if(q.multiFx){if(q.lastFx==undefined||++q.lastFx>=q.fxs.length){q.lastFx=0}v=q.fxs[q.lastFx];q.currFx=v}if(q.oneTimeFx){v=q.oneTimeFx;q.oneTimeFx=null}i.fn.cycle.resetState(q,v);if(q.before.length){i.each(q.before,function(B,C){if(u.cycleStop!=q.stopCount){return}C.apply(z,[A,z,q,y])})}var s=function(){i.each(q.after,function(B,C){if(u.cycleStop!=q.stopCount){return}C.apply(z,[A,z,q,y])})};if(q.nextSlide!=q.currSlide){q.busy=1;if(q.fxFn){q.fxFn(A,z,q,s,y)}else{if(i.isFunction(i.fn.cycle[q.fx])){i.fn.cycle[q.fx](A,z,q,s)}else{i.fn.cycle.custom(A,z,q,s,w&&q.fastOnEvent)}}}q.lastSlide=q.currSlide;if(q.random){q.currSlide=q.nextSlide;if(++q.randomIndex==x.length){q.randomIndex=0}q.nextSlide=q.randomMap[q.randomIndex]}else{var t=(q.nextSlide+1)==x.length;q.nextSlide=t?0:q.nextSlide+1;q.currSlide=t?x.length-1:q.nextSlide-1}if(q.pager){i.fn.cycle.updateActivePagerLink(q.pager,q.currSlide)}}var r=0;if(q.timeout&&!q.continuous){r=h(A,z,q,y)}else{if(q.continuous&&u.cyclePause){r=10}}if(r>0){u.cycleTimeout=setTimeout(function(){e(x,q,0,!q.rev)},r)}}i.fn.cycle.updateActivePagerLink=function(q,r){i(q).each(function(){i(this).find("a").removeClass("activeSlide").filter("a:eq("+r+")").addClass("activeSlide")})};function h(v,s,u,r){if(u.timeoutFn){var q=u.timeoutFn(v,s,u,r);while((q-u.speed)<250){q+=u.speed}a("calculated timeout: "+q+"; speed: "+u.speed);if(q!==false){return q}}return u.timeout}i.fn.cycle.next=function(q){o(q,q.rev?-1:1)};i.fn.cycle.prev=function(q){o(q,q.rev?1:-1)};function o(r,u){var q=r.elements;var t=r.$cont[0],s=t.cycleTimeout;if(s){clearTimeout(s);t.cycleTimeout=0}if(r.random&&u<0){r.randomIndex--;if(--r.randomIndex==-2){r.randomIndex=q.length-2}else{if(r.randomIndex==-1){r.randomIndex=q.length-1}}r.nextSlide=r.randomMap[r.randomIndex]}else{if(r.random){if(++r.randomIndex==q.length){r.randomIndex=0}r.nextSlide=r.randomMap[r.randomIndex]}else{r.nextSlide=r.currSlide+u;if(r.nextSlide<0){if(r.nowrap){return false}r.nextSlide=q.length-1}else{if(r.nextSlide>=q.length){if(r.nowrap){return false}r.nextSlide=0}}}}if(i.isFunction(r.prevNextClick)){r.prevNextClick(u>0,r.nextSlide,q[r.nextSlide])}e(q,r,1,u>=0);return false}function d(r,s){var q=i(s.pager);i.each(r,function(t,u){i.fn.cycle.createPagerAnchor(t,u,q,r,s)});i.fn.cycle.updateActivePagerLink(s.pager,s.startingSlide)}i.fn.cycle.createPagerAnchor=function(u,v,s,t,w){var r;if(i.isFunction(w.pagerAnchorBuilder)){r=w.pagerAnchorBuilder(u,v)}else{r='<a href="#">'+(u+1)+"</a>"}if(!r){return}var x=i(r);if(x.parents("body").length===0){var q=[];if(s.length>1){s.each(function(){var y=x.clone(true);i(this).append(y);q.push(y[0])});x=i(q)}else{x.appendTo(s)}}x.bind(w.pagerEvent,function(A){A.preventDefault();w.nextSlide=u;var z=w.$cont[0],y=z.cycleTimeout;if(y){clearTimeout(y);z.cycleTimeout=0}if(i.isFunction(w.pagerClick)){w.pagerClick(w.nextSlide,t[w.nextSlide])}e(t,w,1,w.currSlide<u);return false});if(w.pagerEvent!="click"){x.click(function(){return false})}if(w.pauseOnPagerHover){x.hover(function(){w.$cont[0].cyclePause++},function(){w.$cont[0].cyclePause--})}};i.fn.cycle.hopsFromLast=function(t,s){var r,q=t.lastSlide,u=t.currSlide;if(s){r=u>q?u-q:t.slideCount-q}else{r=u<q?q-u:q+t.slideCount-u}return r};function g(s){function r(t){t=parseInt(t).toString(16);return t.length<2?"0"+t:t}function q(w){for(;w&&w.nodeName.toLowerCase()!="html";w=w.parentNode){var t=i.css(w,"background-color");if(t.indexOf("rgb")>=0){var u=t.match(/\d+/g);return"#"+r(u[0])+r(u[1])+r(u[2])}if(t&&t!="transparent"){return t}}return"#ffffff"}s.each(function(){i(this).css("background-color",q(this))})}i.fn.cycle.commonReset=function(v,t,u,r,s,q){i(u.elements).not(v).hide();u.cssBefore.opacity=1;u.cssBefore.display="block";if(r!==false&&t.cycleW>0){u.cssBefore.width=t.cycleW}if(s!==false&&t.cycleH>0){u.cssBefore.height=t.cycleH}u.cssAfter=u.cssAfter||{};u.cssAfter.display="none";i(v).css("zIndex",u.slideCount+(q===true?1:0));i(t).css("zIndex",u.slideCount+(q===true?0:1))};i.fn.cycle.custom=function(B,v,q,s,r){var A=i(B),w=i(v);var t=q.speedIn,z=q.speedOut,u=q.easeIn,y=q.easeOut;w.css(q.cssBefore);if(r){if(typeof r=="number"){t=z=r}else{t=z=1}u=y=null}var x=function(){w.animate(q.animIn,t,u,s)};A.animate(q.animOut,z,y,function(){if(q.cssAfter){A.css(q.cssAfter)}if(!q.sync){x()}});if(q.sync){x()}};i.fn.cycle.transitions={fade:function(r,s,q){s.not(":eq("+q.currSlide+")").css("opacity",0);q.before.push(function(v,t,u){i.fn.cycle.commonReset(v,t,u);u.cssBefore.opacity=0});q.animIn={opacity:1};q.animOut={opacity:0};q.cssBefore={top:0,left:0}}};i.fn.cycle.ver=function(){return l};i.fn.cycle.defaults={fx:"fade",timeout:4000,timeoutFn:null,continuous:0,speed:1000,speedIn:null,speedOut:null,next:null,prev:null,prevNextClick:null,prevNextEvent:"click",pager:null,pagerClick:null,pagerEvent:"click",pagerAnchorBuilder:null,before:null,after:null,end:null,easing:null,easeIn:null,easeOut:null,shuffle:null,animIn:null,animOut:null,cssBefore:null,cssAfter:null,fxFn:null,height:"auto",startingSlide:0,sync:1,random:0,fit:0,containerResize:1,pause:0,pauseOnPagerHover:0,autostop:0,autostopCount:0,delay:0,slideExpr:null,cleartype:!i.support.opacity,cleartypeNoBg:false,nowrap:0,fastOnEvent:0,randomizeEffects:1,rev:0,manualTrump:true,requeueOnImageNotLoaded:true,requeueTimeout:250}})(jQuery);
+/*
+ * jQuery Cycle Plugin Transition Definitions
+ * This script is a plugin for the jQuery Cycle Plugin
+ * Examples and documentation at: http://malsup.com/jquery/cycle/
+ * Copyright (c) 2007-2008 M. Alsup
+ * Version:	 2.72
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+(function(a){a.fn.cycle.transitions.none=function(c,d,b){b.fxFn=function(g,e,f,h){a(e).show();a(g).hide();h()}};a.fn.cycle.transitions.scrollUp=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.height();c.cssBefore={top:b,left:0};c.cssFirst={top:0};c.animIn={top:0};c.animOut={top:-b}};a.fn.cycle.transitions.scrollDown=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.height();c.cssFirst={top:0};c.cssBefore={top:-b,left:0};c.animIn={top:0};c.animOut={top:b}};a.fn.cycle.transitions.scrollLeft=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.width();c.cssFirst={left:0};c.cssBefore={left:b,top:0};c.animIn={left:0};c.animOut={left:0-b}};a.fn.cycle.transitions.scrollRight=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.width();c.cssFirst={left:0};c.cssBefore={left:-b,top:0};c.animIn={left:0};c.animOut={left:b}};a.fn.cycle.transitions.scrollHorz=function(c,d,b){c.css("overflow","hidden").width();b.before.push(function(h,f,g,e){a.fn.cycle.commonReset(h,f,g);g.cssBefore.left=e?(f.cycleW-1):(1-f.cycleW);g.animOut.left=e?-h.cycleW:h.cycleW});b.cssFirst={left:0};b.cssBefore={top:0};b.animIn={left:0};b.animOut={top:0}};a.fn.cycle.transitions.scrollVert=function(c,d,b){c.css("overflow","hidden");b.before.push(function(h,f,g,e){a.fn.cycle.commonReset(h,f,g);g.cssBefore.top=e?(1-f.cycleH):(f.cycleH-1);g.animOut.top=e?h.cycleH:-h.cycleH});b.cssFirst={top:0};b.cssBefore={left:0};b.animIn={top:0};b.animOut={left:0}};a.fn.cycle.transitions.slideX=function(c,d,b){b.before.push(function(g,e,f){a(f.elements).not(g).hide();a.fn.cycle.commonReset(g,e,f,false,true);f.animIn.width=e.cycleW});b.cssBefore={left:0,top:0,width:0};b.animIn={width:"show"};b.animOut={width:0}};a.fn.cycle.transitions.slideY=function(c,d,b){b.before.push(function(g,e,f){a(f.elements).not(g).hide();a.fn.cycle.commonReset(g,e,f,true,false);f.animIn.height=e.cycleH});b.cssBefore={left:0,top:0,height:0};b.animIn={height:"show"};b.animOut={height:0}};a.fn.cycle.transitions.shuffle=function(e,f,d){var c,b=e.css("overflow","visible").width();f.css({left:0,top:0});d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h,true,true,true)});if(!d.speedAdjusted){d.speed=d.speed/2;d.speedAdjusted=true}d.random=0;d.shuffle=d.shuffle||{left:-b,top:15};d.els=[];for(c=0;c<f.length;c++){d.els.push(f[c])}for(c=0;c<d.currSlide;c++){d.els.push(d.els.shift())}d.fxFn=function(m,j,l,g,i){var h=i?a(m):a(j);a(j).css(l.cssBefore);var k=l.slideCount;h.animate(l.shuffle,l.speedIn,l.easeIn,function(){var o=a.fn.cycle.hopsFromLast(l,i);for(var q=0;q<o;q++){i?l.els.push(l.els.shift()):l.els.unshift(l.els.pop())}if(i){for(var r=0,n=l.els.length;r<n;r++){a(l.els[r]).css("z-index",n-r+k)}}else{var s=a(m).css("z-index");h.css("z-index",parseInt(s)+1+k)}h.animate({left:0,top:0},l.speedOut,l.easeOut,function(){a(i?this:m).hide();if(g){g()}})})};d.cssBefore={display:"block",opacity:1,top:0,left:0}};a.fn.cycle.transitions.turnUp=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.cssBefore.top=e.cycleH;f.animIn.height=e.cycleH});b.cssFirst={top:0};b.cssBefore={left:0,height:0};b.animIn={top:0};b.animOut={height:0}};a.fn.cycle.transitions.turnDown=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.animIn.height=e.cycleH;f.animOut.top=g.cycleH});b.cssFirst={top:0};b.cssBefore={left:0,top:0,height:0};b.animOut={height:0}};a.fn.cycle.transitions.turnLeft=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.cssBefore.left=e.cycleW;f.animIn.width=e.cycleW});b.cssBefore={top:0,width:0};b.animIn={left:0};b.animOut={width:0}};a.fn.cycle.transitions.turnRight=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.animIn.width=e.cycleW;f.animOut.left=g.cycleW});b.cssBefore={top:0,left:0,width:0};b.animIn={left:0};b.animOut={width:0}};a.fn.cycle.transitions.zoom=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,false,true);f.cssBefore.top=e.cycleH/2;f.cssBefore.left=e.cycleW/2;f.animIn={top:0,left:0,width:e.cycleW,height:e.cycleH};f.animOut={width:0,height:0,top:g.cycleH/2,left:g.cycleW/2}});b.cssFirst={top:0,left:0};b.cssBefore={width:0,height:0}};a.fn.cycle.transitions.fadeZoom=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,false);f.cssBefore.left=e.cycleW/2;f.cssBefore.top=e.cycleH/2;f.animIn={top:0,left:0,width:e.cycleW,height:e.cycleH}});b.cssBefore={width:0,height:0};b.animOut={opacity:0}};a.fn.cycle.transitions.blindX=function(d,e,c){var b=d.css("overflow","hidden").width();c.before.push(function(h,f,g){a.fn.cycle.commonReset(h,f,g);g.animIn.width=f.cycleW;g.animOut.left=h.cycleW});c.cssBefore={left:b,top:0};c.animIn={left:0};c.animOut={left:b}};a.fn.cycle.transitions.blindY=function(d,e,c){var b=d.css("overflow","hidden").height();c.before.push(function(h,f,g){a.fn.cycle.commonReset(h,f,g);g.animIn.height=f.cycleH;g.animOut.top=h.cycleH});c.cssBefore={top:b,left:0};c.animIn={top:0};c.animOut={top:b}};a.fn.cycle.transitions.blindZ=function(e,f,d){var c=e.css("overflow","hidden").height();var b=e.width();d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h);h.animIn.height=g.cycleH;h.animOut.top=i.cycleH});d.cssBefore={top:c,left:b};d.animIn={top:0,left:0};d.animOut={top:c,left:b}};a.fn.cycle.transitions.growX=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.cssBefore.left=this.cycleW/2;f.animIn={left:0,width:this.cycleW};f.animOut={left:0}});b.cssBefore={width:0,top:0}};a.fn.cycle.transitions.growY=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.cssBefore.top=this.cycleH/2;f.animIn={top:0,height:this.cycleH};f.animOut={top:0}});b.cssBefore={height:0,left:0}};a.fn.cycle.transitions.curtainX=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true,true);f.cssBefore.left=e.cycleW/2;f.animIn={left:0,width:this.cycleW};f.animOut={left:g.cycleW/2,width:0}});b.cssBefore={top:0,width:0}};a.fn.cycle.transitions.curtainY=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false,true);f.cssBefore.top=e.cycleH/2;f.animIn={top:0,height:e.cycleH};f.animOut={top:g.cycleH/2,height:0}});b.cssBefore={left:0,height:0}};a.fn.cycle.transitions.cover=function(f,g,e){var i=e.direction||"left";var b=f.css("overflow","hidden").width();var c=f.height();e.before.push(function(j,d,h){a.fn.cycle.commonReset(j,d,h);if(i=="right"){h.cssBefore.left=-b}else{if(i=="up"){h.cssBefore.top=c}else{if(i=="down"){h.cssBefore.top=-c}else{h.cssBefore.left=b}}}});e.animIn={left:0,top:0};e.animOut={opacity:1};e.cssBefore={top:0,left:0}};a.fn.cycle.transitions.uncover=function(f,g,e){var i=e.direction||"left";var b=f.css("overflow","hidden").width();var c=f.height();e.before.push(function(j,d,h){a.fn.cycle.commonReset(j,d,h,true,true,true);if(i=="right"){h.animOut.left=b}else{if(i=="up"){h.animOut.top=-c}else{if(i=="down"){h.animOut.top=c}else{h.animOut.left=-b}}}});e.animIn={left:0,top:0};e.animOut={opacity:1};e.cssBefore={top:0,left:0}};a.fn.cycle.transitions.toss=function(e,f,d){var b=e.css("overflow","visible").width();var c=e.height();d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h,true,true,true);if(!h.animOut.left&&!h.animOut.top){h.animOut={left:b*2,top:-c/2,opacity:0}}else{h.animOut.opacity=0}});d.cssBefore={left:0,top:0};d.animIn={left:0}};a.fn.cycle.transitions.wipe=function(s,m,e){var q=s.css("overflow","hidden").width();var j=s.height();e.cssBefore=e.cssBefore||{};var g;if(e.clip){if(/l2r/.test(e.clip)){g="rect(0px 0px "+j+"px 0px)"}else{if(/r2l/.test(e.clip)){g="rect(0px "+q+"px "+j+"px "+q+"px)"}else{if(/t2b/.test(e.clip)){g="rect(0px "+q+"px 0px 0px)"}else{if(/b2t/.test(e.clip)){g="rect("+j+"px "+q+"px "+j+"px 0px)"}else{if(/zoom/.test(e.clip)){var o=parseInt(j/2);var f=parseInt(q/2);g="rect("+o+"px "+f+"px "+o+"px "+f+"px)"}}}}}}e.cssBefore.clip=e.cssBefore.clip||g||"rect(0px 0px 0px 0px)";var k=e.cssBefore.clip.match(/(\d+)/g);var u=parseInt(k[0]),c=parseInt(k[1]),n=parseInt(k[2]),i=parseInt(k[3]);e.before.push(function(w,h,t){if(w==h){return}var d=a(w),b=a(h);a.fn.cycle.commonReset(w,h,t,true,true,false);t.cssAfter.display="block";var r=1,l=parseInt((t.speedIn/13))-1;(function v(){var y=u?u-parseInt(r*(u/l)):0;var z=i?i-parseInt(r*(i/l)):0;var A=n<j?n+parseInt(r*((j-n)/l||1)):j;var x=c<q?c+parseInt(r*((q-c)/l||1)):q;b.css({clip:"rect("+y+"px "+x+"px "+A+"px "+z+"px)"});(r++<=l)?setTimeout(v,13):d.css("display","none")})()});e.cssBefore={display:"block",opacity:1,top:0,left:0};e.animIn={left:0};e.animOut={left:0}}})(jQuery);</script>
+    <div id="tMDEw3uSsN" style="display: none">
+        <!-- start slideshow -->
+        <div id="j1vZ">
+                    <div class="Z5Byq">
+                <a href="https://www.mcbbs.net/thread-1370113-1-1.html" title="gametime"><img src="https://attachment.mcbbs.net/data/myattachment/portal/202210/11/171509ganny9ppzgpnl9yz.gif" width="462" height="78"></a>
+            </div>
+        
+        </div>
+    </div>
+    <style>
+        #tMDEw3uSsN {
+            width: 480px;
+            height: 96px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            background: url('source/plugin/mcbbs_ad/assets/image/background.png');
+        }
+        #tMDEw3uSsN #j1vZ {
+            margin: 9px 9px;
+        }
+        #tMDEw3uSsN .Z5Byq {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+    
+    <script>
+        jq("#j1vZ").cycle({fx:"fade",speed:"slow",timeout:5000,pager:"#slider_nav",pagerAnchorBuilder:function(idx,slide){return"#slider_nav li:eq("+(idx)+") a"}});jq("#tMDEw3uSsN").show();
+    </script>
+</div>
+</div>
+</div>
+<!--img class="mc_top" src="template/mcbbs/image/muddy_pig_subhero_updated6-19.png"/-->
+    <!--框背景的头部-->
+    <div class="mc_map_border_top"></div>
+    <!--框背景的左右-->
+    <div class="mc_map_border_left">
+        <div class="mc_map_border_right">
+<div id="hd">
+<div width="400" height="600" class="imgshadow"></div>
+<div class="wp">
+<div id="nv">
+<!--<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(479);})">快捷导航</a>-->
+<ul class="nv_ul"><li id="mn_portal"><a href="https://www.mcbbs.net/portal.php" hidefocus="true" title="Portal">首页<span>Portal</span></a></li><li class="a" id="mn_forum" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/forum.php" hidefocus="true" title="Forum">论坛<span>Forum</span></a></li><li id="mn_group" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/group.php" hidefocus="true" title="Groups">小组<span>Groups</span></a></li><li id="mn_Nce95" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" hidefocus="true" title="Wiki">百科<span>Wiki</span></a></li><li id="mn_N45f0" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/thread-1280861-1-1.html#" hidefocus="true" title="Utilities">工具<span>Utilities</span></a></li></ul>
+
+</div>
+                <div id="nv_right">
+                                        <div id="an">
+                        <dl class="cl">
+                            <dt class="z xw1"></dt>
+                            <dd>
+                                <div id="anc"><ul id="ancl"><li><span><a href="https://www.mcbbs.net/thread-1390420-1-1.html" target="_blank" class="xi2">10月15日论坛临时维护公告</a></span></li><li><span><a href="https://www.mcbbs.net/thread-1383808-1-1.html" target="_blank" class="xi2"><font color="#FF0000"><b>关于论坛规则重大变更的公告</b></font></a></span></li><li><span><a href="https://www.mcbbs.net/thread-1272232-1-1.html" target="_blank" class="xi2"><b>请勿外借您的论坛账号，设置高强度密码</b></a></span></li></ul></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <script type="text/javascript">announcement();</script>
+                </div>
+                <script type="text/javascript">
+                    jq(function(){
+                        jq("ul.p_pop").on("mouseover",function(){
+                            var id = jq(this).attr("ctrlid");
+                            jq("#"+id).css({background:"#e4dcc7",color:"#339933"});
+                        });
+                        jq("ul.p_pop").on("mouseleave",function(){
+                            var id = jq(this).attr("ctrlid");
+                            setTimeout(function(){
+                                jq("#"+id).css({background:"none",color:"#fff"});
+                            },250);
+                        });
+                    })
+                </script>
+<ul class="p_pop h_pop" id="plugin_menu" style="display: none">  <li><a href="https://www.mcbbs.net/plugin.php?id=dc_signin:dc_signin" id="mn_plink_dc_signin">每日签到</a></li>
+ </ul>
+<ul class="p_pop h_pop" id="mn_forum_menu" style="display: none"><li><a href="https://www.mcbbs.net/thread-7808-1-1.html" hidefocus="true">坛规</a></li><li><a href="https://www.mcbbs.net/thread-12685-1-1.html" hidefocus="true">勋章申请</a></li><li><a href="https://www.mcbbs.net/thread-924844-1-2.html" hidefocus="true">身份认证</a></li></ul><ul class="p_pop h_pop" id="mn_group_menu" style="display: none"><li><a href="https://www.mcbbs.net/thread-332265-1-1.html" hidefocus="true">优秀小组申请</a></li></ul><div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><ul class="p_pop h_pop" id="mn_Nce95_menu" style="display: none"><li><a href="https://wiki.biligame.com/mc/Minecraft_Wiki" hidefocus="true">中文百科镜像</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E6%88%90%E5%B0%B1" hidefocus="true">成就（基岩版）</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E8%BF%9B%E5%BA%A6" hidefocus="true">进度（Java版）</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E7%94%9F%E7%89%A9" hidefocus="true">生物</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E6%96%B9%E5%9D%97" hidefocus="true">方块</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81" hidefocus="true">物品</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E7%94%9F%E7%89%A9%E7%BE%A4%E7%B3%BB" hidefocus="true">生物群系</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E7%8A%B6%E6%80%81%E6%95%88%E6%9E%9C" hidefocus="true">状态效果</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E9%99%84%E9%AD%94" hidefocus="true">附魔</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E4%BA%A4%E6%98%93" hidefocus="true">交易</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/%E7%BA%A2%E7%9F%B3%E5%85%83%E4%BB%B6" hidefocus="true">红石元件</a></li><li><a href="https://minecraft.fandom.com/zh/wiki/Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" hidefocus="true">最近更改</a></li></ul><ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none"><li><a href="https://pastebin.com/" hidefocus="true" target="_blank">剪贴板 - Pastebin</a></li><li><a href="https://smms.app/" hidefocus="true" target="_blank">图床 - sm.ms</a></li><li><a href="http://pan.baidu.com/" hidefocus="true" target="_blank">网盘 - 百度网盘</a></li><li><a href="https://www.weiyun.com/" hidefocus="true" target="_blank">网盘 - 微云</a></li><li><a href="https://www.baidu.com/s?wd=%20site%3Amcbbs.net" hidefocus="true" target="_blank">搜索 - 百度站内搜索</a></li></ul><div id="mu" class="cl">
+</div></div>
+</div>
+
+<script src="https://www.mcbbs.net/source/plugin/zhaisoul_thread_album/static/album.js" type="text/javascript"></script><link href="https://www.mcbbs.net/source/plugin/zhaisoul_thread_album/static/album.css" rel="stylesheet">
+<div id="wp" class="wp" style="margin:0 85px;float:left;">
+<style>
+embed{    max-width: 800px;!important;}
+</style>
+<script type="text/javascript">var fid = parseInt('479'), tid = parseInt('1280861');</script>
+
+<script src="https://www.mcbbs.net/template/mcbbs/common/RangeDownloader.min.js?a5a" type="text/javascript"></script>
+<script>
+function attach_download_ctrl(obj) {
+    if(obj.className.indexOf("attach-download-link") >= 0) {
+        var main = obj.parentNode.parentNode;
+        var isCtrl = false;
+    } else if(obj.className.indexOf("attach-download-indicator") >= 0) {
+        var main = obj.parentNode;
+        var isCtrl = true;
+    } else {
+        return true;
+    }
+    var urlObj = main.querySelector(".attach-download-link");
+    if(!urlObj){return true;}
+    if(!main.DownloadInit) {
+        main.DownProgress = main.querySelector(".download-progress");
+        main.DownCircle = main.querySelector(".attach-download-circle circle")
+        main.Downloader = new RangeDownloader({
+            url: urlObj.href,
+            onload: function(_self) {
+                main.classList.remove("downloading");
+                main.classList.add("downloaded");
+                main.DownProgress.innerText = "";
+                main.DownLink.href = URL.createObjectURL(_self.getResultAsBlob());
+                main.DownLink.click();
+                clearInterval(main.DownIndicator);
+            },
+            onerror: function (_self) {
+                main.DownProgress.innerText = "下载错误";
+                main.classList.remove("downloading");
+                main.classList.add("download-err");
+            }
+        });
+        main.DownIndicator = setInterval(function (){
+            main.DownProgress.innerText = calc1024Unit(main.Downloader.downloadedSize);
+            var downP = main.Downloader.totalSize == 0 ? (main.Downloader.supportPartial ? 0 : 0.5) : main.Downloader.downloadedSize / main.Downloader.totalSize;
+            main.DownCircle.setAttribute("stroke-dashoffset",(1-downP) * 80);
+        }, 1000);
+        var ele = document.createElement("a");
+        ele.style.display = "none";
+        ele.download = urlObj.innerText;
+        main.append(ele);
+        main.DownLink = ele;
+        main.DownloadInit = true;
+    }
+    var down = main.Downloader;
+    if(!down.running && !down.loaded) {
+        down.start();
+        main.classList.add("downloading");
+    }
+    if(isCtrl && down.running == true) {
+        down.pause();
+        main.classList.remove("downloading");
+    }
+    if(down.loaded == true) {
+        main.DownLink.click();
+    }
+
+    return false;
+}
+</script>
+<script src="https://www.mcbbs.net/data/cache/forum_viewthread.js?a5a" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '700';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="https://www.mcbbs.net/" class="nvhm" title="首页">Minecraft(我的世界)中文论坛</a>
+        <em>»</em>
+        <a href="https://www.mcbbs.net/forum.php">论坛</a>
+         <em>›</em> <a href="https://www.mcbbs.net/forum.php?gid=36">综合讨论</a> <em>›</em> <a href="https://www.mcbbs.net/forum-development-1.html">编程开发</a> <em>›</em> <a href="https://www.mcbbs.net/thread-1280861-1-1.html">[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 ...</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl ">
+<div class="pgt"><div class="pg"><strong>1</strong><a href="https://www.mcbbs.net/thread-1280861-2-1.html">2</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location=&#39;forum.php?mod=viewthread&amp;tid=1280861&amp;extra=page%3D1&amp;page=&#39;+this.value;; doane(event);}"><span title="共 2 页"> / 2 页</span></label><a href="https://www.mcbbs.net/thread-1280861-2-1.html" class="nxt">下一页</a></div></div>
+<span class="y pgb"><a href="https://www.mcbbs.net/forum-development-1.html">返回列表</a></span>
+                <!--<a id="newspecial" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=479')" href="javascript:;" title="发新帖"><img src="template/mcbbs/image/pn_post.png" alt="发新帖" /></a>-->
+                            <a id="" onclick="showWindow(&#39;reply&#39;, &#39;forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&#39;)" href="javascript:;" title="回复"><img src="https://www.mcbbs.net/template/mcbbs/image/pn_reply.png" alt="回复"></a>
+        </div>
+
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">2233</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">16</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<div class="y">
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1280861" title="打印" target="_blank"><img src="https://www.mcbbs.net/template/mcbbs/image/print.png" alt="打印" class="vm"></a>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=1280861" title="上一主题"><img src="https://www.mcbbs.net/template/mcbbs/image/thread-prev.png" alt="上一主题" class="vm"></a>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=1280861" title="下一主题"><img src="https://www.mcbbs.net/template/mcbbs/image/thread-next.png" alt="下一主题" class="vm"></a>
+</div>
+<h1 class="ts">
+<a href="https://www.mcbbs.net/forum.php?mod=forumdisplay&amp;fid=479&amp;filter=typeid&amp;typeid=1030">[其它开发教程]</a>
+<span id="thread_subject">[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器</span>
+</h1>
+<span class="xg1">
+<a href="https://www.mcbbs.net/thread-1280861-1-1.html" onclick="return copyThreadUrl(this, &#39;Minecraft(我的世界)中文论坛&#39;)">[复制链接]</a>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tbody><tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table><div id="post_23950737"><div id="threadstamp"><img src="https://www.mcbbs.net/static/image/stamp/007.gif" title="原创"></div>
+<table id="pid23950737" class="plhin" summary="pid23950737" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar23950737" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank" class="xw1">IllTamer</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo23950737" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo23950737_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank" class="xi2">IllTamer</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547&amp;do=profile" target="_blank" class="xi2">2188</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-7-17</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：黑龙江</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$(&#39;fj_btn&#39;).href=&#39;forum.php?mod=redirect&amp;ptid=1280861&amp;authorid=0&amp;postno=&#39;+this.value" onkeydown="if(event.keyCode==13) {window.location=$(&#39;fj_btn&#39;).href;return false;}" title="跳转到指定楼层">
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="https://www.mcbbs.net/template/mcbbs/image/fj_btn.png" alt="跳转到指定楼层" class="vm"></a>
+</div>
+<strong>
+<a href="https://www.mcbbs.net/thread-1280861-1-1.html" id="postnum23950737" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+楼主</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon23950737" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton23950737">发表于 2021-12-1 21:52:46</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=752547" rel="nofollow">只看该作者</a>
+<span class="pipe">|</span><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;from=album">只看大图</a>
+<span class="none"><img src="https://www.mcbbs.net/template/mcbbs/image/arw_r.gif" class="vm" alt="回帖奖励"></span>
+<span class="pipe show">|</span><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;extra=page%3D1&amp;ordertype=1" class="show">倒序浏览</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($(&#39;thread_subject&#39;).innerHTML, 23950737);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_23950737">
+<div class="attach_nopermission attach_tips">
+<div>
+<h3><strong>
+您尚未登录，立即登录享受更好的浏览体验！</strong></h3>
+<p>您需要 <a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login" onclick="showWindow(&#39;login&#39;, this.href);return false;">登录</a> 才可以下载或查看，没有帐号？<a href="https://www.mcbbs.net/member.php?mod=register" title="注册帐号">注册(register)</a> </p>
+</div>
+<span class="atips_close" onclick="this.parentNode.style.display=&#39;none&#39;">x</span>
+</div>
+<i class="pstatus"> 本帖最后由 IllTamer 于 2022-3-22 11:51 编辑 </i><br>
+<br>
+<strong><font size="5">引子</font></strong>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;众所周知，Minecraft 的服务端和客户端是分离的两部分，客户端与服务端通过 TCP / IP<strong>（特指 Java 版，基岩版使用的是 UDP）</strong> 进行数据通讯（所以我们需要在服务端配置 server.properties 的 port 属性以及客户端连接时所需输入 IP<strong>:</strong>PORT）。如果我们知道客户端与服务端所采用的具体通讯协议，那么就可以伪装客户端对服务器发起访问请求从而进行一系列操作（比如压测<br>
+<br>
+<strong>知识点</strong>本节所涉及知识点如下：<ul><li>对于特定协议的解析与封装</li><li>Socket API</li><li>BIO<br>
+</li></ul><strong><font size="5">说明</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;截止到发帖日期，Minecraft Server 的最新版本已经达到了 1.18+，对于这样一个累积多年进行了无数版本迭代的成熟项目，其协议必然也经过了一系列发展变化，所以出于上手难度的考虑，本文将从低到高介绍 MC C / S 通信协议版本，基于 MC Server 的向下兼容，高版本服务器也支持对低版本客户端的解析，故此处我们使用 Sugarcane 1.17.1 这与的高板本服务器完成本章的测试。<br>
+<strong><font size="5">开始</font></strong><br>
+<strong><font size="4">BETA 1.8 - 1.3</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;在 Minecraft 1.4 以前，如果需要请求服务器返回当前基本信息，则仅需向服务器发送 <strong>0xFE </strong>这一个字节即可，服务器会按照以下以下协议返回其当前状态信息：<br>
+<table cellspacing="0" class="t_table"><tbody><tr><td>字段名称</td><td>字段类型</td><td>注意事项</td></tr><tr><td>包ID</td><td>Byte</td><td>返回的包ID应为: 0xFF</td></tr><tr><td>字段长度</td><td>Short</td><td>数据包剩余部分的长度</td></tr><tr><td>MOTD</td><td rowspan="3">一段以 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUTF-16" target="_blank">UTF-16BE</a> 编码的字符串</td><td>从这里开始，所有字段都应该在同一个字符串中用 § 分隔。此字符串的最大长度为 64 字节。</td></tr><tr><td>在线玩家数</td><td>服务器当前游玩的玩家数量.</td></tr><tr><td>最大玩家数</td><td>服务器能支持的最大玩家数量</td></tr></tbody></table>基于上述我们可以编写以下程序对数据包进行解析，此处先给出通用工具方法<br>
+<font color="#629755"><i>/**<br>
+</i></font><font color="#629755"><i> * </i></font><font color="#629755"><i>获取经校验的合法字符串内容<br>
+</i></font><font color="#629755"><i>* </i></font><font color="#629755"><strong><i>@apiNote </i></strong></font><font color="#629755"><i>数据包</i></font><font color="#629755"><i>ID</i></font><font color="#629755"><i>需为 </i></font><font color="#629755"><i>0xFF </i></font><font color="#629755"><i>且长度合法<br>
+</i></font><font color="#629755"><i>* */<br>
+</i></font><font color="#cc7832">protected static </font>String <font color="#ffc66d">getSecureString</font>(InputStream inputStream<font color="#cc7832">, </font>InputStreamReader inputStreamReader) <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">int </font>packetId = inputStream.read()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; if </font>(packetId == -<font color="#6897bb">1</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">throw new </font>IOException(<font color="#6a8759">"Premature end of stream."</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; if </font>(packetId != <font color="#6897bb">0xFF</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">throw new </font>IOException(<font color="#6a8759">"Invalid packet ID (" </font>+ packetId + <font color="#6a8759">")."</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; int </font>length = inputStreamReader.read()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; if </font>(length == -<font color="#6897bb">1</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">throw new </font>IOException(<font color="#6a8759">"Premature end of stream."</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; if </font>(length == <font color="#6897bb">0</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">throw new </font>IOException(<font color="#6a8759">"Invalid string length."</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp; char</font>[] chars = <font color="#cc7832">new char</font>[length]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; if </font>(inputStreamReader.read(chars<font color="#cc7832">, </font><font color="#6897bb">0</font><font color="#cc7832">, </font>length) != length)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">throw new </font>IOException(<font color="#6a8759">"Premature end of stream."</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; return new </font>String(chars)<font color="#cc7832">;<br>
+</font>}解析代码<br>
+<font color="#629755"><i>/**<br>
+</i></font><font color="#629755"><i> * </i></font><font color="#629755"><strong><i>@version </i></strong></font><font color="#629755"><i>BETA - 1.3<br>
+</i></font><font color="#629755"><i> * */<br>
+</i></font><font color="#cc7832">private void </font><font color="#ffc66d">connect</font>() <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">try </font>(<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Socket socket = <font color="#cc7832">new </font>Socket()<br>
+&nbsp; &nbsp; ) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;socket.setSoTimeout(<font color="#9876aa"><i>TIMEOUT</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>socket.connect(<font color="#cc7832">new </font>InetSocketAddress(<font color="#9876aa">host</font><font color="#cc7832">, </font><font color="#9876aa">port</font>)<font color="#cc7832">, </font><font color="#9876aa"><i>TIMEOUT</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;try </font>(<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; OutputStream dataOutputStream = socket.getOutputStream()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>InputStream inputStream = socket.getInputStream()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>InputStreamReader inputStreamReader = <font color="#cc7832">new </font>InputStreamReader(inputStream<font color="#cc7832">, </font>StandardCharsets.<font color="#9876aa"><i>UTF_16BE</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;dataOutputStream.write(<font color="#6897bb">0xFE</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>String string = <i>getSecureString</i>(inputStream<font color="#cc7832">, </font>inputStreamReader)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>String[] args = string.split(<font color="#6a8759">"</font><font color="#6a8759"><font style="background-color:#364135">§</font></font><font color="#6a8759">"</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#9876aa">motd </font>= args[<font color="#6897bb">0</font>]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#9876aa">onlinePlayers </font>= Integer.<i>parseInt</i>(args[<font color="#6897bb">1</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#9876aa">maxPlayers </font>= Integer.<i>parseInt</i>(args[<font color="#6897bb">2</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>}<br>
+&nbsp; &nbsp; }<br>
+}<font size="4">返回的数据内容（敏感部分已做处理</font><br>
+<strong>原始数据（指除包ID与字段长度之外的可视化数据）</strong><br>
+
+<ignore_js_op>
+
+<img id="aimg_1933198" aid="1933198" src="https://www.mcbbs.net/static/image/common/none.gif" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/213937oo77dwodww3srtoy.png" file="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/213937oo77dwodww3srtoy.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="374" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_1933198_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>image.png</strong> <em class="xg1">(2.38 KB, 下载次数: 2)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTkzMzE5OHxkOTI2NjhkM3wxNjY1ODM2MTg5fDB8MTI4MDg2MQ%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2021-12-1 21:39 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<strong>解析后</strong><br>
+
+<ignore_js_op>
+
+<img id="aimg_1933199" aid="1933199" src="https://www.mcbbs.net/static/image/common/none.gif" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214018zhudx8hhzmuzhyfd.png" file="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214018zhudx8hhzmuzhyfd.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="336" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_1933199_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>image.png</strong> <em class="xg1">(7.45 KB, 下载次数: 4)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTkzMzE5OXw0MGZlZWI0OXwxNjY1ODM2MTg5fDB8MTI4MDg2MQ%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2021-12-1 21:40 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;细心的小伙伴可以看到诸如motd、在线玩家数之类的数据都已经获取到了，但是还有部分例如 serverVersion 的数据未被捕获。不要着急，这些是高版本协议中所增加的元素内容。<br>
+<strong><font size="4">1.6</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;有小伙伴会问：为什么为什么先讲 1.6 ？1.4 和 1.5 去哪了？原因很简单，因为 1.4、1.5 的协议是 1.6 的简化版，1.6 的 Notchian 服务器为了兼容先前的版本，都<strong>只接受老版本的协议</strong>。<br>
+<strong>客户端到服务端</strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;对于 1.4+ 的 MC 的客户端与服务端 TCP 连接。它不是执行身份验证和登录（如<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol" target="_blank">协议</a>和<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol_Encryption" target="_blank">协议加密</a>中所述），而是发送以下格式的数据包：<blockquote><ul type="1" class="litype_1"><li>FE— 服务器列表 ping 的数据包标识符</li><li>01— 服务器列表 ping 的有效负载（始终为 1）</li><li>FA— 插件消息的数据包标识符</li><li>00 0B— 以下字符串的长度，以字符为单位，作为短字符串（始终为 11）</li><li>00 4D 00 43 00 7C 00 50 00 69 00 6E 00 67 00 48 00 6F 00 73 00 74— 编码为<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUTF-16" target="_blank">UTF-16BE</a>字符串的字符串MC|PingHost</li><li>XX XX— 其余数据的长度，作为短。计算为 ，其中 是 UTF-16BE 编码主机名中的字节数。7 + len(hostname)len(hostname)</li><li>XX—<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol_version_numbers%23Versions_before_the_Netty_rewrite" target="_blank">协议版本</a>，例如 最后一个版本 （74）4a</li><li>XX XX— 以下字符串的长度，以字符为单位，作为短字符串</li><li>...— 客户端连接到的主机名，编码为<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUTF-16" target="_blank">UTF-16BE</a>字符串</li><li>XX XX XX XX— 客户端正在连接到的端口，作为整数。<br>
+</li></ul></blockquote><div align="left"><strong>注</strong>：所有数据类型都是 big-endian 的，而为了向下兼容，所有 Notchian 服务器只关心前 3 个字节（且您只能发送这 3 个字节），而 Bukkit 服务器仅关心前两个字节。读取后，响应将发送到客户端，所有旧版服务器 （&lt;=1.6） 将相应地响应。FE 01 FA</div><div align="left">数据包示例：</div><blockquote><div class="quote"><blockquote>0000000: fe01 fa00 0b00 4d00 4300 7c00 5000 6900&nbsp;&nbsp;......M.C.|.P.i.<br>
+0000010: 6e00 6700 4800 6f00 7300 7400 1949 0009&nbsp;&nbsp;n.g.H.o.s.t..I..<br>
+0000020: 006c 006f 0063 0061 006c 0068 006f 0073&nbsp;&nbsp;.l.o.c.a.l.h.o.s<br>
+0000030: 0074 0000 63dd&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;.t..c.</blockquote></div><br>
+</blockquote><strong>服务端到客户端</strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;在最初的三个字节之后，形如编码为 UTF-16BE 字符串的数据包以 ASCII 0167 的字符为起始标志，每个元素间使用&nbsp;&nbsp;\0 作为分隔符，具体解析如下： <br>
+<table cellspacing="0" class="t_table"><tbody><tr><td>字段名称</td><td>字段类型</td><td>注意事项</td></tr><tr><td>包ID</td><td>Byte</td><td>返回的包ID应为: 0xFF</td></tr><tr><td>字段长度</td><td>Short</td><td>数据包剩余部分的长度</td></tr><tr><td>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;协议版本<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</td><td rowspan="5">一段以 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FUTF-16" target="_blank">UTF-16BE</a> 编码的字符串</td><td>例如 74</td></tr><tr><td>服务器版本</td><td>如 1.8.7</td></tr><tr><td>MOTD</td><td>从这里开始，所有字段都应该在同一个字符串中用 § 分隔。此字符串的最大长度为 64 字节。</td></tr><tr><td>在线玩家数</td><td>服务器当前游玩的玩家数量.</td></tr><tr><td>最大玩家数</td><td>服务器能支持的最大玩家数量</td></tr></tbody></table>解析代码<br>
+<font color="#cc7832">private void </font><font color="#ffc66d">connect</font>() <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">try </font>(<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Socket socket = <font color="#cc7832">new </font>Socket()<br>
+&nbsp; &nbsp; ) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;socket.setSoTimeout(<font color="#9876aa"><i>TIMEOUT</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>socket.connect(<font color="#cc7832">new </font>InetSocketAddress(<font color="#9876aa">host</font><font color="#cc7832">, </font><font color="#9876aa">port</font>)<font color="#cc7832">, </font><font color="#9876aa"><i>TIMEOUT</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;try </font>(<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; DataOutputStream dataOutputStream = <font color="#cc7832">new </font>DataOutputStream(socket.getOutputStream())<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>InputStream inputStream = socket.getInputStream()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>InputStreamReader inputStreamReader = <font color="#cc7832">new </font>InputStreamReader(inputStream<font color="#cc7832">, </font>StandardCharsets.<font color="#9876aa"><i>UTF_16BE</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;dataOutputStream.write(<font color="#cc7832">new byte</font>[]{(<font color="#cc7832">byte</font>) <font color="#6897bb">0xFE</font><font color="#cc7832">, </font>(<font color="#cc7832">byte</font>) <font color="#6897bb">0x01</font><font color="#808080">/*, (byte) 0xFA*/</font>})<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>String string = ServerInfoV1_3.<i>getSecureString</i>(inputStream<font color="#cc7832">, </font>inputStreamReader)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;if </font>(string.startsWith(<font color="#6a8759">"§"</font>)) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; String[] data = string.split(<font color="#6a8759">"</font><font color="#cc7832"><strong>\0</strong></font><font color="#6a8759">"</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">pingVersion </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">0</font>].substring(<font color="#6897bb">1</font>))<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">protocolVersion </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">1</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">serverVersion </font>= data[<font color="#6897bb">2</font>]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">motd </font>= data[<font color="#6897bb">3</font>]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">onlinePlayers </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">4</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">maxPlayers </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">5</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>} <font color="#cc7832">else </font>{<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; String[] data = string.split(<font color="#6a8759">"</font><font color="#6a8759"><font style="background-color:#364135">§</font></font><font color="#6a8759">"</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">motd </font>= data[<font color="#6897bb">0</font>]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">onlinePlayers </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">1</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#9876aa">maxPlayers </font>= Integer.<i>parseInt</i>(data[<font color="#6897bb">2</font>])<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>}<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}<br>
+&nbsp; &nbsp; }<br>
+}返回的数据内容<br>
+<strong>原始数据（指除包ID与字段长度之外的可视化数据）</strong><br>
+
+<ignore_js_op>
+
+<img id="aimg_1933200" aid="1933200" src="https://www.mcbbs.net/static/image/common/none.gif" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214420v3utkiqzsun84ny3.png" file="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214420v3utkiqzsun84ny3.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="700" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_1933200_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>image.png</strong> <em class="xg1">(7.02 KB, 下载次数: 2)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTkzMzIwMHw3MzUzMGI4MXwxNjY1ODM2MTg5fDB8MTI4MDg2MQ%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2021-12-1 21:44 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<strong>解析后</strong><br>
+
+<ignore_js_op>
+
+<img id="aimg_1933201" aid="1933201" src="https://www.mcbbs.net/static/image/common/none.gif" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214502giobdbe27fbxnbs5.png" file="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/214502giobdbe27fbxnbs5.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="700" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_1933201_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>image.png</strong> <em class="xg1">(15.36 KB, 下载次数: 2)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTkzMzIwMXxlZGVkNWM3MnwxNjY1ODM2MTg5fDB8MTI4MDg2MQ%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2021-12-1 21:45 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<strong><font size="4">1.4 - 1.5</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;在 Minecraft 1.6 之前，客户端到服务器的操作要简单得多，只发送两字节的起始标识即可：FE 01<br>
+<strong><font size="5">当前</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;1.6 + 以后，客户端与服务端的连接方式发生改变。<br>
+<strong><font size="3">握手</font></strong><br>
+<div align="left">首先，客户端发送状态设置为 1 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Handshake" target="_blank">的握手</a>数据包。</div><table cellspacing="0" class="t_table"><tbody><tr><td><div align="center">数据包标识</div></td><td><div align="center">字段名称</div></td><td><div align="center">字段类型</div></td><td><div align="center">笔记</div></td></tr><tr><td rowspan="4">0x00</td><td>协议版本</td><td>VarInt</td><td>请参阅<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol_version_numbers" target="_blank">协议版本号</a>。客户端计划用于连接到服务器的版本（对于 ping 并不重要）。如果客户端正在 ping 以确定要使用的版本，则应按照惯例进行设置。-1</td></tr><tr><td>服务器地址</td><td>字符串</td><td>用于连接的主机名或 IP，例如 localhost 或 127.0.0.1。Notchian服务器不使用此信息。请注意，SRV 记录是完全重定向，例如，如果_minecraft._tcp.example.com指向 mc.example.org，则连接到 example.com 的用户除了连接到它之外，还将提供 mc.example.org 作为服务器地址。</td></tr><tr><td>服务器端口</td><td>无符号短</td><td>默认值为 25565。Notchian服务器不使用此信息。</td></tr><tr><td>下一个状态</td><td>VarInt</td><td><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Status" target="_blank">状态</a>应为 1，但<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Login" target="_blank">登录</a>时也可以为 2。</td></tr></tbody></table><strong><font size="3"><font color="#000000">请求</font></font></strong><div align="left">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;客户端跟进<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Request" target="_blank">请求</a>数据包。此数据包没有字段。</div><table cellspacing="0" class="t_table"><tbody><tr><td><div align="center">数据包标识</div></td><td><div align="center">字段名称</div></td><td><div align="center">字段类型</div></td><td><div align="center">笔记</div></td></tr><tr><td>0x00</td><td colspan="3"><i>无字段</i></td></tr></tbody></table><strong><font size="3"><font color="#000000">响应</font></font></strong><div align="left">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;服务器应使用<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Response" target="_blank">响应数据包进行响应</a>。请注意，Notchian 服务器将由于未知原因等待接收以下 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Ping" target="_blank">Ping</a>数据包30秒，然后超时并发送响应。</div><table cellspacing="0" class="t_table"><tbody><tr><td><div align="center">数据包标识</div></td><td><div align="center">字段名称</div></td><td><div align="center">字段类型</div></td><td><div align="center">笔记</div></td></tr><tr><td>0x00</td><td>JSON 响应</td><td>字符串</td><td>见下文;与所有字符串一样，这以 VarInt 的长度为前缀</td></tr></tbody></table><div align="left">JSON 响应字段是一个<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJSON" target="_blank">JSON</a> 对象，其格式如下：</div><div align="left">{&nbsp; &nbsp; <font color="#ba2121">"version"</font><font color="#666666">:</font> {&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"name"</font><font color="#666666">:</font> <font color="#ba2121">"1.8.7"</font>,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"protocol"</font><font color="#666666">:</font> <font color="#666666">47</font>&nbsp; &nbsp; },&nbsp; &nbsp; <font color="#ba2121">"players"</font><font color="#666666">:</font> {&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"max"</font><font color="#666666">:</font> <font color="#666666">100</font>,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"online"</font><font color="#666666">:</font> <font color="#666666">5</font>,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"sample"</font><font color="#666666">:</font> [&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;{&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <font color="#ba2121">"name"</font><font color="#666666">:</font> <font color="#ba2121">"thinkofdeath"</font>,&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <font color="#ba2121">"id"</font><font color="#666666">:</font> <font color="#ba2121">"4566e69f-c907-48ee-8d71-d7ba5aa00d20"</font>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;]&nbsp; &nbsp; },&nbsp; &nbsp; <font color="#ba2121">"description"</font><font color="#666666">:</font> {&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#ba2121">"text"</font><font color="#666666">:</font> <font color="#ba2121">"Hello world"</font>&nbsp; &nbsp; },&nbsp; &nbsp; <font color="#ba2121">"favicon"</font><font color="#666666">:</font> <font color="#ba2121">"data:image/png;base64,&lt;data&gt;"</font>}</div>对于此版本的协议传输，我们需要使用 Minecraft 指定的 varInt 函数将 int 转换为 varInt 类型从而构造正确的握手数据包，转换代码如下：<br>
+<font color="#629755"><i>/**<br>
+</i></font><font color="#629755"><i> * varInt </i></font><font color="#629755"><i>读取函数<br>
+</i></font><font color="#629755"><i>* </i></font><font color="#629755"><strong><i>@apiNote </i></strong></font><font color="#629755"><i>https://wiki.vg/index.php?title=Protocol&amp;oldid=16681<br>
+</i></font><font color="#629755"><i> */<br>
+</i></font><font color="#cc7832">protected static int </font><font color="#ffc66d">readVarInt</font>(DataInputStream in) <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">int </font>i = <font color="#6897bb">0</font><font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; int </font>j = <font color="#6897bb">0</font><font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; while </font>(<font color="#cc7832">true</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">int </font>k = in.readByte()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>i |= (k &amp; <font color="#6897bb">0x7F</font>) &lt;&lt; (j++ * <font color="#6897bb">7</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;if </font>(j &gt; <font color="#6897bb">5</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<font color="#cc7832">throw new </font>RuntimeException(<font color="#6a8759">"VarInt too big"</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;if </font>((k &amp; <font color="#6897bb">0x80</font>) != <font color="#6897bb">0x80</font>)<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<font color="#cc7832">break;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; </font>}<br>
+&nbsp; &nbsp; <font color="#cc7832">return </font>i<font color="#cc7832">;<br>
+</font>}<br>
+<font color="#629755"><i>/**<br>
+</i></font><font color="#629755"><i> * varInt </i></font><font color="#629755"><i>写入函数<br>
+</i></font><font color="#629755"><i>* */<br>
+</i></font><font color="#cc7832">protected static void </font><font color="#ffc66d">writeVarInt</font>(DataOutputStream out<font color="#cc7832">, int </font>paramInt) <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">while </font>(<font color="#cc7832">true</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<font color="#cc7832">if </font>((paramInt &amp; ~<font color="#6897bb">0x7F</font>) == <font color="#6897bb">0</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;out.writeByte(paramInt)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;return;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>}<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;out.writeByte(paramInt &amp; <font color="#6897bb">0x7F </font>| <font color="#6897bb">0x80</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>paramInt &gt;&gt;&gt;= <font color="#6897bb">7</font><font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp; </font>}<br>
+}<br>
+基于上述，可以给出以下解析代码，其中解析 json 部分不再赘述：<br>
+<font color="#629755"><i>/**<br>
+</i></font><font color="#629755"><i> * </i></font><font color="#629755"><i>发送数据包格式为：数据包长度 </i></font><font color="#629755"><i>+ </i></font><font color="#629755"><i>内容<br>
+</i></font><font color="#629755"><i>* */<br>
+</i></font><font color="#cc7832">private void </font><font color="#ffc66d">connect</font>() <font color="#cc7832">throws </font>IOException {<br>
+&nbsp; &nbsp; <font color="#cc7832">try </font>(Socket socket = <font color="#cc7832">new </font>Socket()) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;socket.setSoTimeout(<font color="#6897bb">9000</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>socket.connect(<font color="#cc7832">new </font>InetSocketAddress(<font color="#9876aa">host</font><font color="#cc7832">, </font><font color="#9876aa">port</font>)<font color="#cc7832">, </font><font color="#6897bb">9000</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;try </font>(<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; DataOutputStream out = <font color="#cc7832">new </font>DataOutputStream(socket.getOutputStream())<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>DataInputStream in = <font color="#cc7832">new </font>DataInputStream(socket.getInputStream())<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font><font color="#808080">//&gt; Handshake<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>ByteArrayOutputStream handshake_bytes = <font color="#cc7832">new </font>ByteArrayOutputStream()<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </font>DataOutputStream handshake = <font color="#cc7832">new </font>DataOutputStream(handshake_bytes)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>) {<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;handshake.writeByte(<font color="#9876aa"><i>PACKET_HANDSHAKE</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><i>writeVarInt</i>(handshake<font color="#cc7832">, </font><font color="#9876aa">packageProtocolVersion</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><i>writeVarInt</i>(handshake<font color="#cc7832">, </font><font color="#9876aa">host</font>.length())<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>handshake.writeBytes(<font color="#9876aa">host</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>handshake.writeShort(<font color="#9876aa">port</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><i>writeVarInt</i>(handshake<font color="#cc7832">, </font><font color="#9876aa"><i>PACKET_STATUS_HANDSHAKE</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#808080">//&lt; Status Handshake<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><i>writeVarInt</i>(out<font color="#cc7832">, </font>handshake_bytes.size())<font color="#cc7832">; </font><font color="#808080">// Size of packet<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>out.write(handshake_bytes.toByteArray())<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#808080">//&lt; Status Request<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>out.writeByte(<font color="#6897bb">0x01</font>)<font color="#cc7832">; </font><font color="#808080">// Size of packet<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>out.writeByte(<font color="#9876aa"><i>PACKET_STATUS_REQUEST</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#808080">//&lt; Status Response<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;// <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwiki.vg%2FProtocol%23Response" target="_blank">https://wiki.vg/Protocol#Response</a><br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><i>readVarInt</i>(in)<font color="#cc7832">; </font><font color="#808080">// Size<br>
+</font><font color="#808080">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font><font color="#9876aa">pingVersion </font>= <i>readVarInt</i>(in)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;int </font>length = <i>readVarInt</i>(in)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;byte</font>[] data = <font color="#cc7832">new byte</font>[length]<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>in.readFully(data)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>String json = <font color="#cc7832">new </font>String(data<font color="#cc7832">, </font>StandardCharsets.<font color="#9876aa"><i>UTF_8</i></font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>JsonObject jsonObject = <font color="#cc7832">new </font>Gson().fromJson(json<font color="#cc7832">, </font>JsonObject.<font color="#cc7832">class</font>)<font color="#cc7832">;<br>
+</font><font color="#cc7832"><br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</font>parseJson(jsonObject)<font color="#cc7832">;<br>
+</font><font color="#cc7832">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font>}<br>
+&nbsp; &nbsp; }<br>
+}<strong>解析后数据（原始数据为 json 形式存在大量键值对，过于混乱不再给出）</strong><br>
+
+<ignore_js_op>
+
+<img id="aimg_1933202" aid="1933202" src="https://www.mcbbs.net/static/image/common/none.gif" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/215205o6ifvjmp6v1jf1qz.png" file="https://attachment.mcbbs.net/data/myattachment/forum/202112/01/215205o6ifvjmp6v1jf1qz.png" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="700" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_1933202_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>image.png</strong> <em class="xg1">(30.1 KB, 下载次数: 1)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTkzMzIwMnxlZDA5ZDQ2OHwxNjY1ODM2MTg5fDB8MTI4MDg2MQ%3D%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2021-12-1 21:52 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<strong><font size="5">最后</font></strong><br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Minecraft 系列会持续更新，后期会关注生物 AI、自制类库等方面的内容。感兴趣的小伙伴不妨关注一波~<br>
+<br>
+​<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+<div class="modact"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewthreadmod&amp;tid=1280861" title="帖子模式" onclick="showWindow(&#39;viewthreadmod&#39;, this.href)">本主题由 dengyu 于 2022-1-13 19:31 提升</a></div>
+</div>
+<div id="comment_23950737" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_23950737" class="rate">
+<dd style="margin:0">
+<div id="post_rate_23950737"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=23950737" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">7</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+8</span></i></th>
+<th class="xw1" width="80">金粒 <i><span class="xi1">+33</span></i></th>
+<th class="xw1" width="80">宝石 <i><span class="xi1">+9</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_23950737&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_23950737_2213971">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2213971" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2213971" target="_blank">huiyi10</a>
+</td><td class="xg1"></td>
+<td class="xi1"> + 8</td>
+<td class="xg1"></td>
+<td class="xg1">Ssssssssssssssssssss</td>
+</tr>
+<tr id="rate_23950737_2925026">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026" target="_blank">可可的验证</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1"></td>
+<td class="xg1">Ssssssssssssssssssss</td>
+</tr>
+<tr id="rate_23950737_1247881">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881" target="_blank">炼药锅</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_23950737_1480882">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1480882" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1480882" target="_blank">土球球</a>
+</td><td class="xi1"> + 3</td>
+<td class="xi1"> + 25</td>
+<td class="xi1"> + 9</td>
+<td class="xg1">高亮奖励</td>
+</tr>
+<tr id="rate_23950737_1045612">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1045612" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1045612" target="_blank">nihoooo</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_23950737_2313527">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2313527" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2313527" target="_blank">白灯</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_23950737_149991">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=149991" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=149991" target="_blank">。—。</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=23950737" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+<div id="p_btn" class="mtw mbm hm cl">
+<a href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=favorite&amp;type=thread&amp;id=1280861&amp;formhash=5c3a536a" id="k_favorite" onclick="showWindow(this.id, this.href, &#39;get&#39;, 0);" onmouseover="this.title = $(&#39;favoritenumber&#39;).innerHTML + &#39; 人收藏&#39;" title="收藏本帖"><i><img src="https://www.mcbbs.net/template/mcbbs/image/fav.gif" alt="收藏">已收藏</i></a>
+<a id="recommend_add" href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=recommend&amp;do=add&amp;tid=1280861&amp;hash=5c3a536a" onclick="showWindow(&#39;login&#39;, this.href)" onmouseover="this.title = $(&#39;recommendv_add&#39;).innerHTML + &#39; 人顶一下&#39;" title="顶一下"><i><img src="https://www.mcbbs.net/template/mcbbs/image/rec_add.gif" alt="顶一下">顶一下<span id="recommendv_add">1</span></i></a>
+<a id="recommend_subtract" href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=recommend&amp;do=subtract&amp;tid=1280861&amp;hash=5c3a536a" onclick="showWindow(&#39;login&#39;, this.href)" onmouseover="this.title = $(&#39;recommendv_subtract&#39;).innerHTML + &#39; 人踩一下&#39;" title="踩一下"><i><img src="https://www.mcbbs.net/template/mcbbs/image/rec_subtract.gif" alt="踩一下">踩一下<span id="recommendv_subtract" style="display:none">0</span></i></a>
+</div><div><div style="padding:5px;text-align:center;margin-top:10px;color:#00A2D2;"><b>帖子永久链接：</b><input type="text" value="https://www.mcbbs.net/thread-1280861-1-1.html" size="40" class="px" readonly="readonly" style="vertical-align:middle;">&nbsp;<button type="submit" class="pn" onclick="setCopy(&#39;https://www.mcbbs.net/thread-1280861-1-1.html&#39;, &#39;帖子地址已经复制到剪贴板&lt;br /&gt;您可以用快捷键 Ctrl + V 粘贴到 QQ、MSN 里。&#39;)"><em>点击复制</em></button></div><br><fieldset style="border:1px dashed #FF0000;padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;"><legend align="center" style="color:#FFFFFF;width:200px;text-align:center;background-color:#FF0000;">Minecraft中文论坛 - 论坛版权</legend>1、本主题所有言论和图片纯属会员个人意见，与本论坛立场无关<br>
+2、本站所有主题由该帖子作者发表，该帖子作者享有帖子相关版权<br>
+3、其他单位或个人使用、转载或引用本文时必须同时征得该帖子作者的同意<br>
+4、帖子作者须承担一切因本文发表而直接或间接导致的民事或刑事法律责任<br>
+5、本帖若有内容转载自其它媒体，不代表本站赞同其观点和对其真实性负责<br>
+6、若本帖涉及任何版权问题，请立即告知本站，本站将及时予以删除并致以最深的歉意<br>
+7、<a href="https://www.mcbbs.net/" rel="nofollow"><font color="#FF6600">Minecraft(我的世界)中文论坛</font></a>管理员和版主有权不事先通知发贴者而删除本文</fieldset><br></div>
+</td>
+</tr>
+<tr id="_postposition23950737"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;reppost=23950737&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_23950737" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport23950737&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=23950737&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_23950737_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=bump&amp;idtype=tid&amp;id=1280861" id="a_bump" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/bump.small.gif">提升卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=close&amp;idtype=tid&amp;id=1280861" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/close.small.gif">沉默卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=open&amp;idtype=tid&amp;id=1280861" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/open.small.gif">喧嚣卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=highlight&amp;idtype=tid&amp;id=1280861" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/highlight.small.gif">变色卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=23950737:1280861" id="a_namepost_23950737" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_23950737')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[23950737] = ['1933198','1933199','1933200','1933201','1933202'];
+attachimggroup(23950737);
+var aimgfid = 0;
+</script>
+</div><div id="post_23951077"><table id="pid23951077" class="plhin" summary="pid23951077" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar23951077" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751" target="_blank" class="xw1">Panzako</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo23951077" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo23951077_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751" target="_blank" class="xi2">Panzako</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751&amp;do=profile" target="_blank" class="xi2">224</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2021-9-20</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4470751" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：吉林</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=23951077" id="postnum23951077" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+沙发</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon23951077" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton23951077">发表于 2021-12-1 22:23:10</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=4470751" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_23951077">
+高质量，可以看出楼主对MC的网络工作机理相当了解了<br>
+点赞！<br>
+不过对于实际应用，更推荐使用MCProtocol库，可以让开发事半功倍喔</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_23951077" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_23951077" class="rate">
+<dd style="margin:0">
+<div id="post_rate_23951077"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=23951077" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_23951077&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_23951077_752547">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank">IllTamer</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">感谢支持～ 理论同样重要哦</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=23951077" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition23951077"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=23951077&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_23951077" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport23951077&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=23951077&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_23951077_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=23951077:1280861" id="a_namepost_23951077" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_23951077')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_23952138"><table id="pid23952138" class="plhin" summary="pid23952138" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar23952138" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493" target="_blank" class="xw1">635419450</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo23952138" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo23952138_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493" target="_blank" class="xi2">635419450</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493&amp;do=profile" target="_blank" class="xi2">5624</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2013-5-29</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=260493" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=23952138" id="postnum23952138" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+板凳</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon23952138" src="https://www.mcbbs.net/static/image/common/icon_zombie_pigman.png">
+<em id="authorposton23952138">发表于 2021-12-2 01:53:10</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=260493" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_23952138">
+挺好，学到了，有空尝试一下</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_23952138" class="cm">
+</div>
+
+<div id="post_rate_div_23952138"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition23952138"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=23952138&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_23952138" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport23952138&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=23952138&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_23952138_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=23952138:1280861" id="a_namepost_23952138" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_23952138')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_24611614"><table id="pid24611614" class="plhin" summary="pid24611614" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar24611614" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881" target="_blank" class="xw1">炼药锅</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo24611614" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo24611614_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881" target="_blank" class="xi2">炼药锅</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881&amp;do=profile" target="_blank" class="xi2">2452</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2015-3-22</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1247881" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：广西</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=24611614" id="postnum24611614" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+地板</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon24611614" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton24611614">发表于 2022-2-8 23:59:03</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=1247881" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_24611614">
+文中提到的"Notchian"是什么意思</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_24611614" class="cm">
+</div>
+
+<div id="post_rate_div_24611614"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition24611614"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=24611614&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_24611614" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport24611614&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=24611614&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_24611614_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=24611614:1280861" id="a_namepost_24611614" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_24611614')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_24701624"><table id="pid24701624" class="plhin" summary="pid24701624" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar24701624" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969" target="_blank" class="xw1">gsdengdeng</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo24701624" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo24701624_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969" target="_blank" class="xi2">gsdengdeng</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969&amp;do=profile" target="_blank" class="xi2">53</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2022-2-6</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4666969" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：中国</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=24701624" id="postnum24701624" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>5</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon24701624" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton24701624">发表于 2022-2-16 18:36:06</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=4666969" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_24701624">
+感谢分享，收藏了</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_24701624" class="cm">
+</div>
+
+<div id="post_rate_div_24701624"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition24701624"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=24701624&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_24701624" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport24701624&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=24701624&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_24701624_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=24701624:1280861" id="a_namepost_24701624" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_24701624')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25013151"><table id="pid25013151" class="plhin" summary="pid25013151" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25013151" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509" target="_blank" class="xw1" style="color: #946CE6">耗子</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25013151" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25013151_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509" target="_blank" class="xi2" style="color: #946CE6">耗子</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509&amp;do=profile" target="_blank" class="xi2">14122</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2012-2-18</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=42509" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：陕西</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25013151" id="postnum25013151" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>6</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25013151" src="https://www.mcbbs.net/static/image/common/icon_cow.png">
+<em id="authorposton25013151">发表于 2022-3-18 14:40:13</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=42509" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25013151">
+分类不对吧，这应该是其它开发教程</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25013151" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_25013151" class="rate">
+<dd style="margin:0">
+<div id="post_rate_25013151"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=25013151" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_25013151&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_25013151_752547">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=752547" target="_blank">IllTamer</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">已更正</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=1280861&amp;pid=25013151" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25013151"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25013151&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25013151" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25013151&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25013151&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25013151_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25013151:1280861" id="a_namepost_25013151" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25013151')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25147838"><table id="pid25147838" class="plhin" summary="pid25147838" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25147838" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526" target="_blank" class="xw1">老章</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25147838" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25147838_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526" target="_blank" class="xi2">老章</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526&amp;do=profile" target="_blank" class="xi2">108</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2020-4-7</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3206526" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：山东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25147838" id="postnum25147838" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>7</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25147838" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25147838">发表于 2022-3-28 15:46:22</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=3206526" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25147838">
+mcbbs有你更精彩</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25147838" class="cm">
+</div>
+
+<div id="post_rate_div_25147838"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25147838"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25147838&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25147838" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25147838&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25147838&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25147838_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25147838:1280861" id="a_namepost_25147838" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25147838')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25160626"><table id="pid25160626" class="plhin" summary="pid25160626" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25160626" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026" target="_blank" class="xw1">可可的验证</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25160626" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25160626_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026" target="_blank" class="xi2">可可的验证</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026&amp;do=profile" target="_blank" class="xi2">156</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2019-11-16</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2925026" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：贵州</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25160626" id="postnum25160626" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>8</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25160626" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25160626">发表于 2022-3-29 14:41:24</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2925026" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25160626">
+我想问问基岩版怎么去通信，使用udp吗？我用抓包软件抓了一下，看不懂</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25160626" class="cm">
+</div>
+
+<div id="post_rate_div_25160626"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25160626"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25160626&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25160626" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25160626&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25160626&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25160626_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25160626:1280861" id="a_namepost_25160626" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25160626')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25168730"><table id="pid25168730" class="plhin" summary="pid25168730" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25168730" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139" target="_blank" class="xw1">海绵c2</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25168730" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25168730_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139" target="_blank" class="xi2">海绵c2</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139&amp;do=profile" target="_blank" class="xi2">685</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2019-10-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2890139" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：上海</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25168730" id="postnum25168730" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>9</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25168730" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25168730">发表于 2022-3-30 02:29:22</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2890139" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25168730">
+谢谢分享，楼主可以再出一期rcon的教程吗</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25168730" class="cm">
+</div>
+
+<div id="post_rate_div_25168730"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25168730"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25168730&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25168730" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25168730&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25168730&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25168730_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25168730:1280861" id="a_namepost_25168730" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25168730')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25169696"><table id="pid25169696" class="plhin" summary="pid25169696" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25169696" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727" target="_blank" class="xw1">鱼跃y</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25169696" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25169696_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727" target="_blank" class="xi2">鱼跃y</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727&amp;do=profile" target="_blank" class="xi2">241</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2017-6-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2201727" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：江西</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25169696" id="postnum25169696" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>10</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25169696" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25169696">发表于 2022-3-30 08:17:27</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2201727" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25169696">
+第一次发现还有这么NB的版块 i了</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25169696" class="cm">
+</div>
+
+<div id="post_rate_div_25169696"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25169696"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25169696&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25169696" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25169696&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25169696&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25169696_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25169696:1280861" id="a_namepost_25169696" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25169696')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25194156"><table id="pid25194156" class="plhin" summary="pid25194156" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25194156" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538" target="_blank" class="xw1">一个想中奖的人</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25194156" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25194156_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538" target="_blank" class="xi2">一个想中奖的人</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538&amp;do=profile" target="_blank" class="xi2">62</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2021-1-14</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=3838538" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：河北</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25194156" id="postnum25194156" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>11</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25194156" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25194156">发表于 2022-3-31 21:23:26</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=3838538" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25194156">
+牛皮啊666</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25194156" class="cm">
+</div>
+
+<div id="post_rate_div_25194156"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25194156"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25194156&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25194156" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25194156&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25194156&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25194156_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25194156:1280861" id="a_namepost_25194156" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25194156')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25787650"><table id="pid25787650" class="plhin" summary="pid25787650" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25787650" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891" target="_blank" class="xw1">asdafs</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25787650" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25787650_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891" target="_blank" class="xi2">asdafs</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891&amp;do=profile" target="_blank" class="xi2">176</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2019-2-18</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2674891&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar">头像被屏蔽</div>
+</div>
+<p class="cp_pls cl">来自：辽宁</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25787650" id="postnum25787650" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>12</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25787650" src="https://www.mcbbs.net/static/image/common/icon_zombie.png">
+<em id="authorposton25787650">发表于 2022-5-14 07:49:04</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2674891" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25787650">
+mcbbs有你更精彩~</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25787650" class="cm">
+</div>
+
+<div id="post_rate_div_25787650"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25787650"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25787650&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25787650" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25787650&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25787650&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25787650_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25787650:1280861" id="a_namepost_25787650" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25787650')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_25801439"><table id="pid25801439" class="plhin" summary="pid25801439" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar25801439" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561" target="_blank" class="xw1">Virlhyc</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo25801439" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo25801439_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561" target="_blank" class="xi2">Virlhyc</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561&amp;do=profile" target="_blank" class="xi2">1261</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2018-6-25</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2533561" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：浙江</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=25801439" id="postnum25801439" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>13</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon25801439" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton25801439">发表于 2022-5-15 08:37:24</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2533561" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_25801439">
+wuw!蟹蟹!</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_25801439" class="cm">
+</div>
+
+<div id="post_rate_div_25801439"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition25801439"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=25801439&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_25801439" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport25801439&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=25801439&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_25801439_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=25801439:1280861" id="a_namepost_25801439" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_25801439')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_26090730"><table id="pid26090730" class="plhin" summary="pid26090730" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar26090730" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001" target="_blank" class="xw1">魏介</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo26090730" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo26090730_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001" target="_blank" class="xi2">魏介</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001&amp;do=profile" target="_blank" class="xi2">39</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2021-6-15</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=4182001" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：上海</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=26090730" id="postnum26090730" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>14</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon26090730" src="https://www.mcbbs.net/static/image/common/icon_pig.png">
+<em id="authorposton26090730">发表于 2022-6-7 20:39:52</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=4182001" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_26090730">
+厉害6666666666</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_26090730" class="cm">
+</div>
+
+<div id="post_rate_div_26090730"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition26090730"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=26090730&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_26090730" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport26090730&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=26090730&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_26090730_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=26090730:1280861" id="a_namepost_26090730" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_26090730')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_26259202"><table id="pid26259202" class="plhin" summary="pid26259202" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar26259202" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623" target="_blank" class="xw1">BAQ</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo26259202" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo26259202_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623" target="_blank" class="xi2">BAQ</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623&amp;do=profile" target="_blank" class="xi2">168</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="https://www.mcbbs.net/template/mcbbs/image/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2018-9-7</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://www.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2582623" class="avtm" target="_blank"><img src="https://www.mcbbs.net/uc_server/images/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1280861&amp;pid=26259202" id="postnum26259202" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>15</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon26259202" src="https://www.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton26259202">发表于 2022-6-19 14:55:55</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=1280861&amp;page=1&amp;authorid=2582623" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_26259202">
+感谢分享</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_26259202" class="cm">
+</div>
+
+<div id="post_rate_div_26259202"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition26259202"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;repquote=26259202&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_26259202" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport26259202&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=26259202&amp;tid=1280861&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_26259202_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=namepost&amp;idtype=pid&amp;id=26259202:1280861" id="a_namepost_26259202" onclick="showWindow(this.id, this.href)"><img src="https://www.mcbbs.net/static/image/magic/namepost.small.gif">显身卡</a></li><li>
+</li></ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_26259202')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="5c3a536a">
+<input type="hidden" name="optgroup">
+<input type="hidden" name="operation">
+<input type="hidden" name="listextra" value="page%3D1">
+<input type="hidden" name="page" value="1">
+</form>
+
+
+<div class="pgbtn"><a href="https://www.mcbbs.net/thread-1280861-2-1.html" hidefocus="true" class="bm_h">下一页 »</a></div>
+
+<div class="pgs mtm mbm cl">
+<div class="pg"><strong>1</strong><a href="https://www.mcbbs.net/thread-1280861-2-1.html">2</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location=&#39;forum.php?mod=viewthread&amp;tid=1280861&amp;extra=page%3D1&amp;page=&#39;+this.value;; doane(event);}"><span title="共 2 页"> / 2 页</span></label><a href="https://www.mcbbs.net/thread-1280861-2-1.html" class="nxt">下一页</a></div><span class="pgb y"><a href="https://www.mcbbs.net/forum-development-1.html">返回列表</a></span>
+<!--<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=479')" href="javascript:;" title="发新帖"><img src="template/mcbbs/image/pn_post.png" alt="发新帖" /></a>-->
+            <a id="" onclick="showWindow(&#39;reply&#39;, &#39;forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&#39;)" href="javascript:;" title="回复"><img src="https://www.mcbbs.net/template/mcbbs/image/pn_reply.png" alt="回复"></a>
+    </div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('10');
+var postmaxchars = parseInt('1000000');
+var disablepostctrl = parseInt('0');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onsubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls">
+</td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=1280861" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="https://www.mcbbs.net/data/cache/seditor.js?a5a" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+</div></div>
+<div class="area">
+<div class="pt hm">
+您需要登录后才可以回帖 <a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login" onclick="showWindow(&#39;login&#39;, this.href)" class="xi2">登录</a> | <a href="https://www.mcbbs.net/member.php?mod=register" class="xi2">注册(register)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+</div>
+
+
+<input type="hidden" name="formhash" value="5c3a536a">
+<input type="hidden" name="usesig" value="">
+<input type="hidden" name="subject" value="  ">
+<p class="ptm pnpost">
+<a href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=479" class="y" target="_blank">本版积分规则</a>
+<button type="button" onclick="showWindow(&#39;login&#39;, &#39;member.php?mod=logging&amp;action=login&amp;guestmessage=yes&#39;)" onmouseover="checkpostrule(&#39;seccheck_fastpost&#39;, &#39;ac=reply&#39;);this.onmouseover=null" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc">回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</tbody></table>
+</form>
+</div>
+
+<script type="text/javascript">
+new lazyload();
+</script>
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'forum.php?mod=viewthread&tid=1280861', 1);}</script>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=5c3a536a&fuid='+values['fuid'];
+}
+}
+</script>	</div>
+
+
+<script src="./[高质量插件系列] [协议] 教你如何从外部 Ping 通服务器 - 编程开发 - Minecraft(我的世界)中文论坛 -_files/hms-messaging.js.下载" type="text/javascript"></script>
+<script>
+    //Your web app's hms configuration
+    var hmsConfig = {
+        "apiKey":"gCuPASMJwji2N0Y4B7m2fOlPpXCGEgnBBQyeNs_g",
+        "projectId":"736430079244919664",
+        "appId":"322385623857115433",
+        "countryCode":"CN"
+    };
+
+    //Initialize Hms
+    hms.initializeApp(hmsConfig);
+
+    const messaging = hms.messaging();
+    messaging.usePublicVapidKey(
+        "BCuGAGsI9Dl1Zb1T56kZf3duInCznNWaD8QdVBi1uPcAmr0NsUU9ia0Lr37k-chBVf86UXQP9sqZRTDPTZmsZD8");
+    var tkv = '';
+    function getTk() {
+        return messaging.getToken().then((currentToken) => {
+            if (currentToken) {
+                console.log('getToken succ: ', currentToken);
+                tkv = currentToken;
+                setcookie('webpush_token', tkv)
+                ajaxget('plugin.php?id=zhaisoul_huawei_push:push')
+                return currentToken
+                // alert('getToken Success.');
+            } else {
+                console.log('拿不到token');
+            }
+        }).catch((err) => {
+            console.log( err.message);
+        });
+    }
+
+    navigator.serviceWorker.register("hms-messaging-sw.js", {
+        scope: "./hms-cloud-messaging-push-scope"
+    }).then((registration) => {
+        messaging.useServiceWorker(registration);
+    })
+
+    messaging.setBackgroundMessageHandler(function (payload) {
+        console.log('[hms-messaging-sw.js] Received background message.', payload);
+        // 自定义通知栏
+        const notificationTitle = 'Background Message Title';
+        const notificationOptions = {
+            body: 'Background Message body.',
+            icon: '/hms-logo.png'
+        };
+
+        return self.registration.showNotification(notificationTitle, notificationOptions);
+    });
+
+    messaging.onMessage((payload) => {
+        console.log('Message received. ', payload);
+        //...
+    });
+</script>
+<script>
+    window.Notification.requestPermission(function (permission) { // 没有权限发起请求
+        if(!getcookie('webpush_token')) {
+            getTk()
+        }
+        console.log(permission)
+    });
+</script>
+<script>if(document.querySelector(".album_wrapper[initiated='false']")){initAlbum()}</script><style>.album_wrapper[initiated="false"] {visibility: hidden}</style>
+<script src="https://www.mcbbs.net/source/plugin/safe_center/template/js/md5.min.js?a5a" type="text/javascript"></script></div></div></div></div></body></html>

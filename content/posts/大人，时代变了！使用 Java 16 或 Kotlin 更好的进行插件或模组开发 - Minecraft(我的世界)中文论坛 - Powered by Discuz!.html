@@ -1,0 +1,492 @@
+---
+title: "大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!.html"
+---
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%a8%a1%e7%bb%84&d=4740166786817866&mkt=zh-CN&setlang=zh-CN&w=17HuPTIPrsFrlGk9YGo7MHN0g6zkHgYZ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1232939">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2022/4/11--><!--InvariantDate:4/11/2022--></head><body><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1232939" h="ID=SERP,5003.1">https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1232939</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2022/4/11</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1232939" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+<title>大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!</title>
+
+<style type="text/css">
+body 	   {margin: 10px 80px;}
+body,table {font-size: FONTSIZE; font-family: FONT;}
+h1 { font-size: 24px; margin-bottom: 20px; color: #999; }
+</style>
+<script src="https://www.mcbbs.net/data/cache/common.js?AIR" type="text/javascript"></script>
+<script src="https://www.mcbbs.net/data/cache/forum_viewthread.js?AIR" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'AIR', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭[已弃用]|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/nether', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L2ZvcnVtLnBocD9tb2Q9dmlld3RocmVhZCZhY3Rpb249cHJpbnRhYmxlJnRpZD0xMjMyOTM5', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/';</script>
+
+
+
+<h1>Minecraft(我的世界)中文论坛</h1>
+<b>标题: </b>大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 <b><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1232939###" onclick="this.style.visibility=&#39;hidden&#39;;window.print();this.style.visibility=&#39;visible&#39;">[打印本页]</a></b><br>
+<script type="text/javascript">var zoomstatus = 0;var aimgcount = new Array();</script><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>贺兰兰&nbsp; &nbsp; <b>时间: </b>2021-7-27 22:37<br>
+<b>标题: </b>大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发<br><i class="pstatus"> 本帖最后由 贺兰兰 于 2021-7-31 10:57 编辑 </i><br>
+<br>
+<font style="font-size:32px"><strong>大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发</strong></font><br>
+<br>
+<font style="font-size:16px"><strong>声明：本文章中 Java 8 至 Java 16 以来变化的内容整理自 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fadvancedweb.hu%2Fa-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-16%2F" target="_blank">这个网站</a>，您可以访问该网站以了解更多新版本 Java 的更改</strong></font><br>
+<br>
+<font style="font-size:16px">简洁起见，对于某些不重要，或者对开发意义不大的更新，本文并未列出</font><br>
+<br>
+<font style="font-size:24px"><strong>前言</strong></font><br>
+<br>
+<font style="font-size:16px">从很久很久以前，Minecraft 的社区开发者们就开始使用包含了全新的 Stream 库和 Lambda 语句的 Java 8 进行插件或者模组开发，时至今日，Java 8 已成为开发者、服主、玩家使用最多的 Java 版本 —— 或许仍将持续下去，至少对那些忠于旧版本的人们来说。但对于勇于探索新生的冒险者们来说，他们不得不开始正视一个新的拦路虎，亦或者说一种新的机遇 —— 那就是 Java 16。</font><br>
+<br>
+<font style="font-size:16px">从 Java Edition 1.17（正确的来说，是 21w19a）开始，Minecraft 需要 Java 16 或更新版本才能运行。对于这个最新更改，人们别无选择，只能慢慢接受 —— 对于玩家和服主来说，可能只是卸载一个旧版本，安装一个新版本的事情。但对于开发者来说，很显然我们需要知道更多。</font><br>
+<br>
+<font style="font-size:16px">本文的存在就是这个意义，我们将介绍从 Java 8 开始到 Java 16 重要的开发内容更新，并附带这些更新在<strong>以 Java 8 为运行时的 Kotlin</strong> 是如何处理的，以帮助开发者们能够更快的适应和享受新的 Java 或者 Kotlin 带来的更高的开发效率。</font><br>
+<br>
+<font style="font-size:24px"><strong>什么样的开发者适合切换到 Java 16</strong></font><br>
+<br>
+<font style="font-size:16px">对于 Minecraft 开发者而言，由于兼容性，很显然并不是所有的开发者都能够切换到 Java 16 进行开发。以普遍理性而言，这些开发者应当可以切换到 Java 16 进行开发：</font><br>
+<br>
+<font style="font-size:16px"><ul><li>所有面向 Minecraft 1.17 或更高版本进行开发的模组/插件开发者</li><li>面向 Minecraft 1.13+ 的 Bukkit 插件开发者<br>
+</li></ul></font><br>
+<font style="font-size:24px"><strong>为什么使用 Kotlin</strong></font><br>
+<br>
+<font style="font-size:16px">Kotlin（JVM） 作为一个基于 JVM 平台的开发语言，为开发者们提供了更加舒适的开发方式，收到了很多开发者的追捧。对于 Kotlin 来说，由于其可以基于 Java 8 运行，因此在大多数情况下无需进行更多更改，只需要在模组或插件内包含一个 Kotlin 的标准库，便可以享受 Kotlin 带来的便捷开发。</font><br>
+<br>
+<font style="font-size:16px">本文关于 Kotlin 的示例基于 Java 8 运行时，这意味着，某些 JVM 平台更新可能已经在 Kotlin 同样可用，比如&nbsp;&nbsp;Kotlin 已经添加了对 JVM 中 <font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#f6f8fa">Record Class</font></font> 的支持，但我们并不使用这些版本的代码，而将仍旧选择基于 Java 8 运行时时的解决方案 —— 当然，基于更高版本 Java 运行时的 Kotlin 仍旧可以支持这些代码。</font><br>
+<br>
+<font style="font-size:16px">请注意，本文章的主题并不是 Kotlin，因此 Kotlin 内容仅作为对比，并非主要内容。</font><br>
+<br>
+<font style="font-size:24px"><strong>正文：Java 16 到底带来了什么更改？</strong></font><br>
+<br>
+<font style="font-size:20px"><strong>使用 <font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#f6f8fa">var</font></font> 更简洁的创建局部变量</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_h9Q"><ol><li>final List&lt;String&gt; list = new ArrayList&lt;&gt;();</li></ol></div><em onclick="copycode($(&#39;code_h9Q&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_AQi"><ol><li>final var list = new ArrayList&lt;String&gt;();</li></ol></div><em onclick="copycode($(&#39;code_AQi&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">注意，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#f6f8fa">var</font></font> 仅支持局部变量，而不支持全局变量。</font><br>
+<br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_k3h"><ol><li>val list = arrayListOf&lt;String&gt;()</li></ol></div><em onclick="copycode($(&#39;code_k3h&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>使用 Record Class 更方便的创建数据传输对象</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8 </font><br>
+<br>
+<div class="blockcode"><div id="code_Vya"><ol><li>public class Point{<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; private int x;<br>
+</li><li>&nbsp; &nbsp; private int y;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; public Point(int x, int y){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;this.x = x;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;this.y = y;<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; public x(){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;return x;<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; public y(){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;return y;<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>}<br>
+</li><li><br>
+</li><li>Point point = new Point(1, 2);<br>
+</li><li>point.x(); // returns 1<br>
+</li><li>point.y(); // returns 2</li></ol></div><em onclick="copycode($(&#39;code_Vya&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_Zr5"><ol><li>record Point(int x, int y) { }<br>
+</li><li><br>
+</li><li>var point = new Point(1, 2);<br>
+</li><li>point.x(); // returns 1<br>
+</li><li>point.y(); // returns 2</li></ol></div><em onclick="copycode($(&#39;code_Zr5&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_W4P"><ol><li>// With additional toString, hashCode function,like @Data in Lombok<br>
+</li><li>data class Point(val x : Integer,val y : Integer)<br>
+</li><li><br>
+</li><li>var point = Point(1, 2)<br>
+</li><li>point.x // return 1<br>
+</li><li>point.y // return 2</li></ol></div><em onclick="copycode($(&#39;code_W4P&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>增强的 switch</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_Uws"><ol><li>int numLetters;<br>
+</li><li>switch (day) {<br>
+</li><li>&nbsp; &nbsp; case MONDAY, FRIDAY, SUNDAY:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;numLetters = 6;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;break;<br>
+</li><li>&nbsp; &nbsp; case TUESDAY:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;numLetters = 7;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;break;<br>
+</li><li>&nbsp; &nbsp; default:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;String s = day.toString();<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;numLetters = s.length();<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_Uws&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_kLo"><ol><li>int numLetters = switch (day) {<br>
+</li><li>&nbsp; &nbsp; case MONDAY, FRIDAY, SUNDAY -&gt; 6;<br>
+</li><li>&nbsp; &nbsp; case TUESDAY&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; -&gt; 7;<br>
+</li><li>&nbsp; &nbsp; default&nbsp; &nbsp;&nbsp; &nbsp;-&gt; {<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;String s = day.toString();<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;int result = s.length();<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;yield result;<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>};</li></ol></div><em onclick="copycode($(&#39;code_kLo&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_g6M"><ol><li>var numLetters = when (day){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;MONDAY, FRIDAY, SUNDAY -&gt; 6<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;TUESDAY -&gt; 7<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;else -&gt;{<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;var s = day.toString()<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;var result = s.length<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;result<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;}<br>
+</li><li>&nbsp; &nbsp; }</li></ol></div><em onclick="copycode($(&#39;code_g6M&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>使用密封类以限定继承的子类</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_FJ5"><ol><li>// No solution</li></ol></div><em onclick="copycode($(&#39;code_FJ5&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_vid"><ol><li>public abstract sealed class Shape<br>
+</li><li>&nbsp; &nbsp; permits Circle, Rectangle {...}<br>
+</li><li><br>
+</li><li>public class Circle extends Shape {...} // OK<br>
+</li><li>public class Rectangle extends Shape {...} // OK<br>
+</li><li>public class Triangle extends Shape {...} // Compile error<br>
+</li><li><br>
+</li><li>// No need for default case if all permitted types are covered<br>
+</li><li>double area = switch (shape) {<br>
+</li><li>&nbsp; &nbsp; case Circle c&nbsp; &nbsp; -&gt; Math.pow(c.radius(), 2) * Math.PI<br>
+</li><li>&nbsp; &nbsp; case Rectangle r -&gt; r.a() * r.b()<br>
+</li><li>};</li></ol></div><em onclick="copycode($(&#39;code_vid&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_xSK"><ol><li>package pkg.a<br>
+</li><li><br>
+</li><li>sealed class Shape<br>
+</li><li><br>
+</li><li>class Circle : Shape() {...} // OK<br>
+</li><li>class Rectangle : Shape() {...} // OK<br>
+</li><li><br>
+</li><li><br>
+</li><li>package pkg.b<br>
+</li><li><br>
+</li><li>class Triangle : Shape() {...} // Compile error<br>
+</li><li><br>
+</li><li>// No need for default case if all permitted types are covered<br>
+</li><li>var area = when (shape) {<br>
+</li><li>&nbsp; &nbsp; is Circle -&gt; Math.pow(shape.radius(), 2) * Math.PI<br>
+</li><li>&nbsp; &nbsp; is Rectangle -&gt; shape.a() * shape.b()<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_xSK&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>文本块</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_PfG"><ol><li>String html = "&lt;html&gt;\n" +<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; "&nbsp; &nbsp; &lt;body&gt;\n" +<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; "&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world&lt;/p&gt;\n" +<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; "&nbsp; &nbsp; &lt;/body&gt;\n" +<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; "&lt;/html&gt;\n";</li></ol></div><em onclick="copycode($(&#39;code_PfG&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_h2Q"><ol><li>String html = """<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;html&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;body&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world&lt;/p&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;/body&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/html&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;""";</li></ol></div><em onclick="copycode($(&#39;code_h2Q&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_Yin"><ol><li>var html = """<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;html&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;body&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;p&gt;Hello, world&lt;/p&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;/body&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/html&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;"""</li></ol></div><em onclick="copycode($(&#39;code_Yin&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>当变量为 null 时提供更加详细友好的 NullPointerException 描述</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_aCC"><ol><li>a.b.c.i = 99;<br>
+</li><li>---<br>
+</li><li>Exception in thread "main" java.lang.NullPointerException</li></ol></div><em onclick="copycode($(&#39;code_aCC&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_vFZ"><ol><li>a.b.c.i = 99;<br>
+</li><li>---<br>
+</li><li>Exception in thread "main" java.lang.NullPointerException:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;Cannot read field "c" because "a.b" is null</li></ol></div><em onclick="copycode($(&#39;code_vFZ&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>模式匹配 instanceof 以省略必要的显式类型转换</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_c9o"><ol><li>if (obj instanceof String) {<br>
+</li><li>&nbsp; &nbsp; String s = (String) obj;<br>
+</li><li>&nbsp; &nbsp; if(s.length() &gt; 5){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;System.out.println("obj is a String with more than 5 characters: " + s.toUpperCase());<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_c9o&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_znF"><ol><li>if (obj instanceof String s &amp;&amp; s.length() &gt; 5) {<br>
+</li><li>&nbsp; &nbsp; System.out.println("obj is a String with more than 5 characters: " + s.toUpperCase());<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_znF&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_TxN"><ol><li>if (obj is String &amp;&amp; obj.length &gt; 5) {<br>
+</li><li>&nbsp; &nbsp; println("obj is a String with more than 5 characters: " + obj.uppercase(Locale.getDefault()))<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_TxN&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>接口中允许私有方法</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_W7N"><ol><li>// Not allowed</li></ol></div><em onclick="copycode($(&#39;code_W7N&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_MuN"><ol><li>public interface some {<br>
+</li><li>&nbsp; &nbsp; private void doSomething(){<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// do something<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_MuN&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_Uue"><ol><li>interface some {<br>
+</li><li>&nbsp; &nbsp; private fun doSomething() {<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;// do something<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>}</li></ol></div><em onclick="copycode($(&#39;code_Uue&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>更方便的将 Stream 收集为 List</strong></font><br>
+<br>
+<font style="font-size:16px">In Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_CUK"><ol><li>List&lt;String&gt; result =<br>
+</li><li>&nbsp;&nbsp;Stream.of("one", "two", "three")<br>
+</li><li>&nbsp; &nbsp; .filter(s -&gt; s.length() == 3)<br>
+</li><li>&nbsp; &nbsp; .collect(Collectors.toList());</li></ol></div><em onclick="copycode($(&#39;code_CUK&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_VZQ"><ol><li>List&lt;String&gt; result =<br>
+</li><li>&nbsp;&nbsp;Stream.of("one", "two", "three").stream()<br>
+</li><li>&nbsp; &nbsp; .filter(s -&gt; s.length() == 3)<br>
+</li><li>&nbsp; &nbsp; .toList();</li></ol></div><em onclick="copycode($(&#39;code_VZQ&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">In Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_bFb"><ol><li>var result =<br>
+</li><li>&nbsp;&nbsp;Stream.of("one", "two", "three")<br>
+</li><li>&nbsp; &nbsp; .filter(s -&gt; s.length() == 3)<br>
+</li><li>&nbsp; &nbsp; .toList()</li></ol></div><em onclick="copycode($(&#39;code_bFb&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>为 String 添加了更多有用的方法</strong></font><br>
+<br>
+<font style="font-size:16px">Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_yFR"><ol><li>"&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;".isBlank(); // will return true<br>
+</li><li><br>
+</li><li>Stream&lt;String&gt; lines = "1\n2\n3\n4".lines(); // will return Stream ["1", "2", "3", "4"]<br>
+</li><li><br>
+</li><li>"a".repeat(4); // will return "aaaa"<br>
+</li><li><br>
+</li><li>"\u2000 hello \u2000".strip(); // will return "hello"</li></ol></div><em onclick="copycode($(&#39;code_yFR&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>为集合添加了更多易于使用的工厂方法</strong></font><br>
+<br>
+<font style="font-size:16px">Java 8</font><br>
+<br>
+<div class="blockcode"><div id="code_bqt"><ol><li>Set&lt;Integer&gt; mySet = new HashSet&lt;&gt;();<br>
+</li><li>mySet.add(1);<br>
+</li><li>mySet.add(2);<br>
+</li><li>mySet.add(3);<br>
+</li><li>List&lt;Integer&gt; myList = new ArrayList&lt;&gt;();<br>
+</li><li>myList.add(1);<br>
+</li><li>myList.add(2);<br>
+</li><li>myList.add(3);<br>
+</li><li>Map&lt;String, Integer&gt; myMap = new HashMap&lt;&gt;();<br>
+</li><li>myMap.put("one",1);<br>
+</li><li>myMap.put("two",2);</li></ol></div><em onclick="copycode($(&#39;code_bqt&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">Java 16</font><br>
+<br>
+<div class="blockcode"><div id="code_Gho"><ol><li>Set&lt;Integer&gt; mySet = Set.of(1, 2, 3);<br>
+</li><li>List&lt;Integer&gt; myList = List.of(1, 2, 3);<br>
+</li><li>Map&lt;String, Integer&gt; myMap = Map.of("one", 1, "two", 2);</li></ol></div><em onclick="copycode($(&#39;code_Gho&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">Kotlin</font><br>
+<br>
+<div class="blockcode"><div id="code_Xdd"><ol><li>var mySet = setOf(1, 2, 3)<br>
+</li><li>var myList = listOf(1, 2, 3)<br>
+</li><li>var myMap = mapOf("one" to 1, "two" to 2)</li></ol></div><em onclick="copycode($(&#39;code_Xdd&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">除此之外，支持更多平台，支持 TLS 1.3，全新的 jlink 工具，HTML5 标准的 Javadoc，更强大的&nbsp;&nbsp;ZGC 等特性都将可以在全新的 Java 16 中体验到。</font><br>
+<br>
+<font style="font-size:16px">值得一提的是，Java 8 中内置的 JavaScript 解析器 Nashron ，jjs 工具，Java EE，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#f6f8fa">Unsafe::defineAnonymousClass()</font></font>，基本数据类型的包装对象的构造函数都在 Java 16 中被移除或是废弃。</font><br>
+<br>
+<font style="font-size:16px">最后。为什么不现在就切换到 Java 16，来体验更高效的开发呢？</font><br>
+<br>
+<font style="font-size:16px">（完）</font><br>
+<br>
+[groupid=1511]Server CT[/groupid]<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>shuaishuai520&nbsp; &nbsp; <b>时间: </b>2021-7-27 22:38<br>
+wc，太详细了，楼主给你顶一个<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>逍遥先生.&nbsp; &nbsp; <b>时间: </b>2021-7-27 22:41<br>
+这就支持<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>紅葉&nbsp; &nbsp; <b>时间: </b>2021-7-27 22:45<br>
+建议各位都拥抱新时代的潮流，使用Java16或kotlin<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>小六子鸭.&nbsp; &nbsp; <b>时间: </b>2021-7-27 23:16<br>
+<i class="pstatus"> 本帖最后由 小六子鸭. 于 2021-7-28 18:16 编辑 </i><br>
+<br>
+前些天还在赶忙着学kotlin呢 这就看到贺兰大大的文章了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Bowser&nbsp; &nbsp; <b>时间: </b>2021-7-27 23:27<br>
+Nashorn被删了，然而forge又把Nashorn加回来了（笑）<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Glom_&nbsp; &nbsp; <b>时间: </b>2021-7-30 01:44<br>
+Great. <img src="https://www.mcbbs.net/static/image/smiley/tong/....png" smilieid="1443" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>结冰的离季&nbsp; &nbsp; <b>时间: </b>2021-7-30 21:15<br>
+kotlin +1 使用kotlin 何不再试试 <strong>Gradle Kotlin DSL </strong>来构建<br>
+这里是gradle Groovy语言转 gradle Kotlin 的官方迁移教程：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fdocs.gradle.org%2Fcurrent%2Fuserguide%2Fmigrating_from_groovy_to_kotlin_dsl.html" target="_blank">链接</a><br>
+以下是我参考文档+自己摸索写的Gradle Kotlin 脚本<br>
+<font size="4"><strong>build.gradle.kts</strong></font><br>
+<br>
+<div class="blockcode"><div id="code_rsG"><ol><li>plugins {<br>
+</li><li>&nbsp; &nbsp; java<br>
+</li><li>&nbsp; &nbsp; id("org.jetbrains.kotlin.jvm") version "1.4.0"<br>
+</li><li>&nbsp; &nbsp; id("com.github.johnrengelman.shadow") version "6.1.0"&nbsp; &nbsp;//使用shadow将依赖打包进jar包<br>
+</li><li>//&nbsp; &nbsp; kotlin("jvm") version "1.0.0"<br>
+</li><li>}<br>
+</li><li>group = "top.iseason.kotlin"&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; //声明包名<br>
+</li><li>version = "1.0.5"&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;//插件版本<br>
+</li><li>val mainClass = "DeEnchantmentPlugin" //插件主类<br>
+</li><li>val author = "Iseason"&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; //作者<br>
+</li><li>val jarOutputFile = "E:\\mc\\1.17.1 servers\\plugins" //jar导出路径<br>
+</li><li><br>
+</li><li>repositories { //仓库<br>
+</li><li>&nbsp; &nbsp; mavenCentral()<br>
+</li><li>&nbsp; &nbsp; maven {<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>&nbsp; &nbsp; maven {<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;url = uri("https://repo.codemc.org/repository/maven-public/")<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>}<br>
+</li><li><br>
+</li><li>dependencies { //依赖<br>
+</li><li>&nbsp; &nbsp; api("org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT")<br>
+</li><li>&nbsp; &nbsp; implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.31")<br>
+</li><li>&nbsp; &nbsp; implementation("io.github.bananapuncher714:nbteditor:7.17.0")<br>
+</li><li>}<br>
+</li><li><br>
+</li><li>(tasks.getByName("processResources") as ProcessResources).apply {<br>
+</li><li>&nbsp; &nbsp; val p = "${project.group}.${rootProject.name.toLowerCase()}"<br>
+</li><li>&nbsp; &nbsp; include("config.yml") //包含config.yml文件<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; //包含plugin.yml并修改文件内容,这里我用于同步插件信息<br>
+</li><li>&nbsp; &nbsp; //plugin.yml里面的例子: name: ${name} \n main: ${main}<br>
+</li><li>&nbsp; &nbsp; include("plugin.yml").expand(<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;"name" to rootProject.name.apply { this.toLowerCase() },<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;"main" to "$p.$mainClass",<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;"version" to project.version,<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;"author" to author<br>
+</li><li>&nbsp; &nbsp; )<br>
+</li><li>}<br>
+</li><li><br>
+</li><li>//添加ShadowJar任务，将依赖打包，stdlib是kotlin依赖，nbteditor是我自己使用的nbt编辑依赖<br>
+</li><li>tasks.withType&lt;com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar&gt; { <br>
+</li><li>&nbsp; &nbsp; dependencies {<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;include(dependency("io.github.bananapuncher714:nbteditor:7.17.0"))<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;include(dependency("org.jetbrains.kotlin:kotlin-stdlib:1.4.31"))<br>
+</li><li>&nbsp; &nbsp; }<br>
+</li><li>&nbsp; &nbsp; destinationDirectory.set(file(jarOutputFile))<br>
+</li><li>}<br>
+</li><li>//编译完成后的任务<br>
+</li><li>val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks<br>
+</li><li>compileKotlin.kotlinOptions.jvmTarget = "1.8"<br>
+</li><li>java.sourceCompatibility = JavaVersion.VERSION_1_8<br>
+</li><li>java.targetCompatibility = JavaVersion.VERSION_1_8<br>
+</li><li>//设置jar包输出路径<br>
+</li><li>tasks.jar {<br>
+</li><li>&nbsp; &nbsp; this.destinationDirectory.set(file(jarOutputFile))<br>
+</li><li>}<br>
+</li><li></li></ol></div><em onclick="copycode($(&#39;code_rsG&#39;));">复制代码</em></div><br>
+
+<br>
+
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Dasffafa&nbsp; &nbsp; <b>时间: </b>2021-7-31 08:56<br>
+<i class="pstatus"> 本帖最后由 Dasffafa 于 2021-8-1 20:12 编辑 </i><br>
+<br>
+Java16看起来很棒啊，考虑切换了编辑：放弃了这个想法，因为Java16不是长期支持版本，今年九月，长期支持版本Java17就要面世了，到时候我会换Java17<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>黎雨轩&nbsp; &nbsp; <b>时间: </b>2021-10-17 21:22<br>
+所以1.16版本成了Forge团队的LTS<img src="https://www.mcbbs.net/static/image/smiley/rabbit/44.gif" smilieid="694" border="0" alt="">，mcp不更了，java版本也改了，不变的是热爱的心<img src="https://www.mcbbs.net/static/image/smiley/rabbit/52.gif" smilieid="702" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>WorriKe&nbsp; &nbsp; <b>时间: </b>2022-1-4 23:02<br>
+Kotlin加一 真希望能换掉顽固的Java 8...<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>WorriKe&nbsp; &nbsp; <b>时间: </b>2022-1-4 23:29<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22772003&amp;ptid=1232939" target="_blank"><font color="#999999">结冰的离季 发表于 2021-7-30 21:15</font></a></font><br>
+kotlin +1 使用kotlin 何不再试试 Gradle Kotlin DSL 来构建<br>
+这里是gradle Groovy语言转 gradle Kotlin 的 ...</blockquote></div><br>
+太感谢了 正好在研究KTS😘<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>AustinPaul&nbsp; &nbsp; <b>时间: </b>2022-1-7 16:04<br>
+这个简洁，必须支持。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>心伤丶泪&nbsp; &nbsp; <b>时间: </b>2022-2-7 11:23<br>
+java16&nbsp; &nbsp; 适合低版本？&nbsp; &nbsp; java原来好像是可以适用于部分软件程序的<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>teddyxlandlee&nbsp; &nbsp; <b>时间: </b>2022-2-9 14:06<br>
+最近发现 Kotlin 1.6.10 编译器针对 Java 8+ 做了亿些优化，高兴了一下午<br>
+<strike>多图警告</strike><br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><br>
+<br>
+事情是这样的：<br>
+<img id="aimg_Dc27S" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/XSTHV56zqjigaM8.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><br>
+我用Kotlin写Mod，可以看到用了大量的lambda<br>
+<strike>（我在这里用记事本演示，可不是说我用记事本敲的代码啊啊啊</strike><br>
+我原本以为编译出来的东西会像kotlin-stdlib里一样堆<img src="https://www.mcbbs.net/static/image/smiley/mcitem/structure_void.png" smilieid="1199" border="0" alt="">成山：<br>
+<img id="aimg_gi1y2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/rASFVqcBkfuEdMJ.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><br>
+但它实际上长这样：<br>
+<img id="aimg_P8lqA" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/HVxOMmgdfFroJXy.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><br>
+就非常的丝滑<br>
+用javap反解析一下：<br>
+<img id="aimg_d2625" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/ig4kZfxVwuJYAMz.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><br>
+直接调用的 Java 8+ 的 java.lang.invoke.LambdaMetaFactory API，跟 Java 的 lambda 原理一模不两样<br>
+<strike>只不过匿名函数的命名规则不一样</strike><br>
+为此 Kotlin 放弃了让所有的 Kotlin Lambda 做 Lambda 抽象类的子类，也不去实现 Lambda.arity() : Int 这个抽象 val 字段<br>
+<br>
+本来打算写好 Mod 之后用 Proguard 清理一下这些非 public 类，把它们重命名成莫得感情的 abcd<br>
+结果发现 Kotlin 已经帮我整好了，啊哈哈哈哈哈<br>
+<br>
+</td></tr></tbody></table></div></div><br>
+<br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>teddyxlandlee&nbsp; &nbsp; <b>时间: </b>2022-2-9 14:15<br>
+<i class="pstatus"> 本帖最后由 teddyxlandlee 于 2022-2-9 14:20 编辑 </i><br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22772003&amp;ptid=1232939" target="_blank"><font color="#999999">结冰的离季 发表于 2021-7-30 21:15</font></a></font><br>
+kotlin +1 使用kotlin 何不再试试 Gradle Kotlin DSL 来构建<br>
+这里是gradle Groovy语言转 gradle Kotlin 的 ...</blockquote></div><br>
+现在一般都不用shadow吧，即使用shadow也要relocate一下，防止跟其它Mod冲突<br>
+一般用的是 loom 提供的 dependencies -&gt; include<br>
+<div class="blockcode"><div id="code_qpY"><ol><li>dependencies {<br>
+</li><li>&nbsp; &nbsp;&nbsp;&nbsp;// ...<br>
+</li><li>&nbsp; &nbsp;&nbsp;&nbsp;include (implementation ("com.google.guava:guava:31.0.1-jre")<br>
+</li><li>&nbsp; &nbsp;&nbsp;&nbsp;modImplementation ("net.fabricmc:fabric-language-kotlin:1.7.0+kotlin.1.6.10")&nbsp; &nbsp;&nbsp; &nbsp;// 这是 Fabric 给的 Fabric Language Kotlin 模组，自带 LanguageAdapter 和 kotlin-stdlib-jdk8、kotlin-reflect 等基本库。这里不 include 的原因是这玩意在 CurseForge 上有，很多 Mod 也在用，体积也不小，不必 include，只需作为前置让玩家自行下载即可<br>
+</li><li>}<br>
+</li><li></li></ol></div><em onclick="copycode($(&#39;code_qpY&#39;));">复制代码</em></div><br>
+你们在用 Forge/Bukkit 啊，没事了<br>
+但记得relocate一下<br>
+学学人家 Lucky Block 作者是怎么做的<br>
+<img id="aimg_KppwF" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./大人，时代变了！使用 Java 16 或 Kotlin 更好的进行插件或模组开发 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/wRqSftdyTsonZxu.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>456413&nbsp; &nbsp; <b>时间: </b>2022-2-10 10:52<br>
+java16定义语法逐渐向javascript靠拢。。。难道java逐渐从强类型转向弱类型语言了？[哭笑][哭笑][哭笑]<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>贺兰兰&nbsp; &nbsp; <b>时间: </b>2022-2-10 12:05<br>
+<div class="quote"><blockquote><font color="#999999">456413 发表于 2022-2-10 10:52</font><br>
+<font color="#999999">java16定义语法逐渐向javascript靠拢。。。难道java逐渐从强类型转向弱类型语言了？[哭笑][哭笑][哭笑] ...</font></blockquote></div><br>
+?
+<br><br><br><br><hr noshade="" size="2" width="100%" color="BORDERCOLOR">
+<table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" style="font-size: SMFONTSIZE; font-family: SMFONT">
+<tbody><tr><td>欢迎光临 Minecraft(我的世界)中文论坛 (https://www.mcbbs.net/)</td>
+<td align="right">
+Powered by Discuz! X3.5</td></tr></tbody></table>
+
+
+</div></body></html>

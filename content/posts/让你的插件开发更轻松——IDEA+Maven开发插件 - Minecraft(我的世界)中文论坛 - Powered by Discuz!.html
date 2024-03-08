@@ -1,0 +1,595 @@
+---
+title: "让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!.html"
+---
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%8f%92%e4%bb%b6&d=4959450642332938&mkt=zh-CN&setlang=zh-CN&w=HR2ky2zcVwvPTGZ2XYFuSyOOnYAWcjVl -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1000467">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2022/7/4--><!--InvariantDate:7/4/2022--></head><body><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1000467" h="ID=SERP,5003.1">https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1000467</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2022/7/4</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1000467" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+<title>让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!</title>
+
+<style type="text/css">
+body 	   {margin: 10px 80px;}
+body,table {font-size: FONTSIZE; font-family: FONT;}
+h1 { font-size: 24px; margin-bottom: 20px; color: #999; }
+</style>
+<script src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/common.js.下载" type="text/javascript"></script>
+<script src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/forum_viewthread.js.下载" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'jrS', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭[已弃用]|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/nether', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L2ZvcnVtLnBocD9tb2Q9dmlld3RocmVhZCZhY3Rpb249cHJpbnRhYmxlJnRpZD0xMDAwNDY3', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/';</script>
+
+
+
+<h1>Minecraft(我的世界)中文论坛</h1>
+<b>标题: </b>让你的插件开发更轻松——IDEA+Maven开发插件 <b><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1000467###" onclick="this.style.visibility=&#39;hidden&#39;;window.print();this.style.visibility=&#39;visible&#39;">[打印本页]</a></b><br>
+<script type="text/javascript">var zoomstatus = 0;var aimgcount = new Array();</script><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-28 20:47<br>
+<b>标题: </b>让你的插件开发更轻松——IDEA+Maven开发插件<br><i class="pstatus"> 本帖最后由 wjwrh 于 2020-6-16 08:20 编辑 </i><br>
+<br>
+<font style="font-size:32px"><strong>使用IntelliJ IDEA&amp;Maven开发插件</strong></font><br>
+<br>
+<font style="font-size:24px"><strong>目录</strong></font><br>
+<br>
+<font style="font-size:14px"><strong>一、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=17228364" target="_blank">前言</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>二、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=17228370" target="_blank">下载IDEA</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>三、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=17228383" target="_blank">创建项目</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>四、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=17230198" target="_blank">IDEA&amp;Maven代理的设置</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>五、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=17232091" target="_blank">Maven的配置</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>六、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=18096998" target="_blank">实战演示</a></strong></font><br>
+<br>
+<font style="font-size:14px"><strong>七、<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1000467&amp;pid=18097005" target="_blank">Q&amp;A</a></strong></font><br>
+<br>
+<font style="font-size:24px"><strong>更新日志</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li>2020/5/8 更新目录部分结构，完全抛弃了论坛的ljmarkdown解析器</li><li>2020/5/7 添加了实战演示与Q&amp;A部分(欢迎向我提出问题~)</li><li>2020/3/8 在于论坛的markdown解析器斗智斗勇以后，发布本教程<br>
+</li></ul></font><br>
+<font style="font-size:24px"><strong>其它</strong></font><br>
+<br>
+<font style="font-size:16px">个人推荐阅读我提供的pdf版本，然后应该会在未来不远的时间内将其同步到我的博客上</font><br>
+<br>
+<font style="font-size:16px"><ul><li>由于阿.里.云的NT机制，导致存在我VPS上面的所有图片都无法显示，正考虑修复，修复前请阅读PDF版本</li><li><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.kurosawaruby.cn%2F2020%2F03%2F29%2F%25E5%2588%25A9%25E7%2594%25A8IDEA%25E4%25B8%258EMaven%25E7%25AE%2580%25E5%258C%2596%25E6%258F%2592%25E4%25BB%25B6%25E5%25BC%2580%25E5%258F%2591%25E6%25B5%2581%25E7%25A8%258B%2F" target="_blank">个人博客阅读地址</a>，由于使用GitHub Page，可能访问较慢</li><li>PDF下载地址 <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.kurosawaruby.cn%2FIDEA_with_Maven.pdf" target="_blank">https://www.kurosawaruby.cn/IDEA_with_Maven.pdf</a><font style="font-size:16px"><br>
+<ul><li>个人的1M带宽小水管VPS，可能加载比较卡</li><li>如果之前读过，然后没有及时更新，请<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Ctrl + F5</font></font><br>
+</li></ul></font></li><li>百度云地址 <a href="https://pan.baidu.com/s/1jFz51YWloyqKvCKflXpvRA" target="_blank">链接</a> 提取码vahz<br>
+</li></ul></font><br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-29 08:42<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-5-7 22:29 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>一、前言</strong></font><br>
+<br>
+<font style="font-size:16px">不知道各位开发插件使用的是什么IDE，eclipse? NetBeans?还是IDEA?相信各位应该对JetBrains全家桶有所耳闻，这也是(我自认为)目前最好的Java IDE，其拥有丰富的插件，具有极强的可扩展性，而且还有很多实用的功能，可以让程序员的生活更加美好。为了方便各位刚刚接触插件的开发者，节省他们因为不称手的工具而浪费的时间，我写下了这篇IDEA + Maven教程，因为，真的是太好用啦！</font><br>
+<br>
+<font style="font-size:20px"><strong>1. 注意事项</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li>本教程并不包含具体的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Java</font></font>语法教学，但理论上不会<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Java</font></font>也能够看懂(但是看懂了也没啥用吧233)<font style="font-size:16px"><ul><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Java</font></font>在线学习：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.runoob.com%2Fjava%2Fjava-tutorial.html" target="_blank">https://www.runoob.com/java/java-tutorial.html</a></li></ul></font></li><li>请不要与我争论哪一个 IDE 更好用，这没有意义，纯属浪费时间</li><li>本教程的目标为教会各位如何使用 IDEA 配合 Maven 从头开始打包出一个可以使用的插件，其中会可能会穿插一些其他知识的教学，各位可以参考</li><li>为了浅显易懂很多东西可能不会讲的很具体，部分细节也会简化，请不要杠谢谢</li><li>本教程使用系统环境为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Windows 10</font></font>，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Linux</font></font>相关教程暂不提供，因为本教程绝大多数部分都是对于任意操作系统通用的；少部分(例如环境变量配置)，我相信有能力使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Linux</font></font>进行开发的人一定可以自己去完成</li><li><strong>强烈建议国内用户使用梯子</strong></li></ul></font><br>
+<font style="font-size:20px"><strong>2.什么是IDEA？</strong></font><br>
+<br>
+<font style="font-size:16px">IntelliJ IDEA是一种商业化销售的Java集成开发环境（Integrated Development Environment，IDE）工具软件，由 JetBrains 软件公司（前称为 IntelliJ）开发，提供Apache 2.0开放式授权的社区版本以及专有软件的商业版本。(什么是IDE？ 可以理解为一个工具包，包含了编辑器、编译器、调试器等工具，一条龙服务，使用起来更方便)</font><br>
+<br>
+<font style="font-size:20px"><strong>3.什么是Maven？</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li>Wiki的解释：<font style="font-size:16px"><ul><li>Apache Maven，是一个软件（特别是Java软件）项目管理及自动构建工具，由Apache软件基金会所提供。基于项目对象模型（缩写：POM）概念，Maven利用一个中央信息片断能管理一个项目的构建、报告和文档等步骤。</li></ul></font></li><li>个人理解：<font style="font-size:16px"><ul><li>依赖管理器(当然实际功能不止这么简单)</li></ul></font></li></ul></font><br>
+<font style="font-size:20px"><strong>4.为什么我们需要Maven？</strong></font><br>
+<br>
+<font style="font-size:16px">因为你需要一个更好地管理依赖的方式，Maven能够提供依赖包的结构化管理，而且Maven也有丰富的plugin，可以实现更多更强大的功能</font><br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-29 08:44<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-3-29 13:49 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>二、下载IDEA</strong></font><br>
+<br>
+<font style="font-size:16px">IDEA分为两个版本，一个是免费的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">community</font></font>版本，一个是收费的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">ultimate</font></font>版本</font><br>
+<br>
+<font style="font-size:16px"><ul><li>IDEA下载地址： <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.jetbrains.com%2Fidea%2Fdownload%2F" target="_blank">https://www.jetbrains.com/idea/download/</a></li></ul></font><br>
+<font style="font-size:16px">本教程会以收费版<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">IDEA Ultimate 2019.3.4</font></font>为例进行讲解，如果访问或下载过慢可以使用梯子下载，个人推荐使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Toolbox APP</font></font>，可以更好的管理<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Jetbrains</font></font>的各种IDE</font><br>
+<br>
+<font style="font-size:16px"><ul><li>Toolbox下载地址： <a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.jetbrains.com%2Ftoolbox-app%2F" target="_blank">https://www.jetbrains.com/toolbox-app/</a></li></ul></font><br>
+<font style="font-size:16px">特别注意，如果你是大学生，且你们学校提供了学生邮箱<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">以.edu或.edu.cn结尾</font></font>，那么你很有可能能白嫖到<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Jetbrains</font></font>全家桶！这个是真的香，因为他家别的IDE也十分好用，例如<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">PyCharm</font></font>、<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">WebStorm</font></font>等等</font><br>
+<br>
+<font style="font-size:16px"><ul><li>白嫖链接：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.jetbrains.com%2Fshop%2Feform%2Fstudents" target="_blank">https://www.jetbrains.com/shop/eform/students</a></li></ul></font><br>
+<font style="font-size:16px">如果你的学校学生邮箱不可用，你可以去<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">JetBrains/swot</font></font>项目提<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pr</font></font></font><br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-29 08:45<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-4-30 18:27 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>三、创建项目</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">打开IDEA，点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Create New Project</font></font></font><br>
+<br>
+<font style="font-size:16px"> <img id="aimg_yq8TL" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/idea64_andYKAtIhB.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+</li></ul></font><br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">选择<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>并直接点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Next</font></font></font><br>
+<br>
+<font style="font-size:16px">&nbsp;&nbsp;<img id="aimg_LQnB8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/idea64_4I5eEgat4b.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+</li></ul></font><br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">有关这几个选项有必要解释一下</font><br>
+<br>
+<font style="font-size:16px"> <img id="aimg_nzE6t" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/idea64_kojI7iKSDy.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:16px"><br>
+<ul><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Name</font></font> 项目的名字，可以随便取</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Location</font></font> 项目文件的存储地址，可以自己修改</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">GroupId</font></font> 如果你有域名的话，可以填你的域名，但是需要反过来填写，例如我的域名是<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">kurosawaruby.cn</font></font>，那么我就要写成<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">cn.kurosawaruby</font></font>，当然你随便写也是没问题的(，这个的目的主要是为了防止包名的冲突，不过你自己瞎编不要编一个别人的域名出来..</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">ArtifactId</font></font> 你的插件名字</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Version</font></font> 插件的版本<br>
+</li></ul></font></li><li><font style="font-size:16px">填写完毕之后点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Finish</font></font>就行啦~，接下来你就可以在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">src/main</font></font>目录下添加新的包和类了</font><br>
+<br>
+<font style="font-size:16px"> <img id="aimg_KQwft" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/idea64_5CQgRwqZ.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+</li></ul></font><br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-29 10:48<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-4-30 18:27 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>四、IDEA&amp;Maven代理的配置</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li>没有代理的同学可以跳过这一条</li><li><strong>强烈建议</strong>大陆用户使用代理，否则你可能会被低于<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">10kb/s</font></font>的下载速度折磨的痛不欲生<br>
+</li></ul></font><br>
+<font style="font-size:20px"><strong>1. IDEA代理配置</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">同时按下<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Ctrl + Alt + S</font></font>，打开IDEA的Settings界面</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_iEre7" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/WgO9sB68jD.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">在搜索框中输入<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Proxy</font></font>，便会进入IDEA的代理设置界面</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_UwoaD" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/6OT1DGWvQL.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">勾选<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Manual proxy configuration</font></font>这里有几个设置项目，设置完成后点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Apply</font></font>保存即可</font><br>
+<br>
+<font style="font-size:16px"><br>
+<ul><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">代理协议</font></font>： 这里推荐使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">HTTP</font></font>代理，因为IDEA貌似使用的是socks4代理，而现在主流的代理软件使用的协议都是socks5，注意，如果是使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">V2</font></font>的用户需要开启HTTP代理模式</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Host name</font></font>：一般是<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">localhost(127.0.0.1)</font></font></li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Post number</font></font>：代理端口<br>
+</li></ul></font><br>
+<font style="font-size:16px"><img id="aimg_J8igl" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/j6YP02HzZT.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li></ul></font><br>
+<font style="font-size:20px"><strong>2.Maven代理配置</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">Maven的代理配置稍显复杂，需要修改Maven的配置文件，首先我们需要找到IDEA的安装目录，使用Toolbox的用户可以在Toolbox的设置中找到</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_dWo98" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/ycWL9UPVES.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">打开<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">{IDEA安装目录}\ch-0\{IDEA内部版本号}\plugins\maven\lib\maven3\conf\settings.xml</font></font>，转到proxies标签中，去掉红框表示的注释</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_yZBbC" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/2iAUuOje9z.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">修改特定的标签为你所需要的，修改好以后的效果应该是这样</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_e2ktl" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/cmQAXuxPnI.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+</li></ul></font><br>
+<font style="font-size:16px">修改完成之后就可以使用代理高速下载了~</font><br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-3-29 12:26<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-4-30 18:27 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>五、Maven的配置</strong></font><br>
+<br>
+<font style="font-size:16px">Maven的配置也是很有讲究的，在一些大型项目中会用到Maven所支持的许多特性，构建一个层次结构分明的依赖管理关系，而本教程作为一个入门教程，并不会教那些很复杂的东西，本教程的目的只有一个——读完教程之后就能够从零开始构建一个自己的插件</font><br>
+<br>
+<font style="font-size:20px"><strong>Step 0. 打开pom.xml</strong></font><br>
+<br>
+<font style="font-size:16px">在之前创建好的项目中打开<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>，这个就是本项目的Maven配置文件了，以下所有关于Maven的配置都会在此文件中完成</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_W33Rg" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/nl3WcksUI5.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:20px"><strong>Step 1. 设置Java源代码的编码方式以及JDK版本</strong></font><br>
+<br>
+<font style="font-size:16px">在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>的project标签范围内添加以下代码：</font><br>
+<br>
+<div class="blockcode"><div id="code_LlS"><ol><li>&nbsp; &nbsp; &lt;properties&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/properties&gt;</li></ol></div><em onclick="copycode($(&#39;code_LlS&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">设置编码方式是为了保证跨平台的兼容性，而设置源及目标的JDK版本是为了能够正确的使用某些特性，否则你在使用lambda的时候都有可能会编译错误</font><br>
+<br>
+<font style="font-size:20px"><strong>Step 2. 从远程仓库添加依赖</strong></font><br>
+<br>
+<font style="font-size:16px">有时插件作者会以Maven远程仓库的形式提供给你他插件的依赖，你可以在其插件的开发者文档中找到，这里以<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Spigot API</font></font>举例，我们可以在spigot官方找到</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_YMV8N" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/j7VN6kZzwG.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:16px">对于尚未添加任何依赖的我们来说，直接把这一段复制进pom.xml就好了，之后Maven会询问我们是否要导入修改，我们可以手动导入，也可以开启自动导入</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_wnt98" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/5YEtyGWjnD.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:16px">开始导入后，Maven就会自动拉取远程的依赖到本地，如果你没有代理的话你可能需要很久..导入成功后我们就可以在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven-&gt;Dependencies</font></font>中看到我们导入的依赖了</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_mg1qF" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/W1HHaORUzT.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:16px">这里值得一提的就是<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">dependency</font></font>中的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">scope</font></font>标签，这个标签的详解会在下面介绍，姑且让他保持现状，此外就是有多个仓库以及多个远程依赖的情况，我们只需分别在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">repositories</font></font>中新建<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">repository</font></font>标签，在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">dependencies</font></font>中新建<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">dependency</font></font>标签即可，效果如下</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_yVxXk" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/6TbzyQ4My9.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:20px"><strong>Step 3. 导入本地jar文件</strong></font><br>
+<br>
+<font style="font-size:16px">有时可能插件作者并没有为你提供远程仓库，这个时候我们就需要自行导入本地的jar文件，例如我们要导入桌面上的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Vault.jar</font></font>文件，可进行如下操作</font><br>
+<br>
+<font style="font-size:16px"><ul type="1" class="litype_1"><li><font style="font-size:16px">在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">dependencies</font></font>标签中新建<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">dependency</font></font>标签，这里我们需要知道三个值，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">groupId, ArtifactId 以及 version</font></font>，这三个值我们都可以在插件的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">plugin.yml</font></font>中找到</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_plTT6" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/E6l66BIY2z.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">填写上面的值，同时需要设置scope为system，systemPath为你的jar文件的位置</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_eBrIB" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/wwvqQTfm0U.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font><br>
+<br>
+<font style="font-size:16px"><strong>强烈不推荐</strong>这种将依赖地址硬编码的方式，这里只是作为演示才这么写的，规范的处理方式应该是在项目根目录中新建一个lib文件夹，将jar文件放入其中，同时将systemPath改为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">${basedir}/lib/Vault.jar</font></font></font><br>
+</li></ul></font><br>
+<font style="font-size:20px"><strong>Step 4. 使用Shade插件</strong></font><br>
+<br>
+<font style="font-size:16px">如果你引入了第三方库，那么你就需要使用maven的shade插件将你引入的第三方库一同打包进最终的jar文件中，否则你的插件会因为找不到指定的class而崩溃，Maven Shade插件是一个功能十分强大的插件，关于这个插件的详细配置十分复杂，emmmm以后可能会考虑专门讲解，现在我们只需要把下列代码直接贴进去就能用了</font><br>
+<br>
+<div class="blockcode"><div id="code_L0I"><ol><li>&nbsp; &nbsp; &lt;build&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;plugins&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;plugin&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;version&gt;3.2.0&lt;/version&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;configuration&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;minimizeJar&gt;true&lt;/minimizeJar&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;createDependencyReducedPom&gt;false&lt;/createDependencyReducedPom&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;createSourcesJar&gt;false&lt;/createSourcesJar&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;filters&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;filter&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;artifact&gt;*:*&lt;/artifact&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;excludes&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;exclude&gt;META-INF/*.SF&lt;/exclude&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;exclude&gt;META-INF/*.DSA&lt;/exclude&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;exclude&gt;META-INF/*.RSA&lt;/exclude&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;/excludes&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/filter&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/filters&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;/configuration&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;executions&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;execution&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;phase&gt;package&lt;/phase&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;goals&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;goal&gt;shade&lt;/goal&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/goals&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/execution&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;/executions&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/plugin&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/plugins&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/build&gt;</li></ol></div><em onclick="copycode($(&#39;code_L0I&#39;));">复制代码</em></div><br>
+<font style="font-size:20px"><strong>Step 5.关于Scope</strong></font><br>
+<br>
+<font style="font-size:16px">常用的scope一共有下列几种</font><br>
+<br>
+<font style="font-size:16px"><ul><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">compile</font></font> 这是默认的scope，表示该依赖参与项目的编译、测试和运行阶段，你使用的第三方(可以理解为跟MC没有直接关系的)依赖请设置为compile(但是我也不知道为什么不用shade不会打包进jar文件..)</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">provided</font></font> 它表示这个依赖在运行时由运行时环境提供，不需要打包进jar文件中，通常绝大多数的其它插件API、服务器API使用此模式，因为在运行时服务端中其它运行中的对应插件会提供指定的类</li><li><font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">system</font></font> 模式上与provided相同，唯一的区别就是它不来自远程仓库，而来自本地<br>
+</li></ul></font><br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>克鲁鲁殿下&nbsp; &nbsp; <b>时间: </b>2020-3-30 16:22<br>
+谢谢楼主，但是目录功能是不是更好？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Himmelt&nbsp; &nbsp; <b>时间: </b>2020-4-5 10:50<br>
+gradle它不香吗<img src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/doge.png" smilieid="1448" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Nner&nbsp; &nbsp; <b>时间: </b>2020-4-5 11:21<br>
+这个插件用这一直很舒服<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-4-5 17:26<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17371423&amp;ptid=1000467" target="_blank"><font color="#999999">Himmelt 发表于 2020-4-5 10:50</font></a></font><br>
+gradle它不香吗</blockquote></div><br>
+确实gradle用起来会更爽一点，但是感觉现在maven的普及度和知/名度(这个词也踩了？)都比gradle高一些<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>sun弑星&nbsp; &nbsp; <b>时间: </b>2020-4-5 23:06<br>
+谢谢大佬<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦回繁华ac&nbsp; &nbsp; <b>时间: </b>2020-4-7 08:14<br>
+666666666666666666666666<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>lq753951456&nbsp; &nbsp; <b>时间: </b>2020-4-30 18:15<br>
+我用idea有毒，config.yml文件生成了，内容却是空白的。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-4-30 18:30<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17945671&amp;ptid=1000467" target="_blank"><font color="#999999">lq753951456 发表于 2020-4-30 18:15</font></a></font><br>
+我用idea有毒，config.yml文件生成了，内容却是空白的。</blockquote></div><br>
+你SaveDefaultConfig()了吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>lq753951456&nbsp; &nbsp; <b>时间: </b>2020-4-30 19:56<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17946020&amp;ptid=1000467" target="_blank"><font color="#999999">wjwrh 发表于 2020-4-30 18:30</font></a></font><br>
+你SaveDefaultConfig()了吗</blockquote></div><br>
+有，我试过很多种方法config的文件都是空白的。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-5-7 22:29<br>
+<i class="pstatus"> 本帖最后由 wjwrh 于 2020-5-7 22:41 编辑 </i><br>
+<br>
+<font style="font-size:24px"><strong>六、实战演示</strong></font><br>
+<br>
+<font style="font-size:20px"><strong>场景一&nbsp; &nbsp; 从零开始自建插件</strong></font><br>
+<br>
+<font style="font-size:16px">本场景的最终目的是编译出一个利用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">PlaceholderAPI</font></font>来向每一个进入服务器的玩家发出固定问候消息的插件。插件极其简单，而且教授编写插件不是本教程的目标，所以暂不在此过多赘述。</font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">创建一个全新的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>项目</font><br>
+<br>
+<font style="font-size:16px">这一步在上面已经有详细的讲解，因此不再重复</font></li><li><font style="font-size:16px">编辑<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>，添加<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">spigot-api</font></font>与<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">PlaceholderAPI</font></font></font><br>
+<br>
+<font style="font-size:16px">关于如何添加<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">PlaceholderAPI</font></font>依赖可以到其开发wiki中寻找<a href="https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI%EF%BC%8C%E4%BB%A5%E4%B8%8B%E6%98%AF%E6%88%91%E5%8A%A0%E5%A5%BD%E5%90%84%E7%A7%8D%E4%BF%A1%E6%81%AF%E7%9A%84%60pom.xml%60" target="_blank">https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Hook-into-PlaceholderAPI，以下是我加好各种信息的`pom.xml`</a></font><br>
+<br>
+<div class="blockcode"><div id="code_cmg"><ol><li>&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>
+</li><li>&lt;project xmlns="http://maven.apache.org/POM/4.0.0"<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; &lt;groupId&gt;cn.kurosawaruby&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;artifactId&gt;PluginTest&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; &lt;properties&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;package&gt;cn.kurosawaruby.PluginTest&lt;/package&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/properties&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; &lt;build&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;resources&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;resource&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;filtering&gt;true&lt;/filtering&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &lt;directory&gt;src/main/resources&lt;/directory&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;/resource&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/resources&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/build&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; &lt;repositories&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;repository&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;id&gt;spigot-repo&lt;/id&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;url&gt;https://hub.spigotmc.org/nexus/content/repositories/snapshots/&lt;/url&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/repository&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;repository&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;id&gt;placeholderapi&lt;/id&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;url&gt;https://repo.extendedclip.com/content/repositories/placeholderapi/&lt;/url&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/repository&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/repositories&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp; &lt;dependencies&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;dependency&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;groupId&gt;org.spigotmc&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;artifactId&gt;spigot-api&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;version&gt;1.15.2-R0.1-SNAPSHOT&lt;/version&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;scope&gt;provided&lt;/scope&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/dependency&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;dependency&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;groupId&gt;org.jetbrains&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;artifactId&gt;annotations&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;version&gt;17.0.0&lt;/version&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;scope&gt;provided&lt;/scope&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/dependency&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;dependency&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;groupId&gt;org.projectlombok&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;artifactId&gt;lombok&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;version&gt;1.18.12&lt;/version&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;scope&gt;provided&lt;/scope&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&lt;/dependency&gt;<br>
+</li><li><br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&lt;dependency&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;groupId&gt;me.clip&lt;/groupId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;artifactId&gt;placeholderapi&lt;/artifactId&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;version&gt;2.10.6&lt;/version&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&lt;scope&gt;provided&lt;/scope&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;/dependency&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/dependencies&gt;<br>
+</li><li><br>
+</li><li>&lt;/project&gt;</li></ol></div><em onclick="copycode($(&#39;code_cmg&#39;));">复制代码</em></div><br>
+<font style="font-size:16px">细心的同学可能已经发现了，上面多了几个新的标签我从来都没有提到过，这里我统一的介绍一下，关于<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">resources</font></font>。你可以在被添加到<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">resource</font></font>的目录下的所有文件中使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>里定义的变量(实际上不止这些，还可以使用环境变量等等)，使用方式为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">${变量名}</font></font>，这些变量在打包后会同一被替换为他们相应的值，这个功能最大的好处就是，如果你升级了版本，或者修改了包名或者插件名，你可以不必既在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>中修改，又在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">plugin.yml</font></font>中修改，只需在第一次编写时，在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">plugin.yml</font></font>中使用变量，那么在修改时统一修改<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>中的相关值即可，例如我这个插件对应的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">plugin.yml</font></font>文件如下</font><br>
+<br>
+<div class="blockcode"><div id="code_lfM"><ol><li>name: ${name}<br>
+</li><li>main: ${package}.${name}<br>
+</li><li>version: ${project.version}<br>
+</li><li>author: wjwrh<br>
+</li><li><br>
+</li><li>depend:<br>
+</li><li>&nbsp;&nbsp;- PlaceholderAPI<br>
+</li><li><br>
+</li><li># P.S. 变量package是在pom.xml中properties标签内定义的</li></ol></div><em onclick="copycode($(&#39;code_lfM&#39;));">复制代码</em></div><br>
+</li><li><font style="font-size:16px">重新载入<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>配置或直接开启自动导入</font></li><li><font style="font-size:16px">新建主类，如果你套用我上面的一套配置，那么你主类的名称必须为你项目的名称(为了对应<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">${name}</font></font>变量，当然这也是一个不错的习惯)，新建并注册<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Listener</font></font>，如果上述正常的话此时你应该在调用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">PlaceholderAPI</font></font>的时候会直接触发自动补全功能</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_G43X3" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507215154938.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">完成一切操作之后，点击右侧的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven -&gt; 项目名 -&gt; Lifecycle -&gt; package</font></font>，一切正常的话，就会在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">target</font></font>目录下生成你的目标插件</font><br>
+</li></ul></font><br>
+<font style="font-size:20px"><strong>场景二&nbsp; &nbsp; 使用他人的源代码编译插件</strong></font><br>
+<br>
+<font style="font-size:16px">本场景的最终目的是完成编译两个插件，一个是上古版本停止维护的商店插件<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">QuickShop</font></font>(并非仍在活跃开发的reremake版本)，一个是由多个模块组成的项目<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">BungeeCord</font></font>。前者适用于我们想要魔改某个开源软件的代码来实现自己想要的功能，后者是对模块化<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>架构的项目的一个简单的展示(暂时不会介绍技术细节)</font><br>
+<br>
+<font style="font-size:16px"><strong>1. QuickShop</strong></font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">首先从<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">GitHub</font></font>等代码托管网站上获取到你想要的插件的<a href="https://github.com/KaiKikuchi/QuickShop" target="_blank">源代码</a>，这里推荐一个名为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">JetBrains Toolbox Extension</font></font>的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Chrome</font></font>扩展，它可以直接一键把<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Git</font></font>仓库的代码克隆到本地并自动创建<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">IDEA</font></font>项目</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_iV0d8" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507220509540.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">如果你没有使用上述扩展的话也没有关系，把代码弄到本地后，点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">IDEA</font></font>左上角的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">File -&gt; Open</font></font>，打开你下载下来的项目文件夹即可，这里有一个非常棘手的问题，那就是作者为了使用<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">NMS</font></font>手动导入了各个版本的服务端文件<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Spigot.jar</font></font>，但是他在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">.gitignore</font></font>中把<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">lib</font></font>目录给忽略掉了，导致我们没有办法直接从他那里获取到完整的依赖，我采取的解决方法是将这些服务端一一从网上收集并添加到<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">lib</font></font>文件夹中</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_zWAbi" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507221151977.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">修改掉我们想要修改的代码之后，如同上一个场景一样，点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>然后<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Package</font></font>即可，需要注意的是你必须关注开源代码所采用的协议，某些协议很有可能会限制你对源代码的某些行为，<strong>请务必留意</strong></font><br>
+</li></ul></font><br>
+<font style="font-size:16px"><strong>2. BungeeCord</strong></font><br>
+<br>
+<font style="font-size:16px">BC是一个由多个模块构成的项目，其<a href="https://github.com/SpigotMC/BungeeCord" target="_blank">源代码</a>在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">GitHub</font></font>上进行托管</font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">我们首先采取与上述相同的办法将将项目导入<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">IDEA</font></font></font></li><li><font style="font-size:16px">我们可以看到右侧的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>框中有若干个项目，而左侧也有若干文件夹，最外层的根目录与每一个文件夹中都包含有一个<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>，我们可以查看最外层的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>内有一个名为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">modules</font></font>的标签</font><br>
+<br>
+<div class="blockcode"><div id="code_NEY"><ol><li>&nbsp; &nbsp; &lt;modules&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;api&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;bootstrap&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;chat&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;config&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;event&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;log&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;module&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;protocol&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;proxy&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;query&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;module&gt;native&lt;/module&gt;<br>
+</li><li>&nbsp; &nbsp; &lt;/modules&gt;</li></ol></div><em onclick="copycode($(&#39;code_NEY&#39;));">复制代码</em></div><br>
+</li></ul></font><br>
+<font style="font-size:16px">&nbsp;&nbsp;他们的关系大概可以理解成为一种树状结构，即最外层的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>是一个根节点，而每一个子模块都是它的子节点</font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">经过上述的介绍，我们想要编译BC所有模块的话，只需要对"根节点"进行打包即可，有点类似于<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">makefile</font></font>，编译一个文件前会先编译完成它的所有依赖，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>也是一样，编译"根节点"前会逐个编译完它所有的子节点，因此我们只需要在右侧找到带有<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">root</font></font>标示的项目，对它进行<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">package</font></font>即可</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_q2iKV" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507222103110.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">编译后我们即可在<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">target</font></font>目录中得到我们需要的</font><br>
+</li></ul></font><br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-5-7 22:30<br>
+<font style="font-size:24px"><strong>七、Q&amp;A</strong></font><br>
+<br>
+<font style="font-size:16px">注意：本Q&amp;A主要总结个人在码代码的过程中碰到的有关<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>的问题或者我自己认为初次接触<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">IDEA+Maven</font></font>的人会遇到的问题，如果你遇到了别的问题，可以向我提出，我会在尝试解决后将其归纳在本条目中，本条目不定期更新。</font><br>
+<br>
+<font style="font-size:20px"><strong>1. 'mvn' 不是内部或外部命令，也不是可运行的程序或批处理文件</strong></font><br>
+<br>
+<font style="font-size:16px">这是典型的环境变量问题，大概设想一下，如果你不提前"告知"系统你的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven</font></font>在哪，你还想让你的系统能够在你输入<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">mvn</font></font>时做出相应，你的系统需要做什么？你的系统需要扫描你的整个硬盘，以找到名为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">mvn</font></font>的可以运行的程序，但是这还有一个问题，你可能装了<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven2</font></font>和<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven3</font></font>，甚至装了多个版本相同的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven</font></font>，操作系统要用哪一个？这显然是恨不符合逻辑也不符合现实的。因此，我们需要"告知"操作系统，你的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven</font></font>装在哪。"告知"的方式就是通过环境变量。(其实会接触到插件开发的应该都已经熟知怎么配置环境变量了，不过我还是在这里啰嗦两句吧)</font><br>
+<br>
+<font style="font-size:16px"><ul><li><font style="font-size:16px">右击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">此电脑</font></font>，单击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">属性</font></font></font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_aiV6i" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507211126732.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">点击高级系统设置</font></li><li><font style="font-size:16px">新建一个名为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">MAVEN_HOME</font></font>的系统变量，其值为<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">maven3</font></font>的目录，具体怎么寻找参考上面设置代理的相关条目</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_zzuI2" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507211247342.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">再编辑系统变量<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Path</font></font>，往其中新建一条<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">%MAVEN_HOME%\bin</font></font>(注意，只有较高版本的Windows系统才会有这种把每一条path分开的人性化设置界面，旧版本系统<strong>请在已有的Path后添加<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">%MAVEN_HOME%\bin</font></font></strong>)</font><br>
+<br>
+<font style="font-size:16px"><img id="aimg_NyEu9" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/image-20200507211600006.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""></font></li><li><font style="font-size:16px">确定保存即可，以后再terminal中即可直接输入mvn</font></li></ul></font><br>
+<font style="font-size:20px"><strong>2. 我的依赖下面有好多红色的波浪线，打包也打包不了怎么办？</strong></font><br>
+<br>
+<font style="font-size:16px">这种情况一般是因为依赖文件没有成功拖下来，请尝试点击<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Maven</font></font>的<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Reimport</font></font>按钮，并检查依赖所在的依赖仓库是否正确的添加进<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">pom.xml</font></font>中，如果都没有问题</font><br>
+<br>
+<font style="font-size:16px"><strong>请务必使用代理</strong></font><br>
+<br>
+<font style="font-size:16px">我之前没有弄代理的时候十有**会出现这种情况，<font face="Monaco,Consolas,&#39;Lucida Console&#39;,&#39;Courier New&#39;,serif"><font style="background-color:#ebddc0">Reimport</font></font>之后不管等多久，那个条就是跑不完，或者干脆没有进度条，直接就全是红色波浪线，绝大多数都是因为网络质量带来的问题，再说一遍，内地用户请务必使用代理</font><br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>白叶Official&nbsp; &nbsp; <b>时间: </b>2020-5-10 22:16<br>
+额我有一个疑问，为什么不选择在帖子内写而是在评论区内写?不仅杂乱而且这也违反了规定啊<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>dousha0v0&nbsp; &nbsp; <b>时间: </b>2020-5-11 00:35<br>
+很感谢你的帖子，给了我很大的帮助<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>MC_longxi&nbsp; &nbsp; <b>时间: </b>2020-5-11 12:13<br>
+这个插件用这一直很舒服<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>miracle工作室&nbsp; &nbsp; <b>时间: </b>2020-5-12 21:15<br>
+<div class="quote"><blockquote><font color="#999999">sun弑星 发表于 2020-4-5 23:06</font><br>
+<font color="#999999">谢谢大佬</font></blockquote></div><br>
+666，支持支持<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>逗比M&nbsp; &nbsp; <b>时间: </b>2020-5-19 10:14<br>
+nice 很好的教程<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>真香小伙子&nbsp; &nbsp; <b>时间: </b>2020-7-31 17:16<br>
+楼主，图片挂了<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-7-31 17:23<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19227702&amp;ptid=1000467" target="_blank"><font color="#999999">真香小伙子 发表于 2020-7-31 17:16</font></a></font><br>
+楼主，图片挂了</blockquote></div><br>
+论坛HTTP图片全挂了<br>
+去我博客看吧<br>
+<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.kurosawaruby.cn%2F2020%2F03%2F29%2F%25E5%2588%25A9%25E7%2594%25A8IDEA%25E4%25B8%258EMaven%25E7%25AE%2580%25E5%258C%2596%25E6%258F%2592%25E4%25BB%25B6%25E5%25BC%2580%25E5%258F%2591%25E6%25B5%2581%25E7%25A8%258B%2F" target="_blank">https://www.mcbbs.net/plugin.php ... 1%25E7%25A8%258B%2F</a><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>天秀lllj&nbsp; &nbsp; <b>时间: </b>2020-7-31 18:26<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19227702&amp;ptid=1000467" target="_blank"><font color="#999999">真香小伙子 发表于 2020-7-31 17:16</font></a></font><br>
+楼主，图片挂了</blockquote></div><br>
+eee,又tm见面<br>
+我服了<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>真香小伙子&nbsp; &nbsp; <b>时间: </b>2020-8-1 18:50<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19229083&amp;ptid=1000467" target="_blank"><font color="#999999">天秀lllj 发表于 2020-7-31 18:26</font></a></font><br>
+eee,又tm见面<br>
+我服了</blockquote></div><br>
+是你？我佛了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>真香小伙子&nbsp; &nbsp; <b>时间: </b>2020-8-1 18:52<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19227898&amp;ptid=1000467" target="_blank"><font color="#999999">wjwrh 发表于 2020-7-31 17:23</font></a></font><br>
+论坛HTTP图片全挂了<br>
+去我博客看吧<br>
+https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A% ...</blockquote></div><br>
+你博客打不开啊<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>嘉晚饭，赢&nbsp; &nbsp; <b>时间: </b>2020-8-1 18:53<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19246927&amp;ptid=1000467" target="_blank"><font color="#999999">真香小伙子 发表于 2020-8-1 18:52</font></a></font><br>
+你博客打不开啊</blockquote></div><br>
+GitHub page+腾讯云CDN应该没啥问题啊。。<br>
+那你下载那个pdf吧<br>
+<a href="https://pan.baidu.com/s/1jFz51YWloyqKvCKflXpvRA" target="_blank">https://pan.baidu.com/s/1jFz51YWloyqKvCKflXpvRA</a><br>
+提取码vahz<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>真香小伙子&nbsp; &nbsp; <b>时间: </b>2020-8-1 19:49<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=19246952&amp;ptid=1000467" target="_blank"><font color="#999999">wjwrh 发表于 2020-8-1 18:53</font></a></font><br>
+GitHub page+腾讯云CDN应该没啥问题啊。。<br>
+那你下载那个pdf吧<br>
+https://pan.baidu.com/s/1jFz51YWloyqKvCK ...</blockquote></div><br>
+帮你搭建在了zxxhz.top<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>砚澜&nbsp; &nbsp; <b>时间: </b>2020-8-11 14:29<br>
+非常棒已收藏<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>皇橙橙橙籽&nbsp; &nbsp; <b>时间: </b>2020-10-17 08:26<br>
+有用！！！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>xiaoyifu_qaq&nbsp; &nbsp; <b>时间: </b>2020-11-8 21:31<br>
+看了以后我感觉开发简单多了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1157173310&nbsp; &nbsp; <b>时间: </b>2020-11-9 15:59<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=20264372&amp;ptid=1000467" target="_blank"><font color="#999999">xiaoyifu_qaq 发表于 2020-11-8 21:31</font></a></font><br>
+看了以后我感觉开发简单多了</blockquote></div><br>
+现在可以直接从idea的插件中心下载Minecraft Development一键创建项目了<br>
+推荐用这个插件：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fplugins.jetbrains.com%2Fplugin%2F8327-minecraft-development" target="_blank">https://plugins.jetbrains.com/plugin/8327-minecraft-development</a><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>慕柚.&nbsp; &nbsp; <b>时间: </b>2020-11-11 01:55<br>
+不错，感谢<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Robor&nbsp; &nbsp; <b>时间: </b>2020-11-26 13:04<br>
+&nbsp; &nbsp; &nbsp; &nbsp; MCBBS有你更精彩~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>莽蛇&nbsp; &nbsp; <b>时间: </b>2020-11-26 20:39<br>
+谢谢谢谢楼主<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>LwTs&nbsp; &nbsp; <b>时间: </b>2021-1-3 16:33<br>
+感谢大佬的教程，谢谢！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>PbdSPds&nbsp; &nbsp; <b>时间: </b>2021-1-12 08:53<br>
+idea挺好的，就是破解起来有点麻烦<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Hi_zc&nbsp; &nbsp; <b>时间: </b>2021-1-12 09:44<br>
+MCBBS有你更精彩~ 优秀奖励<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Gillier&nbsp; &nbsp; <b>时间: </b>2021-1-27 14:33<br>
+感谢分享！！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>初心545&nbsp; &nbsp; <b>时间: </b>2021-1-27 18:43<br>
+感谢大佬分享呀<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>754623109d&nbsp; &nbsp; <b>时间: </b>2021-1-27 22:52<br>
+66666666666666666666666666<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>王也丶&nbsp; &nbsp; <b>时间: </b>2021-1-28 23:50<br>
+MCBBS因你而精彩<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>lxxboo&nbsp; &nbsp; <b>时间: </b>2021-2-18 11:18<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Howking&nbsp; &nbsp; <b>时间: </b>2021-3-10 09:43<br>
+感谢作者分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Kkforkd&nbsp; &nbsp; <b>时间: </b>2021-3-18 19:34<br>
+不错，在用<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>黑羽快斗´&nbsp; &nbsp; <b>时间: </b>2021-3-18 23:19<br>
+谢谢楼主分享经验<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>蟹蒙老鸽&nbsp; &nbsp; <b>时间: </b>2021-3-24 15:44<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17232091&amp;ptid=1000467" target="_blank"><font color="#999999">wjwrh 发表于 2020-3-29 12:26</font></a></font><br>
+五、Maven的配置<br>
+<br>
+Maven的配置也是很有讲究的，在一些大型项目中会用到Maven所支持的许多特性，构建一个层 ...</blockquote></div><br>
+图炸了...<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>傻缺的秀秀&nbsp; &nbsp; <b>时间: </b>2021-3-27 17:16<br>
+&nbsp; &nbsp; &nbsp; &nbsp; MCBBS有你更精彩~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>傻缺的秀秀&nbsp; &nbsp; <b>时间: </b>2021-3-27 17:17<br>
+&nbsp; &nbsp; &nbsp; &nbsp; MCBBS有你更精彩~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>南征逸&nbsp; &nbsp; <b>时间: </b>2021-3-31 21:43<br>
+图挂了<img src="./让你的插件开发更轻松——IDEA+Maven开发插件 - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/doge.png" smilieid="1448" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>mandd&nbsp; &nbsp; <b>时间: </b>2021-4-6 09:28<br>
+感谢大佬正愁找不到一款系统的开发帖子<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>初梦UWLD&nbsp; &nbsp; <b>时间: </b>2021-4-28 09:37<br>
+图片挂了看不到QAQ<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Mr_SuMo&nbsp; &nbsp; <b>时间: </b>2021-5-1 10:20<br>
+666666666666666666666666<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>筱柒不会哭&nbsp; &nbsp; <b>时间: </b>2021-5-17 21:47<br>
+菜鸟教程 yyds！ 没想到大佬也是从这上学的<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>肖恩酱-Shaun&nbsp; &nbsp; <b>时间: </b>2021-5-24 23:11<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17228383&amp;ptid=1000467" target="_blank"><font color="#999999">wjwrh 发表于 2020-3-29 08:45</font></a></font><br>
+三、创建项目</blockquote></div><br>
+你的图片一直加载不显示，是我问题还是图片挂了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>我爱你祖国g&nbsp; &nbsp; <b>时间: </b>2021-5-25 12:41<br>
+guogerenwu<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>不化的冰块&nbsp; &nbsp; <b>时间: </b>2021-5-26 22:28<br>
+感谢大佬的分享<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>hlz2516&nbsp; &nbsp; <b>时间: </b>2021-7-11 16:41<br>
+请教一下，按照您的教程导出来的jar文件里没有plugin.yml是怎么回事，怎么解决呢？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zdlzhm&nbsp; &nbsp; <b>时间: </b>2021-7-18 21:50<br>
+mcbbs有你们会更好<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>huang520&nbsp; &nbsp; <b>时间: </b>2021-7-22 17:17<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>倌人&nbsp; &nbsp; <b>时间: </b>2021-7-23 15:46<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>xtzzzzzz751128&nbsp; &nbsp; <b>时间: </b>2021-7-23 16:12<br>
+感谢分享，快乐生活每一天<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>LZS蓝天&nbsp; &nbsp; <b>时间: </b>2021-7-25 20:22<br>
+主要是我上不去apache用不了maven,阿里镜像站也不行。唉，无缘Maven<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>无风还要浪&nbsp; &nbsp; <b>时间: </b>2021-8-3 19:01<br>
+真不错啊，我下载了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zdlzhm&nbsp; &nbsp; <b>时间: </b>2021-8-10 10:24<br>
+神乎其技！6的飞起！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>muxichen&nbsp; &nbsp; <b>时间: </b>2021-8-10 21:01<br>
+wdshcbawbkw<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>muxichen&nbsp; &nbsp; <b>时间: </b>2021-8-10 21:01<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22962076&amp;ptid=1000467" target="_blank"><font color="#999999">muxichen 发表于 2021-8-10 21:01</font></a></font><br>
+wdshcbawbkw</blockquote></div><br>
+gjhugbujhvgc<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>SpicyFish&nbsp; &nbsp; <b>时间: </b>2021-8-10 23:59<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>minato三月&nbsp; &nbsp; <b>时间: </b>2021-8-27 06:17<br>
+好难啊QAQ
+<br><br><br><br><hr noshade="" size="2" width="100%" color="BORDERCOLOR">
+<table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" style="font-size: SMFONTSIZE; font-family: SMFONT">
+<tbody><tr><td>欢迎光临 Minecraft(我的世界)中文论坛 (https://www.mcbbs.net/)</td>
+<td align="right">
+Powered by Discuz! X3.5</td></tr></tbody></table>
+
+
+</div></body></html>

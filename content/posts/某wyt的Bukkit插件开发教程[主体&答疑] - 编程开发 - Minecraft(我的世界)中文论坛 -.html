@@ -1,0 +1,3189 @@
+---
+title: "某wyt的Bukkit插件开发教程[主体答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -.html"
+---
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%a8%a1%e7%bb%84&d=4657608923810709&mkt=zh-CN&setlang=zh-CN&w=_ElIboO9MCFGCROVgBfHJd9c405bciOf -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/thread-614388-1-1.html">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2023/12/30--><!--InvariantDate:12/30/2023--></head><body id="nv_forum" class="pg_viewthread" onkeydown="if(event.keyCode==27) return false;"><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/thread-614388-1-1.html" h="ID=SERP,5003.1">https://www.mcbbs.net/thread-614388-1-1.html</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2023/12/30</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/thread-614388-1-1.html" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="force-rendering" content="webkit">
+
+<title>某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 - </title>
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta itemprop="image" content="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png">
+<style>
+.fastlg {
+display:none;
+}
+</style><link href="https://www.mcbbs.net/thread-614388-1-1.html" rel="canonical"><meta name="keywords" content="我的世界编程开发,Minecraft(我的世界)中文论坛,我的世界安装,我的世界下载,我的世界,我的世界中文论坛">
+<meta name="description" content="某wyt的Bukkit插件开发教程[主体&amp;amp;答疑] - 0.序章*什么是Bukkit[以下为本人口胡时间]从前minecraft官方推出了一款服务端,这里暂且成为官服.但这个官服呢,又和mc的尿性一样,没有开源(混淆了),而且对外兼容性差! ( ... ">
+<meta name="generator" content="Discuz! X3.5">
+<meta name="author" content="我的世界中文论坛">
+<meta name="copyright" content="2001-2013 Comsenz Inc.">
+<meta name="MSSmartTagsPreventParsing" content="True">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<!--<base href="https://www.mcbbs.net/">--><base href=".">
+<link rel="manifest" href="https://www.mcbbs.net/manifest.json"><link rel="stylesheet" type="text/css" href="https://static.mcbbs.net/data/cache/style_30_common.css?OcA"><link rel="stylesheet" type="text/css" href="https://static.mcbbs.net/data/cache/style_30_forum_viewthread.css?OcA"><link rel="stylesheet" id="css_extstyle" type="text/css" href="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/style.css"><script charset="utf-8" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/UrlChangeTracker.js.下载"></script><script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/hm.js.下载"></script><script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/push.js.下载"></script><script type="text/javascript">var STYLEID = '30', STATICURL = 'https://static.mcbbs.net/static/', IMGDIR = 'https://static.mcbbs.net/template/mcbbs/image', VERHASH = 'OcA', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭[已弃用]|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/winter', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L3RocmVhZC02MTQzODgtMS0xLmh0bWw=', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'https://static.mcbbs.net/static/js/', CSSPATH = 'https://static.mcbbs.net/data/cache/style_', DYNAMICURL = '';</script>
+<script src="https://static.mcbbs.net/static/js/common.js?OcA" type="text/javascript"></script>
+<meta name="application-name" content="Minecraft(我的世界)中文论坛">
+<meta name="msapplication-tooltip" content="Minecraft(我的世界)中文论坛">
+<meta name="msapplication-task" content="name=首页;action-uri=https://www.mcbbs.net/portal.php;icon-uri=https://www.mcbbs.net/https://static.mcbbs.net/template/mcbbs/image/portal.ico"><meta name="msapplication-task" content="name=论坛;action-uri=https://www.mcbbs.net/forum.php;icon-uri=https://www.mcbbs.net/https://static.mcbbs.net/template/mcbbs/image/bbs.ico">
+<meta name="msapplication-task" content="name=小组;action-uri=https://www.mcbbs.net/group.php;icon-uri=https://www.mcbbs.net/https://static.mcbbs.net/template/mcbbs/image/group.ico"><link rel="archives" title="Minecraft(我的世界)中文论坛" href="https://www.mcbbs.net/archiver/">
+<script src="https://static.mcbbs.net/static/js/forum.js?OcA" type="text/javascript"></script>
+        <!--<link rel="stylesheet" href="template/mcbbs/common/xw.css"/>-->
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/jquery.min.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+var jq = jQuery.noConflict();
+</script>
+
+
+
+
+    <div id="body_fixed_bg"></div>
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<div class="new_wp wp">
+<div class="z light">
+                                        <a href="https://minecraft.net/" title="我的世界（国际版）官方网站" target="_blank">我的世界官网</a>                                        <a href="https://zh.minecraft.wiki/" title="Minecraft Wiki，已迁移到新地址！" target="_blank">中文百科zh.minecraft.wiki</a>                                        <a href="https://www.mcbbs.net/forum-server-1.html" target="_blank" style="font-weight: bold;">Java版服务器列表</a>                                        <a href="https://www.mcbbs.net/forum-peserver-1.html" target="_blank" style="font-weight: bold;">基岩版服务器列表</a>                                                                                                                                                                                                                                                                                                                                                                        </div>
+<div class="y">
+                    <!--<div class="y_search">
+                        <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="search.php?searchsubmit=yes" target="_blank">
+                            <input type="hidden" name="mod" id="scbar_mod" value="search" />
+                            <input type="hidden" name="formhash" value="df36dc86" />
+                            <input type="hidden" name="srchtype" value="title" />
+                            <input type="hidden" name="srhfid" value="479" />
+                            <input type="hidden" name="srhlocality" value="forum::viewthread" />
+                            &lt;!&ndash;&ndash;&gt;
+                                <div class="y_search_btn"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></div>
+                                <div class="y_search_inp"><input type="text" name="srchtxt" id="scbar_txt" value="" placeholder="请输入搜索内容" autocomplete="off" x-webkit-speech speech  title=""/></div>
+
+
+
+</form>
+                    </div>--><div class="cl y_search">
+<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($(&#39;scbar_txt&#39;))" action="https://www.mcbbs.net/search.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search">
+<input type="hidden" name="formhash" value="df36dc86">
+<input type="hidden" name="srchtype" value="title">
+<input type="hidden" name="srhfid" value="479">
+<input type="hidden" name="srhlocality" value="forum::viewthread">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<!--<td class="scbar_icon_td"></td>-->
+<td class="y_search_btn"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="y_search_inp"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech="" speech=""></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true" style="height: 26px">搜索</a></td>
+
+<!--	<td class="scbar_hot_td">
+<div id="scbar_hot">
+&lt;!&ndash;&ndash;&gt;
+</div>
+</td>-->
+</tr>
+</tbody></table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"><li><a href="javascript:;" rel="curforum" fid="479">本版</a></li><li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li><li><a href="javascript:;" rel="user">用户</a></li></ul>
+<script type="text/javascript">
+initSearchmenu('scbar', '');
+</script>
+<div class="user_menu"> 
+<!--<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>-->
+</div>
+<!--
+<div id="user_login_menu" style="display: none">
+<script src="https://static.mcbbs.net/static/js/logging.js?OcA" type="text/javascript"></script>
+<form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit();">
+<ul class="user_info_menu_info">
+<li><label for="ls_username">!account!</label><input type="text" name="username" id="ls_username" class="px vm xg1"  value="用户名/Email" onfocus="if(this.value == '用户名/Email'){this.value = '';this.className = 'px vm';}" onblur="if(this.value == ''){this.value = '用户名/Email';this.className = 'px vm xg1';}" tabindex="901" /></li>
+<li><label for="ls_password">!password!</label><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902" /></li>
+<li><label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903" />自动登录</label></li>
+<li><button type="submit" tabindex="914" style="width:220px;height:45px;cursor:pointer;border:0;background:url('template/mcbbs/image/dl.png') 0 0 no-repeat;display: inherit;"></button></li>
+</ul>
+</form>
+</div>
+-->
+<div class="avt y light" id="user_login" onmouseover="showMenu({&#39;ctrlid&#39;:this.id})">
+<a href="https://www.mcbbs.net/member.php?mod=register">注册</a>
+<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login">登录</a>
+<div class="avt y hd_t_a" style="z-index:0">
+<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login"><img src="https://static.mcbbs.net/template/mcbbs/image/special_photo_bg.png"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+        
+<div id="user_info_menu" style="display: none">
+<ul class="user_info_menu_info">
+<li><p class="username"></p>
+</li>
+<li><a class="rank" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=7">游客</a></li>
+<li><a id="rank" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=usergroup&amp;gid=7" target="_blank"></a>
+</li>
+<li><span class="autowidth pbg2"><span class="pbr2" style="width:%;"></span></span></li>
+<li><a class="extcredits" title="金粒" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit"><em class="gold_nugget"></em>  </a> <a class="extcredits" title="绿宝石" href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit"><em class="emerald"></em>  </a></li>
+
+</ul>
+<ul class="user_info_menu_btn">
+<li><a href="https://www.mcbbs.net/home.php?mod=spacecp" target="_blank">账号设置</a></li>
+<li><a href="https://www.mcbbs.net/forum.php?mod=guide&amp;view=my" target="_blank">我的帖子</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=space&amp;do=favorite&amp;view=me" target="_blank">我的收藏</a></li>
+
+<li><a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=logout&amp;formhash=df36dc86" onclick="showDialog(&#39;你确定要退出登录吗？&#39;, &#39;confirm&#39;, &#39;退出登录&#39;, function(){
+top.window.location.href = &#39;member.php?mod=logging&amp;action=logout&amp;formhash=df36dc86&#39;;
+}, 1, null, &#39;&#39;, &#39;&#39;, &#39;&#39;, &#39;&#39;, 0);return false;">退出登录</a></li>
+
+</ul>
+</div>
+<!--消息通知--> 
+<div id="qmenu_menu" class="p_pop blk" style="display: none;">
+<div class="ptm pbw hm">
+请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br>没有帐号？<a href="https://www.mcbbs.net/member.php?mod=register" class="xi2 xw1">注册(register)</a>
+</div>
+<div id="fjump_menu" class="btda"></div></div>    <!--整个主体div-->
+    <div class="mc_map_wp">
+<!--头部公用 用户状态信息-->
+        <div class="new_wp" style="padding: 28px 0 26px 0;">
+<div class="hdc cl"><h2 style="padding:0;float: left;"><a href="https://www.mcbbs.net/portal.php" title="Minecraft(我的世界)中文论坛"><img src="https://static.mcbbs.net/template/mcbbs/image/logo_sc.png" alt="Minecraft(我的世界)中文论坛" border="0"></a></h2><script src="https://static.mcbbs.net/static/js/logging.js?OcA" type="text/javascript"></script>
+<form method="post" autocomplete="off" id="lsform" action="https://www.mcbbs.net/member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit();">
+<div class="fastlg cl">
+<span id="return_ls" style="display:none"></span>
+<div class="y pns">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td><label for="ls_username">帐号</label></td>
+<td><input type="text" name="username" id="ls_username" class="px vm xg1" value="用户名/Email" onfocus="if(this.value == &#39;用户名/Email&#39;){this.value = &#39;&#39;;this.className = &#39;px vm&#39;;}" onblur="if(this.value == &#39;&#39;){this.value = &#39;用户名/Email&#39;;this.className = &#39;px vm xg1&#39;;}" tabindex="901"></td>
+<td class="fastlg_l"><label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903">自动登录</label></td>
+<td>&nbsp;<a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login&amp;viewlostpw=1">找回密码</a></td>
+</tr>
+<tr>
+<td><label for="ls_password">密码</label></td>
+<td><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902"></td>
+<td class="fastlg_l"><button type="submit" class="pn vm" tabindex="904" style="width: 75px;"><em>登录</em></button></td>
+<td>&nbsp;<a href="https://www.mcbbs.net/member.php?mod=register" class="xi2 xw1">注册(register)</a></td>
+</tr>
+</tbody></table>
+<input type="hidden" name="quickforward" value="yes">
+<input type="hidden" name="handlekey" value="ls">
+</div>
+
+<div class="fastlg_fm y" style="padding-right: 5px; border-right: none;">
+<p><a href="https://beta.mcbbs.net/login?redirect=https%3A%2F%2Fwww.mcbbs.net%2F"><img src="https://static.mcbbs.net/template/mcbbs/image/bili_login.gif" class="vm" alt="!header_login!"></a></p>
+<p class="hm xg1" style="padding-top: 2px; color: white !important;">只需一步，立刻登录</p>
+</div>
+        <script type="text/javascript" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/gt3-init.js.下载"></script>
+        <script type="text/javascript" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/gt.js.下载"></script>
+
+        <script type="text/javascript">
+            var lsform = document.getElementById('lsform');
+            var o = document.createElement("button");  
+            o.id = "header-loggin-btn";       
+            o.setAttribute('type', 'submit');                               
+            o.value = ""; 
+            o.style.display="none";
+            lsform.appendChild(o);
+        </script>
+        <script type="text/javascript">
+            var handler = function (captchaObj) {
+                window.__gtcaptch__ = captchaObj;         
+             };
+            var xmlHttp;
+            function createxmlHttpRequest() {
+                if (window.ActiveXObject) {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                } else if (window.XMLHttpRequest) {
+                    xmlHttp = new XMLHttpRequest();
+                }
+            }
+            createxmlHttpRequest();
+            xmlHttp.open("GET", "./plugin.php?id=geetest3&model=start&t=" + (new Date()).getTime());
+            xmlHttp.send(null);
+            xmlHttp.onreadystatechange = function(result) {
+                if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+                        var obj = JSON.parse(xmlHttp.responseText);          
+                            initGeetest({
+                                gt: obj.gt,
+                                challenge: obj.challenge,
+                                offline: !obj.success,
+                                timeout: '5000',
+                                product: "bind", // 产品形式，包括：float，popup
+                                width: "300px"
+                            }, handler);
+                }
+            }
+        </script>
+</div><button id="header-loggin-btn" type="submit" value="" style="display: none;"></button>
+</form>
+
+<div id="A63UU2" class="y">
+<script>(function(i){var l="2.73";if(i.support==undefined){i.support={opacity:!(i.browser.msie)}}function a(q){if(i.fn.cycle.debug){f(q)}}function f(){if(window.console&&window.console.log){window.console.log("[cycle] "+Array.prototype.join.call(arguments," "))}}i.fn.cycle=function(r,q){var s={s:this.selector,c:this.context};if(this.length===0&&r!="stop"){if(!i.isReady&&s.s){f("DOM not ready, queuing slideshow");i(function(){i(s.s,s.c).cycle(r,q)});return this}f("terminating; zero elements found by selector"+(i.isReady?"":" (DOM not ready)"));return this}return this.each(function(){var w=m(this,r,q);if(w===false){return}if(this.cycleTimeout){clearTimeout(this.cycleTimeout)}this.cycleTimeout=this.cyclePause=0;var x=i(this);var y=w.slideExpr?i(w.slideExpr,this):x.children();var u=y.get();if(u.length<2){f("terminating; too few slides: "+u.length);return}var t=k(x,y,u,w,s);if(t===false){return}var v=t.continuous?10:h(t.currSlide,t.nextSlide,t,!t.rev);if(v){v+=(t.delay||0);if(v<10){v=10}a("first timeout: "+v);this.cycleTimeout=setTimeout(function(){e(u,t,0,!t.rev)},v)}})};function m(q,t,r){if(q.cycleStop==undefined){q.cycleStop=0}if(t===undefined||t===null){t={}}if(t.constructor==String){switch(t){case"stop":q.cycleStop++;if(q.cycleTimeout){clearTimeout(q.cycleTimeout)}q.cycleTimeout=0;i(q).removeData("cycle.opts");return false;case"pause":q.cyclePause=1;return false;case"resume":q.cyclePause=0;if(r===true){t=i(q).data("cycle.opts");if(!t){f("options not found, can not resume");return false}if(q.cycleTimeout){clearTimeout(q.cycleTimeout);q.cycleTimeout=0}e(t.elements,t,1,1)}return false;case"prev":case"next":var u=i(q).data("cycle.opts");if(!u){f('options not found, "prev/next" ignored');return false}i.fn.cycle[t](u);return false;default:t={fx:t}}return t}else{if(t.constructor==Number){var s=t;t=i(q).data("cycle.opts");if(!t){f("options not found, can not advance slide");return false}if(s<0||s>=t.elements.length){f("invalid slide index: "+s);return false}t.nextSlide=s;if(q.cycleTimeout){clearTimeout(q.cycleTimeout);q.cycleTimeout=0}if(typeof r=="string"){t.oneTimeFx=r}e(t.elements,t,1,s>=t.currSlide);return false}}return t}function b(q,r){if(!i.support.opacity&&r.cleartype&&q.style.filter){try{q.style.removeAttribute("filter")}catch(s){}}}function k(y,J,u,t,E){var C=i.extend({},i.fn.cycle.defaults,t||{},i.metadata?y.metadata():i.meta?y.data():{});if(C.autostop){C.countdown=C.autostopCount||u.length}var r=y[0];y.data("cycle.opts",C);C.$cont=y;C.stopCount=r.cycleStop;C.elements=u;C.before=C.before?[C.before]:[];C.after=C.after?[C.after]:[];C.after.unshift(function(){C.busy=0});if(!i.support.opacity&&C.cleartype){C.after.push(function(){b(this,C)})}if(C.continuous){C.after.push(function(){e(u,C,0,!C.rev)})}n(C);if(!i.support.opacity&&C.cleartype&&!C.cleartypeNoBg){g(J)}if(y.css("position")=="static"){y.css("position","relative")}if(C.width){y.width(C.width)}if(C.height&&C.height!="auto"){y.height(C.height)}if(C.startingSlide){C.startingSlide=parseInt(C.startingSlide)}if(C.random){C.randomMap=[];for(var H=0;H<u.length;H++){C.randomMap.push(H)}C.randomMap.sort(function(L,w){return Math.random()-0.5});C.randomIndex=0;C.startingSlide=C.randomMap[0]}else{if(C.startingSlide>=u.length){C.startingSlide=0}}C.currSlide=C.startingSlide=C.startingSlide||0;var x=C.startingSlide;J.css({position:"absolute",top:0,left:0}).hide().each(function(w){var L=x?w>=x?u.length-(w-x):x-w:u.length-w;i(this).css("z-index",L)});i(u[x]).css("opacity",1).show();b(u[x],C);if(C.fit&&C.width){J.width(C.width)}if(C.fit&&C.height&&C.height!="auto"){J.height(C.height)}var D=C.containerResize&&!y.innerHeight();if(D){var v=0,B=0;for(var F=0;F<u.length;F++){var q=i(u[F]),K=q[0],A=q.outerWidth(),I=q.outerHeight();if(!A){A=K.offsetWidth}if(!I){I=K.offsetHeight}v=A>v?A:v;B=I>B?I:B}if(v>0&&B>0){y.css({width:v+"px",height:B+"px"})}}if(C.pause){y.hover(function(){this.cyclePause++},function(){this.cyclePause--})}if(c(C)===false){return false}var s=false;t.requeueAttempts=t.requeueAttempts||0;J.each(function(){var N=i(this);this.cycleH=(C.fit&&C.height)?C.height:N.height();this.cycleW=(C.fit&&C.width)?C.width:N.width();if(N.is("img")){var L=(i.browser.msie&&this.cycleW==28&&this.cycleH==30&&!this.complete);var O=(i.browser.mozilla&&this.cycleW==34&&this.cycleH==19&&!this.complete);var M=(i.browser.opera&&((this.cycleW==42&&this.cycleH==19)||(this.cycleW==37&&this.cycleH==17))&&!this.complete);var w=(this.cycleH==0&&this.cycleW==0&&!this.complete);if(L||O||M||w){if(E.s&&C.requeueOnImageNotLoaded&&++t.requeueAttempts<100){f(t.requeueAttempts," - img slide not loaded, requeuing slideshow: ",this.src,this.cycleW,this.cycleH);setTimeout(function(){i(E.s,E.c).cycle(t)},C.requeueTimeout);s=true;return false}else{f("could not determine size of image: "+this.src,this.cycleW,this.cycleH)}}}return true});if(s){return false}C.cssBefore=C.cssBefore||{};C.animIn=C.animIn||{};C.animOut=C.animOut||{};J.not(":eq("+x+")").css(C.cssBefore);if(C.cssFirst){i(J[x]).css(C.cssFirst)}if(C.timeout){C.timeout=parseInt(C.timeout);if(C.speed.constructor==String){C.speed=i.fx.speeds[C.speed]||parseInt(C.speed)}if(!C.sync){C.speed=C.speed/2}while((C.timeout-C.speed)<250){C.timeout+=C.speed}}if(C.easing){C.easeIn=C.easeOut=C.easing}if(!C.speedIn){C.speedIn=C.speed}if(!C.speedOut){C.speedOut=C.speed}C.slideCount=u.length;C.currSlide=C.lastSlide=x;if(C.random){C.nextSlide=C.currSlide;if(++C.randomIndex==u.length){C.randomIndex=0}C.nextSlide=C.randomMap[C.randomIndex]}else{C.nextSlide=C.startingSlide>=(u.length-1)?0:C.startingSlide+1}if(!C.multiFx){var G=i.fn.cycle.transitions[C.fx];if(i.isFunction(G)){G(y,J,C)}else{if(C.fx!="custom"&&!C.multiFx){f("unknown transition: "+C.fx,"; slideshow terminating");return false}}}var z=J[x];if(C.before.length){C.before[0].apply(z,[z,z,C,true])}if(C.after.length>1){C.after[1].apply(z,[z,z,C,true])}if(C.next){i(C.next).bind(C.prevNextEvent,function(){return o(C,C.rev?-1:1)})}if(C.prev){i(C.prev).bind(C.prevNextEvent,function(){return o(C,C.rev?1:-1)})}if(C.pager){d(u,C)}j(C,u);return C}function n(q){q.original={before:[],after:[]};q.original.cssBefore=i.extend({},q.cssBefore);q.original.cssAfter=i.extend({},q.cssAfter);q.original.animIn=i.extend({},q.animIn);q.original.animOut=i.extend({},q.animOut);i.each(q.before,function(){q.original.before.push(this)});i.each(q.after,function(){q.original.after.push(this)})}function c(w){var u,s,r=i.fn.cycle.transitions;if(w.fx.indexOf(",")>0){w.multiFx=true;w.fxs=w.fx.replace(/\s*/g,"").split(",");for(u=0;u<w.fxs.length;u++){var v=w.fxs[u];s=r[v];if(!s||!r.hasOwnProperty(v)||!i.isFunction(s)){f("discarding unknown transition: ",v);w.fxs.splice(u,1);u--}}if(!w.fxs.length){f("No valid transitions named; slideshow terminating.");return false}}else{if(w.fx=="all"){w.multiFx=true;w.fxs=[];for(p in r){s=r[p];if(r.hasOwnProperty(p)&&i.isFunction(s)){w.fxs.push(p)}}}}if(w.multiFx&&w.randomizeEffects){var t=Math.floor(Math.random()*20)+30;for(u=0;u<t;u++){var q=Math.floor(Math.random()*w.fxs.length);w.fxs.push(w.fxs.splice(q,1)[0])}a("randomized fx sequence: ",w.fxs)}return true}function j(r,q){r.addSlide=function(u,v){var t=i(u),w=t[0];if(!r.autostopCount){r.countdown++}q[v?"unshift":"push"](w);if(r.els){r.els[v?"unshift":"push"](w)}r.slideCount=q.length;t.css("position","absolute");t[v?"prependTo":"appendTo"](r.$cont);if(v){r.currSlide++;r.nextSlide++}if(!i.support.opacity&&r.cleartype&&!r.cleartypeNoBg){g(t)}if(r.fit&&r.width){t.width(r.width)}if(r.fit&&r.height&&r.height!="auto"){$slides.height(r.height)}w.cycleH=(r.fit&&r.height)?r.height:t.height();w.cycleW=(r.fit&&r.width)?r.width:t.width();t.css(r.cssBefore);if(r.pager){i.fn.cycle.createPagerAnchor(q.length-1,w,i(r.pager),q,r)}if(i.isFunction(r.onAddSlide)){r.onAddSlide(t)}else{t.hide()}}}i.fn.cycle.resetState=function(r,q){q=q||r.fx;r.before=[];r.after=[];r.cssBefore=i.extend({},r.original.cssBefore);r.cssAfter=i.extend({},r.original.cssAfter);r.animIn=i.extend({},r.original.animIn);r.animOut=i.extend({},r.original.animOut);r.fxFn=null;i.each(r.original.before,function(){r.before.push(this)});i.each(r.original.after,function(){r.after.push(this)});var s=i.fn.cycle.transitions[q];if(i.isFunction(s)){s(r.$cont,i(r.elements),r)}};function e(x,q,w,y){if(w&&q.busy&&q.manualTrump){i(x).stop(true,true);q.busy=false}if(q.busy){return}var u=q.$cont[0],A=x[q.currSlide],z=x[q.nextSlide];if(u.cycleStop!=q.stopCount||u.cycleTimeout===0&&!w){return}if(!w&&!u.cyclePause&&((q.autostop&&(--q.countdown<=0))||(q.nowrap&&!q.random&&q.nextSlide<q.currSlide))){if(q.end){q.end(q)}return}if(w||!u.cyclePause){var v=q.fx;A.cycleH=A.cycleH||i(A).height();A.cycleW=A.cycleW||i(A).width();z.cycleH=z.cycleH||i(z).height();z.cycleW=z.cycleW||i(z).width();if(q.multiFx){if(q.lastFx==undefined||++q.lastFx>=q.fxs.length){q.lastFx=0}v=q.fxs[q.lastFx];q.currFx=v}if(q.oneTimeFx){v=q.oneTimeFx;q.oneTimeFx=null}i.fn.cycle.resetState(q,v);if(q.before.length){i.each(q.before,function(B,C){if(u.cycleStop!=q.stopCount){return}C.apply(z,[A,z,q,y])})}var s=function(){i.each(q.after,function(B,C){if(u.cycleStop!=q.stopCount){return}C.apply(z,[A,z,q,y])})};if(q.nextSlide!=q.currSlide){q.busy=1;if(q.fxFn){q.fxFn(A,z,q,s,y)}else{if(i.isFunction(i.fn.cycle[q.fx])){i.fn.cycle[q.fx](A,z,q,s)}else{i.fn.cycle.custom(A,z,q,s,w&&q.fastOnEvent)}}}q.lastSlide=q.currSlide;if(q.random){q.currSlide=q.nextSlide;if(++q.randomIndex==x.length){q.randomIndex=0}q.nextSlide=q.randomMap[q.randomIndex]}else{var t=(q.nextSlide+1)==x.length;q.nextSlide=t?0:q.nextSlide+1;q.currSlide=t?x.length-1:q.nextSlide-1}if(q.pager){i.fn.cycle.updateActivePagerLink(q.pager,q.currSlide)}}var r=0;if(q.timeout&&!q.continuous){r=h(A,z,q,y)}else{if(q.continuous&&u.cyclePause){r=10}}if(r>0){u.cycleTimeout=setTimeout(function(){e(x,q,0,!q.rev)},r)}}i.fn.cycle.updateActivePagerLink=function(q,r){i(q).each(function(){i(this).find("a").removeClass("activeSlide").filter("a:eq("+r+")").addClass("activeSlide")})};function h(v,s,u,r){if(u.timeoutFn){var q=u.timeoutFn(v,s,u,r);while((q-u.speed)<250){q+=u.speed}a("calculated timeout: "+q+"; speed: "+u.speed);if(q!==false){return q}}return u.timeout}i.fn.cycle.next=function(q){o(q,q.rev?-1:1)};i.fn.cycle.prev=function(q){o(q,q.rev?1:-1)};function o(r,u){var q=r.elements;var t=r.$cont[0],s=t.cycleTimeout;if(s){clearTimeout(s);t.cycleTimeout=0}if(r.random&&u<0){r.randomIndex--;if(--r.randomIndex==-2){r.randomIndex=q.length-2}else{if(r.randomIndex==-1){r.randomIndex=q.length-1}}r.nextSlide=r.randomMap[r.randomIndex]}else{if(r.random){if(++r.randomIndex==q.length){r.randomIndex=0}r.nextSlide=r.randomMap[r.randomIndex]}else{r.nextSlide=r.currSlide+u;if(r.nextSlide<0){if(r.nowrap){return false}r.nextSlide=q.length-1}else{if(r.nextSlide>=q.length){if(r.nowrap){return false}r.nextSlide=0}}}}if(i.isFunction(r.prevNextClick)){r.prevNextClick(u>0,r.nextSlide,q[r.nextSlide])}e(q,r,1,u>=0);return false}function d(r,s){var q=i(s.pager);i.each(r,function(t,u){i.fn.cycle.createPagerAnchor(t,u,q,r,s)});i.fn.cycle.updateActivePagerLink(s.pager,s.startingSlide)}i.fn.cycle.createPagerAnchor=function(u,v,s,t,w){var r;if(i.isFunction(w.pagerAnchorBuilder)){r=w.pagerAnchorBuilder(u,v)}else{r='<a href="#">'+(u+1)+"</a>"}if(!r){return}var x=i(r);if(x.parents("body").length===0){var q=[];if(s.length>1){s.each(function(){var y=x.clone(true);i(this).append(y);q.push(y[0])});x=i(q)}else{x.appendTo(s)}}x.bind(w.pagerEvent,function(A){A.preventDefault();w.nextSlide=u;var z=w.$cont[0],y=z.cycleTimeout;if(y){clearTimeout(y);z.cycleTimeout=0}if(i.isFunction(w.pagerClick)){w.pagerClick(w.nextSlide,t[w.nextSlide])}e(t,w,1,w.currSlide<u);return false});if(w.pagerEvent!="click"){x.click(function(){return false})}if(w.pauseOnPagerHover){x.hover(function(){w.$cont[0].cyclePause++},function(){w.$cont[0].cyclePause--})}};i.fn.cycle.hopsFromLast=function(t,s){var r,q=t.lastSlide,u=t.currSlide;if(s){r=u>q?u-q:t.slideCount-q}else{r=u<q?q-u:q+t.slideCount-u}return r};function g(s){function r(t){t=parseInt(t).toString(16);return t.length<2?"0"+t:t}function q(w){for(;w&&w.nodeName.toLowerCase()!="html";w=w.parentNode){var t=i.css(w,"background-color");if(t.indexOf("rgb")>=0){var u=t.match(/\d+/g);return"#"+r(u[0])+r(u[1])+r(u[2])}if(t&&t!="transparent"){return t}}return"#ffffff"}s.each(function(){i(this).css("background-color",q(this))})}i.fn.cycle.commonReset=function(v,t,u,r,s,q){i(u.elements).not(v).hide();u.cssBefore.opacity=1;u.cssBefore.display="block";if(r!==false&&t.cycleW>0){u.cssBefore.width=t.cycleW}if(s!==false&&t.cycleH>0){u.cssBefore.height=t.cycleH}u.cssAfter=u.cssAfter||{};u.cssAfter.display="none";i(v).css("zIndex",u.slideCount+(q===true?1:0));i(t).css("zIndex",u.slideCount+(q===true?0:1))};i.fn.cycle.custom=function(B,v,q,s,r){var A=i(B),w=i(v);var t=q.speedIn,z=q.speedOut,u=q.easeIn,y=q.easeOut;w.css(q.cssBefore);if(r){if(typeof r=="number"){t=z=r}else{t=z=1}u=y=null}var x=function(){w.animate(q.animIn,t,u,s)};A.animate(q.animOut,z,y,function(){if(q.cssAfter){A.css(q.cssAfter)}if(!q.sync){x()}});if(q.sync){x()}};i.fn.cycle.transitions={fade:function(r,s,q){s.not(":eq("+q.currSlide+")").css("opacity",0);q.before.push(function(v,t,u){i.fn.cycle.commonReset(v,t,u);u.cssBefore.opacity=0});q.animIn={opacity:1};q.animOut={opacity:0};q.cssBefore={top:0,left:0}}};i.fn.cycle.ver=function(){return l};i.fn.cycle.defaults={fx:"fade",timeout:4000,timeoutFn:null,continuous:0,speed:1000,speedIn:null,speedOut:null,next:null,prev:null,prevNextClick:null,prevNextEvent:"click",pager:null,pagerClick:null,pagerEvent:"click",pagerAnchorBuilder:null,before:null,after:null,end:null,easing:null,easeIn:null,easeOut:null,shuffle:null,animIn:null,animOut:null,cssBefore:null,cssAfter:null,fxFn:null,height:"auto",startingSlide:0,sync:1,random:0,fit:0,containerResize:1,pause:0,pauseOnPagerHover:0,autostop:0,autostopCount:0,delay:0,slideExpr:null,cleartype:!i.support.opacity,cleartypeNoBg:false,nowrap:0,fastOnEvent:0,randomizeEffects:1,rev:0,manualTrump:true,requeueOnImageNotLoaded:true,requeueTimeout:250}})(jQuery);
+/*
+ * jQuery Cycle Plugin Transition Definitions
+ * This script is a plugin for the jQuery Cycle Plugin
+ * Examples and documentation at: http://malsup.com/jquery/cycle/
+ * Copyright (c) 2007-2008 M. Alsup
+ * Version:	 2.72
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+(function(a){a.fn.cycle.transitions.none=function(c,d,b){b.fxFn=function(g,e,f,h){a(e).show();a(g).hide();h()}};a.fn.cycle.transitions.scrollUp=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.height();c.cssBefore={top:b,left:0};c.cssFirst={top:0};c.animIn={top:0};c.animOut={top:-b}};a.fn.cycle.transitions.scrollDown=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.height();c.cssFirst={top:0};c.cssBefore={top:-b,left:0};c.animIn={top:0};c.animOut={top:b}};a.fn.cycle.transitions.scrollLeft=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.width();c.cssFirst={left:0};c.cssBefore={left:b,top:0};c.animIn={left:0};c.animOut={left:0-b}};a.fn.cycle.transitions.scrollRight=function(d,e,c){d.css("overflow","hidden");c.before.push(a.fn.cycle.commonReset);var b=d.width();c.cssFirst={left:0};c.cssBefore={left:-b,top:0};c.animIn={left:0};c.animOut={left:b}};a.fn.cycle.transitions.scrollHorz=function(c,d,b){c.css("overflow","hidden").width();b.before.push(function(h,f,g,e){a.fn.cycle.commonReset(h,f,g);g.cssBefore.left=e?(f.cycleW-1):(1-f.cycleW);g.animOut.left=e?-h.cycleW:h.cycleW});b.cssFirst={left:0};b.cssBefore={top:0};b.animIn={left:0};b.animOut={top:0}};a.fn.cycle.transitions.scrollVert=function(c,d,b){c.css("overflow","hidden");b.before.push(function(h,f,g,e){a.fn.cycle.commonReset(h,f,g);g.cssBefore.top=e?(1-f.cycleH):(f.cycleH-1);g.animOut.top=e?h.cycleH:-h.cycleH});b.cssFirst={top:0};b.cssBefore={left:0};b.animIn={top:0};b.animOut={left:0}};a.fn.cycle.transitions.slideX=function(c,d,b){b.before.push(function(g,e,f){a(f.elements).not(g).hide();a.fn.cycle.commonReset(g,e,f,false,true);f.animIn.width=e.cycleW});b.cssBefore={left:0,top:0,width:0};b.animIn={width:"show"};b.animOut={width:0}};a.fn.cycle.transitions.slideY=function(c,d,b){b.before.push(function(g,e,f){a(f.elements).not(g).hide();a.fn.cycle.commonReset(g,e,f,true,false);f.animIn.height=e.cycleH});b.cssBefore={left:0,top:0,height:0};b.animIn={height:"show"};b.animOut={height:0}};a.fn.cycle.transitions.shuffle=function(e,f,d){var c,b=e.css("overflow","visible").width();f.css({left:0,top:0});d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h,true,true,true)});if(!d.speedAdjusted){d.speed=d.speed/2;d.speedAdjusted=true}d.random=0;d.shuffle=d.shuffle||{left:-b,top:15};d.els=[];for(c=0;c<f.length;c++){d.els.push(f[c])}for(c=0;c<d.currSlide;c++){d.els.push(d.els.shift())}d.fxFn=function(m,j,l,g,i){var h=i?a(m):a(j);a(j).css(l.cssBefore);var k=l.slideCount;h.animate(l.shuffle,l.speedIn,l.easeIn,function(){var o=a.fn.cycle.hopsFromLast(l,i);for(var q=0;q<o;q++){i?l.els.push(l.els.shift()):l.els.unshift(l.els.pop())}if(i){for(var r=0,n=l.els.length;r<n;r++){a(l.els[r]).css("z-index",n-r+k)}}else{var s=a(m).css("z-index");h.css("z-index",parseInt(s)+1+k)}h.animate({left:0,top:0},l.speedOut,l.easeOut,function(){a(i?this:m).hide();if(g){g()}})})};d.cssBefore={display:"block",opacity:1,top:0,left:0}};a.fn.cycle.transitions.turnUp=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.cssBefore.top=e.cycleH;f.animIn.height=e.cycleH});b.cssFirst={top:0};b.cssBefore={left:0,height:0};b.animIn={top:0};b.animOut={height:0}};a.fn.cycle.transitions.turnDown=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.animIn.height=e.cycleH;f.animOut.top=g.cycleH});b.cssFirst={top:0};b.cssBefore={left:0,top:0,height:0};b.animOut={height:0}};a.fn.cycle.transitions.turnLeft=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.cssBefore.left=e.cycleW;f.animIn.width=e.cycleW});b.cssBefore={top:0,width:0};b.animIn={left:0};b.animOut={width:0}};a.fn.cycle.transitions.turnRight=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.animIn.width=e.cycleW;f.animOut.left=g.cycleW});b.cssBefore={top:0,left:0,width:0};b.animIn={left:0};b.animOut={width:0}};a.fn.cycle.transitions.zoom=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,false,true);f.cssBefore.top=e.cycleH/2;f.cssBefore.left=e.cycleW/2;f.animIn={top:0,left:0,width:e.cycleW,height:e.cycleH};f.animOut={width:0,height:0,top:g.cycleH/2,left:g.cycleW/2}});b.cssFirst={top:0,left:0};b.cssBefore={width:0,height:0}};a.fn.cycle.transitions.fadeZoom=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,false);f.cssBefore.left=e.cycleW/2;f.cssBefore.top=e.cycleH/2;f.animIn={top:0,left:0,width:e.cycleW,height:e.cycleH}});b.cssBefore={width:0,height:0};b.animOut={opacity:0}};a.fn.cycle.transitions.blindX=function(d,e,c){var b=d.css("overflow","hidden").width();c.before.push(function(h,f,g){a.fn.cycle.commonReset(h,f,g);g.animIn.width=f.cycleW;g.animOut.left=h.cycleW});c.cssBefore={left:b,top:0};c.animIn={left:0};c.animOut={left:b}};a.fn.cycle.transitions.blindY=function(d,e,c){var b=d.css("overflow","hidden").height();c.before.push(function(h,f,g){a.fn.cycle.commonReset(h,f,g);g.animIn.height=f.cycleH;g.animOut.top=h.cycleH});c.cssBefore={top:b,left:0};c.animIn={top:0};c.animOut={top:b}};a.fn.cycle.transitions.blindZ=function(e,f,d){var c=e.css("overflow","hidden").height();var b=e.width();d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h);h.animIn.height=g.cycleH;h.animOut.top=i.cycleH});d.cssBefore={top:c,left:b};d.animIn={top:0,left:0};d.animOut={top:c,left:b}};a.fn.cycle.transitions.growX=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true);f.cssBefore.left=this.cycleW/2;f.animIn={left:0,width:this.cycleW};f.animOut={left:0}});b.cssBefore={width:0,top:0}};a.fn.cycle.transitions.growY=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false);f.cssBefore.top=this.cycleH/2;f.animIn={top:0,height:this.cycleH};f.animOut={top:0}});b.cssBefore={height:0,left:0}};a.fn.cycle.transitions.curtainX=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,false,true,true);f.cssBefore.left=e.cycleW/2;f.animIn={left:0,width:this.cycleW};f.animOut={left:g.cycleW/2,width:0}});b.cssBefore={top:0,width:0}};a.fn.cycle.transitions.curtainY=function(c,d,b){b.before.push(function(g,e,f){a.fn.cycle.commonReset(g,e,f,true,false,true);f.cssBefore.top=e.cycleH/2;f.animIn={top:0,height:e.cycleH};f.animOut={top:g.cycleH/2,height:0}});b.cssBefore={left:0,height:0}};a.fn.cycle.transitions.cover=function(f,g,e){var i=e.direction||"left";var b=f.css("overflow","hidden").width();var c=f.height();e.before.push(function(j,d,h){a.fn.cycle.commonReset(j,d,h);if(i=="right"){h.cssBefore.left=-b}else{if(i=="up"){h.cssBefore.top=c}else{if(i=="down"){h.cssBefore.top=-c}else{h.cssBefore.left=b}}}});e.animIn={left:0,top:0};e.animOut={opacity:1};e.cssBefore={top:0,left:0}};a.fn.cycle.transitions.uncover=function(f,g,e){var i=e.direction||"left";var b=f.css("overflow","hidden").width();var c=f.height();e.before.push(function(j,d,h){a.fn.cycle.commonReset(j,d,h,true,true,true);if(i=="right"){h.animOut.left=b}else{if(i=="up"){h.animOut.top=-c}else{if(i=="down"){h.animOut.top=c}else{h.animOut.left=-b}}}});e.animIn={left:0,top:0};e.animOut={opacity:1};e.cssBefore={top:0,left:0}};a.fn.cycle.transitions.toss=function(e,f,d){var b=e.css("overflow","visible").width();var c=e.height();d.before.push(function(i,g,h){a.fn.cycle.commonReset(i,g,h,true,true,true);if(!h.animOut.left&&!h.animOut.top){h.animOut={left:b*2,top:-c/2,opacity:0}}else{h.animOut.opacity=0}});d.cssBefore={left:0,top:0};d.animIn={left:0}};a.fn.cycle.transitions.wipe=function(s,m,e){var q=s.css("overflow","hidden").width();var j=s.height();e.cssBefore=e.cssBefore||{};var g;if(e.clip){if(/l2r/.test(e.clip)){g="rect(0px 0px "+j+"px 0px)"}else{if(/r2l/.test(e.clip)){g="rect(0px "+q+"px "+j+"px "+q+"px)"}else{if(/t2b/.test(e.clip)){g="rect(0px "+q+"px 0px 0px)"}else{if(/b2t/.test(e.clip)){g="rect("+j+"px "+q+"px "+j+"px 0px)"}else{if(/zoom/.test(e.clip)){var o=parseInt(j/2);var f=parseInt(q/2);g="rect("+o+"px "+f+"px "+o+"px "+f+"px)"}}}}}}e.cssBefore.clip=e.cssBefore.clip||g||"rect(0px 0px 0px 0px)";var k=e.cssBefore.clip.match(/(\d+)/g);var u=parseInt(k[0]),c=parseInt(k[1]),n=parseInt(k[2]),i=parseInt(k[3]);e.before.push(function(w,h,t){if(w==h){return}var d=a(w),b=a(h);a.fn.cycle.commonReset(w,h,t,true,true,false);t.cssAfter.display="block";var r=1,l=parseInt((t.speedIn/13))-1;(function v(){var y=u?u-parseInt(r*(u/l)):0;var z=i?i-parseInt(r*(i/l)):0;var A=n<j?n+parseInt(r*((j-n)/l||1)):j;var x=c<q?c+parseInt(r*((q-c)/l||1)):q;b.css({clip:"rect("+y+"px "+x+"px "+A+"px "+z+"px)"});(r++<=l)?setTimeout(v,13):d.css("display","none")})()});e.cssBefore={display:"block",opacity:1,top:0,left:0};e.animIn={left:0};e.animOut={left:0}}})(jQuery);</script>
+    <div id="J77OV2sSD7" style="display: none">
+        <!-- start slideshow -->
+        <div id="BKF6">
+                    <div class="zZPff">
+                <a href="https://www.mcbbs.net/thread-1482440-1-1.html" title="JBCWWUONLKTTOTOORICFKF"><img src="https://attachment.mcbbs.net/data/myattachment/portal/202312/24/172158g0sgg00z3mzn3pyr.gif" width="462" height="78"></a>
+            </div>
+                    <div class="zZPff">
+                <a href="https://www.mcbbs.net/thread-1445805-1-1.html" title="喵喵互联"><img src="https://attachment.mcbbs.net/data/myattachment/portal/202312/22/152858uvh1vjhqfhrpp1ue.gif" width="462" height="78"></a>
+            </div>
+                    <div class="zZPff">
+                <a href="https://www.mcbbs.net/thread-1455281-1-1.html" title="辰隙互联"><img src="https://attachment.mcbbs.net/data/myattachment/portal/202312/28/191833xlh8hz29fijf6jvi.gif" width="462" height="78"></a>
+            </div>
+        
+        </div>
+    </div>
+    <style>
+        #J77OV2sSD7 {
+            width: 480px;
+            height: 96px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            background: url('source/plugin/mcbbs_ad/assets/image/background.png');
+        }
+        #J77OV2sSD7 #BKF6 {
+            margin: 9px 9px;
+        }
+        #J77OV2sSD7 .zZPff {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+    
+    <script>
+        jq("#BKF6").cycle({fx:"fade",speed:"slow",timeout:5000,pager:"#slider_nav",pagerAnchorBuilder:function(idx,slide){return"#slider_nav li:eq("+(idx)+") a"}});jq("#J77OV2sSD7").show();
+    </script>
+</div>
+</div>
+</div>
+<!--img class="mc_top" src="https://static.mcbbs.net/template/mcbbs/image/muddy_pig_subhero_updated6-19.png"/-->
+    <!--框背景的头部-->
+    <div class="mc_map_border_top"></div>
+    <!--框背景的左右-->
+    <div class="mc_map_border_left">
+        <div class="mc_map_border_right">
+<div id="hd">
+<div width="400" height="600" class="imgshadow"></div>
+<div class="wp">
+<div id="nv">
+<!--<a href="javascript:;" id="qmenu" onmouseover="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(479);})">快捷导航</a>-->
+<ul class="nv_ul"><li id="mn_portal"><a href="https://www.mcbbs.net/portal.php" hidefocus="true" title="Portal">首页<span>Portal</span></a></li><li class="a" id="mn_forum" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/forum.php" hidefocus="true" title="Forum">论坛<span>Forum</span></a></li><li id="mn_group" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/group.php" hidefocus="true" title="Groups">小组<span>Groups</span></a></li><li id="mn_Nfea6" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://zh.minecraft.wiki/" hidefocus="true" title="Wiki">百科<span>Wiki</span></a></li><li id="mn_N45f0" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;ctrlclass&#39;:&#39;hover&#39;,&#39;duration&#39;:2})"><a href="https://www.mcbbs.net/thread-614388-1-1.html#" hidefocus="true" title="Utilities">工具<span>Utilities</span></a></li></ul>
+
+</div>
+                <div id="nv_right">
+                                        <div id="an">
+                        <dl class="cl">
+                            <dt class="z xw1"></dt>
+                            <dd>
+                                <div id="anc"><ul id="ancl"><li><span><a href="https://www.mcbbs.net/thread-1272232-1-1.html" target="_blank" class="xi2"><b>请勿外借您的论坛账号，设置高强度密码</b></a></span></li></ul></div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <script type="text/javascript">announcement();</script>
+                </div>
+                <script type="text/javascript">
+                    jq(function(){
+                        jq("ul.p_pop").on("mouseover",function(){
+                            var id = jq(this).attr("ctrlid");
+                            jq("#"+id).css({background:"#e4dcc7",color:"#339933"});
+                        });
+                        jq("ul.p_pop").on("mouseleave",function(){
+                            var id = jq(this).attr("ctrlid");
+                            setTimeout(function(){
+                                jq("#"+id).css({background:"none",color:"#fff"});
+                            },250);
+                        });
+                    })
+                </script>
+<ul class="p_pop h_pop" id="plugin_menu" style="display: none">  <li><a href="https://www.mcbbs.net/plugin.php?id=dc_signin:dc_signin" id="mn_plink_dc_signin">每日签到</a></li>
+ </ul>
+<ul class="p_pop h_pop" id="mn_forum_menu" style="display: none"><li><a href="https://www.mcbbs.net/thread-7808-1-1.html" hidefocus="true">坛规</a></li><li><a href="https://www.mcbbs.net/thread-12685-1-1.html" hidefocus="true">勋章申请</a></li><li><a href="https://www.mcbbs.net/thread-924844-1-2.html" hidefocus="true">身份认证</a></li></ul><ul class="p_pop h_pop" id="mn_group_menu" style="display: none"><li><a href="https://www.mcbbs.net/thread-332265-1-1.html" hidefocus="true">优秀小组申请</a></li></ul><div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><ul class="p_pop h_pop" id="mn_Nfea6_menu" style="display: none"><li><a href="https://zh.minecraft.wiki/w/%E6%88%90%E5%B0%B1" hidefocus="true">成就（基岩版）</a></li><li><a href="https://zh.minecraft.wiki/w/%E8%BF%9B%E5%BA%A6" hidefocus="true">进度（Java版）</a></li><li><a href="https://zh.minecraft.wiki/w/%E7%94%9F%E7%89%A9" hidefocus="true">生物</a></li><li><a href="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" hidefocus="true">方块</a></li><li><a href="https://zh.minecraft.wiki/w/%E7%89%A9%E5%93%81" hidefocus="true">物品</a></li><li><a href="https://zh.minecraft.wiki/w/%E7%94%9F%E7%89%A9%E7%BE%A4%E7%B3%BB" hidefocus="true">生物群系</a></li><li><a href="https://zh.minecraft.wiki/w/%E7%8A%B6%E6%80%81%E6%95%88%E6%9E%9C" hidefocus="true">状态效果</a></li><li><a href="https://zh.minecraft.wiki/w/%E9%99%84%E9%AD%94" hidefocus="true">附魔</a></li><li><a href="https://zh.minecraft.wiki/w/%E4%BA%A4%E6%98%93" hidefocus="true">交易</a></li><li><a href="https://zh.minecraft.wiki/w/%E7%BA%A2%E7%9F%B3%E5%85%83%E4%BB%B6" hidefocus="true">红石元件</a></li><li><a href="https://zh.minecraft.wiki/w/Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" hidefocus="true">最近更改</a></li></ul><ul class="p_pop h_pop" id="mn_N45f0_menu" style="display: none"><li><a href="https://pastebin.com/" hidefocus="true" target="_blank">剪贴板 - Pastebin</a></li><li><a href="https://smms.app/" hidefocus="true" target="_blank">图床 - sm.ms</a></li><li><a href="http://pan.baidu.com/" hidefocus="true" target="_blank">网盘 - 百度网盘</a></li><li><a href="https://www.weiyun.com/" hidefocus="true" target="_blank">网盘 - 微云</a></li><li><a href="https://www.baidu.com/s?wd=%20site%3Amcbbs.net" hidefocus="true" target="_blank">搜索 - 百度站内搜索</a></li></ul><div id="mu" class="cl">
+</div></div>
+</div>
+
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/album.js.下载" type="text/javascript"></script><link href="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/album.css" rel="stylesheet">
+<div id="wp" class="wp" style="margin:0 85px;float:left;">
+<style>
+embed{    max-width: 800px;!important;}
+</style>
+<script type="text/javascript">var fid = parseInt('479'), tid = parseInt('614388');</script>
+<script src="https://static.mcbbs.net/static/js/forum_viewthread.js?OcA" type="text/javascript"></script>
+<script type="text/javascript">zoomstatus = parseInt(1);var imagemaxwidth = '700';var aimgcount = new Array();</script>
+
+<style id="diy_style" type="text/css"></style>
+<!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
+<div id="pt" class="bm cl">
+<div class="z">
+<a href="https://www.mcbbs.net/" class="nvhm" title="首页">Minecraft(我的世界)中文论坛</a>
+        <em>»</em>
+        <a href="https://www.mcbbs.net/forum.php">论坛</a>
+         <em>›</em> <a href="https://www.mcbbs.net/forum.php?gid=36">综合讨论</a> <em>›</em> <a href="https://www.mcbbs.net/forum-development-1.html">编程开发</a> <em>›</em> <a href="https://www.mcbbs.net/thread-614388-1-1.html">某wyt的Bukkit插件开发教程[主体&amp;答疑]</a>
+</div>
+</div>
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="wp cl">
+<div id="pgt" class="pgs mbm cl ">
+<div class="pgt"><div class="pg"><strong>1</strong><a href="https://www.mcbbs.net/thread-614388-2-1.html">2</a><a href="https://www.mcbbs.net/thread-614388-3-1.html">3</a><a href="https://www.mcbbs.net/thread-614388-4-1.html">4</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location=&#39;forum.php?mod=viewthread&amp;tid=614388&amp;extra=page%3D1&amp;page=&#39;+this.value;; doane(event);}"><span title="共 4 页"> / 4 页</span></label><a href="https://www.mcbbs.net/thread-614388-2-1.html" class="nxt">下一页</a></div></div>
+<span class="y pgb"><a href="https://www.mcbbs.net/forum-development-1.html">返回列表</a></span>
+<!--<button id="newspecial" class="pn pnc" onclick="location.href='forum.php?mod=post&action=newthread&fid=479&extra=Array&sortid=40'"><strong>我要编程提问</strong></button>-->
+                <a id="" onclick="showWindow(&#39;reply&#39;, &#39;forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&#39;)" href="javascript:;" title="回复"><img src="https://static.mcbbs.net/template/mcbbs/image/pn_reply.png" alt="回复"></a>
+        </div>
+
+
+
+<div id="postlist" class="pl bm">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls ptn pbn">
+<div class="hm ptn">
+<span class="xg1">查看:</span> <span class="xi1">31795</span><span class="pipe">|</span><span class="xg1">回复:</span> <span class="xi1">59</span>
+</div>
+</td>
+<td class="plc ptm pbn vwthd">
+<div class="y">
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=614388" title="打印" target="_blank"><img src="https://static.mcbbs.net/template/mcbbs/image/print.png" alt="打印" class="vm"></a>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=nextoldset&amp;tid=614388" title="上一主题"><img src="https://static.mcbbs.net/template/mcbbs/image/thread-prev.png" alt="上一主题" class="vm"></a>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=nextnewset&amp;tid=614388" title="下一主题"><img src="https://static.mcbbs.net/template/mcbbs/image/thread-next.png" alt="下一主题" class="vm"></a>
+</div>
+<h1 class="ts">
+<a href="https://www.mcbbs.net/forum.php?mod=forumdisplay&amp;fid=479&amp;filter=typeid&amp;typeid=1029">[插件开发教程]</a>
+<span id="thread_subject">某wyt的Bukkit插件开发教程[主体&amp;答疑]</span>
+</h1>
+<span class="xg1">
+<a href="https://www.mcbbs.net/thread-614388-1-1.html" onclick="return copyThreadUrl(this, &#39;Minecraft(我的世界)中文论坛&#39;)">[复制链接]</a>
+</span>
+</td>
+</tr>
+</tbody></table>
+
+
+<table cellspacing="0" cellpadding="0" class="ad">
+<tbody><tr>
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table><div id="post_10679592"><div id="threadstamp"><img src="https://static.mcbbs.net/static/image/stamp/001.gif" title="精华"></div>
+<table id="pid10679592" class="plhin" summary="pid10679592" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10679592" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10679592" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10679592_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<div id="fj" class="y">
+<label class="z">电梯直达</label>
+<input type="text" class="px p_fre z" size="2" onkeyup="$(&#39;fj_btn&#39;).href=&#39;forum.php?mod=redirect&amp;ptid=614388&amp;authorid=0&amp;postno=&#39;+this.value" onkeydown="if(event.keyCode==13) {window.location=$(&#39;fj_btn&#39;).href;return false;}" title="跳转到指定楼层">
+<a href="javascript:;" id="fj_btn" class="z" title="跳转到指定楼层"><img src="https://static.mcbbs.net/template/mcbbs/image/fj_btn.png" alt="跳转到指定楼层" class="vm"></a>
+</div>
+<strong>
+<a href="https://www.mcbbs.net/thread-614388-1-1.html" id="postnum10679592" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+楼主</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10679592" src="https://static.mcbbs.net/static/image/common/icon_member.gif">
+<em id="authorposton10679592">发表于 2016-8-3 09:39:49</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+<span class="pipe">|</span><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;from=album">只看大图</a>
+<span class="none"><img src="https://static.mcbbs.net/template/mcbbs/image/arw_r.gif" class="vm" alt="回帖奖励"></span>
+<span class="pipe show">|</span><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;extra=page%3D1&amp;ordertype=1" class="show">倒序浏览</a>
+<span class="pipe show">|</span><a href="javascript:;" onclick="readmode($(&#39;thread_subject&#39;).innerHTML, 10679592);" class="show">阅读模式</a>
+</div>
+</div>
+</div><div class="pct"><style type="text/css">.pcb{margin-right:0}</style><div class="pcb">
+ 
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10679592">
+<div class="attach_nopermission attach_tips">
+<div>
+<h3><strong>
+您尚未登录，立即登录享受更好的浏览体验！</strong></h3>
+<p>您需要 <a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login" onclick="showWindow(&#39;login&#39;, this.href);return false;">登录</a> 才可以下载或查看，没有帐号？<a href="https://www.mcbbs.net/member.php?mod=register" title="注册帐号">注册(register)</a> </p>
+</div>
+<span class="atips_close" onclick="this.parentNode.style.display=&#39;none&#39;">x</span>
+</div>
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-20 12:18 编辑 </i><br>
+<br>
+<font face="Verdana"><strong><font size="6">0.序章</font><br>
+</strong><strong><font size="5">*什么是Bukkit</font></strong></font><br>
+<font face="Verdana"><font size="4"><strong>[以下为本人口胡时间]</strong></font></font><br>
+<font face="Verdana"><font size="4">从前minecraft官方推出了一款服务端,这里暂且成为官服.</font></font><br>
+<font face="Verdana"><font size="4">但这个官服呢,又和mc的尿性一样,没有开源(混淆了),而且对外兼容性差! (不能兼容mod,插件那时还没有)</font></font><br>
+<font face="Verdana"><font size="4">于是呢,就有一个团队,他们把官服给强势反混淆(人工的)了一遍,然后在其中强力插入♂某些需要的内容,然后封装做成现在的bukkitAPI供我们调用. 于是就有了现在的插件....</font></font><br>
+<font face="Verdana"><font size="4">虽说反混淆了,但是仍有许多方法名是没改过来的,所以如果你去反编译一下net.minecraft.server包的话,大概看到的方法名都是a,b,c,d...... </font></font><br>
+<font face="Verdana"><font size="4">[以下为正文]</font></font><br>
+<font face="Verdana"><font size="4"><strong><a href="https://bukkit.org/pages/about-us/" target="_blank">Bukkit About Us</a></strong></font></font><br>
+<br>
+<font face="Verdana"><font size="5"><strong>读前准备</strong></font></font><br>
+<font face="Verdana"><font size="4"><strong>本教程<font color="#ff0000"><font style="background-color:white">不考虑</font></font>没有java基础的初学者。</strong><br>
+换句话说，本教程要求所有的阅读者都掌握Java语法且<font color="#ff0000"><strong>清晰的</strong></font>了解以下概念</font></font><br>
+<font face="Verdana"><font size="4">[题外话:我就是半吊子从其他语言边写插件边转过来的,然后现在还得恶补一番.]</font></font><br>
+<font face="Verdana"><font size="4"><font color="#ff0000"><font style="background-color:white">标有*的为非必须,但推荐阅读相关资料.</font></font></font></font><br>
+<font face="Verdana"><font size="4"><font color="#ff0000"><font style="background-color:white">粗体的为必须中的必须,必须掌握并熟练运用</font></font></font></font><font face="Verdana"><br>
+<font size="4"><font face="Verdana"><font size="4"><br>
+</font></font></font>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966177" aid="966177" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/094358jv62ktt54r718t6z.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/094358jv62ktt54r718t6z.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966177_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>x.png</strong> <em class="xg1">(19.89 KB, 下载次数: 45)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2MTc3fGUyNTg1MTlkfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 09:43 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<font size="4">还需要什么</font><br>
+<font size="4">对mc与编程的热情.(必须): 经常需要看一大坨<font color="#ff0000"><font style="background-color:white"><strong>别人的</strong></font></font>代码,如果你没有这个耐心与逻辑思维,学学倒是可以..</font><br>
+<font size="4">坚强的,耐挫的决心. : 论如何调试代码? 都说是试... 很多时候你没法直接定位错误在哪,这个时候该怎么办?.....</font><br>
+<font size="4">对mc游戏内容的了解 : 这个不解释</font><br>
+</font><font face="Verdana"><font size="4">JDK与一个IDE: JDK7或者JDK8, IDE推荐<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fwww.eclipse.org%2Fdownloads%2F" target="_blank">Eclipse</a>和</font></font><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fwww.jetbrains.com%2Fidea%2Fdownload%2F" target="_blank"><font face="Verdana"><font size="4">IntellijIDEA</font></font></a><br>
+<font face="Verdana"><font size="4">一个bukkit的JavaDoc : </font></font><font size="3"><a href="https://hub.spigotmc.org/javadocs/bukkit/" target="_blank">Bukkit 1.10.2-R0.1-SNAPSHOT API</a></font><br>
+<font size="3"><br>
+若有写的不好的地方,欢迎各位斧正.</font><br>
+<font size="3"><br>
+</font><font face="Verdana"><font face="Verdana"><font style="font-size:14px"><font size="4">如果你已经阅读完毕这些东西并认为自己可以继续阅读,那你可以往下翻页了!</font></font></font></font><br>
+<font face="Verdana"><br>
+</font><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10679592" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10679592" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10679592"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10679592" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">16</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+27</span></i></th>
+<th class="xw1" width="80">金粒 <i><span class="xi1">+203</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10679592&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10679592_2234315">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2234315" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=2234315" target="_blank">迷失的绵羊</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 15</td>
+<td class="xg1">神乎其技，不服不行！</td>
+</tr>
+<tr id="rate_10679592_1371406">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1371406" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1371406" target="_blank">qaz2296777814</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1"></td>
+<td class="xg1">神乎其技，不服不行！</td>
+</tr>
+<tr id="rate_10679592_1506210">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1506210" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1506210" target="_blank">dust_of_heart</a>
+</td><td class="xi1"> + 2</td>
+<td class="xi1"> + 35</td>
+<td class="xg1">这波教程很有用</td>
+</tr>
+<tr id="rate_10679592_1095012">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1095012" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1095012" target="_blank">寂</a>
+</td><td class="xi1"> + 2</td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_1376266">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1376266" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1376266" target="_blank">SYS_TEM</a>
+</td><td class="xi1"> + 2</td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_161872">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=161872" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=161872" target="_blank">Greensky</a>
+</td><td class="xi1"> + 2</td>
+<td class="xi1"> + 25</td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_488395">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=488395" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=488395" target="_blank">HotPe_e</a>
+</td><td class="xi1"> + 2</td>
+<td class="xg1"></td>
+<td class="xg1">楼主你太帅了~</td>
+</tr>
+<tr id="rate_10679592_193114">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=193114" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=193114" target="_blank">纯白剑姬</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 15</td>
+<td class="xg1">为写教程的大触献上膝盖</td>
+</tr>
+<tr id="rate_10679592_81501">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank">hsk001ufo</a>
+</td><td class="xi1"> + 2</td>
+<td class="xi1"> + 28</td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_1009269">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1009269" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1009269" target="_blank">PETER·篠</a>
+</td><td class="xi1"> + 3</td>
+<td class="xi1"> + 25</td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_145264">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=145264" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=145264" target="_blank">蓝色的鲨鱼</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 5</td>
+<td class="xg1">很棒的作品！</td>
+</tr>
+<tr id="rate_10679592_660537">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=660537" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=660537" target="_blank">BensonQC</a>
+</td><td class="xi1"> + 3</td>
+<td class="xg1"></td>
+<td class="xg1">MCBBS有你更精彩~</td>
+</tr>
+<tr id="rate_10679592_349553">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=349553" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=349553" target="_blank">RecursiveG</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 30</td>
+<td class="xg1">已加入教程全家桶</td>
+</tr>
+<tr id="rate_10679592_816382">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=816382" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=816382" target="_blank">吕乐乐</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 10</td>
+<td class="xg1">楼主你太帅了~</td>
+</tr>
+<tr id="rate_10679592_1810571">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1810571" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1810571" target="_blank">SpaceBang</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 15</td>
+<td class="xg1">很棒的作品！</td>
+</tr>
+<tr id="rate_10679592_1101813">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1101813" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1101813" target="_blank">晚安2001</a>
+</td><td class="xi1"> + 2</td>
+<td class="xg1"></td>
+<td class="xg1">Mcbbs有你更精彩~</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10679592" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+<div id="p_btn" class="mtw mbm hm cl">
+<a href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=favorite&amp;type=thread&amp;id=614388&amp;formhash=df36dc86" id="k_favorite" onclick="showWindow(this.id, this.href, &#39;get&#39;, 0);" onmouseover="this.title = $(&#39;favoritenumber&#39;).innerHTML + &#39; 人收藏&#39;" title="收藏本帖"><i><img src="https://static.mcbbs.net/template/mcbbs/image/fav.gif" alt="收藏">已收藏<span id="favoritenumber">85</span></i></a>
+<a id="recommend_add" href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=recommend&amp;do=add&amp;tid=614388&amp;hash=df36dc86" onclick="showWindow(&#39;login&#39;, this.href)" onmouseover="this.title = $(&#39;recommendv_add&#39;).innerHTML + &#39; 人顶一下&#39;" title="顶一下"><i><img src="https://static.mcbbs.net/template/mcbbs/image/rec_add.gif" alt="顶一下">顶一下<span id="recommendv_add">1</span></i></a>
+<a id="recommend_subtract" href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=recommend&amp;do=subtract&amp;tid=614388&amp;hash=df36dc86" onclick="showWindow(&#39;login&#39;, this.href)" onmouseover="this.title = $(&#39;recommendv_subtract&#39;).innerHTML + &#39; 人踩一下&#39;" title="踩一下"><i><img src="https://static.mcbbs.net/template/mcbbs/image/rec_subtract.gif" alt="踩一下">踩一下<span id="recommendv_subtract" style="display:none">0</span></i></a>
+</div><div><div style="padding:5px;text-align:center;margin-top:10px;color:#00A2D2;"><b>帖子永久链接：</b><input type="text" value="https://www.mcbbs.net/thread-614388-1-1.html" size="40" class="px" readonly="readonly" style="vertical-align:middle;">&nbsp;<button type="submit" class="pn" onclick="setCopy(&#39;https://www.mcbbs.net/thread-614388-1-1.html&#39;, &#39;帖子地址已经复制到剪贴板&lt;br /&gt;您可以用快捷键 Ctrl + V 粘贴到 QQ、MSN 里。&#39;)"><em>点击复制</em></button></div><br><fieldset style="border:1px dashed #FF0000;padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;"><legend align="center" style="color:#FFFFFF;width:200px;text-align:center;background-color:#FF0000;">Minecraft中文论坛 - 论坛版权</legend>1、本主题所有言论和图片纯属会员个人意见，与本论坛立场无关<br>
+2、本站所有主题由该帖子作者发表，该帖子作者享有帖子相关版权<br>
+3、其他单位或个人使用、转载或引用本文时必须同时征得该帖子作者的同意<br>
+4、帖子作者须承担一切因本文发表而直接或间接导致的民事或刑事法律责任<br>
+5、本帖若有内容转载自其它媒体，不代表本站赞同其观点和对其真实性负责<br>
+6、若本帖涉及任何版权问题，请立即告知本站，本站将及时予以删除并致以最深的歉意<br>
+7、<a href="https://www.mcbbs.net/" rel="nofollow"><font color="#FF6600">Minecraft(我的世界)中文论坛</font></a>管理员和版主有权不事先通知发贴者而删除本文</fieldset><br></div>
+</td>
+</tr>
+<tr id="_postposition10679592"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;reppost=10679592&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10679592" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10679592&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10679592&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10679592_menu" class="p_pop mgcmn" style="display: none;">
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=bump&amp;idtype=tid&amp;id=614388" id="a_bump" onclick="showWindow(this.id, this.href)"><img src="https://static.mcbbs.net/static/image/magic/bump.small.gif">提升卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=close&amp;idtype=tid&amp;id=614388" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://static.mcbbs.net/static/image/magic/close.small.gif">沉默卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=open&amp;idtype=tid&amp;id=614388" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://static.mcbbs.net/static/image/magic/open.small.gif">喧嚣卡</a></li>
+<li><a href="https://www.mcbbs.net/home.php?mod=magic&amp;mid=highlight&amp;idtype=tid&amp;id=614388" id="a_stick" onclick="showWindow(this.id, this.href)"><img src="https://static.mcbbs.net/static/image/magic/highlight.small.gif">变色卡</a></li>
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10679592')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10679592] = ['966177'];
+attachimggroup(10679592);
+var aimgfid = 0;
+</script>
+</div><div id="post_10683343"><table id="pid10683343" class="plhin" summary="pid10683343" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10683343" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10683343" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10683343_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10683343" id="postnum10683343" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+沙发</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10683343" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10683343">发表于 2016-8-3 16:44:30</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10683343">
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-25 17:26 编辑 </i><br>
+<br>
+<font face="Verdana"><font style="font-size:14px"><font size="6"><strong>1.创建一个空白插件</strong></font></font><br>
+<br>
+<strong>安装好jdk和IDE之后,我们就可以准备写第一个插件了.</strong><br>
+<strong>[文中非关键步骤我都只是一笔带过,如果看不明白可以去baidu,Google,或者找别人的教程看看有没有说明.<br>
+总是依赖别人替你做好所有事情永远也不是一个好码农]</strong><br>
+<br>
+<strong>1.首先新建java项目, "MyFirstPlugin".</strong><br>
+<strong>2.右键项目,属性,将编码设置为UTF-8, 并在"java构建路径"中将服务端的jar文件添加到引用的库.<br>
+
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966487" aid="966487" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/171241vtndnxdxvr0068xz.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/171241vtndnxdxvr0068xz.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966487_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160803162335.png</strong> <em class="xg1">(44.4 KB, 下载次数: 53)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2NDg3fGM5Y2E3NjhkfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 17:12 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</strong><br>
+<strong>3.<br>
+右键项目,新建plugin.yml文件,按如下格式<br>
+</strong><strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966473" aid="966473" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164540gnb9ffzxz9bjdslo.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164540gnb9ffzxz9bjdslo.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966473_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160803164356.png</strong> <em class="xg1">(4.31 KB, 下载次数: 50)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2NDczfGI0NGVjMDY0fDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 16:45 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</strong><br>
+<strong>plugin的g漏掉了.... 不要在意</strong></font><font face="Verdana"><strong>这个文件用于让bukkit识别这是一个插件.</strong></font><font face="Verdana"><strong>bukkit加载插件最先会读取这个文件,获取主类路径,然后再一路加载下去<br>
+</strong><br>
+<strong>需要遵循Yaml语法. <br>
+</strong><strong>name - 插件名称 (推荐全字母)</strong><br>
+<strong>main - 一个类的完整类名,这个类,需要继承Bukkit中的JavaPlugin类,又称插件的<font color="#ff0000"><font style="background-color:white">主类</font></font></strong><br>
+<font size="2"><strong>version - 能表示插件版本的字符串.</strong></font><br>
+<br>
+<strong>特别容易错的地方有: 冒号后面没加空格, 主类路径打错, <strike>作死用中文</strike> 值可以用</strong><br>
+<strong>错误plugin.yml在开服时会有一段报错并导致插件不加载,就像这样: Invaild plugin.yml.</strong><br>
+<br>
+<strong>4.<br>
+打开项目,在源文件夹(\src)下,新建包com.github.MrWub.MyFirstPlugin, 在这个包下新建类MyFirstPlugin. </strong><br>
+<strong>那么我们就说<font style="font-size:14px">MyFirstPlugin类的完整类名为</font><font style="font-size:14px">com.github.MrWub.</font><font style="font-size:14px">MyFirstPlugin.MyFirstPlugin</font></strong><br>
+<strong><font color="#ff0000"><font style="background-color:white">plugin.yml的main项必须与该类完整类名一致,就像我所写的一样.</font></font></strong></font><br>
+<font face="Verdana"><strong>5.<br>
+使得主类继承bukkit中的JavaPlugin类</strong><br>
+<strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966476" aid="966476" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164134b9hgrrrxdntxhntr.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164134b9hgrrrxdntxhntr.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966476_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>x.png</strong> <em class="xg1">(8.68 KB, 下载次数: 54)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2NDc2fDcyZmFiMjFjfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 16:41 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</strong><br>
+<strong>这时候出现了编译错误,有可能是因为JavaPlugin类未导入. 可使用IDE的快速补全解决.<br>
+</strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966472" aid="966472" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/163848n2o8jas10n07pson.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/163848n2o8jas10n07pson.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966472_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160803163703.png</strong> <em class="xg1">(14.92 KB, 下载次数: 64)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2NDcyfDZiM2M5ODZmfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 16:38 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+<strong>这类问题以后非特殊情况不再特殊说明.</strong><br>
+<strong><br>
+6.重写onEnable()与onDisable()方法</strong><br>
+<strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_966475" aid="966475" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164715r7knvaxvwpvppxbf.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/03/164715r7knvaxvwpvppxbf.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_966475_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>x.png</strong> <em class="xg1">(15.99 KB, 下载次数: 46)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY2NDc1fDA2OWY4Y2ZmfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-3 16:47 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</strong><br>
+<strong>Bukkit会在启用某插件时调用 (继承JavaPlugin类的) 主类的onEnable()方法,禁用某插件时调用onDisable()方法. </strong><br>
+<font color="#ff0000"><font style="font-size:14px"><strong><font style="background-color:white">**小括号内为注释与补充,可以忽略**</font><br>
+</strong></font></font></font><font face="Verdana"><strong><font color="#ff0000"><font style="background-color:white">**中括号内为题外话**</font></font><br>
+</strong><strong>重写这两个方法,这样我们就可以让他在</strong><strong><font color="#ff0000"><font style="background-color:white">启用</font></font></strong><strong>与</strong><strong><font color="#ff0000"><font style="background-color:white">禁用</font></font></strong><strong>时做我们想做♂的事情. </strong><br>
+<font style="font-size:14px"><strong>其实还有onLoad()方法,这个方法仅在开服</strong></font><font color="#ff0000"><font style="background-color:white"><font style="font-size:14px"><strong>加载</strong></font></font></font><font style="font-size:14px"><strong>插件时调用一次.<br>
+</strong></font><strong>(开服时,插件会被加载并启用,</strong><br>
+<strong>reload时,插件会先被禁用,再被启用,</strong><br>
+<strong>关服时,插件会被禁用.)</strong><br>
+<br>
+<strong>[推荐大家去使用反编译工具(例如jdgui)看一下JavaPlugin类的源码,这样印象会深很多.</strong><br>
+<strong>其实不止是javaplugin的,其他很多常用类都可以看看...]</strong><br>
+<font size="3"><br>
+</font><br>
+<font size="2"><strong>7.在启用时向控制台输出信息</strong></font><br>
+<font size="2"><strong><img src="https://static.mcbbs.net/static/image/smiley/mc_mob_food_plants/character.gif" smilieid="826" border="0" alt="">: 这不很简单吗,在onEnable()中添加</strong></font><strong>System.out.println()?</strong><br>
+<font size="2"><strong>不不不 我们有更高级的方法 this.getLogger().info("msg"); 这是一个定义在javaplugin类中的方法.</strong></font></font><font face="Verdana"><font size="2"><strong>这个方法能够记录一条日志信息并在控制台即时显示.<br>
+</strong></font><br>
+</font><font face="Verdana"><font size="2"><strong>不过,这玩意不支持颜色代码.这个之后会讲.</strong></font></font><br>
+<font face="Verdana"><font size="2"><strong>8.完工! </strong></font><br>
+<font size="2"><strong>确认你的插件没有编译错误,确认plugin.yml编写正确后,选择项目,导出jar文件(不是可运行的!) </strong></font><br>
+<font size="2"><strong>将得到的jar文件放到服务端的plugins文件夹中,运行服务器吧!</strong></font><br>
+<br>
+<br>
+</font><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10683343" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10683343" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10683343"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10683343" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">金粒 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10683343&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10683343_1696224">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank">TimmyOVO</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">建议getServer().getConsoleSender().sendM.</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10683343" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10683343"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10683343&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10683343" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10683343&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10683343&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10683343_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10683343')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10683343] = ['966472','966473','966475','966476','966487'];
+attachimggroup(10683343);
+var aimgfid = 0;
+</script>
+</div><div id="post_10683348"><table id="pid10683348" class="plhin" summary="pid10683348" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10683348" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank" class="xw1">TimmyOVO</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10683348" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10683348_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank" class="xi2">TimmyOVO</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=profile" target="_blank" class="xi2">5108</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2016-2-13</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：湖北</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10683348" id="postnum10683348" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+板凳</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10683348" src="https://static.mcbbs.net/static/image/common/icon_zombie_pigman.png">
+<em id="authorposton10683348">发表于 2016-8-3 16:45:05</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=1696224" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10683348">
+?????<br>
+excuse me????<br>
+nms得到的途径可不是正规途径得到的<br>
+后来Bukkit被dmca你以为为啥呢-.-</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10683348" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10683348" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10683348"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10683348" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">金粒 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10683348&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10683348_58570">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570" target="_blank">gooding300</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">DMCA的原因我没记错是bukkit团队里一个人为.</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10683348" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10683348"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10683348&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10683348" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10683348&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10683348&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10683348_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10683348')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10691777"><table id="pid10691777" class="plhin" summary="pid10691777" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10691777" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10691777" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10691777_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10691777" id="postnum10691777" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+地板</a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10691777" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10691777">发表于 2016-8-4 16:41:41</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10691777">
+<i class="pstatus"> 本帖最后由 754503921 于 2018-8-11 09:38 编辑 </i><br>
+<br>
+<font face="Verdana"><font style="font-size:14px"><font size="6">2.创建命令</font></font></font><br>
+<font face="Verdana"><font size="3">论如何创建一个安全,优雅的命令<br>
+</font></font><font face="Verdana"><font size="3">1.无报错,正常运行.</font></font><br>
+<font face="Verdana"><font size="3">2.<strong>必须</strong>考虑权限问题.</font></font><br>
+<font face="Verdana"><font size="3">3.使用简洁,参数顺序符合逻辑思维</font></font><br>
+<font face="Verdana"><font size="3">创建命令的步骤如下.<br>
+<br>
+</font></font><br>
+<font face="Verdana"><font size="3">1.在plugin.yml中注册命令,按如下格式</font></font><br>
+<br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><font face="Verdana"><font size="3">name: ....</font></font><br>
+<font face="Verdana"><font size="3">version: ....</font></font><br>
+<font face="Verdana"><font size="3">main: .....</font></font><br>
+<font face="Verdana"><font size="3">commands:</font></font><br>
+<font face="Verdana"><font size="3">&nbsp;&nbsp;mfp: #主命令名,不带斜杠. 如gamemode,tp,tpa等</font></font><br>
+<font face="Verdana"><font size="3">&nbsp; &nbsp; usage: '该命令的用法, 如/myhome &lt;序号&gt;'</font></font><br>
+<font face="Verdana"><font size="3">&nbsp; &nbsp; description: '该命令的描述,输入/help即会显示'</font></font><br>
+<font face="Verdana"><font size="3">&nbsp; &nbsp; permisson: 'mfp.use' #使用权限.</font></font><br>
+<font face="Verdana"><font size="3">&nbsp; &nbsp; permisson-message: '没有权限的提示'</font></font><br>
+</td></tr></tbody></table></div></div><br>
+<font face="Verdana"><font size="3">如何默认给玩家权限.</font></font><br>
+<br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><font face="Verdana"><font size="3">permissions: #可以选择不注册该权限,同样可以使用.</font></font><br>
+<font face="Verdana"><font size="3">&nbsp;&nbsp;mfp.use:</font></font><br>
+<font face="Verdana"><font size="3">&nbsp; &nbsp; default: [op/true] #为true时,所有玩家默认有该权限.&nbsp;&nbsp;为op时仅op默认有该权限.</font></font><br>
+</td></tr></tbody></table></div></div><br>
+<br>
+<font face="Verdana"><font size="3">2.重写onCommand()方法<br>
+</font></font><font face="Verdana"><font size="3">执行命令时会被bukkit调用的方法.</font></font><br>
+<font face="Verdana"><font size="3">[其实整个框架你可以理解为有一层平面,然后从这个平面上垂下来一条绳子,你可以在绳子上挂东西,当上层需要的时候就把绳子收上去拿走东西... ]<br>
+</font></font><font face="Verdana"><font size="3">可选择直接在主类中重写,也可以选择开一个命令执行类MyExecutor extends CommandExecutor,</font></font><br>
+<font face="Verdana"><font size="3">然后在主类中getCommand("myhome").setExecutor(new 执行类()); 在这个类中重写onCommand();</font></font><br>
+<br>
+<font face="Verdana"><font size="3">onCommand()的形式是</font></font><font face="Verdana"><font size="3"><br>
+public boolean onCommand(CommandSender sender, Command cmd, String label,String[] args) {<br>
+&nbsp;&nbsp;/* 其中sender为命令发送者,&nbsp; &nbsp;必定是Player实例或ConsoleSender实例.<br>
+&nbsp; &nbsp;&nbsp; &nbsp; cmd Command实例,暂时无用.<br>
+&nbsp; &nbsp;&nbsp; &nbsp; label 相当于主命令去掉/ ,如输入/gamemode 1,则label参数就为"gamemode".<br>
+&nbsp; &nbsp;&nbsp; &nbsp; args 命令参数数组,如输入/gamemode 1 test 则args={"1","test"}. <br>
+&nbsp;&nbsp;*/ <br>
+&nbsp;&nbsp;return false; //返回值为false时,会提示玩家plugin.yml中usage的内容.<br>
+}<br>
+<br>
+3.在onCommand()中填写内容<br>
+假设我们现在要新建一个命令,当他运行的时候给玩家发送一行聊天框信息,这个命令只允许玩家执行</font></font><font face="Verdana"><font size="3">
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_967230" aid="967230" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/04/170011kjajeqnv2aveudwv.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/04/170011kjajeqnv2aveudwv.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_967230_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160804165817.png</strong> <em class="xg1">(42.94 KB, 下载次数: 53)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY3MjMwfGE3NzAxMzIzfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-4 17:00 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+</font></font><br>
+<font style="font-size:14px">5.导出运行试试吧!</font><br>
+<font style="font-size:14px">未完待续</font><br>
+<font size="3"><font color="#ff0000"><strong>强烈建议论坛支持Markdown语法!</strong></font></font><br>
+版主留：你的 command 少了个 s，已编辑<font face="Verdana"><font size="3"><br>
+<br>
+<br>
+</font></font><br>
+<font face="Verdana"><font size="3"><br>
+</font></font><br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10691777" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10691777" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10691777"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10691777" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10691777&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10691777_1552368">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1552368" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1552368" target="_blank">太帅是罪过</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">plugin.yml文件cmd 那条少了个s</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10691777" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10691777"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10691777&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10691777" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10691777&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10691777&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10691777_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10691777')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10691777] = ['967230'];
+attachimggroup(10691777);
+var aimgfid = 0;
+</script>
+</div><div id="post_10704887"><table id="pid10704887" class="plhin" summary="pid10704887" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10704887" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10704887" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10704887_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10704887" id="postnum10704887" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>5</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10704887" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10704887">发表于 2016-8-6 08:01:37</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10704887">
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=10702926&amp;ptid=614388" target="_blank"><font color="#999999">吕乐乐 发表于 2016-8-5 20:54</font></a></font><br>
+可是我我并不会怎么将在NetBeans IDE 7.2里的插件导出？<br>
+变成JAR？</blockquote></div><br>
+如果我记得没错的话是构建,然后在build文件夹下有.</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10704887" class="cm">
+</div>
+
+<div id="post_rate_div_10704887"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10704887"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10704887&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10704887" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10704887&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10704887&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10704887_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10704887')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10704915"><table id="pid10704915" class="plhin" summary="pid10704915" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10704915" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10704915" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10704915_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10704915" id="postnum10704915" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>6</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10704915" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10704915">发表于 2016-8-6 08:18:39</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10704915">
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=10704902&amp;ptid=614388" target="_blank"><font color="#999999">吕乐乐 发表于 2016-8-6 08:14</font></a></font><br>
+谢谢了，不过我发现构建之后.JAVA都构建好了编程class<br>
+但是plugin.yml等文件却没有构建，如何修复呢。<br>
+以 ...</blockquote></div><br>
+....netbeans并没有用过... 但肯定有办法的<br>
+再不行就手动拖进去呗 \*_*/</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10704915" class="cm">
+</div>
+
+<div id="post_rate_div_10704915"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10704915"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10704915&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10704915" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10704915&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10704915&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10704915_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10704915')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10705078"><table id="pid10705078" class="plhin" summary="pid10705078" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10705078" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10705078" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10705078_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10705078" id="postnum10705078" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>7</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10705078" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10705078">发表于 2016-8-6 08:50:36</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10705078">
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-6 20:00 编辑 </i><br>
+<br>
+<font face="Verdana"><font size="6">3.配置文件(YAML)</font></font><br>
+<font face="Verdana"><font size="3">bukkit自带的是snake_yaml库.</font></font><br>
+<font face="Verdana"><font size="3"><strong>不过我们并不需要直接用,Bukkit都给我们封装好了.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>1.在plugin.yml旁边新建config.yml, 并在其中写入默认配置(遵循yaml语法)</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>2.了解如下有关的方法<br>
+
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_968349" aid="968349" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/085536g738ei3ee3556z57.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/085536g738ei3ee3556z57.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_968349_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160806085343.png</strong> <em class="xg1">(22.27 KB, 下载次数: 50)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY4MzQ5fDk2MzFlMWYxfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-6 08:55 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+</strong></font></font><br>
+<table cellspacing="0" class="t_table"><tbody><tr><td>实现ConfigurationSerializable接口的类可以作为set方法的第二个参数<br>
+因为实现了该接口的类允许被序列化/反序列化到配置文件或BukkitObjectOutputStream/BukkitObjectInputStream中<br>
+如果你说,我只添加了 implements ConfigurationSerializable,需要实现的两个方法我摆个空的在那里,那可不可以做到序列化/反序列化呢?<br>
+你说呢?....对于这类问题我不想解答.</td></tr></tbody></table><br>
+<font face="Verdana"><font size="3"><strong>解释一下"路径":</strong></font></font><br>
+<br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><font face="Verdana"><font size="3"><strong>假如当前有一个如下的.yml文件</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>root:</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>&nbsp;&nbsp;children: '那么我的路径就是root.children'</strong></font></font><br>
+</td></tr></tbody></table></div></div><br>
+<br>
+<font face="Verdana"><font size="3"><strong>3.然后....好像就没有了...</strong></font></font><font face="Verdana"><font size="3"><strong>这些方法已经足以让我们进行配置文件的读写了.<br>
+</strong></font></font><font face="Verdana"><font size="3"><strong>当然yaml的神奇用法远远不止这些,可以去snake_yaml库里看看.</strong></font></font><br>
+<br>
+稍微补充一下yaml的基本语法<br>
+键:[空格]值<br>
+值如果是字符串则需要用'字符串'这样的形式括起来,当然这是在你手动修改的时候(虽然不括也行,但是括起来更规范)<br>
+不允许使用tab,每一层缩进为两个空格<br>
+<br>
+list的形式是<br>
+key:<br>
+&nbsp;&nbsp;- xxx<br>
+&nbsp;&nbsp;- xxx<br>
+....<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10705078" class="cm">
+</div>
+
+<div id="post_rate_div_10705078"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10705078"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10705078&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10705078" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10705078&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10705078&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10705078_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10705078')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10705078] = ['968349'];
+attachimggroup(10705078);
+var aimgfid = 0;
+</script>
+</div><div id="post_10707640"><table id="pid10707640" class="plhin" summary="pid10707640" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10707640" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10707640" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10707640_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10707640" id="postnum10707640" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>8</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10707640" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10707640">发表于 2016-8-6 15:15:01</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10707640">
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-6 15:18 编辑 </i><br>
+<br>
+<font face="Verdana"><font size="6">4.监听事件</font></font><br>
+<font face="Verdana"><font size="5"><strong>事件是什么</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>顾名思义,一件事,如: 玩家传送,实体死亡,交互等等等等..</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>bukkit在NMS中插入了许多不可描述的代码,成功的做成了一套事件触发系统.</strong></font></font><br>
+<br>
+<font face="Verdana"><font size="5"><strong>监听器是什么</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>一个方法,bukkit检测到 事件类型与该方法参数类型符合时 会调用</strong></font></font><strong><br>
+(bukkit会根据注解来获取监听器,根据参数来判断是哪种监听器.)</strong><br>
+<br>
+<font face="Verdana"><font size="3"><strong>即: <br>
+NMS运作 -&gt; 不可描述的代码通知事件系统发生事件 (又名唤起) -&gt; 事件系统调用监听器.</strong></font></font><br>
+<br>
+<font face="Verdana"><font size="3"><strong>1.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>首先在事件系统中注册监听器,这一步一般在启用时执行</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>Bukkit.getPluginManager().registerEvents(Listener实例,JavaPlugin实例);</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>Listener实例 - 监听器必须在一个实现了Listener接口的类中,但实现这个接口其实和没实现没区别...</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>JavaPlugin实例 - 你的主类.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>比如说,我要在主类中创建监听器</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_968596" aid="968596" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/144347xxbekd3xh77273x5.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/144347xxbekd3xh77273x5.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_968596_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160806144924.png</strong> <em class="xg1">(11.67 KB, 下载次数: 47)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY4NTk2fGRlNWYxNTlkfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-6 14:43 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>又比如说,我觉得在主类中太乱了,我想新开一个类放监听器</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_968598" aid="968598" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/144514jz3m21mmgg3ctu54.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/144514jz3m21mmgg3ctu54.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_968598_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160806145055.png</strong> <em class="xg1">(12.38 KB, 下载次数: 52)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY4NTk4fDc5NzBjZDFjfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-6 14:45 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+</strong></font></font><br>
+<strong><font size="3"><font face="Verdana">没有本质上的区别,仅仅是监听器挪了位</font></font></strong><br>
+<strong><font size="3"><font face="Verdana"><br>
+</font></font></strong><br>
+<strong><font size="3"><font face="Verdana">2.</font></font></strong><br>
+<font face="Verdana"><font size="3"><strong>创建监听器,为了让Bukkit在Listener实例中找到你的监听器,这个方法需要添加@EventHandle注解</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>(他是怎么找到监听器的? 反射,详情请见java.lang.reflect包)</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>[一个记录着java自带类与方法如何使用的官方规范是必要的,就像这个,<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Ftool.oschina.net%2Fapidocs%2Fapidoc%3Fapi%3Djdk-zh" target="_blank">JAVA1.6API规范(中文)</a>.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>更高版本的并没有中文,汉化团队强行弃了一波坑,Eclipse就自带英文的]</strong></font></font><br>
+<br>
+<font face="Verdana"><font size="3"><strong>就像这样</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_968615" aid="968615" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/145248ql4my13mt1mji3t3.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/145248ql4my13mt1mji3t3.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_968615_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>xx.png</strong> <em class="xg1">(7.33 KB, 下载次数: 45)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY4NjE1fDI3ZGFjNDVmfDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-6 14:52 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>这个方法内可以做任何你想做的事情</strong></font></font><br>
+<br>
+<font face="Verdana"><font size="5"><strong>更高级的玩法</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>EventHandler可以带参数,就像这样</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>@EventHandler(priority = EventPriority.LOW)</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>这个代表他的优先级.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>若有不同监听器监听同一个事件(这些监听器有可能在别的插件中!)那他们的调用顺序由优先级决定</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>由低到高执行.</strong></font></font><br>
+<ul type="1" class="litype_1"><li><font face="Verdana"><font size="3"><strong>EventPriority.LOWEST (最先)</strong></font></font></li><li><font face="Verdana"><font size="3"><strong>EventPriority.LOW</strong></font></font></li><li><font face="Verdana"><font size="3"><strong>EventPriority.NORMAL</strong></font></font></li><li><font face="Verdana"><font size="3"><strong>EventPriority.HIGH</strong></font></font></li><li><font face="Verdana"><font size="3"><strong>EventPriority.HIGHEST</strong></font></font></li><li><font face="Verdana"><font size="3"><strong>EventPriority.MONITOR (最后)</strong></font></font><br>
+</li></ul><br>
+<font face="Verdana"><font size="3"><strong>一个良好的插件应该具有良好的兼容性.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>请按照你的需要调整优先级,比如你是一个反作弊插件需要监听玩家执行命令,那么你的优先级应该是lowest,即为最先捕捉命令并拦截.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>请不要在优先级为MONITOR的方法中修改事件结果,那就无法保证别的插件能监听到你修改后的结果.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>反正就最好留下余地,不要把事情做死.[</strong></font></font><strong>这算是职业道德么233]</strong><br>
+[就和你每个方法都final一样恶心]<br>
+<br>
+<font face="Verdana"><font size="3"><strong>Cancellable接口</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>一个实现了Cancellable接口的事件则可以被取消,何为被取消? </strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>比如一个玩家打羊羊君</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>我把这个事件取消了,那就不会有任何反应,反之羊会受到伤害并被击飞</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>大部分Bukkit自带事件都实现了这个接口,我们可以通过这两个方法来判断他们是否被取消.</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>setCancelled(boolean)</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>isCancelled()</strong></font></font><br>
+<font face="Verdana"><font size="3"><strong>被取消的事件依旧会继续调用接下来的监听器,所以在你捕捉到事件之后先需要判断他是否被取消[虽然总是忘记]</strong></font></font><br>
+<br>
+<strong><font face="Verdana"><font size="3">事件中通常会携带这个事件的有关信息,若想得到这些信息则需要到bukkit的javadoc中去找相关的方法.</font></font></strong><font size="3"><br>
+</font><br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10707640" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10707640" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10707640"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10707640" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">人气 <i><span class="xi1">+1</span></i></th>
+<th class="xw1" width="80">金粒 <i><span class="xi1">+15</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10707640&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10707640_1810571">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1810571" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1810571" target="_blank">SpaceBang</a>
+</td><td class="xi1"> + 1</td>
+<td class="xi1"> + 15</td>
+<td class="xg1">可以这很详细</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10707640" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10707640"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10707640&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10707640" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10707640&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10707640&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10707640_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10707640')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10707640] = ['968596','968598','968615'];
+attachimggroup(10707640);
+var aimgfid = 0;
+</script>
+</div><div id="post_10710297"><table id="pid10710297" class="plhin" summary="pid10710297" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10710297" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10710297" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10710297_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10710297" id="postnum10710297" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>9</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10710297" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10710297">发表于 2016-8-6 22:26:52</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10710297">
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-7 15:11 编辑 </i><br>
+<br>
+<font size="6">5.物品(ItemStack)类与背包(Inventory)类</font><br>
+<font size="3">先说ItemStack类(</font><font size="3">Material或ID + 数量 + damage(附加值,比如不同颜色的羊毛有着同样的ID不同的附加值) + 其他数据</font><font size="3">).<br>
+</font><font size="3">他代表着游戏中的一格物品,注意是一格而不是一个.</font><font size="3">即他有"数量"这个属性.</font><br>
+<font size="3">ItemStack的构造方法与方法javadoc里有很清晰的解释,这里就不多说了,说了也是误导大家.</font><br>
+<font size="3"><br>
+</font><font size="3">值得一提的是ItemMeta这个类.</font><br>
+<font size="3">他储存了物品的许多的属性如显示名称(物品的名称与显示名称是不一样的),附魔,lore(就是悬停时那一小行说明)等等</font><br>
+<font size="3">获取与修改的方法也在ItemStack的javadoc中,需要注意的是 他是传出一个clone的对象,而不是直接传引用的,所以需要重新set回去.</font><br>
+<font size="3">这些其实都是储存在NBT中的数据,只是部分被转换成了ItemMeta而已.</font><br>
+<br>
+<br>
+<font size="3">Inventory (<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fwiki.vg%2FInventory" target="_blank">WIKI</a>) 类描述了一个背包<br>
+种类也有许多
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_968960" aid="968960" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/220154xjbrzdguoj17jphd.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/06/220154xjbrzdguoj17jphd.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_968960_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160806220736.png</strong> <em class="xg1">(18.65 KB, 下载次数: 56)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY4OTYwfDQ4MWY2NDI2fDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-6 22:01 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+最常见的就非PlayerInventory(玩家背包, 即包括装备栏)莫属了.<br>
+<strong>如何创建一个背包</strong><br>
+Inventory类并不能实例化,需要用到bukkit类的一个静态方法,自行查阅.<br>
+Bukkit.createInventory(..)<br>
+<br>
+对一个背包,我们有如下几个关键方法<br>
+addItem(ItemStack) - 给这个背包添加一个物品,返回值为一个HashMap,塞不下的物品会被返回.<br>
+contains(ItemStack) - 该背包中是否包含给定的ItemStack<br>
+getItem(int) - 根据下标获取相应的物品</font><font size="3">getTitle() - 得到左上角所显示的标题.<br>
+</font><font size="3">等等......&nbsp;&nbsp;<br>
+[对应的下标的获取方法下面有]<br>
+<br>
+假如我们现在创建好了一个背包,也给里面添加好了物品.<br>
+<strong>如何让一个玩家看到呢?</strong><br>
+Player类的openInventory(Inventory)方法.</font><br>
+<font size="3">在该玩家的界面打开背包. (如果背包类型是默认的箱子背包的话, 玩家看到的就和打开一个箱子所显示出的界面一样.)<br>
+<br>
+那玩家会不会拿里面的东西? 那可都是我辛辛苦苦创建出来的宝♂贝QAQ [大雾]<br>
+所以说,我们要监听玩家拿取东西的事件并取消掉他.<br>
+这时我们就需要监听事件<strong>InventoryClickEvent.</strong><br>
+<strong>这个事件会触发在玩家点击一个Slot(物品槽)的时候,即使这个物品槽是空的.</strong></font><font size="3">只要我们确定这个背包是我们自定义的背包,就可以取消这个事件使得玩家无法点击物品,达到无法拿出的效果.</font><br>
+<font size="3">如何确定呢? 没错,就是靠判断背包的title.</font><br>
+<font size="3">如何查看下标? </font><font size="3">InventoryClickEvent的</font><font size="3">getSlot()方法,会返回物品槽下标.</font><br>
+<font size="3"><div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td>
+<ignore_js_op>
+
+<img style="cursor:pointer" id="aimg_969414" aid="969414" src="https://static.mcbbs.net/static/image/common/none.gif" onclick="zoom(this, this.getAttribute(&#39;zoomfile&#39;), 0, 0, &#39;0&#39;)" zoomfile="https://attachment.mcbbs.net/data/myattachment/forum/201608/07/144334dhpylpd9dolgxylp.png" file="https://attachment.mcbbs.net/data/myattachment/forum/201608/07/144334dhpylpd9dolgxylp.png.thumb.jpg" inpost="1" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<div class="tip tip_4 aimg_tip" id="aimg_969414_menu" style="position: absolute; display: none" disautofocus="true">
+<div class="xs0">
+<p><strong>QQ截图20160807144852.png</strong> <em class="xg1">(110.07 KB, 下载次数: 67)</em></p>
+<p>
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=OTY5NDE0fGU4OWU2MGY0fDE3MDM5Mzk3OTF8MHw2MTQzODg%3D&amp;nothumb=yes" target="_blank">下载附件</a>
+
+</p>
+
+<p class="xg1 y">2016-8-7 14:43 上传</p>
+
+</div>
+<div class="tip_horn"></div>
+</div>
+
+</ignore_js_op>
+<br>
+看WIKI的孩子有糖吃</td></tr></tbody></table></div></div><br>
+</font><br>
+<font size="3"><br>
+</font><br>
+<font size="3">[不知道为什么,看javadoc的英文看多了连中文语序都变了..可怕的文化侵蚀]<br>
+</font><br>
+<br>
+<font size="5">需要注意的地方</font><br>
+<div class="quote"><blockquote><font size="2">Assuming the EntityHuman associated with this event is an instance of a Player, manipulating the MaxStackSize or contents of an Inventory will require an Invocation of Player.updateInventory(). </font></blockquote></div><br>
+在<font size="3">InventoryClickEvent的javadoc中有这么一段话,其大意为如果触发这个事件的实体是一个玩家(虽然我不知道非玩家如何触发这个事件),在修改他的背包之后需要调用</font><font size="3">Player.updateInventory()这个方法更新他的背包.</font><br>
+<font size="3"><br>
+</font><br>
+<br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10710297" class="cm">
+</div>
+
+<div id="post_rate_div_10710297"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10710297"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10710297&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10710297" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10710297&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10710297&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10710297_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10710297')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" reload="1">
+aimgcount[10710297] = ['968960','969414'];
+attachimggroup(10710297);
+var aimgfid = 0;
+</script>
+</div><div id="post_10711682"><table id="pid10711682" class="plhin" summary="pid10711682" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10711682" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank" class="xw1">TimmyOVO</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10711682" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10711682_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" target="_blank" class="xi2">TimmyOVO</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=profile" target="_blank" class="xi2">5108</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2016-2-13</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1696224" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：湖北</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10711682" id="postnum10711682" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>10</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10711682" src="https://static.mcbbs.net/static/image/common/icon_zombie_pigman.png">
+<em id="authorposton10711682">发表于 2016-8-7 09:15:16</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=1696224" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10711682">
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=10704946&amp;ptid=614388" target="_blank"><font color="#999999">吕乐乐 发表于 2016-8-6 08:20</font></a></font><br>
+是的= =我采取的办法就是手动打开jar，<br>
+然后用手拖进去，可是总忘了把我写的config.yml拖进去，<br>
+于是插件 ...</blockquote></div><br>
+？？？？？？？，netbeans在对应的工程文件夹下面.dist/文件夹下面有构建好的jar</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10711682" class="cm">
+</div>
+
+<div id="post_rate_div_10711682"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10711682"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10711682&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10711682" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10711682&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10711682&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10711682_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10711682')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10715059"><table id="pid10715059" class="plhin" summary="pid10715059" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10715059" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10715059" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10715059_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：广东</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10715059" id="postnum10715059" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>11</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10715059" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10715059">发表于 2016-8-7 16:21:35</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10715059">
+<i class="pstatus"> 本帖最后由 914554688wyt 于 2016-8-19 19:48 编辑 </i><br>
+<br>
+<font face="Verdana"><font size="6">6.关于"数据包".<br>
+</font></font><font face="Verdana"><font size="6">本章内容在bukkit javadoc中无涉及,</font></font><br>
+<font face="Verdana"><font size="6">需查看NMS包.</font></font><br>
+<font face="Verdana"><font size="3">服务端与客户端之间的通讯,全部以数据包来往的方式进行.</font></font><font face="Verdana"><font size="3">然而Bukkit并提供没有收发包的API,具体原因嘛...自己脑补一下<strike>我也不知道</strike>.</font></font><br>
+<font face="Verdana"><font size="3"><br>
+</font></font><font face="Verdana"><font size="3">这里暂且不涉及到具体通讯方法(Socket,暂时不打算搞</font></font><font face="Verdana"><font size="3">)</font></font><br>
+<font face="Verdana"><font size="3">每一种数据包都被封装为一个类,这个类在net.minecraft.server.版本包中,类名格式为Packet + 类型 + (Out/In) +内容.</font></font><br>
+<font face="Verdana"><font size="3">类型有四种</font></font><br>
+<font face="Verdana"><font size="3">Login - 加入服务器时.(与登录插件无关)</font></font><br>
+<font face="Verdana"><font size="3">Status - Ping与MOTD等</font></font><br>
+<font face="Verdana"><font size="3">Play - 游戏内容</font></font><br>
+<font face="Verdana"><font size="3">Handshake - 握手包</font></font><br>
+<font face="Verdana"><font size="3"><br>
+</font></font><br>
+<font face="Verdana"><font size="3">Out 是指 传出,即发送给客户端的包</font></font><br>
+<font face="Verdana"><font size="3">In 是指 收到,即从客户端传出的包</font></font><br>
+<font face="Verdana"><font size="3"><strong>如何不使用别的工具(ProtocolLib说的就是你!)发包</strong></font></font><br>
+<font face="Verdana"><font size="3"><font style="background-color:white"><strong>(需要一定的反射知识)</strong></font></font></font><br>
+<font face="Verdana"><font size="3"><strong>[以下是本人口胡时间]</strong></font></font><br>
+<font face="Verdana"><font size="3">首先我们想,给玩家发包,应该是在Player类下</font></font><br>
+<font face="Verdana"><font size="3">然后我们又发现,Player是个抽象类,于是我们找到他的实现类CraftPlayer.</font></font><br>
+<font face="Verdana"><font size="3">我们发现一个很有可能的成员 playerConnection,但这个成员在CraftPlayer.getHandle()下,</font></font><br>
+<font face="Verdana"><font size="3">继续顺藤摸瓜,找到getHandle的返回类型EntityPlayer,打开PlayerConnection类,</font></font><br>
+<font face="Verdana"><font size="3">然后就可以看到在PlayerConnection类下的sendPacket方法!</font></font><br>
+<font face="Verdana"><font size="3">[以下为正文]</font></font><br>
+<font face="Verdana"><font size="3"><br>
+</font></font><br>
+通过不懈的探索与寻找(其实就是强行查找),我们找到了一个发包(至少是名字像)方法<br>
+<br>
+public void sendPacket(final Packet packet)<br>
+但在Player类中没有包含getHandle这个方法,只在他的实现类CraftPlayer中有.但所有Player实例实际上也是一个CraftPlayer实例<br>
+假设有Player p;<br>
+<br>
+1.这时候就要用到我们的反射大法,首先获取Class&lt;CraftPlayer&gt;实例,然后再获取他的"getHandle"方法,再执行获取EntityPlayer实例<br>
+Object entityPlayer = p.getClass().getMethod("get<font style="font-size:14px">Handle", new Class[0]).invoke(p, new Object[0]);</font><br>
+<font style="font-size:14px"><br>
+</font><br>
+<font style="font-size:14px">可能有人会说,可以强转CraftPlayer然后直接调用getHandle啊</font><br>
+<br>
+<font style="font-size:14px">.. 如果出现导入,那么服务端换了版本就会抛</font>ClassNotFound<font style="font-size:14px">异常,因为</font><br>
+<div class="quote"><blockquote>NMS与CraftBukkit包<strike>居心险恶的</strike>每个版本的包名不一样</blockquote></div><br>
+所以说, 你强转CraftPlayer类不需要导入吗？<br>
+<br>
+2.再获取他的playerConnection 字段<br>
+Object <font style="font-size:14px">playerConnection </font>= <font style="font-size:14px">craftPlayer</font>.getClass().getField("playerConnection").get(<font style="font-size:14px">craftPlayer</font>);<br>
+3.最后获取他的sendPacket方法<br>
+<br>
+<font style="font-size:14px">playerConnection</font><font style="font-size:14px"> </font>.getClass().getMethod("sendPacket", new Class[] { getNMSClass("Packet") })<br>
+<br>
+这个getNMSClass,是因为NMS<strike>居心险恶的</strike>每个版本的包名不一样,而这个包名的格式是<br>
+net.minecraft.server.vX_X_RX<br>
+然后bukkit的实现类都在craftbukkit包里,这个包名的格式是<br>
+org.bukkit.craftbukkit.<font style="font-size:14px">vX_X_RX</font><br>
+<br>
+这个好办,我们随便获取一个nms或者cb Class,然后取他的包名然后再处理就可以了,就像这样<br>
+version = Bukkit.getServer().getClass().getPackage().getName() <br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;.substring(Bukkit.getServer().getClass().getPackage().getName().lastIndexOf('.') + 1);<br>
+*这里的getServer()返回的是CraftServer实例<br>
+<br>
+得到版本后,就直接Class.forName(<font style="font-size:14px">net.minecraft.server.版本.类名</font>)获取NMS类就可以了.<br>
+<br>
+得到sendPacket方法后,我们还需要处理他的参数Packet.<br>
+<br>
+通过反射获取我们需要的包的构造器, 假如我要发PacketPlayOutTitle包<br>
+<font style="font-size:14px">Object packetTitle = getNmsClass("PacketPlayOutTitle").getConstructor(new Class[] {</font><font style="font-size:14px">有序的</font><font style="font-size:14px">构造器参数类型的Class实例</font><font style="font-size:14px">})</font><br>
+<font style="font-size:14px">.newInstance(new Object[] { 有序的构造器参数 });</font><br>
+<font style="font-size:14px"><br>
+</font><br>
+现在来完成最后一步, 执行sendPacket方法<br>
+<font style="font-size:14px">playerConnection</font><font style="font-size:14px"> </font><font style="font-size:14px">.getClass().</font><br>
+<font style="font-size:14px">&nbsp;&nbsp;getMethod("sendPacket", new Class[] { getNMSClass("Packet") }).invoke(</font><font style="font-size:14px">playerConnection</font><font style="font-size:14px"> </font><font style="font-size:14px">, new Object[] { </font><font style="font-size:14px">packetTitle </font><font style="font-size:14px">});</font><br>
+大功告成,这样你就成功的给玩家发送了一个Packet.<br>
+<br>
+另外,我们还可以使用ProtocolLib进行收发包,监听包的收发等等.... <br>
+梨子的ProtocolLib教程:<br>
+[Ni]ProtocolLib怎么玩|使用ProtocolLib发包或收包|突破Bukkit限制|只有想不到系列<br>
+<a href="http://www.mcbbs.net/thread-568714-1-1.html" target="_blank">http://www.mcbbs.net/thread-568714-1-1.html</a><br>
+<br>
+番外<br>
+NMS包是不是有混淆? 有些包的字段是不是看不懂?<br>
+你需要这个<br>
+<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fwiki.vg%2FProtocol" target="_blank">http://wiki.vg/Protocol</a><br>
+完整的描述了mc数据包每个字段的意义.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10715059" class="cm">
+</div>
+
+<div id="post_rate_div_10715059"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10715059"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10715059&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10715059" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10715059&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10715059&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10715059_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10715059')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10737527"><table id="pid10737527" class="plhin" summary="pid10737527" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10737527" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777" target="_blank" class="xw1">Keng_Die</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10737527" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10737527_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777" target="_blank" class="xi2">Keng_Die</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777&amp;do=profile" target="_blank" class="xi2">1850</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-10-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=943777&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar">头像被屏蔽</div>
+</div>
+<p class="cp_pls cl country-icon">来自：辽宁</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10737527" id="postnum10737527" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>12</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10737527" src="https://static.mcbbs.net/static/image/common/icon_zombie.png">
+<em id="authorposton10737527">发表于 2016-8-10 15:18:49</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=943777" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10737527">
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=10715059&amp;ptid=614388" target="_blank"><font color="#999999">914554688wyt 发表于 2016-8-7 16:21</font></a></font><br>
+6.关于"数据包".<br>
+本章内容在bukkit javadoc中无涉及,<br>
+需查看NMS包.</blockquote></div><br>
+反射大法2333</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10737527" class="cm">
+</div>
+
+<div id="post_rate_div_10737527"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10737527"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10737527&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10737527" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10737527&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10737527&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10737527_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10737527')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10738723"><table id="pid10738723" class="plhin" summary="pid10738723" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10738723" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank" class="xw1">hsk001ufo</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10738723" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10738723_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank" class="xi2">hsk001ufo</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501&amp;do=profile" target="_blank" class="xi2">8151</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2012-7-7</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：浙江</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10738723" id="postnum10738723" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>13</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10738723" src="https://static.mcbbs.net/static/image/common/icon_zombie_pigman.png">
+<em id="authorposton10738723">发表于 2016-8-10 18:03:11</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=81501" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10738723">
+那个bukkit的javadoc链接 404了</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10738723" class="cm">
+</div>
+
+<div id="post_rate_div_10738723"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10738723"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10738723&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10738723" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10738723&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10738723&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10738723_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10738723')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10738972"><table id="pid10738972" class="plhin" summary="pid10738972" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10738972" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xw1">914554688wyt</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10738972" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10738972_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" target="_blank" class="xi2">914554688wyt</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" class="xi2">3291</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2014-1-1</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=475558" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：天津</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10738972" id="postnum10738972" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>14</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10738972" src="https://static.mcbbs.net/template/mcbbs/image/ico_lz.png">
+&nbsp;楼主<span class="pipe">|</span>
+<em id="authorposton10738972">发表于 2016-8-10 18:43:49</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=475558" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10738972">
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=10738723&amp;ptid=614388" target="_blank"><font color="#999999">hsk001ufo 发表于 2016-8-10 18:03</font></a></font><br>
+那个bukkit的javadoc链接 404了</blockquote></div><br>
+<a href="https://hub.spigotmc.org/javadocs/spigot/" target="_blank">https://hub.spigotmc.org/javadocs/spigot/</a>,可以尝试一下spigotAPI,与BukkitAPI98%基本相同</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10738972" class="cm">
+</div>
+
+<h3 class="psth xs1"><span class="icon_ring vm"></span>评分</h3>
+<dl id="ratelog_10738972" class="rate">
+<dd style="margin:0">
+<div id="post_rate_10738972"></div>
+<table class="ratl">
+<tbody><tr>
+<th class="xw1" width="120"><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10738972" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分"> 参与人数 <span class="xi1">1</span></a></th><th class="xw1" width="80">金粒 <i><span class="xi1">+1</span></i></th>
+<th>
+<a href="javascript:;" onclick="toggleRatelogCollapse(&#39;ratelog_10738972&#39;, this);" class="y xi2 op">收起</a>
+<i class="txt_h">理由</i>
+</th>
+</tr>
+</tbody><tbody class="ratl_l"><tr id="rate_10738972_81501">
+<td>
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a> <a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=81501" target="_blank">hsk001ufo</a>
+</td><td class="xi1"> + 1</td>
+<td class="xg1">谢了=。=正好要的就是spigot的</td>
+</tr>
+</tbody>
+</table>
+<p class="ratc">
+<a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=viewratings&amp;tid=614388&amp;pid=10738972" onclick="showWindow(&#39;viewratings&#39;, this.href)" title="查看全部评分" class="xi2">查看全部评分</a>
+</p>
+</dd>
+</dl>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10738972"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10738972&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10738972" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10738972&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10738972&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10738972_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10738972')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_10740051"><table id="pid10740051" class="plhin" summary="pid10740051" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls" rowspan="2">
+<div id="favatar10740051" class="pls favatar">
+ <div class="pi">
+<div class="authi"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570" target="_blank" class="xw1" style="color: #0099FF">gooding300</a>
+</div>
+</div>
+<div class="p_pop blk bui card_gender_" id="userinfo10740051" style="opacity: 0; transition: opacity 200ms ease 0s; pointer-events: none; margin-top: -11px;">
+<div class="m z">
+<div id="userinfo10740051_ma"></div>
+</div>
+<div class="i y">
+<div>
+<strong><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570" target="_blank" class="xi2" style="color: #0099FF">gooding300</a></strong>
+<em>当前离线</em>
+</div><dl class="cl">
+<dt>积分</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570&amp;do=profile" target="_blank" class="xi2">18236</a></dd>
+<dt>帖子</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570&amp;do=thread&amp;type=reply&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>主题</dt><dd><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570&amp;do=thread&amp;type=thread&amp;view=me&amp;from=space" target="_blank" class="xi2"></a></dd>
+<dt>精华</dt><dd></dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/nautilus_shell.png"> 贡献</dt><dd> 份</dd>
+<dt><img style="vertical-align:middle" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/apple.png"> 爱心</dt><dd> 心</dd>
+<dt>钻石</dt><dd> 颗</dd>
+<dt>人气</dt><dd> 点</dd>
+<dt>下界之星</dt><dd> 枚</dd>
+<dt>最后登录</dt><dd>1970-1-1</dd>
+<dt>注册时间</dt><dd>2012-4-13</dd>
+</dl><div class="imicn">
+<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570&amp;do=profile" target="_blank" title="查看详细资料"><img src="https://static.mcbbs.net/template/mcbbs/image/userinfo.gif" alt="查看详细资料"></a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+<div>
+<div class="avatar"><a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=58570" class="avtm" target="_blank"><img src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/noavatar.svg" onerror="this.onerror=null;this.src=&#39;https://www.mcbbs.net/uc_server/images/noavatar.svg&#39;"></a></div>
+</div>
+<p class="cp_pls cl country-icon">来自：浙江</p></div>
+</td>
+<td class="plc">
+<div class="pi">
+<strong>
+<a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=614388&amp;pid=10740051" id="postnum10740051" onclick="setCopy(this.href, &#39;帖子地址复制成功&#39;);return false;">
+<em>15</em><sup>#</sup></a>
+</strong>
+<div class="pti">
+<div class="pdbt">
+</div>
+<div class="authi">
+<img class="authicn vm" id="authicon10740051" src="https://static.mcbbs.net/static/image/common/icon_cow.png">
+<em id="authorposton10740051">发表于 2016-8-10 21:09:55</em>
+<span class="pipe">|</span>
+<a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;tid=614388&amp;page=1&amp;authorid=58570" rel="nofollow">只看该作者</a>
+</div>
+</div>
+</div><div class="pct"><div class="pcb">
+<div class="t_fsz">
+<table cellspacing="0" cellpadding="0"><tbody><tr><td class="t_f" id="postmessage_10740051">
+等等..容器(container)？不是集合(collection)吗？</td></tr></tbody></table>
+
+
+</div>
+<div id="comment_10740051" class="cm">
+</div>
+
+<div id="post_rate_div_10740051"></div>
+</div>
+</div>
+
+</td></tr>
+<tr><td class="plc plm">
+</td>
+</tr>
+<tr id="_postposition10740051"></tr>
+<tr>
+<td class="pls"></td>
+<td class="plc" style="overflow:visible;">
+<div class="po hin">
+<div class="pob cl">
+<em>
+<a class="fastre" href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;repquote=10740051&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)">回复</a>
+</em>
+
+<p>
+<a href="javascript:;" id="mgc_post_10740051" onmouseover="showMenu(this.id)" class="showmenu">使用道具</a>
+<a href="javascript:;" onclick="showWindow(&#39;miscreport10740051&#39;, &#39;misc.php?mod=report&amp;rtype=post&amp;rid=10740051&amp;tid=614388&amp;fid=479&#39;, &#39;get&#39;, -1);return false;">举报</a>
+</p>
+
+<ul id="mgc_post_10740051_menu" class="p_pop mgcmn" style="display: none;">
+</ul>
+<script type="text/javascript" reload="1">checkmgcmn('post_10740051')</script>
+</div>
+</div>
+</td>
+</tr>
+<tr class="ad">
+<td class="pls">
+</td>
+<td class="plc">
+</td>
+</tr>
+</tbody></table>
+</div><div id="postlistreply" class="pl"><div id="post_new" class="viewthread_table" style="display: none"></div></div>
+</div>
+
+
+<form method="post" autocomplete="off" name="modactions" id="modactions">
+<input type="hidden" name="formhash" value="df36dc86">
+<input type="hidden" name="optgroup">
+<input type="hidden" name="operation">
+<input type="hidden" name="listextra" value="page%3D1">
+<input type="hidden" name="page" value="1">
+</form>
+
+
+<div class="pgbtn"><a href="https://www.mcbbs.net/thread-614388-2-1.html" hidefocus="true" class="bm_h">下一页 »</a></div>
+
+<div class="pgs mtm mbm cl">
+<div class="pg"><strong>1</strong><a href="https://www.mcbbs.net/thread-614388-2-1.html">2</a><a href="https://www.mcbbs.net/thread-614388-3-1.html">3</a><a href="https://www.mcbbs.net/thread-614388-4-1.html">4</a><label><input type="text" name="custompage" class="px" size="2" title="输入页码，按回车快速跳转" value="1" onkeydown="if(event.keyCode==13) {window.location=&#39;forum.php?mod=viewthread&amp;tid=614388&amp;extra=page%3D1&amp;page=&#39;+this.value;; doane(event);}"><span title="共 4 页"> / 4 页</span></label><a href="https://www.mcbbs.net/thread-614388-2-1.html" class="nxt">下一页</a></div><span class="pgb y"><a href="https://www.mcbbs.net/forum-development-1.html">返回列表</a></span>
+<!--<a id="newspecialtmp" onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" onclick="showWindow('newthread', 'forum.php?mod=post&action=newthread&fid=479')" href="javascript:;" title="发新帖"><img src="https://static.mcbbs.net/template/mcbbs/image/pn_post.png" alt="发新帖" /></a>-->
+            <a id="" onclick="showWindow(&#39;reply&#39;, &#39;forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&#39;)" href="javascript:;" title="回复"><img src="https://static.mcbbs.net/template/mcbbs/image/pn_reply.png" alt="回复"></a>
+    </div>
+
+<!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]-->
+<script type="text/javascript">
+var postminchars = parseInt('10');
+var postmaxchars = parseInt('1000000');
+var disablepostctrl = parseInt('0');
+</script>
+
+<div id="f_pst" class="pl bm bmw">
+<form method="post" autocomplete="off" id="fastpostform" action="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;extra=page%3D1&amp;replysubmit=yes&amp;infloat=yes&amp;handlekey=fastpost" onsubmit="return fastpostvalidate(this)">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="pls">
+</td>
+<td class="plc">
+
+<span id="fastpostreturn"></span>
+
+
+<div class="cl">
+<div id="fastposteditor">
+<div class="tedt mtn">
+<div class="bar">
+<span class="y">
+<a href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388" onclick="return switchAdvanceMode(this.href)">高级模式</a>
+</span><script src="https://static.mcbbs.net/static/js/seditor.js?OcA" type="text/javascript"></script>
+<div class="fpd">
+<a href="javascript:;" title="文字加粗" class="fbld">B</a>
+<a href="javascript:;" title="设置文字颜色" class="fclr" id="fastpostforecolor">Color</a>
+<a id="fastpostimg" href="javascript:;" title="图片" class="fmg">Image</a>
+<a id="fastposturl" href="javascript:;" title="添加链接" class="flnk">Link</a>
+<a id="fastpostquote" href="javascript:;" title="引用" class="fqt">Quote</a>
+<a id="fastpostcode" href="javascript:;" title="代码" class="fcd">Code</a>
+<a href="javascript:;" class="fsml" id="fastpostsml">Smilies</a>
+</div></div>
+<div class="area">
+<div class="pt hm">
+您需要登录后才可以回帖 <a href="https://www.mcbbs.net/member.php?mod=logging&amp;action=login" onclick="showWindow(&#39;login&#39;, this.href)" class="xi2">登录</a> | <a href="https://www.mcbbs.net/member.php?mod=register" class="xi2">注册(register)</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="seccheck_fastpost">
+</div>
+
+
+<input type="hidden" name="formhash" value="df36dc86">
+<input type="hidden" name="usesig" value="">
+<input type="hidden" name="subject" value="  ">
+<p class="ptm pnpost">
+<a href="https://www.mcbbs.net/home.php?mod=spacecp&amp;ac=credit&amp;op=rule&amp;fid=479" class="y" target="_blank">本版积分规则</a>
+<button type="button" onclick="showWindow(&#39;login&#39;, &#39;member.php?mod=logging&amp;action=login&amp;guestmessage=yes&#39;)" onmouseover="checkpostrule(&#39;seccheck_fastpost&#39;, &#39;ac=reply&#39;);this.onmouseover=null" name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5"><strong>发表回复</strong></button>
+<label for="fastpostrefresh"><input id="fastpostrefresh" type="checkbox" class="pc">回帖后跳转到最后一页</label>
+<script type="text/javascript">if(getcookie('fastpostrefresh') == 1) {$('fastpostrefresh').checked=true;}</script>
+</p>
+</td>
+</tr>
+</tbody></table>
+</form>
+</div>
+
+<script type="text/javascript">
+new lazyload();
+</script>
+<script type="text/javascript">document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'forum.php?mod=viewthread&tid=614388', 1);}</script>
+</div>
+
+<div class="wp mtn">
+<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+function succeedhandle_followmod(url, msg, values) {
+var fObj = $('followmod_'+values['fuid']);
+if(values['type'] == 'add') {
+fObj.innerHTML = '不收听';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=del&fuid='+values['fuid'];
+} else if(values['type'] == 'del') {
+fObj.innerHTML = '收听TA';
+fObj.href = 'home.php?mod=spacecp&ac=follow&op=add&hash=df36dc86&fuid='+values['fuid'];
+}
+}
+</script>	</div>
+
+
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/hms-messaging.js.下载" type="text/javascript"></script>
+<script>
+    //Your web app's hms configuration
+    var hmsConfig = {
+        "apiKey":"gCuPASMJwji2N0Y4B7m2fOlPpXCGEgnBBQyeNs_g",
+        "projectId":"736430079244919664",
+        "appId":"322385623857115433",
+        "countryCode":"CN"
+    };
+
+    //Initialize Hms
+    hms.initializeApp(hmsConfig);
+
+    const messaging = hms.messaging();
+    messaging.usePublicVapidKey(
+        "BCuGAGsI9Dl1Zb1T56kZf3duInCznNWaD8QdVBi1uPcAmr0NsUU9ia0Lr37k-chBVf86UXQP9sqZRTDPTZmsZD8");
+    var tkv = '';
+    function getTk() {
+        return messaging.getToken().then((currentToken) => {
+            if (currentToken) {
+                console.log('getToken succ: ', currentToken);
+                tkv = currentToken;
+                setcookie('webpush_token', tkv)
+                ajaxget('plugin.php?id=zhaisoul_huawei_push:push')
+                return currentToken
+                // alert('getToken Success.');
+            } else {
+                console.log('拿不到token');
+            }
+        }).catch((err) => {
+            console.log( err.message);
+        });
+    }
+
+    navigator.serviceWorker.register("hms-messaging-sw.js", {
+        scope: "./hms-cloud-messaging-push-scope"
+    }).then((registration) => {
+        messaging.useServiceWorker(registration);
+    })
+
+    messaging.setBackgroundMessageHandler(function (payload) {
+        console.log('[hms-messaging-sw.js] Received background message.', payload);
+        // 自定义通知栏
+        const notificationTitle = 'Background Message Title';
+        const notificationOptions = {
+            body: 'Background Message body.',
+            icon: '/hms-logo.png'
+        };
+
+        return self.registration.showNotification(notificationTitle, notificationOptions);
+    });
+
+    messaging.onMessage((payload) => {
+        console.log('Message received. ', payload);
+        //...
+    });
+</script>
+<script>
+    window.Notification.requestPermission(function (permission) { // 没有权限发起请求
+        if(!getcookie('webpush_token')) {
+            getTk()
+        }
+        console.log(permission)
+    });
+</script>
+<script>if(document.querySelector(".album_wrapper[initiated='false']")){initAlbum()}</script><style>.album_wrapper[initiated="false"] {visibility: hidden}</style>
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/md5.min.js.下载" type="text/javascript"></script>
+<script>
+    function fcdf36dc86(){NotificationGet.load().then(function(b){b.get().then(function(a){a=a.visitorId;setcookie("last_message_key",md5(a+"fcdf36dc86"));setcookie("last_formhash",md5("fcdf36dc86"));ajaxget("https://www.mcbbs.net/plugin.php?id=dc_signin:check&formhash=df36dc86&key="+a)})})};
+</script>
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/fp.min.js.下载" type="text/javascript" onload="fcdf36dc86();"></script>
+<script type="text/javascript">
+            
+        </script><script>(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?cab42a0e12c257cb6bef445f6481198c":"https://jspassport.ssl.qhimg.com/11.0.1.js?cab42a0e12c257cb6bef445f6481198c";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script><script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/11.0.1.js.下载" id="sozz"></script><script charset="utf-8" src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/ab77b6ea7f3fbf79.js.下载"></script><script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>    <!--框背景的底部-->
+
+    </div>
+    </div>
+    <div class="mc_map_border_foot"></div>
+    </div>
+    <!--整个主体div结束-->
+    <style type="text/css">
+        #ft {padding: 10px 0 20px;line-height: 1.8;color: #fff;border:none;font-size:14px;}
+        #ft a {color:#fff;font-size:14px;}
+        #scrolltop {border:none;background:none;bottom:160px;}
+        #scrolltop .scrolltopa {background:url("https://static.mcbbs.net/template/mcbbs/image/scrollTo.png") left top no-repeat;width:71px;height:54px;border:none;}
+#scrolltop .templateNew {background:url("https://static.mcbbs.net/template/mcbbs/image/newTemplate.png") left top no-repeat;width:119px;height:54px;border: none;}
+</style>
+    <script type="text/javascript">
+        jq(function(){
+            var window_h = jq(window).height();
+            jq(".mc_map_wp").css("minHeight",window_h - 284 + "px");
+        });
+
+    </script>
+    <div style="width:100%;margin-top:-20px;background:url(&#39;https://static.mcbbs.net/template/mcbbs/image/bedrock.png&#39;) 0 0 repeat;padding-top:50px;">
+    <div id="ft" class="wp cl">
+<div id="flk" class="y">
+<p>
+<a href="https://www.mcbbs.net/archiver/">Archiver</a><span class="pipe">|</span><a href="https://www.mcbbs.net/forum.php?mod=misc&amp;action=showdarkroom">小黑屋</a><span class="pipe">|</span><strong><a href="https://www.mcbbs.net/" target="_blank">Mcbbs.net</a></strong>
+( <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备15023768号-1</a> ) | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502037624" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://attachment.mcbbs.net/data/myattachment/forum/201904/18/174618efzrjz22n825mfds.png">京公网安备 11010502037624号</a> |
+<a href="http://www.mcbbs.net/forum.php?mobile=2">手机版</a>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?affdf09dddabcdf2d681acefa474b973";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</p>
+<p class="xs0">
+GMT+8, 2023-12-30 20:36<span id="debuginfo">
+, Processed in 0.060254 second(s), Total 31, Slave 30 queries, Release: Build.2023.11.27 0934, Gzip On, Redis On.
+</span>
+<script>
+console.log("Release: Build.2023.11.27 0934\ndeveloper：MCBBS Team\n");
+</script>
+</p>
+<p>"<a href="https://www.minecraft.net/" target="_blank">Minecraft</a>"以及"我的世界"为美国微软公司的商标 本站与微软公司没有从属关系</p>
+<p>© 2010-2023 <a href="https://www.mcbbs.net/" target="_blank">我的世界中文论坛</a> 版权所有 本站内原创内容版权属于其原创作者，除作者或版规特别声明外未经许可不得转载</p>
+</div></div>
+    </div>
+<script src="./某wyt的Bukkit插件开发教程[主体&amp;答疑] - 编程开发 - Minecraft(我的世界)中文论坛 -_files/home.php" type="text/javascript"></script>
+<div id="scrolltop">
+<span style="display:none;"><a href="https://www.mcbbs.net/forum.php?mod=post&amp;action=reply&amp;fid=479&amp;tid=614388&amp;extra=page%3D1&amp;page=1" onclick="showWindow(&#39;reply&#39;, this.href)" class="replyfast" title="快速回复"><b>快速回复</b></a></span>
+<span hidefocus="true"><a title="试用新模板" href="https://beta.mcbbs.net/" class="templateNew" style="padding-bottom: 30px"></a></span>
+<span hidefocus="true"><a title="返回顶部" onclick="jq(&#39;body,html&#39;).animate({scrollTop:0},400);" class="scrolltopa"><b>返回顶部</b></a></span>
+<span style="display:none;">
+<a href="https://www.mcbbs.net/forum-development-1.html" hidefocus="true" class="returnlist" title="返回列表"><b>返回列表</b></a>
+</span>
+</div>
+<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
+
+
+</div></body></html>

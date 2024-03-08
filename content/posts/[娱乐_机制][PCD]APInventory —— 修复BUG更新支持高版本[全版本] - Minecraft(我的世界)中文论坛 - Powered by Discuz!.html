@@ -1,0 +1,946 @@
+---
+title: "[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!.html"
+---
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%8f%92%e4%bb%b6&d=4720817960604847&mkt=zh-CN&setlang=zh-CN&w=y-ZzuEHqWGFix7YfOaTvf25JT-XVt2IT -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1021016">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2021/11/9--><!--InvariantDate:11/9/2021--></head><body><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1021016" h="ID=SERP,5003.1">https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1021016</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2021/11/9</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1021016" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+<title>[娱乐|机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!</title>
+
+<style type="text/css">
+body 	   {margin: 10px 80px;}
+body,table {font-size: FONTSIZE; font-family: FONT;}
+h1 { font-size: 24px; margin-bottom: 20px; color: #999; }
+</style>
+<script src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/common.js.下载" type="text/javascript"></script>
+<script src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/forum_viewthread.js.下载" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'fVX', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/nether', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L2ZvcnVtLnBocD9tb2Q9dmlld3RocmVhZCZhY3Rpb249cHJpbnRhYmxlJnRpZD0xMDIxMDE2', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/';</script>
+
+
+
+<h1>Minecraft(我的世界)中文论坛</h1>
+<b>标题: </b>[娱乐|机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] <b><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1021016###" onclick="this.style.visibility=&#39;hidden&#39;;window.print();this.style.visibility=&#39;visible&#39;">[打印本页]</a></b><br>
+<script type="text/javascript">var zoomstatus = 0;var aimgcount = new Array();</script><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 09:36<br>
+<b>标题: </b>[娱乐|机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本]<br><i class="pstatus"> 本帖最后由 梦星桐 于 2021-8-12 20:29 编辑 </i><br>
+<br>
+<table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>插件介绍</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><div align="center"><font size="3"><font color="#000000">这是个在AP属性的基础上制作的饰品插件</font></font></div><font size="3"><font color="#000000"><div align="center">自定义性较高，可搭配材质包实现RPGInventory那样的效果</div><div align="center">插件具有单独的套装属性，可自定义</div><div align="center">如果测试了其他版本、核心可以用可以回复告诉我</div><div align="center">理论支持全版本Spigot端</div><div align="center">已测试可正常使用</div><div align="center">1.7.10UR端 1.12.2 Spigot 1.16.3,1.16.4Paper(来自384#"墨寒菌"的测试)</div><br>
+<div align="center">配合材质包实现饰品背包范例</div><div align="center">示例1 原版物品栏贴图例</div></font></font><div align="center">
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202004/21/153332stz11a5qnvfsuw1f.png" alt="QQ图片20200421153313.png" title="QQ图片20200421153313.png">
+
+</ignore_js_op>
+</div><br>
+<font size="3"></font><div align="center"><font size="3"><font size="3"><font color="#000000"><strong>材质包</strong></font></font><font style="font-size:14px">
+<ignore_js_op>
+
+<div class="attach-down-wrapper" data-attach-id="1563554">
+
+<div class="attach-download-indicator" onclick="return attach_download_ctrl(this)">
+<svg class="attach-download-circle" width="32" height="32">
+<circle cx="16" cy="16" r="13" fill="none" stroke-width="3" stroke="#2196f3" stroke-dasharray="82" stroke-dashoffset="80"></circle>
+</svg>
+<div class="attach-ctrl-icon">
+<i class="fico-down"></i>
+<i class="fico-remove"></i>
+</div>
+<div class="attach-file-icon"><img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/zip.gif" border="0" class="vm" alt=""></div>
+</div>
+<div class="download-info" id="attach_1563554" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTU2MzU1NHw0ZTU0NjJiZHwxNjM2NDcwMDg4fDB8MTAyMTAxNg%3D%3D" class="attach-download-link" onclick="return attach_download_ctrl(this)" target="_blank">APInventory材质包.zip</a>
+
+<em class="xg1">(<span class="download-progress">0 </span>181.8 KB, 下载次数: 605)</em>
+</div>
+<div class="direct-link">
+下载遇到问题? <a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTU2MzU1NHw0ZTU0NjJiZHwxNjM2NDcwMDg4fDB8MTAyMTAxNg%3D%3D" target="_blank">直接下载</a>
+</div>
+</div>
+</ignore_js_op></font></font><div class="tip tip_4" id="attach_1563554_menu" style="position: absolute; display: none" disautofocus="true"><font size="3"><font style="font-size:14px">
+</font><div class="tip_c xs0"><font style="font-size:14px">
+<div class="y">2020-4-21 15:35 上传</div>
+点击文件名下载附件
+
+
+</font></div><br>
+</font></div></div></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>使用教程(慎入)</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000"><div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td>1、下载APInventory的最新版本放入服务端根目录的plugins文件夹<br>
+2、开启服务器，确认生成了对应的配置<br>
+3、打开plugins/APInventory/config.yml<br>
+可进行主自定义界面的编辑，第一行的Version为版本号<div align="left">
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904ziv11rrm81irhlji.png" alt="3.png" title="3.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+4、界面名字的设置，你可任意修改界面名字为你想要的，但请不要设置的和其他任何界面重名<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904xpu4ffbx9affiz91.png" alt="4.png" title="4.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">5、权限设置，Use权限为玩家输入api open打开界面所需要的权限<br>
+Admin权限为重载插件的管理员权限<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904oj3h72lfbqjjr3bv.png" alt="5.png" title="5.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">6、界面行数的设置，你可以将其设为1-6的任意一个数字<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904exx3ggl2c3xz85qw.png" alt="6.png" title="6.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">7、原版装备栏的设置，你可以将这里设为true使玩家无法使用原版的装备栏<br>
+如果开启玩家点击装备栏会自动进入主自定义界面<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904h5ts2fmo5qjnnnss.png" alt="7.png" title="7.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">8、背包快捷打开主自定义界面的设置<br>
+Ps: 仅支持生存模式的背包，不要用创造模式做这些！<br>
+你可以将这里开启，然后设置孔位使玩家点击孔位打开主自定义界面<br>
+开启这个Debug后你点击格子可以显示这个孔位的位置<br>
+你可以将显示的位置写入ReplaceSlot<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904nw41a1w01i4494ff.png" alt="8.png" title="8.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">9、分割线的设置 Ps: 仅&lt;&gt;括起来的为可修改内容<br>
+<div class="blockcode"><div id="code_UCv"><ol><li>Dividing:<br>
+</li><li>&nbsp;&nbsp;Name: '&lt;分割线名字，可彩色，颜色符号§&gt;'<br>
+</li><li>&nbsp;&nbsp;Id: &lt;物品的ID&gt; #可通过/itemdb查看手中物品的id，要写英文的！<br>
+</li><li>&nbsp;&nbsp;Data: &lt;耐久度&gt; #/itemdb显示的id冒号后面的数字，一般都写0，可控制玻璃颜色等等<br>
+</li><li>&nbsp;&nbsp;Lore:<br>
+</li><li>&nbsp; &nbsp; - '&lt;物品描述，可彩色，颜色符号§&gt;' #可往下写，可多行，不限制行数但不能空着<br>
+</li><li>&nbsp;&nbsp;Slot: #分割线在界面中的位置，不限制数量，仅可使用数字<br>
+</li><li>&nbsp; &nbsp; - &lt;分割线位置&gt;<br>
+</li><li>&nbsp; &nbsp; - &lt;分割线位置&gt;</li></ol></div><em onclick="copycode($(&#39;code_UCv&#39;));">复制代码</em></div></font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224904zzra9igoe2ozfoar.png" alt="9.png" title="9.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+10、孔位的设置：<br>
+<div class="blockcode"><div id="code_L22"><ol><li>Ornaments:<br>
+</li><li>&nbsp;&nbsp;&lt;孔位位置&gt;: #孔位位置是从0开始的而不是从1开始<br>
+</li><li>&nbsp; &nbsp; Name: '&lt;占位物品名字，可彩色，颜色符号§&gt;'<br>
+</li><li>&nbsp; &nbsp; Id: &lt;物品的ID&gt;<br>
+</li><li>&nbsp; &nbsp; Data: &lt;耐久度&gt; #/itemdb显示的id冒号后面的数字，一般都写0，可控制玻璃颜色等等<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '&lt;物品描述&gt;' #可往下写，可多行，不限制行数但不能空着<br>
+</li><li>&nbsp; &nbsp; KeyName: '&lt;物品类型&gt;' #可以放什么类型物品，随便写<br>
+</li><li>&nbsp; &nbsp; #物品有一行lore同时包含物品类型和config.yml第十行的KeyLore的内容才可放入槽位<br>
+</li><li>&nbsp; &nbsp; Suit: true #该孔位是否启用套装，启用则达到套装件数可触发套装属性(自行设置)</li></ol></div><em onclick="copycode($(&#39;code_L22&#39;));">复制代码</em></div></font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224905zszz3fsr5t3e34ep.png" alt="10.png" title="10.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+11、孔位的更多功能，孔位还可达到点击触发指令，点击打开其他自定义界面的功能<br>
+但这两个功能启用后这个孔位将丧失物品孔位的功能，而仅仅是个按钮<br>
+你只需要在&lt;孔的位置&gt;下面加入<br>
+</font></font><div class="blockcode"><div id="code_Gs7"><ol><li>OpenInv: &lt;自定义界面名字&gt;<br>
+</li><li>Commands: #Ps: 这是以玩家身份执行的<br>
+</li><li>&nbsp;&nbsp;- 'say 我打开了首饰界面'</li></ol></div><em onclick="copycode($(&#39;code_Gs7&#39;));">复制代码</em></div><font size="3"><font color="#000000">这样即可加上这两个功能，可单独使用这两个功能中的1个<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224905qkk4eyp0e0ee9pkp.png" alt="11.png" title="11.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">12、自定义界面内的物品的套装设置<br>
+主自定义界面必须要有套装的设置<br>
+其他的自定义界面可以不需要，如果不需要可以直接删除Suit部分<br>
+<div class="blockcode"><div id="code_oxc"><ol><li>Suit:<br>
+</li><li>&nbsp;&nbsp;Name: '&lt;占位物品名字&gt;'<br>
+</li><li>&nbsp;&nbsp;Id: &lt;物品的ID&gt;<br>
+</li><li>&nbsp;&nbsp;Data: &lt;耐久度&gt;<br>
+</li><li>&nbsp;&nbsp;SuitShowSlot: &lt;格子位置&gt;<br>
+</li><li>&nbsp;&nbsp;KeyLore: '&lt;套装关键字&gt;' <br>
+</li><li>&nbsp;&nbsp;#如写'所属套装'，装备上有一行lore是'所属套装: 幻梦套装'，那么这个物品就属于幻梦套装<br>
+</li><li>&nbsp;&nbsp;NoSuit: '&lt;没触发套装属性显示的内容&gt;'<br>
+</li><li>&nbsp;&nbsp;Attribute:<br>
+</li><li>&nbsp; &nbsp; '&lt;套装名字&gt;':<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&lt;触发属性件数&gt;:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&lt;属性&gt;' #最好加上颜色符号，因为会被当做这个物品的lore<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&lt;触发属性件数&gt;: #写了1和3不写2的话不会触发2件的属性<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&lt;属性&gt;'</li></ol></div><em onclick="copycode($(&#39;code_oxc&#39;));">复制代码</em></div></font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224905y56l582z5i586cwr.png" alt="12.png" title="12.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+13、自定义信息提示，直接任意修改提示信息即可<br>
+</font></font>
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202006/15/224905i87lk0a28b0l7u80.png" alt="13.png" title="13.png">
+
+</ignore_js_op>
+<font size="3"><font color="#000000"><br>
+</font></font></div><div align="left"><font size="3"><font color="#000000">14、输入/api reload以重载配置<br>
+如果出现报错，以下为主要几个原因<br>
+(1):6行的界面出现了第54个位置的物品，而应在0-53的位置<br>
+(2):未使用Spigot核心或1.7.10的ur核心<br>
+15、可以输入/api open或点击背包栏的孔位来打开你的自定义主界面了！<br>
+16、其他自定义界面的配置和config.yml的一样，写在插件文件夹的Inventory里<br>
+不限制界面个数，无限自定义！<br>
+其他自定义界面的配置和config的差别在于无Admin权限设置以及自定义提示信息<br>
+因为这些是通用的，其他自定义界面可选择使用Suit部分！</font></font></div></td></tr></tbody></table></div></div></font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>指令及权限</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000">除无需权限的指令外权限全部可自行配置<br>
+/api open 打开饰品界面 默认权限APInventory.use<br>
+/api open [背包名字] 自行设置权限<br>
+/api see [玩家] 无需权限<br>
+/api see [玩家] [背包名字] 无需权限<br>
+/api use [孔位] 无需权限 暂不可使用！<br>
+/api clear [玩家] 清空玩家饰品 默认权限APInventory.admin<br>
+/api clear [玩家] [背包名字] 清空玩家饰品 默认权限APInventory.admin<br>
+/api reload 重载饰品配置 默认权限APInventory.admin<br>
+默认权限的意思是配置里可以更改所需权限，若不更改权限则是这个<br>
+所有权限不默认给玩家，均需要手动给玩家权限，推荐只给玩家APInventory.use权限<br>
+</font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>配置文件</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000"><strong><div align="center">config.yml</div><br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><div class="blockcode"><div id="code_eaf"><ol><li>Version: v2.0.9<br>
+</li><li><br>
+</li><li>#背包名字<br>
+</li><li>InvName: '§3§l饰品背包'<br>
+</li><li>#打开界面权限<br>
+</li><li>UsePermission: 'APInventory.use'<br>
+</li><li>#管理员权限 重载插件权限<br>
+</li><li>AdminPermission: 'APInventory.admin'<br>
+</li><li>#饰品识别的lore<br>
+</li><li>KeyLore: '饰品类型'<br>
+</li><li>#界面行数<br>
+</li><li>InvSize: 6<br>
+</li><li>#禁止使用原版装备栏<br>
+</li><li>NoEquipment: false<br>
+</li><li>#是否开启替换指定背包位置打开界面<br>
+</li><li>Replace: true<br>
+</li><li>#点击哪个孔位打开饰品界面，35为第三行最后一格<br>
+</li><li>ReplaceSlot: 35<br>
+</li><li>#开启以后点击背包格子会显示格子id，可用于ReplaceSlot<br>
+</li><li>Debug: false<br>
+</li><li><br>
+</li><li>#你可以不使用分割线和孔位占据格子，使格子留空<br>
+</li><li>#但是如果快速连续点击空格子可能将物品放入无法取出<br>
+</li><li><br>
+</li><li>#分割线部分<br>
+</li><li>Dividing:<br>
+</li><li>&nbsp;&nbsp;#分割线名字<br>
+</li><li>&nbsp;&nbsp;Name: '§7分割线'<br>
+</li><li>&nbsp;&nbsp;#分割线ID 服务器里拿着物品输入itemdb可查看<br>
+</li><li>&nbsp;&nbsp;Id: STAINED_GLASS_PANE<br>
+</li><li>&nbsp;&nbsp;#分割线ID:后的部分<br>
+</li><li>&nbsp;&nbsp;Data: 0<br>
+</li><li>&nbsp;&nbsp;#分割线lore<br>
+</li><li>&nbsp;&nbsp;Lore:<br>
+</li><li>&nbsp; &nbsp; - '§7这是分割线'<br>
+</li><li>&nbsp;&nbsp;#分割线孔位<br>
+</li><li>&nbsp;&nbsp;Slot:<br>
+</li><li>&nbsp; &nbsp; - 0<br>
+</li><li>&nbsp; &nbsp; - 1<br>
+</li><li>&nbsp; &nbsp; - 2<br>
+</li><li>&nbsp; &nbsp; - 3<br>
+</li><li>&nbsp; &nbsp; - 5<br>
+</li><li>&nbsp; &nbsp; - 6<br>
+</li><li>&nbsp; &nbsp; - 7<br>
+</li><li>&nbsp; &nbsp; - 8<br>
+</li><li>&nbsp; &nbsp; - 9<br>
+</li><li>&nbsp; &nbsp; - 11<br>
+</li><li>&nbsp; &nbsp; - 15<br>
+</li><li>&nbsp; &nbsp; - 16<br>
+</li><li>&nbsp; &nbsp; - 17<br>
+</li><li>&nbsp; &nbsp; - 18<br>
+</li><li>&nbsp; &nbsp; - 20<br>
+</li><li>&nbsp; &nbsp; - 23<br>
+</li><li>&nbsp; &nbsp; - 24<br>
+</li><li>&nbsp; &nbsp; - 25<br>
+</li><li>&nbsp; &nbsp; - 26<br>
+</li><li>&nbsp; &nbsp; - 27<br>
+</li><li>&nbsp; &nbsp; - 29<br>
+</li><li>&nbsp; &nbsp; - 32<br>
+</li><li>&nbsp; &nbsp; - 33<br>
+</li><li>&nbsp; &nbsp; - 34<br>
+</li><li>&nbsp; &nbsp; - 35<br>
+</li><li>&nbsp; &nbsp; - 36<br>
+</li><li>&nbsp; &nbsp; - 37<br>
+</li><li>&nbsp; &nbsp; - 38<br>
+</li><li>&nbsp; &nbsp; - 39<br>
+</li><li>&nbsp; &nbsp; - 40<br>
+</li><li>&nbsp; &nbsp; - 41<br>
+</li><li>&nbsp; &nbsp; - 42<br>
+</li><li>&nbsp; &nbsp; - 43<br>
+</li><li>&nbsp; &nbsp; - 44<br>
+</li><li>&nbsp; &nbsp; - 45<br>
+</li><li>&nbsp; &nbsp; - 46<br>
+</li><li>&nbsp; &nbsp; - 52<br>
+</li><li>&nbsp; &nbsp; - 53<br>
+</li><li>#饰品部分<br>
+</li><li>Ornaments:<br>
+</li><li>&nbsp;&nbsp;#饰品格子位置<br>
+</li><li>&nbsp;&nbsp;0:<br>
+</li><li>&nbsp; &nbsp; #饰品孔位名字<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l点击打开首饰界面'<br>
+</li><li>&nbsp; &nbsp; #饰品孔位物品id<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; #饰品孔位物品id:后的部分<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; #饰品孔位物品的lore<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e点击打开首饰界面'<br>
+</li><li>&nbsp; &nbsp; #点击打开哪个饰品界面 可选择使用、删除此行<br>
+</li><li>&nbsp; &nbsp; OpenInv: test<br>
+</li><li>&nbsp; &nbsp; #点击执行指令，玩家身份 可选择使用、删除此行<br>
+</li><li>&nbsp; &nbsp; Commands:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- 'say 我打开了首饰界面'<br>
+</li><li>&nbsp; &nbsp; #饰品类型lore<br>
+</li><li>&nbsp; &nbsp; #一个装备需要有一行lore同时包含第42行的KeyLore和KeyName才可放入这里<br>
+</li><li>&nbsp; &nbsp; #这个地方的作用是打开其他界面，所以这里可以随便写，因为不会有人放入装备<br>
+</li><li>&nbsp; &nbsp; KeyName: '这里没什么用'<br>
+</li><li>&nbsp; &nbsp; #是否开启套装加成 只有开启的格子，装备才会被算作最下面的套装里<br>
+</li><li>&nbsp; &nbsp; Suit: false<br>
+</li><li>&nbsp;&nbsp;4:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l头盔栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放头盔'<br>
+</li><li>&nbsp; &nbsp; KeyName: '头盔'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;10:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l戒指栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放戒指'<br>
+</li><li>&nbsp; &nbsp; KeyName: '戒指'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;12:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l手套栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放手套'<br>
+</li><li>&nbsp; &nbsp; KeyName: '手套'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;13:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l胸甲栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放胸甲'<br>
+</li><li>&nbsp; &nbsp; KeyName: '胸甲'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;14:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l手套栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放手套'<br>
+</li><li>&nbsp; &nbsp; KeyName: '手套'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;19:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l项链栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放项链'<br>
+</li><li>&nbsp; &nbsp; KeyName: '项链'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;21:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护盾栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护盾'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护盾'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;22:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护腿栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护腿'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护腿'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;28:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l手镯栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放手镯'<br>
+</li><li>&nbsp; &nbsp; KeyName: '手镯'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;30:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l翅膀栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放翅膀'<br>
+</li><li>&nbsp; &nbsp; KeyName: '翅膀'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;31:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l靴子栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放靴子'<br>
+</li><li>&nbsp; &nbsp; KeyName: '靴子'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;47:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护身符栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护身符'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护身符'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;48:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护身符栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护身符'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护身符'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;49:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护身符栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护身符'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护身符'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;50:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护身符栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护身符'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护身符'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>&nbsp;&nbsp;51:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l护身符栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放护身符'<br>
+</li><li>&nbsp; &nbsp; KeyName: '护身符'<br>
+</li><li>&nbsp; &nbsp; Suit: true<br>
+</li><li>#套装部分<br>
+</li><li>Suit:<br>
+</li><li>&nbsp;&nbsp;#显示套装属性的物品名字<br>
+</li><li>&nbsp;&nbsp;Name: '§b§l套装属性'<br>
+</li><li>&nbsp;&nbsp;#显示套装属性的物品的ID<br>
+</li><li>&nbsp;&nbsp;Id: SIGN<br>
+</li><li>&nbsp;&nbsp;#显示套装属性的物品的id:后的部分<br>
+</li><li>&nbsp;&nbsp;Data: 0<br>
+</li><li>&nbsp;&nbsp;#饰品格子位置<br>
+</li><li>&nbsp;&nbsp;SuitShowSlot: 8<br>
+</li><li>&nbsp;&nbsp;#每件饰品所检查的套装名字的关键字 示例: '&amp;f所属套装: &amp;a皮革套装'<br>
+</li><li>&nbsp;&nbsp;KeyLore: '所属套装'<br>
+</li><li>&nbsp;&nbsp;#没有触发套装属性的显示<br>
+</li><li>&nbsp;&nbsp;NoSuit: '§f无套装属性'<br>
+</li><li>&nbsp;&nbsp;#套装属性<br>
+</li><li>&nbsp;&nbsp;Attribute:<br>
+</li><li>&nbsp; &nbsp; #套装名字<br>
+</li><li>&nbsp; &nbsp; '皮革套装':<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;#一件时触发的属性<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;1:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击几率: 10'<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击倍率: 300'<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;#请不要间隔写，如1写完了直接写3，如果不写2是不会触发2个的属性的<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;2:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击几率: 20'<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击倍率: 500'<br>
+</li><li>#自定义信息<br>
+</li><li>Msg:<br>
+</li><li>&nbsp;&nbsp;CmdHelp:<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api open §a打开背包界面'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api open [背包名字] §a打开背包界面'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api see [玩家] §a查看玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api see [玩家] [背包名字] §a查看玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api use [孔位] §a使用孔位物品'<br>
+</li><li>&nbsp;&nbsp;OpCmdHelp:<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api open §a打开背包界面'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api open [背包名字] §a打开背包界面'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api see [玩家] §a查看玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api see [玩家] [背包名字] §a查看玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api use [孔位] §a使用孔位物品'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api clear [玩家] §a清空该玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api clear [玩家] [背包] §a清空该玩家背包'<br>
+</li><li>&nbsp; &nbsp; - '§c[系统] §b/api reload §a重载饰品配置'<br>
+</li><li>&nbsp;&nbsp;NoInventory: '§c[系统] §a此背包不存在.'<br>
+</li><li>&nbsp;&nbsp;NoConsole: '§c[系统] §a控制台不能执行此指令！'<br>
+</li><li>&nbsp;&nbsp;OpenOther: '§c[系统] §a你正在查看他人的背包.'<br>
+</li><li>&nbsp;&nbsp;Reload: '§c[系统] §a重载成功！'<br>
+</li><li>&nbsp;&nbsp;NoPermission: '§c[系统] §a你没有权限这样做！'<br>
+</li><li>&nbsp;&nbsp;SuccessClear: '§c[系统] §a成功清空玩家背包！'<br>
+</li><li>&nbsp;&nbsp;NoPlayer: '§c[系统] §a玩家不存在！'<br>
+</li><li>&nbsp;&nbsp;Success: '§c[系统] §a成功载入%inv%§a背包属性！'<br>
+</li><li>&nbsp;&nbsp;TypeFalse: '§c[系统] §a请放入正确的饰品！'<br>
+</li><li>&nbsp;&nbsp;NotDoThis: '§c[系统] §a这里不是饰品孔位但你放入了饰品，若不取走将丢失！'</li></ol></div><em onclick="copycode($(&#39;code_eaf&#39;));">复制代码</em></div></td></tr></tbody></table></div></div></strong><br>
+<strong><div align="center">test.yml</div><br>
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><div class="blockcode"><div id="code_Ni9"><ol><li>InvName: '§3§ltest背包'<br>
+</li><li>UsePermission: 'APInventory.test'<br>
+</li><li>KeyLore: '饰品类型'<br>
+</li><li>InvSize: 1<br>
+</li><li>Dividing:<br>
+</li><li>&nbsp;&nbsp;Name: '§7分割线'<br>
+</li><li>&nbsp;&nbsp;Id: STAINED_GLASS_PANE<br>
+</li><li>&nbsp;&nbsp;Data: 0<br>
+</li><li>&nbsp;&nbsp;Lore:<br>
+</li><li>&nbsp; &nbsp; - '§7这是分割线'<br>
+</li><li>&nbsp;&nbsp;Slot:<br>
+</li><li>&nbsp; &nbsp; - 2<br>
+</li><li>&nbsp; &nbsp; - 3<br>
+</li><li>&nbsp; &nbsp; - 4<br>
+</li><li>&nbsp; &nbsp; - 5<br>
+</li><li>&nbsp; &nbsp; - 6<br>
+</li><li>&nbsp; &nbsp; - 7<br>
+</li><li>Ornaments:<br>
+</li><li>&nbsp;&nbsp;0:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l点击打开主界面'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e点击返回装备界面'<br>
+</li><li>&nbsp; &nbsp; OpenInv: default<br>
+</li><li>&nbsp; &nbsp; KeyName: '这里没什么用了'<br>
+</li><li>&nbsp; &nbsp; Suit: false<br>
+</li><li>&nbsp;&nbsp;1:<br>
+</li><li>&nbsp; &nbsp; Name: '§a§l戒指栏'<br>
+</li><li>&nbsp; &nbsp; Id: PAPER<br>
+</li><li>&nbsp; &nbsp; Data: 0<br>
+</li><li>&nbsp; &nbsp; Lore:<br>
+</li><li>&nbsp; &nbsp;&nbsp; &nbsp;- '§e这里可以放戒指'<br>
+</li><li>&nbsp; &nbsp; KeyName: '戒指'<br>
+</li><li>&nbsp; &nbsp; #Suit: false<br>
+</li><li>#不需要Suit部分可直接删掉Suit部分<br>
+</li><li>#Suit:<br>
+</li><li>#&nbsp;&nbsp;Name: '§b§l套装属性'<br>
+</li><li>#&nbsp;&nbsp;Id: SIGN<br>
+</li><li>#&nbsp;&nbsp;Data: 0<br>
+</li><li>#&nbsp;&nbsp;SuitShowSlot: 8<br>
+</li><li>#&nbsp;&nbsp;KeyLore: '所属套装'<br>
+</li><li>#&nbsp;&nbsp;NoSuit: '§f无套装属性'<br>
+</li><li>#&nbsp;&nbsp;Attribute:<br>
+</li><li>#&nbsp; &nbsp; '皮革套装':<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;1:<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击几率: 10'<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击倍率: 300'<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;2:<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击几率: 20'<br>
+</li><li>#&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '§f暴击倍率: 500'</li></ol></div><em onclick="copycode($(&#39;code_Ni9&#39;));">复制代码</em></div></td></tr></tbody></table></div></div></strong><br>
+</font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>注意事项</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000">孔位、分割线、套装属性孔位请使用0-53，不要用54<br>
+请不要设置3行界面但是孔位设置超出了3行<br>
+<br>
+ArticleCMD文件暂不可使用，消耗物品执行指令未完成，制作中<br>
+主界面Suit部分不可删除，自定义界面可以删除<br>
+自定义界面名字不要使用config、default<br>
+</font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>更新</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000"><div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == &#39;none&#39;) {n.style.display = &#39;block&#39;;} else {n.style.display = &#39;none&#39;;} return false;"></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><tbody><tr><td><div class="blockcode"><div id="code_vPH"><ol><li>7月25日v2.0.9<br>
+</li><li>修复了伪全版本的问题，支持 1.14.4及1.15.2，1.16待测试<br>
+</li><li>修复了退出游戏双重默认界面套装属性的BUG （对不起，有人反馈，未及时修复）<br>
+</li><li><br>
+</li><li>5月30日v2.0.7<br>
+</li><li>修复了退出进入属性和原属性叠加问题<br>
+</li><li><br>
+</li><li>5月28日v2.0.6<br>
+</li><li>优化信息显示<br>
+</li><li>关闭背包显示加载属性<br>
+</li><li>查看他人饰品背包<br>
+</li><li>自定义多页饰品<br>
+</li><li>选择开关原版装备栏<br>
+</li><li>自定义背包位置点击打开饰品界面<br>
+</li><li>自定义界面可不使用套装属性<br>
+</li><li>重载可重新加载所有玩家属性<br>
+</li><li>自定义孔位点击执行指令和打开界面<br>
+</li><li><br>
+</li><li>v1.1 修复背包编辑器BUG<br>
+</li><li>v1.0 插件发布<br>
+</li><li><br>
+</li><li>计划更新<br>
+</li><li>指令消耗界面物品执行指令</li></ol></div><em onclick="copycode($(&#39;code_vPH&#39;));">复制代码</em></div><br>
+<font size="3"><font color="#000000"></font></font></td></tr></tbody></table></div></div></font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>使用问题</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000">问：配置较为繁琐，我想直接用可以吗？<br>
+答：当然可以，默认配置就是图片中的效果，可下载上方材质包配合食用<br>
+<br>
+问：有BUG！我可以在一个孔位放入10件同样的饰品啊<br>
+答：一个孔位放再多饰品也只加一次属性，无需担心，而且放多件饰品也不会丢失<br>
+<br>
+问：我在玩家放入饰品后更改了饰品孔位位置，玩家饰品会丢失吗？<br>
+答：不会，在重载配置后，玩家不会加原地方的饰品属性，打开界面，饰品还在原位置，可以取出，但若不取出将会丢失<br>
+<br>
+问：为什么所有孔位比设置的都前移了一个？<br>
+答：孔位设置使用了mc的孔位，非从第一个格子开始数的孔位，从0-53并非1-54<br>
+</font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>BUG修复</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000"><strike>退出游戏双重默认界面套装属性</strike> v2.0.9已修复<br>
+<strike>取出装备属性还在</strike> v2.0.8已修复<br>
+<strike>退出进入属性和原属性叠加</strike> v2.0.7已修复<br>
+<strike>1.7.10背包编辑器顶界面刷物品</strike>&nbsp;&nbsp;v1.1已修复<br>
+</font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>插件交流群</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><font size="3"><font color="#000000"><strong>QQ交流群554867303<br>
+</strong></font></font></div></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0C4DE"><td><div align="center"><font size="4"><font color="#000000"><strong>下载</strong></font></font></div></td></tr></tbody></table><table cellspacing="0" class="t_table"><tbody><tr style="background-color:#B0E0E6"><td><div align="center"><div align="left"><div align="center"><font size="3"><font color="#000000">
+<ignore_js_op>
+
+<div class="attach-down-wrapper" data-attach-id="1556969">
+
+<div class="attach-download-indicator" onclick="return attach_download_ctrl(this)">
+<svg class="attach-download-circle" width="32" height="32">
+<circle cx="16" cy="16" r="13" fill="none" stroke-width="3" stroke="#2196f3" stroke-dasharray="82" stroke-dashoffset="80"></circle>
+</svg>
+<div class="attach-ctrl-icon">
+<i class="fico-down"></i>
+<i class="fico-remove"></i>
+</div>
+<div class="attach-file-icon"><img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/unknown.gif" border="0" class="vm" alt=""></div>
+</div>
+<div class="download-info" id="attach_1556969" onmouseover="showMenu({&#39;ctrlid&#39;:this.id,&#39;pos&#39;:&#39;12&#39;})">
+
+<a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTU1Njk2OXxhZGNlZDU0OXwxNjM2NDcwMDg4fDB8MTAyMTAxNg%3D%3D" class="attach-download-link" onclick="return attach_download_ctrl(this)" target="_blank">APInventory v2.0.9.jar</a>
+
+<em class="xg1">(<span class="download-progress">0 </span>37 KB, 下载次数: 1095)</em>
+</div>
+<div class="direct-link">
+下载遇到问题? <a href="https://www.mcbbs.net/forum.php?mod=attachment&amp;aid=MTU1Njk2OXxhZGNlZDU0OXwxNjM2NDcwMDg4fDB8MTAyMTAxNg%3D%3D" target="_blank">直接下载</a>
+</div>
+</div>
+</ignore_js_op></font></font><div class="tip tip_4" id="attach_1556969_menu" style="position: absolute; display: none" disautofocus="true"><font size="3"><font color="#000000">
+</font></font><div class="tip_c xs0"><font size="3"><font color="#000000">
+<div class="y">2020-7-25 09:30 上传</div>
+点击文件名下载附件
+
+
+<br>
+</font></font></div></div><div align="left"><div align="center"><div align="center"><font color="#000"><font size="3">评个分吧~评论支持下也好哇~</font></font></div></div><br>
+<font size="3"><div align="center"><div align="center"><font color="#000">评分评论才好让我继续更新哇！</font></div></div><br>
+<font color="#000000"><div align="center"><a href="https://afdian.net/@MengXingTong" target="_blank"></a><a href="https://afdian.net/@MengXingTong" target="_blank"><strong>作者的爱发电</strong></a></div></font></font></div></div></div></div></td></tr></tbody></table><br>
+<div align="center"><font size="5"><font color="#ff0000"><strong>本插件所用所有代码均为原创,不存在借用/抄袭等行为</strong></font></font></div><br>
+[groupid=1330]PluginsCDTribe[/groupid]<script type="text/javascript" reload="1">
+aimgcount[17645557] = ['1563551','1620212','1620213','1620214','1620215','1620216','1620217','1620218','1620219','1620220','1620221','1620222'];
+attachimggroup(17645557);
+</script>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>苏子峰&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:08<br>
+前排沙发 火火火<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zjyz11&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:38<br>
+啥时候支持个sx<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/25.gif" smilieid="675" border="0" alt="">，就缺个rpg背包插件<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:52<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17647484&amp;ptid=1021016" target="_blank"><font color="#999999">zjyz11 发表于 2020-4-17 10:38</font></a></font><br>
+啥时候支持个sx，就缺个rpg背包插件</blockquote></div><br>
+sx加属性看起来太麻烦了，没写过<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/47.GIF" smilieid="697" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Era丶霜殇&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:54<br>
+很好的插件，AP使用者的福音：) 感谢星桐的开发<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Era丶霜殇&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:55<br>
+感谢星桐的开发～<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>ban.com&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:55<br>
+AP插件的附属吗？有点牛批了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 10:59<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17647973&amp;ptid=1021016" target="_blank"><font color="#999999">ban.com 发表于 2020-4-17 10:55</font></a></font><br>
+AP插件的附属吗？有点牛批了</blockquote></div><br>
+谢谢支持，用完评个分呀~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>ban.com&nbsp; &nbsp; <b>时间: </b>2020-4-17 11:01<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17648048&amp;ptid=1021016" target="_blank"><font color="#999999">残星殇 发表于 2020-4-17 10:59</font></a></font><br>
+谢谢支持，用完评个分呀~</blockquote></div><br>
+一定哦！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Sayu_&nbsp; &nbsp; <b>时间: </b>2020-4-17 14:29<br>
+希望支持SX<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 14:39<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17652390&amp;ptid=1021016" target="_blank"><font color="#999999">13920170403 发表于 2020-4-17 14:29</font></a></font><br>
+希望支持SX</blockquote></div><br>
+尽量吧。。。<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/52.gif" smilieid="702" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1105090571@qq.c&nbsp; &nbsp; <b>时间: </b>2020-4-17 16:18<br>
+没有指令支持玩家相互之间看对方背包吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>ctl520&nbsp; &nbsp; <b>时间: </b>2020-4-17 16:53<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 17:01<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17654983&amp;ptid=1021016" target="_blank"><font color="#999999">1105090571@qq.c 发表于 2020-4-17 16:18</font></a></font><br>
+没有指令支持玩家相互之间看对方背包吗</blockquote></div><br>
+下次一定下次一定~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 17:02<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17655753&amp;ptid=1021016" target="_blank"><font color="#999999">ctl520 发表于 2020-4-17 16:53</font></a></font><br>
+可以连接数据库么</blockquote></div><br>
+暂时不可以的。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>名副其实&nbsp; &nbsp; <b>时间: </b>2020-4-17 18:45<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17647866&amp;ptid=1021016" target="_blank"><font color="#999999">残星殇 发表于 2020-4-17 10:52</font></a></font><br>
+sx加属性看起来太麻烦了，没写过</blockquote></div><br>
+试试看只同步lore而不是直接同步属性?<br>
+这个插件很像我之前提出的BEB<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-17 19:50<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17657928&amp;ptid=1021016" target="_blank"><font color="#999999">名副其实 发表于 2020-4-17 18:45</font></a></font><br>
+试试看只同步lore而不是直接同步属性?<br>
+这个插件很像我之前提出的BEB</blockquote></div><br>
+只同步lore什么意思？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>david890504&nbsp; &nbsp; <b>时间: </b>2020-4-17 22:36<br>
+跪求支援1.14.4<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>烟消1云散&nbsp; &nbsp; <b>时间: </b>2020-4-17 23:49<br>
+不错的插件,楼主辛苦了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-18 10:35<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17663481&amp;ptid=1021016" target="_blank"><font color="#999999">烟消1云散 发表于 2020-4-17 23:49</font></a></font><br>
+不错的插件,楼主辛苦了</blockquote></div><br>
+谢谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>88771231211&nbsp; &nbsp; <b>时间: </b>2020-4-18 14:23<br>
+材質包似乎不能用 裝上去還是顯示原本的紙張<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>skzs&nbsp; &nbsp; <b>时间: </b>2020-4-18 15:16<br>
+有图吗？没图不知道和其他插件有什么区别啊<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-18 21:45<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17673517&amp;ptid=1021016" target="_blank"><font color="#999999">skzs 发表于 2020-4-18 15:16</font></a></font><br>
+有图吗？没图不知道和其他插件有什么区别啊</blockquote></div><br>
+完全自定义界面，如果要图的话我也不知道怎么发呢。。<br>
+你可以自行设置界面截图然后我放上去奥<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-18 21:45<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17672411&amp;ptid=1021016" target="_blank"><font color="#999999">90057123 发表于 2020-4-18 14:23</font></a></font><br>
+材質包似乎不能用 裝上去還是顯示原本的紙張</blockquote></div><br>
+安装高清修复mod然后使用材质包<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>细雨清风&nbsp; &nbsp; <b>时间: </b>2020-4-19 10:24<br>
+很好用的插件 不错哟 支持一下<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-19 14:42<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17687258&amp;ptid=1021016" target="_blank"><font color="#999999">zitao001022 发表于 2020-4-19 10:24</font></a></font><br>
+很好用的插件 不错哟 支持一下</blockquote></div><br>
+谢谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>细雨清风&nbsp; &nbsp; <b>时间: </b>2020-4-19 17:37<br>
+对了 这个支持sx吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>小悠酱&nbsp; &nbsp; <b>时间: </b>2020-4-19 17:41<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>细雨清风&nbsp; &nbsp; <b>时间: </b>2020-4-19 18:15<br>
+1.12.2 猫端 用不了吗？<br>
+<img id="aimg_JJA9j" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/vmzZwG7BaVeyboK.png" onmouseover="img_onmouseoverfunc(this)" onload="thumbImg(this)" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-20 17:34<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17695950&amp;ptid=1021016" target="_blank"><font color="#999999">zitao001022 发表于 2020-4-19 17:37</font></a></font><br>
+对了 这个支持sx吗</blockquote></div><br>
+你可以去用rpginv。。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-20 17:34<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17696037&amp;ptid=1021016" target="_blank"><font color="#999999">小悠酱 发表于 2020-4-19 17:41</font></a></font><br>
+很不错的插件</blockquote></div><br>
+谢谢支持<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-20 17:35<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17696775&amp;ptid=1021016" target="_blank"><font color="#999999">zitao001022 发表于 2020-4-19 18:15</font></a></font><br>
+1.12.2 猫端 用不了吗？</blockquote></div><br>
+如果我有cat端核心了试着支持一下<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>qq1831723028&nbsp; &nbsp; <b>时间: </b>2020-4-20 17:36<br>
+来几个图片估计就火了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 09:40<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17717925&amp;ptid=1021016" target="_blank"><font color="#999999">qq1831723028 发表于 2020-4-20 17:36</font></a></font><br>
+来几个图片估计就火了</blockquote></div><br>
+好的，今天补上<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>淺の音路人&nbsp; &nbsp; <b>时间: </b>2020-4-21 10:05<br>
+mcbbs有你更精彩<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>qw986354084&nbsp; &nbsp; <b>时间: </b>2020-4-21 11:22<br>
+很棒的插件，感谢分享<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/kiss.png" smilieid="1434" border="0" alt=""><img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/kiss.png" smilieid="1434" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>卿歌&nbsp; &nbsp; <b>时间: </b>2020-4-21 12:48<br>
+感谢分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>chen2927544529&nbsp; &nbsp; <b>时间: </b>2020-4-21 13:11<br>
+看起来挺不错的支持支持！！！！！！！！！！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>2173204318&nbsp; &nbsp; <b>时间: </b>2020-4-21 13:30<br>
+出个查看玩家饰品背包被<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>mlhc&nbsp; &nbsp; <b>时间: </b>2020-4-21 14:14<br>
+对服务器很有帮助<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>936107447&nbsp; &nbsp; <b>时间: </b>2020-4-21 14:48<br>
+支持，感谢分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 15:08<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17728374&amp;ptid=1021016" target="_blank"><font color="#999999">淺の音路人 发表于 2020-4-21 10:05</font></a></font><br>
+mcbbs有你更精彩</blockquote></div><br>
+谢谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 15:09<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17732977&amp;ptid=1021016" target="_blank"><font color="#999999">2173204318 发表于 2020-4-21 13:30</font></a></font><br>
+出个查看玩家饰品背包被</blockquote></div><br>
+下个版本，下个版本，下次一定。。。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 15:09<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17734715&amp;ptid=1021016" target="_blank"><font color="#999999">936107447 发表于 2020-4-21 14:48</font></a></font><br>
+支持，感谢分享</blockquote></div><br>
+谢谢支持，评个分呗~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 15:09<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17733845&amp;ptid=1021016" target="_blank"><font color="#999999">mlhc 发表于 2020-4-21 14:14</font></a></font><br>
+对服务器很有帮助</blockquote></div><br>
+感谢支持~~~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-21 15:10<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17732667&amp;ptid=1021016" target="_blank"><font color="#999999">chen2927544529 发表于 2020-4-21 13:11</font></a></font><br>
+看起来挺不错的支持支持！！！！！！！！！！</blockquote></div><br>
+谢谢支持，评个分？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>狐狸不熬夜&nbsp; &nbsp; <b>时间: </b>2020-4-21 19:30<br>
+sdasasdasd<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>清风送爽&nbsp; &nbsp; <b>时间: </b>2020-4-21 19:41<br>
+看起来不错，收了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>@陌路人&nbsp; &nbsp; <b>时间: </b>2020-4-21 22:04<br>
+非常实用，感谢分享！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>952689471&nbsp; &nbsp; <b>时间: </b>2020-4-21 22:21<br>
+太强了，服务器正好需要这样的插件<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>纯_冰&nbsp; &nbsp; <b>时间: </b>2020-4-21 22:57<br>
+MCbbs有你更精彩~~~~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>彦祖&nbsp; &nbsp; <b>时间: </b>2020-4-21 23:58<br>
+看亚子好nb的,白嫖了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>david890504&nbsp; &nbsp; <b>时间: </b>2020-4-22 00:33<br>
+等paper出了一定紅<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>david890504&nbsp; &nbsp; <b>时间: </b>2020-4-22 00:33<br>
+等paper出了一定紅<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>loveqjj520521&nbsp; &nbsp; <b>时间: </b>2020-4-22 00:59<br>
+感谢分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1097218564&nbsp; &nbsp; <b>时间: </b>2020-4-22 02:23<br>
+爱仕达大所多撒大所大所大大多<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>sxmcl&nbsp; &nbsp; <b>时间: </b>2020-4-22 03:15<br>
+我想问一下...我的服务器是catserver1.12.2 插件在游戏内正常使用 但是后台不生成配置文件 是要改插件本体里的那个配置文件吗<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/cry.png" smilieid="1453" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 09:07<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17745994&amp;ptid=1021016" target="_blank"><font color="#999999">sxmcl 发表于 2020-4-22 03:15</font></a></font><br>
+我想问一下...我的服务器是catserver1.12.2 插件在游戏内正常使用 但是后台不生成配置文件 是要改插件本体 ...</blockquote></div><br>
+CatServer未测试，你要不加群把核心发我看看，我试着兼容？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 09:08<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17745584&amp;ptid=1021016" target="_blank"><font color="#999999">loveqjj520521 发表于 2020-4-22 00:59</font></a></font><br>
+感谢分享</blockquote></div><br>
+不客气~感谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 09:08<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17745421&amp;ptid=1021016" target="_blank"><font color="#999999">david890504 发表于 2020-4-22 00:33</font></a></font><br>
+等paper出了一定紅</blockquote></div><br>
+您的评分是我们更新的动力<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/50.gif" smilieid="700" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 09:09<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17744386&amp;ptid=1021016" target="_blank"><font color="#999999">纯_冰 发表于 2020-4-21 22:57</font></a></font><br>
+MCbbs有你更精彩~~~~</blockquote></div><br>
+感谢支持，评分区欢迎你奥~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 09:10<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17743539&amp;ptid=1021016" target="_blank"><font color="#999999">@陌路人 发表于 2020-4-21 22:04</font></a></font><br>
+非常实用，感谢分享！</blockquote></div><br>
+感谢支持，首页下方有个评分区奥~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>mieshiQwQ&nbsp; &nbsp; <b>时间: </b>2020-4-22 10:52<br>
+支持原创<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 11:44<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17751110&amp;ptid=1021016" target="_blank"><font color="#999999">mieshiQwQ 发表于 2020-4-22 10:52</font></a></font><br>
+支持原创</blockquote></div><br>
+评分区感谢你的支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Gu_Qin_&nbsp; &nbsp; <b>时间: </b>2020-4-22 12:08<br>
+可以自定义孔位在在哪里的吗？？<br>
+这款插件貌似看起来比RPGInventory可自定义性更高啊！<br>
+tqltql，大佬抽烟 最后感谢楼主分享，评分已给~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>🍓肉多多&nbsp; &nbsp; <b>时间: </b>2020-4-22 13:59<br>
+感谢大佬的开发!<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Mo_xiaoxi&nbsp; &nbsp; <b>时间: </b>2020-4-22 14:32<br>
+感谢大佬分享 <hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1752614267&nbsp; &nbsp; <b>时间: </b>2020-4-22 16:24<br>
+唯一一个附属多到金粒买不起的插件，但还是要下（<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>elian255&nbsp; &nbsp; <b>时间: </b>2020-4-22 16:51<br>
+不错 , 推 <hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>鹤归山998&nbsp; &nbsp; <b>时间: </b>2020-4-22 17:51<br>
+装了ap插件，来加点新花样，感谢作者<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>233思密达&nbsp; &nbsp; <b>时间: </b>2020-4-22 19:01<br>
+谢谢楼主分享<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:11<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17752894&amp;ptid=1021016" target="_blank"><font color="#999999">Gu_Qin_ 发表于 2020-4-22 12:08</font></a></font><br>
+可以自定义孔位在在哪里的吗？？<br>
+这款插件貌似看起来比RPGInventory可自定义性更高啊！<br>
+tqltql，大佬抽烟&nbsp;&nbsp;...</blockquote></div><br>
+感谢支持噢~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:12<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17758266&amp;ptid=1021016" target="_blank"><font color="#999999">1752614267 发表于 2020-4-22 16:24</font></a></font><br>
+唯一一个附属多到金粒买不起的插件，但还是要下（</blockquote></div><br>
+哈哈，感谢支持噢~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:12<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17758802&amp;ptid=1021016" target="_blank"><font color="#999999">elian255 发表于 2020-4-22 16:51</font></a></font><br>
+不错 , 推</blockquote></div><br>
+感谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:13<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17761213&amp;ptid=1021016" target="_blank"><font color="#999999">233思密达 发表于 2020-4-22 19:01</font></a></font><br>
+谢谢楼主分享</blockquote></div><br>
+不客气噢，以后要多多关注哈<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:13<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17755813&amp;ptid=1021016" target="_blank"><font color="#999999">Mo_xiaoxi 发表于 2020-4-22 14:32</font></a></font><br>
+感谢大佬分享</blockquote></div><br>
+感谢支持，评分区在那里！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-22 22:14<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17755065&amp;ptid=1021016" target="_blank"><font color="#999999">why637636 发表于 2020-4-22 13:59</font></a></font><br>
+感谢大佬的开发!</blockquote></div><br>
+插件持续更新，点关注不迷路~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>dreepr322&nbsp; &nbsp; <b>时间: </b>2020-4-22 23:35<br>
+<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/25.gif" smilieid="675" border="0" alt=""> 加油&nbsp;&nbsp;超强大的插件<br>
+感觉以后基本可以在每一个服务器都看见这个插件的身影<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/25.gif" smilieid="675" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>清风-明景&nbsp; &nbsp; <b>时间: </b>2020-4-23 11:04<br>
+可以，必须支持一下<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>酷乐工作室&nbsp; &nbsp; <b>时间: </b>2020-4-23 11:25<br>
+mcbbs的插件开发者越来越强大了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 11:36<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17765864&amp;ptid=1021016" target="_blank"><font color="#999999">dreepr322 发表于 2020-4-22 23:35</font></a></font><br>
+加油&nbsp;&nbsp;超强大的插件<br>
+感觉以后基本可以在每一个服务器都看见这个插件的身影 ...</blockquote></div><br>
+不，标题自定义，你可能不知道他是什么呢<br>
+<img src="./[娱乐_机制][PCD]APInventory —— 修复BUG更新支持高版本[全版本] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/56.gif" smilieid="706" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 11:37<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17773211&amp;ptid=1021016" target="_blank"><font color="#999999">酷乐工作室 发表于 2020-4-23 11:25</font></a></font><br>
+mcbbs的插件开发者越来越强大了</blockquote></div><br>
+萌新上路，一般bbs作者只要想都可以做成自定义的<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Yexiaolu&nbsp; &nbsp; <b>时间: </b>2020-4-23 11:52<br>
+能支持量子RPG吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>皮皮懒不懒&nbsp; &nbsp; <b>时间: </b>2020-4-23 12:00<br>
+<div class="quote"><blockquote><font color="#999999">残星殇 发表于 2020-4-17 17:01</font><br>
+<font color="#999999">下次一定下次一定~</font></blockquote></div><br>
+可以考虑shift+右键玩家查看<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>XD_saozhu&nbsp; &nbsp; <b>时间: </b>2020-4-23 15:07<br>
+很棒的插件<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>37510932&nbsp; &nbsp; <b>时间: </b>2020-4-23 15:51<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>碧海也学霸&nbsp; &nbsp; <b>时间: </b>2020-4-23 18:32<br>
+又是一个很好的插件，非常感谢。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>wzy050723&nbsp; &nbsp; <b>时间: </b>2020-4-23 18:52<br>
+好棒的插件<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>碧海也学霸&nbsp; &nbsp; <b>时间: </b>2020-4-23 18:59<br>
+希望以后能够支持SX<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>sharina2012&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:11<br>
+哇 nb 谢谢大佬分享！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:38<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17774163&amp;ptid=1021016" target="_blank"><font color="#999999">皮皮懒不懒 发表于 2020-4-23 12:00</font></a></font><br>
+可以考虑shift+右键玩家查看</blockquote></div><br>
+已经在抢先群发放指令查看他人玩家饰品背包版本，一周后无BUG在mcbbs更新，shift+右键可以考虑搭配其他插件食用<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:38<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17783783&amp;ptid=1021016" target="_blank"><font color="#999999">碧海也学霸 发表于 2020-4-23 18:59</font></a></font><br>
+希望以后能够支持SX</blockquote></div><br>
+sx已经停止更新了，所以也不会针对sx进行兼容了。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:38<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17784043&amp;ptid=1021016" target="_blank"><font color="#999999">sharina2012 发表于 2020-4-23 19:11</font></a></font><br>
+哇 nb 谢谢大佬分享！</blockquote></div><br>
+不客气，看，评分区在那里噢~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:39<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17783623&amp;ptid=1021016" target="_blank"><font color="#999999">wzy050723 发表于 2020-4-23 18:52</font></a></font><br>
+好棒的插件</blockquote></div><br>
+感谢支持~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:39<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17778237&amp;ptid=1021016" target="_blank"><font color="#999999">XD_saozhu 发表于 2020-4-23 15:07</font></a></font><br>
+很棒的插件</blockquote></div><br>
+感谢支持~评分区在那里！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:40<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17779379&amp;ptid=1021016" target="_blank"><font color="#999999">37510932 发表于 2020-4-23 15:51</font></a></font><br>
+不错的插件,楼主辛苦了</blockquote></div><br>
+感谢支持噢，点关注不迷路~<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>梦星桐&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:40<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=17773960&amp;ptid=1021016" target="_blank"><font color="#999999">Yexiaolu 发表于 2020-4-23 11:52</font></a></font><br>
+能支持量子RPG吗</blockquote></div><br>
+量子以前看过，确实很强，但是他被混淆了，而且作者貌似没有提供API接口？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Sayu_&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:41<br>
+看来还是不支持 SX<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>8528577&nbsp; &nbsp; <b>时间: </b>2020-4-23 19:42<br>
+来嫖的 好吧 星铜鸽鸽<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>a1642566224&nbsp; &nbsp; <b>时间: </b>2020-4-23 23:02<br>
+支持AP系列的附属插件
+<br><br><br><br><hr noshade="" size="2" width="100%" color="BORDERCOLOR">
+<table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" style="font-size: SMFONTSIZE; font-family: SMFONT">
+<tbody><tr><td>欢迎光临 Minecraft(我的世界)中文论坛 (https://www.mcbbs.net/)</td>
+<td align="right">
+Powered by Discuz! X3.5</td></tr></tbody></table>
+
+
+</div></body></html>
