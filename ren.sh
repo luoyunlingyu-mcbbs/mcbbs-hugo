@@ -6,3 +6,4 @@ for file in *.html; do
     sed -i "1s|^|title: \"$filename\"\n|" "$file"
     sed -i "1i ---" "$file"
 done
+echo "标题添加完成。"
