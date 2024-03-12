@@ -1,4 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://luoyunlingyu-mcbbs.github.io/mcbbs-hugo/'
 languageCode = 'zh-CN'
 title = '拯救MCBBS'
 theme = 'etch'
+[params]
+  subtitle = 'MC的精神，我们的世界!'
+[taxonomies]
+  tag = "tags"
+
