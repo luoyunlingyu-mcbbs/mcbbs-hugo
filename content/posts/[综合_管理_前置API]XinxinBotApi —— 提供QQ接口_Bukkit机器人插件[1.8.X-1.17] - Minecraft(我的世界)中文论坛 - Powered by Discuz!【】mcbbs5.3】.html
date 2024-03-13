@@ -1,0 +1,327 @@
+
+<!-- saved from url=(0148)http://cncc.bingj.com/cache.aspx?q=site%3amcbbs.net+%e6%8f%92%e4%bb%b6&d=4788626907077937&mkt=zh-CN&setlang=zh-CN&w=wlU8VQ_T1D6BnZLXeRwYTM-2_q3FIleY -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><!--<base href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1182079">--><base href="."><!-- Banner:Start --><!--LocalizedDate:2021/12/22--><!--InvariantDate:12/22/2021--></head><body><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1182079" h="ID=SERP,5003.1">https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1182079</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2021/12/22</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1182079" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent">
+
+<title>[综合|管理|前置API]XinxinBotApi —— 提供QQ接口|Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!</title>
+
+<style type="text/css">
+body 	   {margin: 10px 80px;}
+body,table {font-size: FONTSIZE; font-family: FONT;}
+h1 { font-size: 24px; margin-bottom: 20px; color: #999; }
+</style>
+<script src="https://www.mcbbs.net/data/cache/common.js?KLv" type="text/javascript"></script>
+<script src="https://www.mcbbs.net/data/cache/forum_viewthread.js?KLv" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'KLv', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭[已弃用]|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/nether', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L2ZvcnVtLnBocD9tb2Q9dmlld3RocmVhZCZhY3Rpb249cHJpbnRhYmxlJnRpZD0xMTgyMDc5', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/';</script>
+
+
+
+<h1>Minecraft(我的世界)中文论坛</h1>
+<b>标题: </b>[综合|管理|前置API]XinxinBotApi —— 提供QQ接口|Bukkit机器人插件[1.8.X-1.17] <b><a href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1182079###" onclick="this.style.visibility=&#39;hidden&#39;;window.print();this.style.visibility=&#39;visible&#39;">[打印本页]</a></b><br>
+<script type="text/javascript">var zoomstatus = 0;var aimgcount = new Array();</script><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-14 23:14<br>
+<b>标题: </b>[综合|管理|前置API]XinxinBotApi —— 提供QQ接口|Bukkit机器人插件[1.8.X-1.17]<br><i class="pstatus"> 本帖最后由 新鑫丶 于 2021-12-18 11:05 编辑 </i><br>
+<hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="Wheat"><tbody><tr><td><div align="center"><strong><font face="Impact"><font size="6">新鑫机器人接口</font></font></strong></div><div align="center"><div align="right"><font face="Tahoma"><font size="2"><strong>—— 可以自主扩展的机器人插件</strong></font></font></div></div></td></tr></tbody></table></div><hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td><br>
+<div align="left"><font size="2"><strong><font face="微软雅黑">此插件对接的是GitHub上的一个开源项目 <a href="https://github.com/Mrs4s/go-cqhttp" target="_blank">go-cqhttp</a><br>
+</font></strong></font></div><div align="left"><font size="2"><strong>此插件部分插件的前置插件，需要将此插件对接上机器人后即可食用</strong></font></div><div align="left"><font size="2"><strong>当此插件对接好机器人后即可开启Q服互动……</strong></font><br>
+</div><br>
+</td></tr></tbody></table></div><br>
+<hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="Wheat"><tbody><tr><td><img id="aimg_RRd5d" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="18" src="./[综合_管理_前置API]XinxinBotApi —— 提供QQ接口_Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/iNewLogo.png" border="0" alt=""> <font style="background-color:darkred">.</font> <strong><font size="3">功能</font></strong></td></tr></tbody></table></div><hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td> <br>
+<ul><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>此插件使用WebSocket进行QQ消息操作</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>所以必须通过指令连接一次WebSocket才能正常使用</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>在配置文件中可以开启自动连接，但需要提前开启go-cqhttp</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>在插件内新增了4种QQ事件和发送消息、获取绑定接口</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>绑定信息支持MySQL储存，若不开启则为本地文件储存</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>使用此插件作为前置开发的绑定接口也可以使用MySQL</strong></font></font></font><br>
+</li></ul><br>
+<strong><font color="#8b0000">!</font></strong> 经过 Bukkit-1.12.2 和 Paper-1.16.5 测试，正常使用，其它服务端核心未知，请自行测试，理论上支持所有Bukkit，Spigot服务端<br>
+<br>
+</td></tr></tbody></table><br>
+</div><div align="center"><hr class="l"></div><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="Wheat"><tbody><tr><td><img id="aimg_FvC31" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="18" src="./[综合_管理_前置API]XinxinBotApi —— 提供QQ接口_Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/iNewLogo.png" border="0" alt=""> <font style="background-color:darkred">.</font> <font size="3"><strong><font color="#8b0000">指令</font></strong></font><br>
+</td></tr></tbody></table></div><hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td> <strong><font size="2"><br>
+</font></strong><ul><li><strong><font face="微软雅黑"><font size="3">/xbot bind [QQ] [玩家] —— </font></font><font face="微软雅黑"><font size="3">手动绑定一个QQ</font></font></strong></li><li><strong><font face="微软雅黑"><font size="3">/xbot delbind [QQ] —— </font></font><font face="微软雅黑"><font size="3">删除一个QQ的绑定账号</font></font></strong></li><li><strong><font face="微软雅黑"><font size="3">/xbot connect —— </font></font><font face="微软雅黑"><font size="3">连接WebSocket</font></font></strong></li><li><strong><font face="微软雅黑"><font size="3">/xbot close —— </font></font><font face="微软雅黑"><font size="3">断开WebSocket</font></font></strong></li><li><strong><font face="微软雅黑"><font size="3">/xbot reload —— </font></font><font face="微软雅黑"><font size="3">重载插件</font></font></strong><br>
+</li></ul><br>
+</td></tr></tbody></table></div><br>
+<hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="Wheat"><tbody><tr><td><div align="left"><div align="center"><div align="left"><img id="aimg_CT7aT" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="18" src="./[综合_管理_前置API]XinxinBotApi —— 提供QQ接口_Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/iNewLogo.png" border="0" alt=""> <font style="background-color:darkred">.</font> <font size="3"><strong>功能展示</strong></font></div></div></div></td></tr></tbody></table></div><hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td><ul><li><font face="微软雅黑"><font size="3"><strong>此插件作为单独使用的话只有一个绑定玩家功能</strong></font></font></li><li><font face="微软雅黑"><font size="3"><strong>而这个绑定功能也没有任何实质性作用</strong></font></font></li><li><font face="微软雅黑"><font size="3"><strong>但是可以通过用以下接口和事件进行拓展开发</strong></font></font><br>
+</li></ul><br>
+<div align="left">
+<ignore_js_op>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202106/18/145311a1alzqygfs2f5f40.png" alt="[3TFA5A)NB%~GTXE)P)C_LT.png" title="[3TFA5A)NB%~GTXE)P)C_LT.png">
+
+</ignore_js_op>
+</div><div align="left"><ul><li><strong>若将此插件作为开发前置</strong><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>即可</strong></font></font></font><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>让MC充满各种可能性</strong></font></font></font><br>
+</li></ul></div><div align="left"><div align="left"><ul><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>或许在这之前你开发群服互联插件会去找各种Api</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>现在你只需要把本插件添加为你的依赖</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>使用本插件作为前置开发请在Plugin.yml里加入</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>depend: XinxinBotApi</strong></font></font></font></li><li><font face="Tahoma, &amp;quot;"><font size="2"><font face="微软雅黑"><strong>让本插件在你插件之前加载</strong></font></font></font><br>
+</li></ul></div></div><br>
+</td></tr></tbody></table></div><br>
+<hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="Wheat"><tbody><tr><td><div align="left"><div align="left"><img id="aimg_QM1i0" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="18" height="18" src="./[综合_管理_前置API]XinxinBotApi —— 提供QQ接口_Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/iNewLogo.png" border="0" alt=""> <font style="background-color:darkred">.</font> <strong><font size="3">官方文档WIKI / 教程</font></strong></div></div></td></tr></tbody></table></div><hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td><br>
+<div align="center"><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbk.xxin.vip%2Farticles%2F4" target="_blank"><img id="aimg_Ar7z4" onclick="zoom(this, this.src, 0, 0, 0)" class="zoom" width="700" height="169" src="./[综合_管理_前置API]XinxinBotApi —— 提供QQ接口_Bukkit机器人插件[1.8.X-1.17] - Minecraft(我的世界)中文论坛 - Powered by Discuz!_files/wiki.png" onmouseover="img_onmouseoverfunc(this)" style="cursor:pointer" border="0" alt=""></a></div><br>
+</td></tr></tbody></table></div><br>
+<div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td><div align="center"><div align="left"><strong><font size="4"> <font style="background-color:darkred">.</font> 附属</font></strong></div></div><div align="center"><div align="left"><hr class="l"></div></div><br>
+<ul><li><font face="微软雅黑"><font size="3"><font color="Black"><strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fforum.php%3Fmod%3Dviewthread%26amp%3Btid%3D4%26amp%3Bextra%3D" target="_blank">绑定礼包</a></strong></font></font></font></li><li><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fforum.php%3Fmod%3Dviewthread%26amp%3Btid%3D6%26amp%3Bextra%3D" target="_blank">进服验证</a></strong></font></strong></font></font></font></li><li><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><strong><a href="https://www.mcbbs.net/thread-1198722-1-1.html" target="_blank">群服信息</a></strong></font></strong></font></strong></font></font></font></li><li><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fforum.php%3Fmod%3Dviewthread%26amp%3Btid%3D13" target="_blank">群服注册</a></strong></font></strong></font></strong></font></font></font></strong></font></strong></font></strong></font></font></font></li><li><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><font size="3"><font color="Black"><strong><font face="微软雅黑"><strong><font face="微软雅黑"><strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fthread-52-1-1.html" target="_blank">互联指令</a></strong></font></strong></font></strong></font></font></font></strong></font></strong></font></strong></font></font></font><br>
+</li></ul><strong><font color="#8b0000"><br>
+! </font></strong><font color="#8b0000"><font color="Black">更多附属插件可联系作者进行定制或前往 <strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fforum.php%3Fmod%3Dforumdisplay%26amp%3Bfid%3D37" target="_blank">插件许愿版块</a></strong> 进行插件许愿</font></font></td></tr></tbody></table></div><br>
+<br>
+<div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="White"><tbody><tr><td><div align="center"><div align="left"><strong><font size="4"> <font style="background-color:darkred">.</font> 下载</font></strong></div></div><div align="center"><div align="left"><hr class="l"></div></div><br>
+<font size="5"><strong><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fbbs.xxin.vip%2Fthread-3-1-1.html" target="_blank">点击下载</a></strong></font></td></tr></tbody></table></div><br>
+<br>
+<hr class="l"><div align="center"><table cellspacing="0" class="t_table" style="width:98%" bgcolor="DarkRed"><tbody><tr><td><div align="center"><strong><font color="#ffffff">版权声明</font></strong></div></td></tr></tbody></table></div><hr class="l"><div align="center"><strong>本插件所用所有代码均为原创,不存在借用/抄袭等行为<br>
+本插件为非盈利性插件，免费发布，严禁销售和转卖</strong></div><div align="center"><strong>若需要开发任何与此插件相关的附属插件可以</strong><strong><strong>联系作者</strong></strong></div><br>
+<br>
+<script type="text/javascript" reload="1">
+aimgcount[21450478] = ['1833690'];
+attachimggroup(21450478);
+</script>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>末图&nbsp; &nbsp; <b>时间: </b>2021-3-15 00:08<br>
+支持狗新鑫<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>初雪霁❄️&nbsp; &nbsp; <b>时间: </b>2021-3-15 00:18<br>
+这用语也太c语言了吧<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>开心的杨&nbsp; &nbsp; <b>时间: </b>2021-3-15 00:28<br>
+6666666666666<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>玄月月&nbsp; &nbsp; <b>时间: </b>2021-3-15 00:41<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>芜湖氵人&nbsp; &nbsp; <b>时间: </b>2021-3-15 02:31<br>
+这不摇摆鑫吗，几天不见这么拉了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-15 09:23<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21451503&amp;ptid=1182079" target="_blank"><font color="#999999">玄月月 发表于 2021-3-15 00:41</font></a></font><br>
+呦这不是鑫仔吗，几天不见怎么又整活了</blockquote></div><br>
+<img src="https://www.mcbbs.net/static/image/smiley/tong/doge.png" smilieid="1448" border="0" alt="">再不整点东西出来都以为我跑路了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-15 09:24<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21451326&amp;ptid=1182079" target="_blank"><font color="#999999">末图 发表于 2021-3-15 00:08</font></a></font><br>
+支持狗新鑫</blockquote></div><br>
+支持就请把你最后2个金粒送给我<img src="https://www.mcbbs.net/static/image/smiley/tong/....png" smilieid="1443" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>结城希亚&nbsp; &nbsp; <b>时间: </b>2021-3-15 18:10<br>
+可以整个qq等级接口吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>崒笫&nbsp; &nbsp; <b>时间: </b>2021-3-15 18:41<br>
+似乎挺好用的我试试水看看好不好用<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-15 20:44<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21455579&amp;ptid=1182079" target="_blank"><font color="#999999">结城希亚 发表于 2021-3-15 18:10</font></a></font><br>
+可以整个qq等级接口吗</blockquote></div><br>
+好像是有的，看看官方文档有没有<img src="https://www.mcbbs.net/static/image/smiley/tong/cowry.png" smilieid="1452" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-15 20:47<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21455579&amp;ptid=1182079" target="_blank"><font color="#999999">结城希亚 发表于 2021-3-15 18:10</font></a></font><br>
+可以整个qq等级接口吗</blockquote></div><br>
+或者可以使用其他的接口达到，比如<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=https%3A%2F%2Fapi.66mz8.com%2Fapi%2Fqq.level.php%3Fqq%3D" target="_blank">https://api.66mz8.com/api/qq.level.php?qq=</a>查询的QQ<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>JackZhangCNCC&nbsp; &nbsp; <b>时间: </b>2021-3-16 15:12<br>
+好家伙加油打气回复的怎么比插件下载次数还多= =<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-16 16:10<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21461876&amp;ptid=1182079" target="_blank"><font color="#999999">JackZhangCNCC 发表于 2021-3-16 15:12</font></a></font><br>
+好家伙加油打气回复的怎么比插件下载次数还多= =</blockquote></div><br>
+因为他们早已经在群里下载了<img src="https://www.mcbbs.net/static/image/smiley/tong/....png" smilieid="1443" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>xmdhs&nbsp; &nbsp; <b>时间: </b>2021-3-16 21:37<br>
+提醒一下，go-cqhttp 是以 AGPLv3 协议开源，即使你只是通过网络调用，也得以相同的协议开源才行。<br>
+<br>
+更何况你对其的封装的程序，就算是 GPLv3 也得以相同协议开源才行。<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-16 22:16<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21464711&amp;ptid=1182079" target="_blank"><font color="#999999">xmdhs 发表于 2021-3-16 21:37</font></a></font><br>
+提醒一下，go-cqhttp 是以 AGPLv3 协议开源，即使你只是通过网络调用，也得以相同的协议开源才行。<br>
+<br>
+更何况 ...</blockquote></div><br>
+这个插件只是提供一个连接WebSocket的接口而已，没有将go-cqhttp写入插件，两者是分开的<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>xmdhs&nbsp; &nbsp; <b>时间: </b>2021-3-16 22:32<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21465065&amp;ptid=1182079" target="_blank"><font color="#999999">新鑫丶 发表于 2021-3-16 22:16</font></a></font><br>
+这个插件只是提供一个连接WebSocket的接口而已，没有将go-cqhttp写入插件，两者是分开的 ...</blockquote></div><br>
+但是你那个封装的程序，显然是完全符合的。<br>
+<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-16 23:16<br>
+<i class="pstatus"> 本帖最后由 新鑫丶 于 2021-3-16 23:18 编辑 </i><br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21465184&amp;ptid=1182079" target="_blank"><font color="#999999">xmdhs 发表于 2021-3-16 22:32</font></a></font><br>
+但是你那个封装的程序，显然是完全符合的。</blockquote></div><br>
+那个外置程序，只是个快捷启动的小程序，其实也是分开的，只是有个生成go-cqhttp的功能，实际也只有个获取WebSocket和一点小功能，如果有影响的话我可以删除这个功能<img src="https://www.mcbbs.net/static/image/smiley/tong/Strong_smile.png" smilieid="1435" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>一个人的牢&nbsp; &nbsp; <b>时间: </b>2021-3-17 10:28<br>
+bbs下载不了，难受<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-3-17 11:02<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21466888&amp;ptid=1182079" target="_blank"><font color="#999999">一个人的牢 发表于 2021-3-17 10:28</font></a></font><br>
+bbs下载不了，难受</blockquote></div><br>
+bbs下载需要改后缀名，如果觉得麻烦可以去原帖下载<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>励志长久开服&nbsp; &nbsp; <b>时间: </b>2021-3-17 20:05<br>
+MCBBS有你更精彩！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>你飘了吗？&nbsp; &nbsp; <b>时间: </b>2021-3-20 15:21<br>
+<br>
+支持狗新鑫<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Kirell&nbsp; &nbsp; <b>时间: </b>2021-3-20 15:59<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>末图&nbsp; &nbsp; <b>时间: </b>2021-3-22 14:19<br>
+原来是鑫鑫凉了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>qazx.&nbsp; &nbsp; <b>时间: </b>2021-3-22 16:37<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>励志长久开服&nbsp; &nbsp; <b>时间: </b>2021-3-25 14:54<br>
+老仙加油继续写插件！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>m00nfly&nbsp; &nbsp; <b>时间: </b>2021-4-16 15:28<br>
+最近正在寻找这样的插件，测试了好几个都不太满意；<br>
+看介绍楼主这款应该非常不错；支持一下！这就去测试看看！<br>
+感谢大佬的开发和分享！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>2063246315&nbsp; &nbsp; <b>时间: </b>2021-4-20 12:32<br>
+机器人不错偶<img src="https://www.mcbbs.net/static/image/smiley/rabbit/50.gif" smilieid="700" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Newcentury&nbsp; &nbsp; <b>时间: </b>2021-4-24 19:10<br>
+支持新鑫，好插件！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>崩三栀蓝&nbsp; &nbsp; <b>时间: </b>2021-4-27 23:42<br>
+这机器人很C语言<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zws1314520&nbsp; &nbsp; <b>时间: </b>2021-4-28 10:22<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-4-28 20:38<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21806464&amp;ptid=1182079" target="_blank"><font color="#999999">zws1314520 发表于 2021-4-28 10:22</font></a></font><br>
+**** 作者被禁止或删除 内容自动屏蔽 ****</blockquote></div><br>
+不能进群吗？<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>xiaojingjingjin&nbsp; &nbsp; <b>时间: </b>2021-5-10 17:12<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>LuvFeng&nbsp; &nbsp; <b>时间: </b>2021-5-17 16:26<br>
+感谢大佬的分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>yuan_kun&nbsp; &nbsp; <b>时间: </b>2021-5-21 22:53<br>
+表示没用啊<br>
+回车玩ticket窗口关闭没什么反应了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-5-26 21:44<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=21992649&amp;ptid=1182079" target="_blank"><font color="#999999">yuan_kun 发表于 2021-5-21 22:53</font></a></font><br>
+表示没用啊<br>
+回车玩ticket窗口关闭没什么反应了</blockquote></div><br>
+注意看一下教程，你的操作可能有误<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>狙击手v&nbsp; &nbsp; <b>时间: </b>2021-6-1 11:00<br>
+[10:50:31 INFO]: [新鑫互联] 出现错误：java.lang.IllegalStateException: NoticeEve<br>
+nt may only be triggered synchronously.<br>
+1.16.5一直炸，用啥方法都不行怎么办，急在线等<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1265921&nbsp; &nbsp; <b>时间: </b>2021-6-2 07:26<br>
+支持这不错<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>TheZhiheng223&nbsp; &nbsp; <b>时间: </b>2021-6-3 11:02<br>
+我这里一直这样，这是怎么回事<br>
+
+
+<ignore_js_op>
+
+<dl class="tattl attm">
+
+<dd>
+
+<img src="https://attachment.mcbbs.net/data/myattachment/forum/202106/03/110151gn362evml6zmwyop.png" alt="AVGM3KUT_@YRQ_VFS%0N640.png" title="AVGM3KUT_@YRQ_VFS%0N640.png">
+</dd>
+
+</dl>
+
+</ignore_js_op>
+
+<script type="text/javascript" reload="1">
+aimgcount[22096333] = ['1826624'];
+attachimggroup(22096333);
+</script>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>水表小伙&nbsp; &nbsp; <b>时间: </b>2021-6-26 08:53<br>
+看起来不错，下载了<br>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>水表小伙&nbsp; &nbsp; <b>时间: </b>2021-6-26 10:48<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22081958&amp;ptid=1182079" target="_blank"><font color="#999999">狙击手v 发表于 2021-6-1 11:00</font></a></font><br>
+[10:50:31 INFO]: [新鑫互联] 出现错误：java.lang.IllegalStateException: NoticeEve<br>
+nt may only be trig ...</blockquote></div><br>
+我今天部署也遇到了同样的问题 1.17 spigot<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-6-26 21:09<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22306484&amp;ptid=1182079" target="_blank"><font color="#999999">水表小伙 发表于 2021-6-26 10:48</font></a></font><br>
+我今天部署也遇到了同样的问题 1.17 spigot</blockquote></div><br>
+1.16及以上版本目前存在一定bug，后续我有时间的时候会修复<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>水表小伙&nbsp; &nbsp; <b>时间: </b>2021-6-27 19:11<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22313947&amp;ptid=1182079" target="_blank"><font color="#999999">新鑫丶 发表于 2021-6-26 21:09</font></a></font><br>
+1.16及以上版本目前存在一定bug，后续我有时间的时候会修复</blockquote></div><br>
+好的，辛苦了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>hy3&nbsp; &nbsp; <b>时间: </b>2021-6-27 19:35<br>
+超级好用感谢楼主<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>CCAV90&nbsp; &nbsp; <b>时间: </b>2021-6-28 11:22<br>
+请问面板服可以用吗<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-7-2 08:53<br>
+新版本已更新，已经兼容1.17版本服务器！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>闪鹿&nbsp; &nbsp; <b>时间: </b>2021-7-18 22:28<br>
+插件好用！么么哒！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zdlzhm&nbsp; &nbsp; <b>时间: </b>2021-7-18 22:30<br>
+mcbbs有你们会更好<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>irocksir&nbsp; &nbsp; <b>时间: </b>2021-7-20 16:20<br>
+qq群内玩家不能绑定，一直提示玩家不在线<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>mc_xiaoyu_dada&nbsp; &nbsp; <b>时间: </b>2021-7-22 17:26<br>
+支持楼主可以自主开发q群联动了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>wrnxrbz&nbsp; &nbsp; <b>时间: </b>2021-7-23 23:32<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zdlzhm&nbsp; &nbsp; <b>时间: </b>2021-7-28 16:48<br>
+神乎其技！6的飞起！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Yue梦兮伊萌&nbsp; &nbsp; <b>时间: </b>2021-7-28 17:23<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>清风风雪&nbsp; &nbsp; <b>时间: </b>2021-7-28 17:45<br>
+笑撒开聊的撒大撒<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>楚逍&nbsp; &nbsp; <b>时间: </b>2021-8-2 19:03<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-8-3 11:19<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22619523&amp;ptid=1182079" target="_blank"><font color="#999999">irocksir 发表于 2021-7-20 16:20</font></a></font><br>
+qq群内玩家不能绑定，一直提示玩家不在线</blockquote></div><br>
+说明玩家不在你插件存在的服务器，bc服的话插件需要装在主服<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Era丶霜殇&nbsp; &nbsp; <b>时间: </b>2021-8-3 19:33<br>
+能不能为开发者增加一个发送网络图片的API<img src="https://www.mcbbs.net/static/image/smiley/tong/doge.png" smilieid="1448" border="0" alt="">，或者“我喜欢的”里面的图片<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>索拉卡qwq&nbsp; &nbsp; <b>时间: </b>2021-8-3 20:21<br>
+感谢分享 顶！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>YLZZJ&nbsp; &nbsp; <b>时间: </b>2021-8-4 08:52<br>
+刚好需要这个！感谢！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>易语言爱好者&nbsp; &nbsp; <b>时间: </b>2021-8-5 19:35<br>
+厉害高能.<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>justmmp&nbsp; &nbsp; <b>时间: </b>2021-8-9 14:42<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>zdlzhm&nbsp; &nbsp; <b>时间: </b>2021-8-10 10:29<br>
+神乎其技！6的飞起！<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>287937051&nbsp; &nbsp; <b>时间: </b>2021-8-10 11:08<br>
+一直在找的插件，感谢分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>qixiaomi&nbsp; &nbsp; <b>时间: </b>2021-8-10 12:18<br>
+这个插件就特别顶，跟qq群可以有个沟通，增加了服务器活跃程度<br>
+感谢楼主分享<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>血刹白给针不戳&nbsp; &nbsp; <b>时间: </b>2021-9-27 22:20<br>
+1.7.10KC不能用吗 哭了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>独城雪纷飞&nbsp; &nbsp; <b>时间: </b>2021-10-6 14:47<br>
+整挺好，希望用这个不会登不上QQ号了<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>DestinyReturn&nbsp; &nbsp; <b>时间: </b>2021-10-10 22:23<br>
+[22:20:04 WARN]: Nag author(s): '[新鑫丶]' of 'XinxinBotApi' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).<br>
+<br>
+这是啥意思&nbsp; &nbsp;哪位大佬知道啊 1.17的<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>207674061&nbsp; &nbsp; <b>时间: </b>2021-10-25 15:51<br>
+支持1.7.10吗 群说一下<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>mio_miao&nbsp; &nbsp; <b>时间: </b>2021-10-26 08:08<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>Qingraw&nbsp; &nbsp; <b>时间: </b>2021-10-29 11:04<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1123714557&nbsp; &nbsp; <b>时间: </b>2021-10-31 19:30<br>
+楼主 有没有1.7的呀<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>1741466575&nbsp; &nbsp; <b>时间: </b>2021-11-19 20:15<br>
+提示: <em>作者被禁止或删除 内容自动屏蔽</em>
+<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>豪豪吃西瓜&nbsp; &nbsp; <b>时间: </b>2021-12-1 15:32<br>
+为什么我放到服务器里面无法加载，核心是CraftBukkit 1.12.2<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>玖狙梦&nbsp; &nbsp; <b>时间: </b>2021-12-9 15:56<br>
+楼主什么时候更新到1.18<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-12-9 18:28<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=24013467&amp;ptid=1182079" target="_blank"><font color="#999999">玖狙梦 发表于 2021-12-9 15:56</font></a></font><br>
+楼主什么时候更新到1.18</blockquote></div><br>
+理论上1.18一样可以使用，可以试一试<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>玖狙梦&nbsp; &nbsp; <b>时间: </b>2021-12-9 18:33<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=24014567&amp;ptid=1182079" target="_blank"><font color="#999999">新鑫丶 发表于 2021-12-9 18:28</font></a></font><br>
+理论上1.18一样可以使用，可以试一试</blockquote></div><br>
+试了&nbsp;&nbsp;不支持&nbsp; &nbsp;所以才问&nbsp; &nbsp; ab那个也不支持<img src="https://www.mcbbs.net/static/image/smiley/rabbit/52.gif" smilieid="702" border="0" alt=""><hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-12-9 19:16<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=24014597&amp;ptid=1182079" target="_blank"><font color="#999999">玖狙梦 发表于 2021-12-9 18:33</font></a></font><br>
+试了&nbsp;&nbsp;不支持&nbsp; &nbsp;所以才问&nbsp; &nbsp; ab那个也不支持</blockquote></div><br>
+那就是核心的问题，你是什么核心<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>玖狙梦&nbsp; &nbsp; <b>时间: </b>2021-12-10 15:26<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=24014876&amp;ptid=1182079" target="_blank"><font color="#999999">新鑫丶 发表于 2021-12-9 19:16</font></a></font><br>
+那就是核心的问题，你是什么核心</blockquote></div><br>
+purpur-1.18<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>feiyuyu&nbsp; &nbsp; <b>时间: </b>2021-12-10 23:03<br>
+WebSocket是一对一 还是一对多的&nbsp;&nbsp;多个服务器用一个行吗&nbsp;&nbsp;群组服<hr noshade="" size="2" width="100%" color="#808080">
+<b>作者: </b>新鑫丶&nbsp; &nbsp; <b>时间: </b>2021-12-11 12:12<br>
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=24025125&amp;ptid=1182079" target="_blank"><font color="#999999">feiyuyu 发表于 2021-12-10 23:03</font></a></font><br>
+WebSocket是一对一 还是一对多的&nbsp;&nbsp;多个服务器用一个行吗&nbsp;&nbsp;群组服</blockquote></div><br>
+一对多的，只用启动一个机器人多个服务器都可以连接
+<br><br><br><br><hr noshade="" size="2" width="100%" color="BORDERCOLOR">
+<table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" style="font-size: SMFONTSIZE; font-family: SMFONT">
+<tbody><tr><td>欢迎光临 Minecraft(我的世界)中文论坛 (https://www.mcbbs.net/)</td>
+<td align="right">
+Powered by Discuz! X3.5</td></tr></tbody></table>
+
+
+</div></body></html>

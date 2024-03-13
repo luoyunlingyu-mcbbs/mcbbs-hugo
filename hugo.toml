@@ -1,6 +1,6 @@
 baseURL = 'https://luoyunlingyu-mcbbs.github.io/mcbbs-hugo/'
 languageCode = 'zh-CN'
-title = '拯救MCBBS'
+title = '拯救MCBBS：论坛页面归档列表'
 theme = 'etch'
 [params]
   subtitle = 'MC的精神，我们的世界!'
