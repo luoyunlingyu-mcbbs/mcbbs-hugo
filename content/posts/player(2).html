@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://www.bilibili.com/html/player.html?aid=15617346&wmode=transparent&as_wide=1&page=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>bilibili new player</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="spm_prefix" content="888.211">
+    <script type="text/javascript">
+    if (!!navigator.userAgent.match(/AppleWebKit.*Mobile.*/)) {
+        window.location.href = '//www.bilibili.com/blackboard/html5mobileplayer.html' + window.location.search;
+    }
+    var GetUrlValue = function(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            try {
+                return decodeURIComponent(r[2]);
+            } catch (e) {
+                return null;
+            }
+        }
+        return null;
+    }
+    if(GetUrlValue('hideInteractiveHistory')) {
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML=".bilibili-player-video-interactive {display: none!important;}";
+        document.getElementsByTagName('head').item(0).appendChild(style);
+    }
+    </script>
+    <script src="./whitelist.js.下载"></script>
+    <script type="text/javascript" src="./biliconfig.js.下载"></script>
+    <script type="text/javascript">
+    if (GetUrlValue('bvid')) {
+      window.show_bv = 1;
+    } else {
+      window.show_bv = 0;
+    }
+    </script>
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .player,
+            #bofqi {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .player .bilibili-player {
+                box-shadow: none;
+            }
+            .player .bilibili-player-video-bottom-area .bilibili-player-video-sendbar {
+                box-sizing: border-box;
+                border-left: 1.5px solid #f4f4f4;
+                border-bottom: 1.5px solid #f4f4f4;
+                border-right: 1.5px solid #f4f4f4;
+            }
+            .player-with-auxiliary {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: -moz-box;
+                display: -moz-flex;
+                display: flex;
+            }
+            .player-with-auxiliary .player {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -moz-box-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+            }
+            .player-with-auxiliary .danmaku-box {
+                width: 320px;
+                margin-left: 30px;
+            }
+
+            .player-mode-widescreen .danmaku-box {
+                display: none;
+            }
+
+            #act-preview-alert-mask {
+                display: none!important;
+            }
+        </style>
+<script type="text/javascript" src="./video.js.下载"></script><meta id="bwp-meta" http-equiv="origin-trial" content="Aia0paiHanbyoHFAvvXm7tMtPqm0MdgwiIX1mQMzF7vTzW4k0Q5dpnYCzV6lL967czKbRqOI4p4YUUvXo4z0rQsAAAB2eyJvcmlnaW4iOiJodHRwczovL2JpbGliaWxpLmNvbTo0NDMiLCJmZWF0dXJlIjoiVW5yZXN0cmljdGVkU2hhcmVkQXJyYXlCdWZmZXIiLCJleHBpcnkiOjE2NzUyOTU5OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><style data-injector="video"></style><style data-injector="video">body,html{overflow:hidden}#bilibili-player,#bofqi,.player,body,html{margin:0;padding:0;width:100%;height:100%}.player .bilibili-player{-webkit-box-shadow:none;box-shadow:none}.player .bilibili-player-video-bottom-area .bilibili-player-video-sendbar{-webkit-box-sizing:border-box;box-sizing:border-box;border-left:1.5px solid #f4f4f4;border-bottom:1.5px solid #f4f4f4;border-right:1.5px solid #f4f4f4}.player-with-auxiliary{display:-webkit-box;display:-ms-flexbox;display:flex}.player-with-auxiliary .player{-webkit-box-flex:1;-ms-flex:1;flex:1}.player-with-auxiliary .danmaku-box{width:320px;margin-left:30px}.player-mode-widescreen .danmaku-box{display:none}</style></head>
+
+<body>
+    <div id="heimu"></div>
+    <div class="player">
+        <div id="bofqi"></div>
+    </div>
+    <script type="text/javascript">
+        var url = '//s1.hdslb.com/bfs/static/player/main/video.js?bver=' + Math.ceil(Date.now() / 300000);
+        function loadJS(url, callback){
+            var script = document.createElement('script'),
+                fn = callback || function(){};
+            script.type = 'text/javascript';
+
+            if(script.readyState){
+                script.onreadystatechange = function(){
+                    if( script.readyState == 'loaded' || script.readyState == 'complete' ){
+                        script.onreadystatechange = null;
+                        fn();
+                    }
+                };
+            } else {
+                script.onload = function(){
+                    fn();
+                };
+            }
+            script.src = url;
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+
+        loadJS(url, function(){
+            window.EmbedPlayer && window.EmbedPlayer('player', '', '', '', false, '', true);
+        });
+
+        // 临时容器方案
+        try {
+            if (window.frameElement && top.location.href) {
+                if (!window.parent.Html5IframeInitializedInjected) {
+                    window.parent.Html5IframeInitializedInjected = window.parent.Html5IframeInitialized || function() {};
+
+                    window.parent.Html5IframeInitialized = function() {
+                        var hasPlay = false;
+                        // 如果有其它视频在播放时，当前视频暂停
+                        top.document.querySelectorAll('iframe').forEach(function(e) {
+                            try {
+                                if (e.contentWindow.player) {
+                                    if (hasPlay) {
+                                        e.contentWindow.player.pause();
+                                    } else if (!e.contentWindow.document.querySelector('video').paused) {
+                                        hasPlay = true;
+                                    }
+
+                                    if (!e.contentWindow.initializedInjected) {
+                                        e.contentWindow.initializedInjected = true;
+
+                                        // 当前视频播放时，其它视频暂停
+                                        e.contentWindow.player.addEventListener('video_media_play', function() {
+                                            top.document.querySelectorAll('iframe').forEach(function(g) {
+                                                try {
+                                                    if (g !== e.contentWindow.frameElement && g.contentWindow.player) {
+                                                        if (!g.contentWindow.document.querySelector('video').paused) {
+                                                            g.contentWindow.player.pause();
+                                                        }
+                                                    }
+                                                } catch(e) {}
+                                            });
+                                        });
+                                    }
+                                }
+                            } catch(e) {}
+                        });
+                        return window.parent.Html5IframeInitializedInjected();
+                    }
+                }
+            }
+        } catch(e) {}
+    </script>
+    
+
+</body></html>
