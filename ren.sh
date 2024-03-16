@@ -7,3 +7,4 @@ for file in *.html; do
     sed -i "1i ---" "$file"
 done
 echo "标题添加完成。"
+rm -vf index.html
