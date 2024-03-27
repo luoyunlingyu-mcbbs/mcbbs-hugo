@@ -1,0 +1,212 @@
+<style type="text/css">.disclaimer{text-align:right;font-size:x-small}.banner{background-color:#fff;text-align:left}.cacheContent{position:relative}.b_vPanel>div{padding-bottom:10px}.b_vPanel>div:last-child{padding:0}.banner a{color:#4007a2}</style><base href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1237266" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><!-- Banner:Start --><!--LocalizedDate:2021/10/20--><!--InvariantDate:10/20/2021--><div class="banner"><div class="b_vPanel"><div><!-- Title:Start -->已获得 <strong><a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1237266" h="ID=SERP,5003.1">https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1237266</a></strong> 的缓存页面<!-- Title:End --></div><div><!-- Content:Start -->下面是网页在 <strong>2021/10/20</strong> 时(我们的爬网程序最近访问该网页的时间)的快照。此页面版本用于对您的搜索结果进行评级。该页面自上次对其进行缓存以来可能已更改。若要查看已更改的内容(不包含突出显示)，<a target="_blank" href="https://www.mcbbs.net/forum.php?mod=viewthread&amp;action=printable&amp;tid=1237266" h="ID=SERP,5003.2">请转到当前页面</a>。<!-- Content:End --></div><div><!-- Disclaimer:Start --><div class="disclaimer">必应不对此页面的内容负责。</div><!-- Disclaimer:End --></div><!-- Banner:End --></div></div><div class="cacheContent"> <html>
+<head>
+<title>MMOItems修饰符应用问题 - Minecraft(我的世界)中文论坛 - Powered by Discuz!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+body 	   {margin: 10px 80px;}
+body,table {font-size: FONTSIZE; font-family: FONT;}
+h1 { font-size: 24px; margin-bottom: 20px; color: #999; }
+</style>
+<script src="data/cache/common.js?FXV" type="text/javascript"></script>
+<script src="data/cache/forum_viewthread.js?FXV" type="text/javascript"></script>
+<script type="text/javascript">var STYLEID = '30', STATICURL = 'static/', IMGDIR = 'template/mcbbs/image', VERHASH = 'FXV', charset = 'UTF-8', discuz_uid = '0', cookiepre = 'ZxYQ_8cea_', cookiedomain = '.mcbbs.net', cookiepath = '/', showusercard = '1', attackevasive = '0', disallowfloat = 'newthread|tradeorder|nav|usergroups', creditnotice = '1|人气|点,2|金粒|粒,3|金锭|块,4|宝石|颗,5|下界之星|枚,6|贡献|份,7|爱心|心,8|钻石|颗', defaultstyle = './template/mcbbs/style/nether', REPORTURL = 'aHR0cHM6Ly93d3cubWNiYnMubmV0L2ZvcnVtLnBocD9tb2Q9dmlld3RocmVhZCZhY3Rpb249cHJpbnRhYmxlJnRpZD0xMjM3MjY2', SITEURL = 'https://www.mcbbs.net/', JSPATH = 'data/cache/';</script>
+</head>
+
+<body>
+<h1>Minecraft(我的世界)中文论坛</h1>
+<b>标题: </b>MMOItems修饰符应用问题 <b><a href="###" onclick="this.style.visibility='hidden';window.print();this.style.visibility='visible'">[打印本页]</a></b></span><br />
+<script type="text/javascript">var zoomstatus = 0;var aimgcount = new Array();</script><hr noshade size="2" width="100%" color="#808080">
+<b>作者: </b>ZXYLOVE&nbsp; &nbsp; <b>时间: </b>2021-8-3 12:18<br />
+<b>标题: </b>MMOItems修饰符应用问题<br />服务端:Paper-1.16.5<br />
+插件版本: MMOItems-6.57<br />
+前置版本: MythicLib-1.1.2<br />
+<br />
+在使用修饰符修饰物品时附魔属性以及Lore、技能不能应用于该物品具体内容如折叠所示:<br />
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onClick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;"/></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><td><br />
+[MMOItems Item Generation] Could not merge EnchantListData modifier data into AbilityListData of ENCHANTS when generating DAGGER 1.<br />
+ [12:01:37 INFO]: [MMOItems Item Generation] Could not merge AbilityListData modifier data into StringListData of ABILITY when generating DAGGER 1. <br />
+[12:01:37 INFO]: [MMOItems Item Generation] Could not merge EnchantListData modifier data into AbilityListData of ENCHANTS when generating DAGGER 1. <br />
+[12:01:37 INFO]: [MMOItems Item Generation] Could not merge StringListData modifier data into EnchantListData of LORE when generating DAGGER 1.</td></table></div></div><br />
+<br />
+配置文件如下折叠所示:<br />
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onClick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;"/></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><td><br />
+<br />
+Test1:<br />
+&nbsp; &nbsp; option:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;roll-modifier-check-order: true<br />
+&nbsp; &nbsp; base: # base项代表了武器的基础属性<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;tier: abab<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;name: '&amp;c我是一把武器'<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;material: IRON_SWORD<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;attack-damage: 4<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;attack-speed: 1.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; sharpness: 6.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; fire_aspect: 1<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; unbreaking: 3<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;max-durability: 256.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;hide-enchants: true<br />
+&nbsp; &nbsp; modifiers:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;cx: # 修饰符first-modifier<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;chance: 1 # 有30%的几率随到这个修饰符<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.5<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;looting: 2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; attack-speed: .4 # 该修饰符可以提供3点攻击力<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; ability:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;on-hit:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;type: SmashAttack<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;mode: ON_HIT<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;drain: 3.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;cooldown: 4.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; # 此处省略一些物品属性...<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; - '..........'<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; - '&amp;9我是潮汐!'<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;second-modifier:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;chance: 1 # 有30%的几率随到这个修饰符<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.5<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;looting: 2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; ability:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;on-hit:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;type: SmashAttack<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;mode: ON_HIT<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;drain: 3.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;cooldown: 1.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; - '&amp;6我是日食!'<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;a:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;chance: 1 # 有30%的几率随到这个修饰符<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.5<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;looting: 2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; ability:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;on-hit:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;type: SmashAttack<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;mode: ON_HIT<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;drain: 3.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;cooldown: 1.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; - '&amp;a我是霸王花!'<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;b:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;chance: 1 # 有30%的几率随到这个修饰符<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.5<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;looting: 5<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; - '&amp;2我是捕蝇草!'<br />
+<br />
+</td></table></div></div><br />
+<br />
+<br />
+<hr noshade size="2" width="100%" color="#808080">
+<b>作者: </b>一颗丁子&nbsp; &nbsp; <b>时间: </b>2021-8-3 18:54<br />
+一是尝试去除<br />
+<font style="font-size:14px">&nbsp; &nbsp; option:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;roll-modifier-check-order: true</font><br />
+<br />
+<font style="font-size:14px">这项设置</font><br />
+<font style="font-size:14px">二是你这是截取过的配置文件吗？不是的话你的格式是有问题的 参考这个</font><br />
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onClick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;"/></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><td><br />
+<font style="font-size:14px">小木斧:</font><br />
+<font style="font-size:14px">&nbsp;&nbsp;option:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; tiered: true</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; level-item: true</font><br />
+<font style="font-size:14px">&nbsp;&nbsp;base:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; material: WOODEN_AXE</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; name: '&amp;f小木斧'</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; attack-damage: 2.8</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; attack-speed: 0.7</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; critical-strike-chance: 20.0</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; lore-format: nogs</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; tier: 普通</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; lore:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; - '&amp;f由树木削制的斧子'</font><br />
+<font style="font-size:14px">&nbsp;&nbsp;modifiers:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp; 1:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;chance: 0.3</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;weight: 2.0</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;prefix: ''</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;stats:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;element:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; fire:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;damage: 10.0</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;lore:</font><br />
+<font style="font-size:14px">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&amp;f木器是如何冒着火光的呢...'</font><br />
+<br />
+</td></table></div></div><font style="font-size:14px"><br />
+</font><br />
+<hr noshade size="2" width="100%" color="#808080">
+<b>作者: </b>ZXYLOVE&nbsp; &nbsp; <b>时间: </b>2021-8-3 21:55<br />
+<div class="quote"><blockquote><font size="2"><a href="https://www.mcbbs.net/forum.php?mod=redirect&amp;goto=findpost&amp;pid=22834255&amp;ptid=1237266" target="_blank"><font color="#999999">一颗丁子 发表于 2021-8-3 18:54</font></a></font><br />
+一是尝试去除<br />
+&nbsp; &nbsp; option:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;roll-modifier-check-order: true</blockquote></div><br />
+按你所说我试了一下 第一项排除<br />
+<br />
+第二项修改之后我发现是修饰符配置内还是不能带有附魔样式的修饰符<br />
+删除附魔样式后Lore样式时好时坏<br />
+有时可以出来有时还是提示那个就很怪配置文件如下所示<br />
+<div class="spoiler"><div class="spoilerheader"><input type="button" class="spoilerbutton" value="展开 / 收起隐藏文字" onClick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;"/></div><div class="spoilerbody" style="display: none;border-style:inset;padding-right:5px;border-color: #ccc; "><table><td><br />
+帷幕:<br />
+&nbsp;&nbsp;option:<br />
+&nbsp; &nbsp; roll-modifier-check-order: true<br />
+&nbsp;&nbsp;base:<br />
+&nbsp; &nbsp; material: IRON_SWORD<br />
+&nbsp; &nbsp; name: '&amp;c帷幕🗡'<br />
+&nbsp; &nbsp; attack-damage: 4<br />
+&nbsp; &nbsp; attack-speed: 1.0<br />
+&nbsp; &nbsp; tier: COMMON<br />
+&nbsp; &nbsp; enchants:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;sharpness: 6.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;fire_aspect: 1<br />
+&nbsp; &nbsp;&nbsp; &nbsp;unbreaking: 3<br />
+&nbsp; &nbsp; max-durability: 256.0<br />
+&nbsp; &nbsp; hide-enchants: false<br />
+&nbsp;&nbsp;modifiers:<br />
+&nbsp; &nbsp; 1:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;chance: 1<br />
+&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;ability:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; on-hit:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;type: SmashAttack<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;mode: ON_HIT<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;drain: 3.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;cooldown: 4.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;# 此处省略一些物品属性...<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&amp;9我是潮汐!'<br />
+&nbsp; &nbsp; 2:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;chance: 1<br />
+&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;element:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; fire:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;damage: 10.0<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&amp;6我是日食!.'<br />
+&nbsp; &nbsp; b:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;chance: 1 # 有30%的几率随到这个修饰符<br />
+&nbsp; &nbsp;&nbsp; &nbsp;weight: 1.2<br />
+&nbsp; &nbsp;&nbsp; &nbsp;stats:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;lore:<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- '&amp;2我是捕蝇草!'<br />
+<br />
+</td></table></div></div><br />
+<br />
+<br />
+
+<br /><br /><br /><br /><hr noshade size="2" width="100%" color="BORDERCOLOR">
+<table cellspacing="0" cellpadding="0" border="0" width="95%" align="center" style="font-size: SMFONTSIZE; font-family: SMFONT">
+<tr><td>欢迎光临 Minecraft(我的世界)中文论坛 (https://www.mcbbs.net/)</td>
+<td align="right">
+Powered by Discuz! X3.5</td></tr></table>
+
+</body>
+</html></div>
