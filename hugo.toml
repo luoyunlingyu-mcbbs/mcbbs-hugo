@@ -9,10 +9,10 @@ theme = 'etch'
   
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "页面列表"
-    title = "页面列表"
-    url = "/"
+    identifier = "github"
+    name = "Github仓库"
+    title = "Github仓库"
+    url = "https://github.com/luoyunlingyu-mcbbs/mcbbs-hugo"
     weight = 10
   [[menu.main]]
     identifier = "about"
