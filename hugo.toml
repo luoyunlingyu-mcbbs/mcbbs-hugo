@@ -1,12 +1,15 @@
 baseURL = 'https://luoyunlingyu-mcbbs.github.io/mcbbs-hugo/'
-languageCode = 'zh-CN'
+languageCode = 'en'
 title = '拯救MCBBS：论坛页面归档列表'
-theme = 'etch'
+theme = 'etch-mc'
 
 [params]
   description = "MC的精神，我们的世界!"
   copyright = "声明：所有网页均来自mcbbs论坛页面，其中内容与本站无关!"
-  
+  mainTitle = "MCBBS论坛页面归档列表"
+  subTitle = "拯救MCBBS"
+  Title = "拯救MCBBS：论坛页面归档列表"
+
 [menu]
   [[menu.main]]
     identifier = "github"
