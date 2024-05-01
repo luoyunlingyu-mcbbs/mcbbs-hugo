@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.125.1
+      HUGO_VERSION: 0.125.4
     steps:
       - name: Install Hugo CLI
         run: |
@@ -50,7 +50,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Add Titles To Each File
+      - name: Add Titles to Each File
         run: bash ren.sh content/posts/
       - name: Build with Hugo
         env:
@@ -61,6 +61,8 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --printMemoryUsage \
+            --logLevel debug \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

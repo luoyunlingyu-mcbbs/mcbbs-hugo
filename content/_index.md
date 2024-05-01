@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "MCBBS论坛页面归档列表 - 拯救MCBBS - build with hugo"
 ---
 欢迎访问mcbbs备份页面。任何时候点击页面大标题返回列表主页面。
 
