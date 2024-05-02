@@ -40,7 +40,6 @@ jobs:
           name: renamed
           path: .
           if-no-files-found: error
-          compression-level: 3
   # Build job
   build:
     runs-on: windows-latest
@@ -70,9 +69,9 @@ jobs:
           HUGO_ENV: production
           # HUGO_MEMORYLIMIT: 6
         run: |
-          C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"          
+          C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./public
 
@@ -86,4 +85,30 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4.0.5
+
+  # Build test test
+  build_test:
+    runs-on: windows-latest
+    needs: rename
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          curl -o C:\windows\wget.exe https://eternallybored.org/misc/wget/1.21.4/64/wget.exe
+          wget -O ${{ runner.temp }}\hugo-inst.zip https://github.com/gohugoio/hugo/releases/download/v0.125.5/hugo_extended_0.125.5_windows-amd64.zip
+          tar -C C:\ -xzvf  ${{ runner.temp }}\hugo-inst.zip
+          C:\hugo.exe version
+      - uses: actions/download-artifact@v4
+        with:
+          name: renamed
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+          # HUGO_MEMORYLIMIT: 6
+        run: |
+          C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
