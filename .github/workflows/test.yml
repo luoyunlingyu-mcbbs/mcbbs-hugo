@@ -45,40 +45,39 @@ jobs:
           path: archive.tar
           if-no-files-found: error
           compression-level: 6
-  # Build job
-  build:
-    runs-on: windows-latest
-    # needs: rename
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          curl -o C:\windows\wget.exe https://eternallybored.org/misc/wget/1.21.4/64/wget.exe
-          wget -O ${{ runner.temp }}\hugo-inst.zip https://github.com/gohugoio/hugo/releases/download/v0.125.5/hugo_extended_0.125.5_windows-amd64.zip
-          tar -C C:\ -xzvf  ${{ runner.temp }}\hugo-inst.zip
-          C:\hugo.exe version
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Add Titles to Each File
-        run: bash ren.sh content/posts/
-        shell: bash
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      - name: Build with Hugo
-        env:
-          # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-          # HUGO_MEMORYLIMIT: 6
-        run: |
-          C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          path: ./public
+  # Build job old
+#  build_total:
+#    runs-on: windows-latest
+#    steps:
+#      - name: Install Hugo CLI
+#        run: |
+#          curl -o C:\windows\wget.exe https://eternallybored.org/misc/wget/1.21.4/64/wget.exe
+#          wget -O ${{ runner.temp }}\hugo-inst.zip https://github.com/gohugoio/hugo/releases/download/v0.125.5/hugo_extended_0.125.5_windows-amd64.zip
+#          tar -C C:\ -xzvf  ${{ runner.temp }}\hugo-inst.zip
+#          C:\hugo.exe version
+#      - name: Checkout
+#        uses: actions/checkout@v4
+#        with:
+#          submodules: recursive
+#          fetch-depth: 0
+#      - name: Add Titles to Each File
+#        run: bash ren.sh content/posts/
+#        shell: bash
+#      - name: Setup Pages
+#        id: pages
+#        uses: actions/configure-pages@v4
+#      - name: Build with Hugo
+#        env:
+#          # For maximum backward compatibility with Hugo modules
+#          HUGO_ENVIRONMENT: production
+#          HUGO_ENV: production
+#          # HUGO_MEMORYLIMIT: 6
+#        run: |
+#          C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
+#      - name: Upload artifact
+#        uses: actions/upload-pages-artifact@v3.0.1
+#        with:
+#          path: ./public
 
   # Deployment job
   deploy:
@@ -86,14 +85,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
+    needs: build_only
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4.0.5
 
-  # Build test test
-  build_test:
+  # Build test
+  build_only:
     runs-on: windows-latest
     needs: rename
     steps:
@@ -120,6 +119,10 @@ jobs:
         run: |
           move archive.tar ..\
           cd ..
-          tar -xvf archive.tar
+          tar -xf archive.tar
           cd mcbbs-hugo
           C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: ./public

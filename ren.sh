@@ -18,6 +18,7 @@ for file in *.htm; do
 done
 echo "标题添加完成。"
 rm -vf index.html
+exit
 for file in *.html; do
     if [ -f "$file" ]; then
         # 显示文件名
