@@ -33,13 +33,18 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Add Titles to Each File
-        run: bash ren.sh content/posts/
+        run: |
+          bash ren.sh content/posts/
+          cd ..
+          tar -cf archive.tar mcbbs-hugo
+          mv archive.tar mcbbs-hugo/
       - name: Upload Result
         uses: actions/upload-artifact@v4
         with:
           name: renamed
-          path: .
+          path: archive.tar
           if-no-files-found: error
+          compression-level: 6
   # Build job
   build:
     runs-on: windows-latest
@@ -92,23 +97,29 @@ jobs:
     runs-on: windows-latest
     needs: rename
     steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: renamed
       - name: Install Hugo CLI
+        shell: cmd
         run: |
           curl -o C:\windows\wget.exe https://eternallybored.org/misc/wget/1.21.4/64/wget.exe
           wget -O ${{ runner.temp }}\hugo-inst.zip https://github.com/gohugoio/hugo/releases/download/v0.125.5/hugo_extended_0.125.5_windows-amd64.zip
           tar -C C:\ -xzvf  ${{ runner.temp }}\hugo-inst.zip
           C:\hugo.exe version
-      - uses: actions/download-artifact@v4
-        with:
-          name: renamed
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with Hugo
+        shell: cmd
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
           # HUGO_MEMORYLIMIT: 6
         run: |
+          move archive.tar ..\
+          cd ..
+          tar -xvf archive.tar
+          cd mcbbs-hugo
           C:\hugo.exe --gc --minify --printMemoryUsage --logLevel debug --baseURL "${{ steps.pages.outputs.base_url }}/"
